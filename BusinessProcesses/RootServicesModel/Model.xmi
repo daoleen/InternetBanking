@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.btools.bom.model.models="http:///com/ibm/btools/bom/model/models.ecore"
+    xmlns:com.ibm.btools.model.resourcemanager.resourceproperties="http:///com/ibm/btools/model/resourcemanager/resourceproperties.ecore">
+  <com.ibm.btools.model.resourcemanager.resourceproperties:ResourceProperties versionID="7.0.0.0"
+      lastModified="1416610614796"/>
+  <com.ibm.btools.bom.model.models:ServicesModel xmi:id="FID-00005-5b627d9ac2dc2dc6165e1a1937e46179"
+      uid="FID-00005-5b627d9ac2dc2dc6165e1a1937e46179" name="RootServicesModel"/>
+</xmi:XMI>

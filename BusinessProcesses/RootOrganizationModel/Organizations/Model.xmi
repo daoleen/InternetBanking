@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.btools.bom.model.models="http:///com/ibm/btools/bom/model/models.ecore"
+    xmlns:com.ibm.btools.model.resourcemanager.resourceproperties="http:///com/ibm/btools/model/resourcemanager/resourceproperties.ecore">
+  <com.ibm.btools.model.resourcemanager.resourceproperties:ResourceProperties versionID="7.0.0.0"
+      lastModified="1416610633546"/>
+  <com.ibm.btools.bom.model.models:OrganizationModel xmi:id="FID-00009-a77b4d9e625933281a1adae4e04eff22"
+      uid="FID-00009-a77b4d9e625933281a1adae4e04eff22" name="Organizations">
+    <ownedComment xmi:id="BLM-658ffec88fc3b701773bc31436f8f1e6" uid="BLM-658ffec88fc3b701773bc31436f8f1e6"
+        name="###_NAME_COMMENT_###" body=""/>
+    <owningPackage href="RID-00003-dad60dce221a6f12e511d3663557c30b.xmi#FID-00003-6c3477837aac2e2b6c6c7134687f499c"/>
+  </com.ibm.btools.bom.model.models:OrganizationModel>
+</xmi:XMI>

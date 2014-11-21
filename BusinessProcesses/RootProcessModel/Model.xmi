@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:com.ibm.btools.bom.model.models="http:///com/ibm/btools/bom/model/models.ecore"
+    xmlns:com.ibm.btools.model.resourcemanager.resourceproperties="http:///com/ibm/btools/model/resourcemanager/resourceproperties.ecore">
+  <com.ibm.btools.model.resourcemanager.resourceproperties:ResourceProperties versionID="7.0.0.0"
+      lastModified="1416610632796"/>
+  <com.ibm.btools.bom.model.models:ProcessModel xmi:id="FID-00001-ad9a45b1154e1f336a7e5b04104a6a31"
+      uid="FID-00001-ad9a45b1154e1f336a7e5b04104a6a31" name="RootProcessModel">
+    <ownedMember xsi:type="com.ibm.btools.bom.model.models:ProcessModel" href="RID-00010-2f692ef5ad7eb5a95f165d75a6b139c0.xmi#FID-00010-df13a34335666a3908f4db598482644b"/>
+  </com.ibm.btools.bom.model.models:ProcessModel>
+</xmi:XMI>

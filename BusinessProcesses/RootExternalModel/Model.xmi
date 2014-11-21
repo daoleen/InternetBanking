@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:com.ibm.btools.bom.model.models="http:///com/ibm/btools/bom/model/models.ecore"
+    xmlns:com.ibm.btools.model.resourcemanager.resourceproperties="http:///com/ibm/btools/model/resourcemanager/resourceproperties.ecore">
+  <com.ibm.btools.model.resourcemanager.resourceproperties:ResourceProperties versionID="7.0.0.0"
+      lastModified="1416610634109"/>
+  <com.ibm.btools.bom.model.models:ExternalModel xmi:id="FID-00023-0def459ef61860baae55280e3a6a1996"
+      uid="FID-00023-0def459ef61860baae55280e3a6a1996" name="RootExternalModel">
+    <ownedMember xsi:type="com.ibm.btools.bom.model.models:ExternalModel" href="RID-00025-b60b471379b32dcfd6be2630834bb0df.xmi#FID-00025-68e423a142dfccf90258be1b979c5d01"/>
+    <ownedMember xsi:type="com.ibm.btools.bom.model.models:ExternalModel" href="RID-00024-a1e467011fb713fdbe5daaa9a593a7dc.xmi#FID-00024-e501bb8c427a8ad22973f540174079a8"/>
+  </com.ibm.btools.bom.model.models:ExternalModel>
+</xmi:XMI>

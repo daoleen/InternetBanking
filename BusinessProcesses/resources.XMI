@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.btools.model.resourcemanager="http:///com/ibm/btools/model/resourcemanager.ecore"
+    xmlns:com.ibm.btools.model.resourcemanager.resourceproperties="http:///com/ibm/btools/model/resourcemanager/resourceproperties.ecore">
+  <com.ibm.btools.model.resourcemanager.resourceproperties:ResourceProperties versionID="7.0.0.0"
+      lastModified="1416610614109"/>
+  <com.ibm.btools.model.resourcemanager:ProjectResourcesMGR>
+    <idRecords id="DM-303582dde1cc6540717841d276a8d0f7" uri="dependencies.xmi" modelType="0"
+        rootObjType="0" groupID=""/>
+    <idRecords id="RID-00001-800aa38791bbceeda69a782c5a1de281" uri="RootProcessModel\Model.xmi"
+        modelType="1" rootObjType="101">
+      <rootObjIDs>FID-00001-ad9a45b1154e1f336a7e5b04104a6a31</rootObjIDs>
+    </idRecords>
+    <idRecords id="RID-00002-e584ec7b0fa9b419ddffabc5fe974cb3" uri="RootInformationModel\Model.xmi"
+        modelType="1" rootObjType="102">
+      <rootObjIDs>FID-00002-d2c1045764ff3fae68e3ec2ef479d01c</rootObjIDs>
+    </idRecords>
+    <idRecords id="RID-00003-dad60dce221a6f12e511d3663557c30b" uri="RootOrganizationModel\Model.xmi"
+        modelType="1" rootObjType="103">
+      <rootObjIDs>FID-00003-6c3477837aac2e2b6c6c7134687f499c</rootObjIDs>
+    </idRecords>
+    <idRecords id="RID-00004-33ef60dc57a989eb375b9529a4d4eaa9" uri="RootResourceModel\Model.xmi"
+        modelType="1" rootObjType="104">
+      <rootObjIDs>FID-00004-3b601e690138e4329b05c2df4086228c</rootObjIDs>
+    </idRecords>
+    <idRecords id="RID-00005-22f3e1b61824cf5bb39ecb0d94e9f999" uri="RootServicesModel\Model.xmi"
+        modelType="1" rootObjType="105">
+      <rootObjIDs>FID-00005-5b627d9ac2dc2dc6165e1a1937e46179</rootObjIDs>
+    </idRecords>
+    <idRecords id="RID-00023-45218dd7d5ab3536d8dcaa7427ee6e41" uri="RootExternalModel\Model.xmi"
+        modelType="1" rootObjType="111">
+      <rootObjIDs>FID-00023-0def459ef61860baae55280e3a6a1996</rootObjIDs>
+    </idRecords>
+    <idRecords id="RID-00013-5a79e9e1e67e3c9b24037afe88c17ede" uri="RootClassifierModel\Model.xmi"
+        modelType="1" rootObjType="103">
+      <rootObjIDs>FID-00013-e7b645e77a0a34af62483cb7beef5335</rootObjIDs>
+    </idRecords>
+    <idRecords id="RID-00014-613801d45ac49c39bbbc289ba667b0a4" uri="RootClassifierModel\Classifiers\Model.xmi"
+        modelType="1" rootObjType="103" groupID="GID-00000000000000000000000000000128">
+      <rootObjIDs>FID-00014-1a7a1e00ef93453bc6781c96d832b1ce</rootObjIDs>
+    </idRecords>
+    <idRecords id="RootReportModelResourceID-01a883ca1a8ab4fd6eff003dab5ba8e7" uri="RootReportModel\Model.xmi"
+        modelType="3" rootObjType="106">
+      <rootObjIDs>RootReportModelID-9a8759551e30086b742b22fae36d0188</rootObjIDs>
+    </idRecords>
+    <idRecords id="RID-00008-e87895b3279b312b975d4207b37ed076" uri="RootInformationModel\Business items\Model.xmi"
+        modelType="1" rootObjType="102" groupID="BLMNAV-dc7f162b26339b89d8fd7f8e13aca338">
+      <rootObjIDs>FID-00008-354282317f740a5ad70315d7196a3df1</rootObjIDs>
+    </idRecords>
+    <idRecords id="" uri="messages.xmi" modelType="0" rootObjType="0" groupID=""/>
+    <idRecords id="RID-00010-2f692ef5ad7eb5a95f165d75a6b139c0" uri="RootProcessModel\Processes\Model.xmi"
+        modelType="1" rootObjType="101" groupID="BLMNAV-934d396ce87ff85e6037f722766052cd">
+      <rootObjIDs>FID-00010-df13a34335666a3908f4db598482644b</rootObjIDs>
+    </idRecords>
+    <idRecords id="RID-00007-5acbbfa7c7a71a8a685b09fe4e1a898b" uri="RootSimulationModel\Model.xmi"
+        modelType="5" rootObjType="109">
+      <rootObjIDs>FID-00007-fd0ced569db6545b4c296a489c9752f8</rootObjIDs>
+    </idRecords>
+    <idRecords id="RID-00009-a3ccf7cb9675d1b32f4791ef9ad30102" uri="RootOrganizationModel\Organizations\Model.xmi"
+        modelType="1" rootObjType="103" groupID="BLMNAV-cc6a955c687349a9e5ca4b75d30c7e94">
+      <rootObjIDs>FID-00009-a77b4d9e625933281a1adae4e04eff22</rootObjIDs>
+    </idRecords>
+    <idRecords id="RID-00025-b60b471379b32dcfd6be2630834bb0df" uri="RootExternalModel\Business services\Model.xmi"
+        modelType="1" rootObjType="111" groupID="BLMNAV-acfb431f608087977f7d499132d7a91f">
+      <rootObjIDs>FID-00025-68e423a142dfccf90258be1b979c5d01</rootObjIDs>
+    </idRecords>
+    <idRecords id="RID-00024-a1e467011fb713fdbe5daaa9a593a7dc" uri="RootExternalModel\Business service objects\Model.xmi"
+        modelType="1" rootObjType="111" groupID="BLMNAV-c5c368abb9c31a1581eb01a167a41fd5">
+      <rootObjIDs>FID-00024-e501bb8c427a8ad22973f540174079a8</rootObjIDs>
+    </idRecords>
+    <idRecords id="RID-00011-7461ff98022b473173360fc6261f7f95" uri="RootResourceModel\Resources\Model.xmi"
+        modelType="1" rootObjType="104" groupID="BLMNAV-1a7c838b09b8c3b671836ffba60d58b2">
+      <rootObjIDs>FID-00011-f5194ace6dd0e1cc665e3ec41e717504</rootObjIDs>
+    </idRecords>
+    <idRecords id="QRY-RootQueryModelResourceID-b6653aca6b2fe85ada94d3e96d9385dd"
+        uri="RootQueryModel\Model.xmi" modelType="4" rootObjType="108" groupID="">
+      <rootObjIDs>RootQueryModelID-846184bb8708951b2b41c44bcb20f25e</rootObjIDs>
+    </idRecords>
+    <idRecords id="QRY-AdvancedResourceID-e78494ef09529291c681ea8ea47e9c2e" uri="RootQueryModel\Advanced profile\Model.xmi"
+        modelType="4" rootObjType="108" groupID="">
+      <rootObjIDs>QRY-AdvancedID-2b647a700821d463b5c8ae7d482fcf4c</rootObjIDs>
+    </idRecords>
+    <idRecords id="QRY-IntermediateResourceID-5b2b56aeb68a2af1699b253e37f54f84" uri="RootQueryModel\Intermediate profile\Model.xmi"
+        modelType="4" rootObjType="108" groupID="">
+      <rootObjIDs>QRY-IntermediateID-2a142331babc273615732c674a209126</rootObjIDs>
+    </idRecords>
+    <idRecords id="QRY-BasicResourceID-0d09e50b49a47794f1e86fc01ba1db1b" uri="RootQueryModel\Basic profile\Model.xmi"
+        modelType="4" rootObjType="108" groupID="">
+      <rootObjIDs>QRY-BasicID-5d38e0035fe7238a4eb8715667f7520d</rootObjIDs>
+    </idRecords>
+    <idRecords id="Reports_Catalog_Resource_ID-f729ee9469311f9c80bb8a37451014d6" uri="RootReportModel\Reports\Model.xmi"
+        modelType="3" rootObjType="106" groupID="BLMNAV-a5fe9907fe67796aa55202c1c55ec09b">
+      <rootObjIDs>Reports_Catalog_ID-3cb292abf89de757d7f4ba0093641e1f</rootObjIDs>
+    </idRecords>
+  </com.ibm.btools.model.resourcemanager:ProjectResourcesMGR>
+</xmi:XMI>
