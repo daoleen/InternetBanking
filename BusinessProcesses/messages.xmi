@@ -4,7 +4,7 @@
     xmlns:com.ibm.btools.model.modelmanager.validation="http:///com/ibm/btools/model/modelmanager/validation.ecore"
     xmlns:com.ibm.btools.model.resourcemanager.resourceproperties="http:///com/ibm/btools/model/resourcemanager/resourceproperties.ecore">
   <com.ibm.btools.model.resourcemanager.resourceproperties:ResourceProperties versionID="7.0.0.0"
-      lastModified="1416677217906"/>
+      lastModified="1416684311921"/>
   <com.ibm.btools.model.modelmanager.validation:ProjectMessageSet ownerObjectID="BusinessProcesses"
       projectName="BusinessProcesses">
     <composedChildren xsi:type="com.ibm.btools.model.modelmanager.validation:RootMessageSet"
@@ -464,27 +464,11 @@
     <composedChildren xsi:type="com.ibm.btools.model.modelmanager.validation:RootMessageSet"
         ownerObjectID="BLM-2f5cc2078b6c2b430c0fffb15197e906">
       <composedChildren xsi:type="com.ibm.btools.model.modelmanager.validation:TargetMessageSet"
-          ownerObjectID="BLM-d13bcf518363800e898dfb6dfac9bf74">
-        <messages id="ZXP102501W" featureID="12" text="The basic type &quot;Long&quot; for element &quot;id&quot; is not supported."
-            targetObjectName="id">
-          <rootObject href="BLM-b2c4689e9386a922728426f48ac9c302.xmi#BLM-2f5cc2078b6c2b430c0fffb15197e906"/>
-          <targetObject href="BLM-b2c4689e9386a922728426f48ac9c302.xmi#BLM-d13bcf518363800e898dfb6dfac9bf74"/>
-        </messages>
-      </composedChildren>
-      <composedChildren xsi:type="com.ibm.btools.model.modelmanager.validation:TargetMessageSet"
           ownerObjectID="BLM-318b6e86339ff2be99f570d116f6c975">
         <messages id="ZXP102501W" featureID="12" text="The basic type &quot;Double&quot; for element &quot;amount&quot; is not supported."
             targetObjectName="amount">
           <rootObject href="BLM-b2c4689e9386a922728426f48ac9c302.xmi#BLM-2f5cc2078b6c2b430c0fffb15197e906"/>
           <targetObject href="BLM-b2c4689e9386a922728426f48ac9c302.xmi#BLM-318b6e86339ff2be99f570d116f6c975"/>
-        </messages>
-      </composedChildren>
-      <composedChildren xsi:type="com.ibm.btools.model.modelmanager.validation:TargetMessageSet"
-          ownerObjectID="BLM-44de2d596cc047d83067f346fbf6fb19">
-        <messages id="ZXP102501W" featureID="12" text="The basic type &quot;Long&quot; for element &quot;cardNumber&quot; is not supported."
-            targetObjectName="cardNumber">
-          <rootObject href="BLM-b2c4689e9386a922728426f48ac9c302.xmi#BLM-2f5cc2078b6c2b430c0fffb15197e906"/>
-          <targetObject href="BLM-b2c4689e9386a922728426f48ac9c302.xmi#BLM-44de2d596cc047d83067f346fbf6fb19"/>
         </messages>
       </composedChildren>
     </composedChildren>
