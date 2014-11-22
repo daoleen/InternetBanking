@@ -1,9 +1,283 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0"
-    xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.btools.model.modelmanager.validation="http:///com/ibm/btools/model/modelmanager/validation.ecore"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:com.ibm.btools.model.modelmanager.validation="http:///com/ibm/btools/model/modelmanager/validation.ecore"
     xmlns:com.ibm.btools.model.resourcemanager.resourceproperties="http:///com/ibm/btools/model/resourcemanager/resourceproperties.ecore">
   <com.ibm.btools.model.resourcemanager.resourceproperties:ResourceProperties versionID="7.0.0.0"
-      lastModified="1416610631562"/>
+      lastModified="1416614497171"/>
   <com.ibm.btools.model.modelmanager.validation:ProjectMessageSet ownerObjectID="BusinessProcesses"
-      projectName="BusinessProcesses"/>
+      projectName="BusinessProcesses">
+    <composedChildren xsi:type="com.ibm.btools.model.modelmanager.validation:RootMessageSet"
+        ownerObjectID="BLM-81b28085e59b5bc251a05a931673f79e">
+      <composedChildren xsi:type="com.ibm.btools.model.modelmanager.validation:TargetMessageSet"
+          ownerObjectID="BLM-bab2877bbce758de71fef1d534aa3868">
+        <messages id="ZBL500001W" featureID="42" text="The primary owner is not assigned by role for the human task &quot;Filling a new statement for Internet Banking service&quot;.  To deploy business processes, the primary owner must have an assigned role."
+            targetObjectName="Filling a new statement for Internet Banking service">
+          <rootObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-81b28085e59b5bc251a05a931673f79e"/>
+          <targetObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-bab2877bbce758de71fef1d534aa3868"/>
+          <targetObjectOverride href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-0e9431b947f0021e34a58824a24c83b6"/>
+        </messages>
+      </composedChildren>
+      <composedChildren xsi:type="com.ibm.btools.model.modelmanager.validation:TargetMessageSet"
+          ownerObjectID="BLM-abddf02a1f60d3b4250559287dd1ebdb">
+        <messages id="ZBL500001W" featureID="42" text="The primary owner is not assigned by role for the human task &quot;Verification of passport data&quot;.  To deploy business processes, the primary owner must have an assigned role."
+            targetObjectName="Verification of passport data">
+          <rootObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-81b28085e59b5bc251a05a931673f79e"/>
+          <targetObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-abddf02a1f60d3b4250559287dd1ebdb"/>
+          <targetObjectOverride href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-0b6c471efe14937188ad3705e47e3be4"/>
+        </messages>
+      </composedChildren>
+      <composedChildren xsi:type="com.ibm.btools.model.modelmanager.validation:TargetMessageSet"
+          ownerObjectID="BLM-a7d961aa06a2210d9e5a723ee8c53528">
+        <messages id="ZBL300007W" featureID="14" text="Role requirement specified on &quot;Saving the statement&quot; will not be interpreted as Human Task. Consider using the Human Task modeling construct instead."
+            targetObjectName="Role requirement:1">
+          <rootObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-81b28085e59b5bc251a05a931673f79e"/>
+          <targetObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-a7d961aa06a2210d9e5a723ee8c53528"/>
+        </messages>
+      </composedChildren>
+      <composedChildren xsi:type="com.ibm.btools.model.modelmanager.validation:TargetMessageSet"
+          ownerObjectID="BLM-6e9724d66f210e30a7ad937decafa608">
+        <messages id="ZBL500001W" featureID="42" text="The primary owner is not assigned by role for the human task &quot;Registration in the bank system via internet&quot;.  To deploy business processes, the primary owner must have an assigned role."
+            targetObjectName="Registration in the bank system via internet">
+          <rootObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-81b28085e59b5bc251a05a931673f79e"/>
+          <targetObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-6e9724d66f210e30a7ad937decafa608"/>
+          <targetObjectOverride href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-5c8379a3d617e0b3cc810dfc820d1cfd"/>
+        </messages>
+      </composedChildren>
+      <composedChildren xsi:type="com.ibm.btools.model.modelmanager.validation:TargetMessageSet"
+          ownerObjectID="BLM-eed3d459caa21634992b32b48aef79f1">
+        <messages id="ZBL300007W" featureID="14" text="Role requirement specified on &quot;Searching client&quot; will not be interpreted as Human Task. Consider using the Human Task modeling construct instead."
+            targetObjectName="Role requirement:1">
+          <rootObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-81b28085e59b5bc251a05a931673f79e"/>
+          <targetObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-eed3d459caa21634992b32b48aef79f1"/>
+        </messages>
+      </composedChildren>
+      <composedChildren xsi:type="com.ibm.btools.model.modelmanager.validation:TargetMessageSet"
+          ownerObjectID="BLM-5406fe45d4422cd49bf1a0b77415ef57">
+        <messages id="ZBL300007W" featureID="14" text="Role requirement specified on &quot;Show notification to user&quot; will not be interpreted as Human Task. Consider using the Human Task modeling construct instead."
+            targetObjectName="Role requirement:1">
+          <rootObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-81b28085e59b5bc251a05a931673f79e"/>
+          <targetObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-5406fe45d4422cd49bf1a0b77415ef57"/>
+        </messages>
+      </composedChildren>
+      <composedChildren xsi:type="com.ibm.btools.model.modelmanager.validation:TargetMessageSet"
+          ownerObjectID="BLM-d4a2a3e7957d7639502b7514b6ec7f54">
+        <messages id="ZBL300007W" featureID="14" text="Role requirement specified on &quot;Blocking account for a 1 hour&quot; will not be interpreted as Human Task. Consider using the Human Task modeling construct instead."
+            targetObjectName="Role requirement:1">
+          <rootObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-81b28085e59b5bc251a05a931673f79e"/>
+          <targetObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-d4a2a3e7957d7639502b7514b6ec7f54"/>
+        </messages>
+      </composedChildren>
+      <composedChildren xsi:type="com.ibm.btools.model.modelmanager.validation:TargetMessageSet"
+          ownerObjectID="BLM-43bf1c8504720443c346a79b117bad4d">
+        <messages id="ZBL300007W" featureID="14" text="Role requirement specified on &quot;Show notification about blocking to user&quot; will not be interpreted as Human Task. Consider using the Human Task modeling construct instead."
+            targetObjectName="Role requirement:1">
+          <rootObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-81b28085e59b5bc251a05a931673f79e"/>
+          <targetObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-43bf1c8504720443c346a79b117bad4d"/>
+        </messages>
+      </composedChildren>
+      <composedChildren xsi:type="com.ibm.btools.model.modelmanager.validation:TargetMessageSet"
+          ownerObjectID="BLM-245a0040eb84fbc068dc1158ad5969bc">
+        <messages id="ZBL300007W" featureID="14" text="Role requirement specified on &quot;Sending sms to the client&quot; will not be interpreted as Human Task. Consider using the Human Task modeling construct instead."
+            targetObjectName="Role requirement:1">
+          <rootObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-81b28085e59b5bc251a05a931673f79e"/>
+          <targetObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-245a0040eb84fbc068dc1158ad5969bc"/>
+        </messages>
+      </composedChildren>
+      <composedChildren xsi:type="com.ibm.btools.model.modelmanager.validation:TargetMessageSet"
+          ownerObjectID="BLM-7705d3b0d8e9e9bd62870c9d3d5d386c">
+        <messages id="ZBL500001W" featureID="42" text="The primary owner is not assigned by role for the human task &quot;Submitting the sms code from mobile phone&quot;.  To deploy business processes, the primary owner must have an assigned role."
+            targetObjectName="Submitting the sms code from mobile phone">
+          <rootObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-81b28085e59b5bc251a05a931673f79e"/>
+          <targetObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-7705d3b0d8e9e9bd62870c9d3d5d386c"/>
+          <targetObjectOverride href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-5f337b9dbd43b0ed01cc6db5bae4e75b"/>
+        </messages>
+      </composedChildren>
+      <composedChildren xsi:type="com.ibm.btools.model.modelmanager.validation:TargetMessageSet"
+          ownerObjectID="BLM-d0a8f2958fe33c07e148fa0f80c6971c">
+        <messages id="ZBL500001W" featureID="42" text="The primary owner is not assigned by role for the human task &quot;Filling the login data form&quot;.  To deploy business processes, the primary owner must have an assigned role."
+            targetObjectName="Filling the login data form">
+          <rootObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-81b28085e59b5bc251a05a931673f79e"/>
+          <targetObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-d0a8f2958fe33c07e148fa0f80c6971c"/>
+          <targetObjectOverride href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-f351564efa5979ab26f2d5d0c96de4f5"/>
+        </messages>
+      </composedChildren>
+      <composedChildren xsi:type="com.ibm.btools.model.modelmanager.validation:TargetMessageSet"
+          ownerObjectID="BLM-93f135e24f05cf7df548b285e2de0f32">
+        <messages id="ZBL300007W" featureID="14" text="Role requirement specified on &quot;Save user login data&quot; will not be interpreted as Human Task. Consider using the Human Task modeling construct instead."
+            targetObjectName="Role requirement:1">
+          <rootObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-81b28085e59b5bc251a05a931673f79e"/>
+          <targetObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-93f135e24f05cf7df548b285e2de0f32"/>
+        </messages>
+      </composedChildren>
+      <composedChildren xsi:type="com.ibm.btools.model.modelmanager.validation:TargetMessageSet"
+          ownerObjectID="BLM-c331fa3b86d598ac8c4605c234a22958">
+        <messages id="ZBL110012E" featureID="21" text="Decision output condition on branch &quot;Yes&quot; is not defined."
+            targetObjectName="Yes">
+          <rootObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-81b28085e59b5bc251a05a931673f79e"/>
+          <targetObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-c331fa3b86d598ac8c4605c234a22958"/>
+        </messages>
+        <messages id="ZFL210013E" featureID="21" text="There is no decision output condition defined for element &quot;Yes.&quot;"
+            targetObjectName="Yes">
+          <rootObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-81b28085e59b5bc251a05a931673f79e"/>
+          <targetObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-c331fa3b86d598ac8c4605c234a22958"/>
+        </messages>
+        <messages id="ZXP110005E" featureID="21" text="The output condition on branch &quot;Yes&quot; of decision &quot;Is number of attempts more than  3?&quot; is not defined."
+            targetObjectName="Yes">
+          <rootObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-81b28085e59b5bc251a05a931673f79e"/>
+          <targetObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-c331fa3b86d598ac8c4605c234a22958"/>
+        </messages>
+      </composedChildren>
+      <composedChildren xsi:type="com.ibm.btools.model.modelmanager.validation:TargetMessageSet"
+          ownerObjectID="BLM-752839e1230dea8ef9d062a634a6488a">
+        <messages id="ZBL110012E" featureID="21" text="Decision output condition on branch &quot;No&quot; is not defined."
+            targetObjectName="No">
+          <rootObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-81b28085e59b5bc251a05a931673f79e"/>
+          <targetObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-752839e1230dea8ef9d062a634a6488a"/>
+        </messages>
+        <messages id="ZFL210013E" featureID="21" text="There is no decision output condition defined for element &quot;No.&quot;"
+            targetObjectName="No">
+          <rootObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-81b28085e59b5bc251a05a931673f79e"/>
+          <targetObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-752839e1230dea8ef9d062a634a6488a"/>
+        </messages>
+        <messages id="ZXP110005E" featureID="21" text="The output condition on branch &quot;No&quot; of decision &quot;Did the client was found?&quot; is not defined."
+            targetObjectName="No">
+          <rootObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-81b28085e59b5bc251a05a931673f79e"/>
+          <targetObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-752839e1230dea8ef9d062a634a6488a"/>
+        </messages>
+      </composedChildren>
+      <composedChildren xsi:type="com.ibm.btools.model.modelmanager.validation:TargetMessageSet"
+          ownerObjectID="BLM-0bd0f63fa744a39ba70a6a95ed2e849d">
+        <messages id="ZBL110012E" featureID="21" text="Decision output condition on branch &quot;Yes&quot; is not defined."
+            targetObjectName="Yes">
+          <rootObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-81b28085e59b5bc251a05a931673f79e"/>
+          <targetObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-0bd0f63fa744a39ba70a6a95ed2e849d"/>
+        </messages>
+        <messages id="ZFL210013E" featureID="21" text="There is no decision output condition defined for element &quot;Yes.&quot;"
+            targetObjectName="Yes">
+          <rootObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-81b28085e59b5bc251a05a931673f79e"/>
+          <targetObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-0bd0f63fa744a39ba70a6a95ed2e849d"/>
+        </messages>
+        <messages id="ZXP110005E" featureID="21" text="The output condition on branch &quot;Yes&quot; of decision &quot;Is numer of attempts more than 3?&quot; is not defined."
+            targetObjectName="Yes">
+          <rootObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-81b28085e59b5bc251a05a931673f79e"/>
+          <targetObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-0bd0f63fa744a39ba70a6a95ed2e849d"/>
+        </messages>
+      </composedChildren>
+      <composedChildren xsi:type="com.ibm.btools.model.modelmanager.validation:TargetMessageSet"
+          ownerObjectID="BLM-f1f3b28717e71b0d8623daa4fe8a5425">
+        <messages id="ZBL100033W" featureID="12" text="The termination semantics of the &quot;Terminate Node&quot; terminate node in the &quot;Registration for new client&quot; process will not be preserved during BPEL generation and export."
+            targetObjectName="Terminate Node">
+          <rootObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-81b28085e59b5bc251a05a931673f79e"/>
+          <targetObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-f1f3b28717e71b0d8623daa4fe8a5425"/>
+        </messages>
+      </composedChildren>
+      <composedChildren xsi:type="com.ibm.btools.model.modelmanager.validation:TargetMessageSet"
+          ownerObjectID="BLM-ad91253390c36b901239410239992dfa">
+        <messages id="ZBL110012E" featureID="21" text="Decision output condition on branch &quot;Yes&quot; is not defined."
+            targetObjectName="Yes">
+          <rootObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-81b28085e59b5bc251a05a931673f79e"/>
+          <targetObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-ad91253390c36b901239410239992dfa"/>
+        </messages>
+        <messages id="ZFL210013E" featureID="21" text="There is no decision output condition defined for element &quot;Yes.&quot;"
+            targetObjectName="Yes">
+          <rootObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-81b28085e59b5bc251a05a931673f79e"/>
+          <targetObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-ad91253390c36b901239410239992dfa"/>
+        </messages>
+        <messages id="ZXP110005E" featureID="21" text="The output condition on branch &quot;Yes&quot; of decision &quot;Did the client was found?&quot; is not defined."
+            targetObjectName="Yes">
+          <rootObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-81b28085e59b5bc251a05a931673f79e"/>
+          <targetObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-ad91253390c36b901239410239992dfa"/>
+        </messages>
+      </composedChildren>
+      <composedChildren xsi:type="com.ibm.btools.model.modelmanager.validation:TargetMessageSet"
+          ownerObjectID="BLM-91200cccf9cd28727db4d26665e63a9f">
+        <messages id="ZBL110012E" featureID="21" text="Decision output condition on branch &quot;No&quot; is not defined."
+            targetObjectName="No">
+          <rootObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-81b28085e59b5bc251a05a931673f79e"/>
+          <targetObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-91200cccf9cd28727db4d26665e63a9f"/>
+        </messages>
+        <messages id="ZFL210013E" featureID="21" text="There is no decision output condition defined for element &quot;No.&quot;"
+            targetObjectName="No">
+          <rootObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-81b28085e59b5bc251a05a931673f79e"/>
+          <targetObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-91200cccf9cd28727db4d26665e63a9f"/>
+        </messages>
+        <messages id="ZXP110005E" featureID="21" text="The output condition on branch &quot;No&quot; of decision &quot;Is receved code correct?&quot; is not defined."
+            targetObjectName="No">
+          <rootObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-81b28085e59b5bc251a05a931673f79e"/>
+          <targetObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-91200cccf9cd28727db4d26665e63a9f"/>
+        </messages>
+      </composedChildren>
+      <composedChildren xsi:type="com.ibm.btools.model.modelmanager.validation:TargetMessageSet"
+          ownerObjectID="BLM-767a6c44c74fddf7d564d0b4fdde9644">
+        <messages id="ZBL110012E" featureID="21" text="Decision output condition on branch &quot;Yes&quot; is not defined."
+            targetObjectName="Yes">
+          <rootObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-81b28085e59b5bc251a05a931673f79e"/>
+          <targetObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-767a6c44c74fddf7d564d0b4fdde9644"/>
+        </messages>
+        <messages id="ZFL210013E" featureID="21" text="There is no decision output condition defined for element &quot;Yes.&quot;"
+            targetObjectName="Yes">
+          <rootObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-81b28085e59b5bc251a05a931673f79e"/>
+          <targetObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-767a6c44c74fddf7d564d0b4fdde9644"/>
+        </messages>
+        <messages id="ZXP110005E" featureID="21" text="The output condition on branch &quot;Yes&quot; of decision &quot;Is receved code correct?&quot; is not defined."
+            targetObjectName="Yes">
+          <rootObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-81b28085e59b5bc251a05a931673f79e"/>
+          <targetObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-767a6c44c74fddf7d564d0b4fdde9644"/>
+        </messages>
+      </composedChildren>
+      <composedChildren xsi:type="com.ibm.btools.model.modelmanager.validation:TargetMessageSet"
+          ownerObjectID="BLM-42da9a482c89a6aea5f6978b2c0a42da">
+        <messages id="ZBL110012E" featureID="21" text="Decision output condition on branch &quot;No&quot; is not defined."
+            targetObjectName="No">
+          <rootObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-81b28085e59b5bc251a05a931673f79e"/>
+          <targetObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-42da9a482c89a6aea5f6978b2c0a42da"/>
+        </messages>
+        <messages id="ZFL210013E" featureID="21" text="There is no decision output condition defined for element &quot;No.&quot;"
+            targetObjectName="No">
+          <rootObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-81b28085e59b5bc251a05a931673f79e"/>
+          <targetObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-42da9a482c89a6aea5f6978b2c0a42da"/>
+        </messages>
+        <messages id="ZXP110005E" featureID="21" text="The output condition on branch &quot;No&quot; of decision &quot;Is numer of attempts more than 3?&quot; is not defined."
+            targetObjectName="No">
+          <rootObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-81b28085e59b5bc251a05a931673f79e"/>
+          <targetObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-42da9a482c89a6aea5f6978b2c0a42da"/>
+        </messages>
+      </composedChildren>
+      <composedChildren xsi:type="com.ibm.btools.model.modelmanager.validation:TargetMessageSet"
+          ownerObjectID="BLM-3c19607d803514851b28220addce5842">
+        <messages id="ZBL110012E" featureID="21" text="Decision output condition on branch &quot;No&quot; is not defined."
+            targetObjectName="No">
+          <rootObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-81b28085e59b5bc251a05a931673f79e"/>
+          <targetObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-3c19607d803514851b28220addce5842"/>
+        </messages>
+        <messages id="ZFL210013E" featureID="21" text="There is no decision output condition defined for element &quot;No.&quot;"
+            targetObjectName="No">
+          <rootObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-81b28085e59b5bc251a05a931673f79e"/>
+          <targetObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-3c19607d803514851b28220addce5842"/>
+        </messages>
+        <messages id="ZXP110005E" featureID="21" text="The output condition on branch &quot;No&quot; of decision &quot;Is number of attempts more than  3?&quot; is not defined."
+            targetObjectName="No">
+          <rootObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-81b28085e59b5bc251a05a931673f79e"/>
+          <targetObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-3c19607d803514851b28220addce5842"/>
+        </messages>
+      </composedChildren>
+      <composedChildren xsi:type="com.ibm.btools.model.modelmanager.validation:TargetMessageSet"
+          ownerObjectID="BLM-751510c508b2f97601d37b43ba60efce">
+        <messages id="ZFL200032E" featureID="-1" text="2 cycles were detected in &quot;Registration for new client.&quot;  Cycles are not supported. The paths are: [&quot;Connection:6&quot;,&quot;Connection:7&quot;,&quot;Connection:8&quot;,&quot;Connection:9&quot;,&quot;Connection:20&quot;] [&quot;Connection:15&quot;,&quot;Connection:16&quot;,&quot;Connection:21&quot;] ."
+            targetObjectName="Registration for new client">
+          <rootObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-81b28085e59b5bc251a05a931673f79e"/>
+          <targetObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-751510c508b2f97601d37b43ba60efce"/>
+        </messages>
+      </composedChildren>
+      <composedChildren xsi:type="com.ibm.btools.model.modelmanager.validation:TargetMessageSet"
+          ownerObjectID="BLM-81b28085e59b5bc251a05a931673f79e">
+        <messages id="ZBL600051E" featureID="-1" text="A potential deadlock situation, detected on &quot;Registration in the bank system via internet&quot;, occurs in the region between &quot;Registration in the bank system via internet&quot; and the end of the process in process &quot;Registration for new client&quot;.  The process cannot be deployed."
+            targetObjectName="Registration for new client">
+          <rootObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-81b28085e59b5bc251a05a931673f79e"/>
+          <targetObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-81b28085e59b5bc251a05a931673f79e"/>
+        </messages>
+      </composedChildren>
+    </composedChildren>
+  </com.ibm.btools.model.modelmanager.validation:ProjectMessageSet>
 </xmi:XMI>

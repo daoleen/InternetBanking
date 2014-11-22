@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.btools.bom.model.resources="http:///com/ibm/btools/bom/model/resources.ecore"
+    xmlns:com.ibm.btools.model.resourcemanager.resourceproperties="http:///com/ibm/btools/model/resourcemanager/resourceproperties.ecore">
+  <com.ibm.btools.model.resourcemanager.resourceproperties:ResourceProperties versionID="7.0.0.0"
+      lastModified="1416611966546"/>
+  <com.ibm.btools.bom.model.resources:Role xmi:id="BLM-9b7fbfba68200e947b1c293f0723e726"
+      uid="BLM-9b7fbfba68200e947b1c293f0723e726" name="Bank Employee">
+    <ownedComment xmi:id="BLM-2801b5872bd1148de9ed93b9eb45b82e" uid="BLM-2801b5872bd1148de9ed93b9eb45b82e"
+        name="###_NAME_COMMENT_###" body=""/>
+    <ownedComment xmi:id="BLM-3a2ad58587e927546bb79af3c14cc582" uid="BLM-3a2ad58587e927546bb79af3c14cc582"
+        name="###_NAME_COLOR_###" body="128,128,128"/>
+    <owningPackage href="RID-00011-7461ff98022b473173360fc6261f7f95.xmi#FID-00011-f5194ace6dd0e1cc665e3ec41e717504"/>
+  </com.ibm.btools.bom.model.resources:Role>
+</xmi:XMI>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<navigation:NavigationProjectNode xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:navigation="http://navigation" id="BusinessProcesses_id" label="BusinessProcesses" overridingImageKey="" uid="BLMNAV-cc30b2dea2f5ce89c44affa59efdbf89">
+<navigation:NavigationProjectNode xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:navigation="http://navigation" id="BusinessProcesses_id" label="BusinessProcesses" state="2" overridingImageKey="" uid="BLMNAV-cc30b2dea2f5ce89c44affa59efdbf89" attribute4="PROCESS_DEFAULTS,SWIMLANE_EDITOR,role">
   <libraryNode label="Library" uid="BLMNAV-a3893695910a9fcb4d9abc28715c5d1b">
     <dataCatalogsNode id="Data catalogs" label="Data catalogs" uid="BLMNAV-77e01fcf2f67ecb9f521f46392b6f467" bomUID="FID-00002-d2c1045764ff3fae68e3ec2ef479d01c" projectNode="BLMNAV-cc30b2dea2f5ce89c44affa59efdbf89">
       <navigationURINode uri="RID-00002-e584ec7b0fa9b419ddffabc5fe974cb3"/>
@@ -9,14 +9,31 @@
     </dataCatalogsNode>
     <processCatalogsNodes id="Process catalogs" label="Process catalogs" uid="BLMNAV-2f1149ba371301d107f168f6cac53b0d" bomUID="FID-00001-ad9a45b1154e1f336a7e5b04104a6a31" projectNode="BLMNAV-cc30b2dea2f5ce89c44affa59efdbf89">
       <navigationURINode uri="RID-00001-800aa38791bbceeda69a782c5a1de281"/>
-      <processCatalogNodes id="DEFAULT_CATALOG" label="Processes" uid="BLMNAV-934d396ce87ff85e6037f722766052cd" bomUID="FID-00010-df13a34335666a3908f4db598482644b" projectNode="BLMNAV-cc30b2dea2f5ce89c44affa59efdbf89">
+      <processCatalogNodes id="DEFAULT_CATALOG" label="Processes" state="2" uid="BLMNAV-934d396ce87ff85e6037f722766052cd" bomUID="FID-00010-df13a34335666a3908f4db598482644b" projectNode="BLMNAV-cc30b2dea2f5ce89c44affa59efdbf89">
         <navigationURINode uri="RID-00010-2f692ef5ad7eb5a95f165d75a6b139c0"/>
+        <processesNode label="Processes" projectNode="BLMNAV-cc30b2dea2f5ce89c44affa59efdbf89">
+          <processNodes id="Registration for new client" label="Registration for new client" uid="BLMNAV-a189ddb8e2ab2fb2264621ed202e19c4" bomUID="BLM-81b28085e59b5bc251a05a931673f79e" attribute4="PROCESS_DEFAULTS,SWIMLANE_EDITOR,role" attribute5="USED_SWIMLANE_TYPES;role" projectNode="BLMNAV-cc30b2dea2f5ce89c44affa59efdbf89">
+            <navigationURINodes uri="BLM-c0d0c391793918de8ef7bab8b93293c1"/>
+            <navigationURINodes uri="CEF-d029a49eb1d99fdeac3a45d110154976"/>
+          </processNodes>
+        </processesNode>
       </processCatalogNodes>
     </processCatalogsNodes>
     <resourceCatalogsNode id="Resource catalogs" label="Resource catalogs" uid="BLMNAV-fea9fa57fda18d242494f39211866ca9" bomUID="FID-00004-3b601e690138e4329b05c2df4086228c" projectNode="BLMNAV-cc30b2dea2f5ce89c44affa59efdbf89">
       <navigationURINode uri="RID-00004-33ef60dc57a989eb375b9529a4d4eaa9"/>
-      <resourceCatalogNodes id="DEFAULT_CATALOG" label="Resources" uid="BLMNAV-1a7c838b09b8c3b671836ffba60d58b2" bomUID="FID-00011-f5194ace6dd0e1cc665e3ec41e717504" projectNode="BLMNAV-cc30b2dea2f5ce89c44affa59efdbf89">
+      <resourceCatalogNodes id="DEFAULT_CATALOG" label="Resources" state="2" uid="BLMNAV-1a7c838b09b8c3b671836ffba60d58b2" bomUID="FID-00011-f5194ace6dd0e1cc665e3ec41e717504" projectNode="BLMNAV-cc30b2dea2f5ce89c44affa59efdbf89">
         <navigationURINode uri="RID-00011-7461ff98022b473173360fc6261f7f95"/>
+        <rolesNode label="Roles" projectNode="BLMNAV-cc30b2dea2f5ce89c44affa59efdbf89">
+          <roleNodes id="System" label="System" uid="BLMNAV-3374f0be4c3a9eceaff14f5b005bc290" bomUID="BLM-962f0bf5502787e94afc5715a02c92d5" projectNode="BLMNAV-cc30b2dea2f5ce89c44affa59efdbf89">
+            <navigationURINodes uri="BLM-5cfbb4a5d35c1aaeb1c32c46f1bbd240"/>
+          </roleNodes>
+          <roleNodes id="Client" label="Client" uid="BLMNAV-19c4086b663ed8ba570d52a4869e1664" bomUID="BLM-27dd877a16d3687d4d23c37fc335eeba" projectNode="BLMNAV-cc30b2dea2f5ce89c44affa59efdbf89">
+            <navigationURINodes uri="BLM-192d9a746e588f405cbec7c041833d86"/>
+          </roleNodes>
+          <roleNodes id="Bank Employee" label="Bank Employee" uid="BLMNAV-61a19894e585b40efd22ecf0eb679143" bomUID="BLM-9b7fbfba68200e947b1c293f0723e726" projectNode="BLMNAV-cc30b2dea2f5ce89c44affa59efdbf89">
+            <navigationURINodes uri="BLM-9221cc7967ce5665d585bc3af619dd52"/>
+          </roleNodes>
+        </rolesNode>
       </resourceCatalogNodes>
     </resourceCatalogsNode>
     <organizationCatalogsNode id="Organization catalogs" label="Organization catalogs" uid="BLMNAV-988c0eee2166938ad3cd64ff5e6963a5" bomUID="FID-00003-6c3477837aac2e2b6c6c7134687f499c" projectNode="BLMNAV-cc30b2dea2f5ce89c44affa59efdbf89">

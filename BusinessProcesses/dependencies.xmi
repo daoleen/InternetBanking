@@ -3,6 +3,81 @@
     xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.btools.model.modelmanager.dependencymanager="http:///com/ibm/btools/model/modelmanager/dependencymanager.ecore"
     xmlns:com.ibm.btools.model.resourcemanager.resourceproperties="http:///com/ibm/btools/model/resourcemanager/resourceproperties.ecore">
   <com.ibm.btools.model.resourcemanager.resourceproperties:ResourceProperties versionID="7.0.0.0"
-      lastModified="1416610614437"/>
-  <com.ibm.btools.model.modelmanager.dependencymanager:DependencyModel/>
+      lastModified="1416613823390"/>
+  <com.ibm.btools.model.modelmanager.dependencymanager:DependencyModel>
+    <eObjectDescriptors eObjectID="BLM-bab2877bbce758de71fef1d534aa3868" eObjectName="Primary owner"
+        dependenciesWhereSource="/1/@dependencies.0">
+      <eObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-bab2877bbce758de71fef1d534aa3868"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-27dd877a16d3687d4d23c37fc335eeba" eObjectName="Client">
+      <eObject href="BLM-192d9a746e588f405cbec7c041833d86.xmi#BLM-27dd877a16d3687d4d23c37fc335eeba"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-abddf02a1f60d3b4250559287dd1ebdb" eObjectName="Primary owner"
+        dependenciesWhereSource="/1/@dependencies.1">
+      <eObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-abddf02a1f60d3b4250559287dd1ebdb"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-9b7fbfba68200e947b1c293f0723e726" eObjectName="Bank Employee">
+      <eObject href="BLM-9221cc7967ce5665d585bc3af619dd52.xmi#BLM-9b7fbfba68200e947b1c293f0723e726"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-a7d961aa06a2210d9e5a723ee8c53528" eObjectName="Role requirement:1"
+        dependenciesWhereSource="/1/@dependencies.2">
+      <eObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-a7d961aa06a2210d9e5a723ee8c53528"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-962f0bf5502787e94afc5715a02c92d5" eObjectName="System">
+      <eObject href="BLM-5cfbb4a5d35c1aaeb1c32c46f1bbd240.xmi#BLM-962f0bf5502787e94afc5715a02c92d5"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-6e9724d66f210e30a7ad937decafa608" eObjectName="Primary owner"
+        dependenciesWhereSource="/1/@dependencies.3">
+      <eObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-6e9724d66f210e30a7ad937decafa608"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-eed3d459caa21634992b32b48aef79f1" eObjectName="Role requirement:1"
+        dependenciesWhereSource="/1/@dependencies.4">
+      <eObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-eed3d459caa21634992b32b48aef79f1"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-5406fe45d4422cd49bf1a0b77415ef57" eObjectName="Role requirement:1"
+        dependenciesWhereSource="/1/@dependencies.5">
+      <eObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-5406fe45d4422cd49bf1a0b77415ef57"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-d4a2a3e7957d7639502b7514b6ec7f54" eObjectName="Role requirement:1"
+        dependenciesWhereSource="/1/@dependencies.6">
+      <eObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-d4a2a3e7957d7639502b7514b6ec7f54"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-43bf1c8504720443c346a79b117bad4d" eObjectName="Role requirement:1"
+        dependenciesWhereSource="/1/@dependencies.7">
+      <eObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-43bf1c8504720443c346a79b117bad4d"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-245a0040eb84fbc068dc1158ad5969bc" eObjectName="Role requirement:1"
+        dependenciesWhereSource="/1/@dependencies.8">
+      <eObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-245a0040eb84fbc068dc1158ad5969bc"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-7705d3b0d8e9e9bd62870c9d3d5d386c" eObjectName="Primary owner"
+        dependenciesWhereSource="/1/@dependencies.9">
+      <eObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-7705d3b0d8e9e9bd62870c9d3d5d386c"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-d0a8f2958fe33c07e148fa0f80c6971c" eObjectName="Primary owner"
+        dependenciesWhereSource="/1/@dependencies.10">
+      <eObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-d0a8f2958fe33c07e148fa0f80c6971c"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-93f135e24f05cf7df548b285e2de0f32" eObjectName="Role requirement:1"
+        dependenciesWhereSource="/1/@dependencies.11">
+      <eObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-93f135e24f05cf7df548b285e2de0f32"/>
+    </eObjectDescriptors>
+    <dependencies name="role" indirect="false" source="/1/@eObjectDescriptors.0" target="/1/@eObjectDescriptors.1"/>
+    <dependencies name="role" indirect="false" source="/1/@eObjectDescriptors.2" target="/1/@eObjectDescriptors.3"/>
+    <dependencies name="role" indirect="false" source="/1/@eObjectDescriptors.4" target="/1/@eObjectDescriptors.5"/>
+    <dependencies name="role" indirect="false" source="/1/@eObjectDescriptors.6" target="/1/@eObjectDescriptors.1"/>
+    <dependencies name="role" indirect="false" source="/1/@eObjectDescriptors.7" target="/1/@eObjectDescriptors.5"/>
+    <dependencies name="role" indirect="false" source="/1/@eObjectDescriptors.8" target="/1/@eObjectDescriptors.5"/>
+    <dependencies name="role" indirect="false" source="/1/@eObjectDescriptors.9" target="/1/@eObjectDescriptors.5"/>
+    <dependencies name="role" indirect="false" source="/1/@eObjectDescriptors.10"
+        target="/1/@eObjectDescriptors.5"/>
+    <dependencies name="role" indirect="false" source="/1/@eObjectDescriptors.11"
+        target="/1/@eObjectDescriptors.5"/>
+    <dependencies name="role" indirect="false" source="/1/@eObjectDescriptors.12"
+        target="/1/@eObjectDescriptors.1"/>
+    <dependencies name="role" indirect="false" source="/1/@eObjectDescriptors.13"
+        target="/1/@eObjectDescriptors.1"/>
+    <dependencies name="role" indirect="false" source="/1/@eObjectDescriptors.14"
+        target="/1/@eObjectDescriptors.5"/>
+  </com.ibm.btools.model.modelmanager.dependencymanager:DependencyModel>
 </xmi:XMI>

@@ -1,13 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0"
-    xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.btools.bom.model.models="http:///com/ibm/btools/bom/model/models.ecore"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:com.ibm.btools.bom.model.models="http:///com/ibm/btools/bom/model/models.ecore"
+    xmlns:com.ibm.btools.bom.model.resources="http:///com/ibm/btools/bom/model/resources.ecore"
     xmlns:com.ibm.btools.model.resourcemanager.resourceproperties="http:///com/ibm/btools/model/resourcemanager/resourceproperties.ecore">
   <com.ibm.btools.model.resourcemanager.resourceproperties:ResourceProperties versionID="7.0.0.0"
-      lastModified="1416610634328"/>
+      lastModified="1416611641625"/>
   <com.ibm.btools.bom.model.models:ResourceModel xmi:id="FID-00011-f5194ace6dd0e1cc665e3ec41e717504"
       uid="FID-00011-f5194ace6dd0e1cc665e3ec41e717504" name="Resources">
     <ownedComment xmi:id="BLM-9c3e3e00a2859bcc2fec09bbeae16900" uid="BLM-9c3e3e00a2859bcc2fec09bbeae16900"
         name="###_NAME_COMMENT_###" body=""/>
     <owningPackage href="RID-00004-33ef60dc57a989eb375b9529a4d4eaa9.xmi#FID-00004-3b601e690138e4329b05c2df4086228c"/>
+    <ownedMember xsi:type="com.ibm.btools.bom.model.resources:Role" href="BLM-5cfbb4a5d35c1aaeb1c32c46f1bbd240.xmi#BLM-962f0bf5502787e94afc5715a02c92d5"/>
+    <ownedMember xsi:type="com.ibm.btools.bom.model.resources:Role" href="BLM-192d9a746e588f405cbec7c041833d86.xmi#BLM-27dd877a16d3687d4d23c37fc335eeba"/>
+    <ownedMember xsi:type="com.ibm.btools.bom.model.resources:Role" href="BLM-9221cc7967ce5665d585bc3af619dd52.xmi#BLM-9b7fbfba68200e947b1c293f0723e726"/>
   </com.ibm.btools.bom.model.models:ResourceModel>
 </xmi:XMI>

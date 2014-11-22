@@ -92,5 +92,27 @@
         modelType="3" rootObjType="106" groupID="BLMNAV-a5fe9907fe67796aa55202c1c55ec09b">
       <rootObjIDs>Reports_Catalog_ID-3cb292abf89de757d7f4ba0093641e1f</rootObjIDs>
     </idRecords>
+    <idRecords id="BLM-c0d0c391793918de8ef7bab8b93293c1" uri="RootProcessModel\Processes\Registration for new client\Model.xmi"
+        modelType="1" rootObjType="1001" groupID="BLMNAV-a189ddb8e2ab2fb2264621ed202e19c4">
+      <rootObjIDs>BLM-81b28085e59b5bc251a05a931673f79e</rootObjIDs>
+    </idRecords>
+    <idRecords id="CEF-d029a49eb1d99fdeac3a45d110154976" uri="RootProcessModel\Processes\Registration for new client\View.xmi"
+        modelType="2" rootObjType="107" groupID="BLMNAV-a189ddb8e2ab2fb2264621ed202e19c4">
+      <rootObjIDs>CEF-9e577659be553fb688d3cc4769b62747</rootObjIDs>
+    </idRecords>
+    <idRecords id="BLM-5cfbb4a5d35c1aaeb1c32c46f1bbd240" uri="RootResourceModel\Resources\System\Model.xmi"
+        modelType="1" rootObjType="1012" groupID="BLMNAV-3374f0be4c3a9eceaff14f5b005bc290">
+      <rootObjIDs>BLM-962f0bf5502787e94afc5715a02c92d5</rootObjIDs>
+    </idRecords>
+    <idRecords id="BLM-192d9a746e588f405cbec7c041833d86" uri="RootResourceModel\Resources\Client\Model.xmi"
+        modelType="1" rootObjType="1012" groupID="BLMNAV-19c4086b663ed8ba570d52a4869e1664">
+      <rootObjIDs>BLM-27dd877a16d3687d4d23c37fc335eeba</rootObjIDs>
+    </idRecords>
+    <idRecords id="BLM-9221cc7967ce5665d585bc3af619dd52" uri="RootResourceModel\Resources\Bank Employee\Model.xmi"
+        modelType="1" rootObjType="1012" groupID="BLMNAV-61a19894e585b40efd22ecf0eb679143">
+      <rootObjIDs>BLM-9b7fbfba68200e947b1c293f0723e726</rootObjIDs>
+    </idRecords>
+    <idRecords id="DM-8f0c85eb9a678717a5b97ddba37bc8c2" uri="RootProcessModel\Processes\Registration for new client\Model_dependencies.xmi"
+        modelType="0" rootObjType="0" groupID="BLMNAV-a189ddb8e2ab2fb2264621ed202e19c4"/>
   </com.ibm.btools.model.resourcemanager:ProjectResourcesMGR>
 </xmi:XMI>

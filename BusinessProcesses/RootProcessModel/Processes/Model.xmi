@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmi:XMI xmi:version="2.0"
-    xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.btools.bom.model.models="http:///com/ibm/btools/bom/model/models.ecore"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:com.ibm.btools.bom.model.models="http:///com/ibm/btools/bom/model/models.ecore"
+    xmlns:com.ibm.btools.bom.model.processes.activities="http:///com/ibm/btools/bom/model/processes/activities.ecore"
     xmlns:com.ibm.btools.model.resourcemanager.resourceproperties="http:///com/ibm/btools/model/resourcemanager/resourceproperties.ecore">
   <com.ibm.btools.model.resourcemanager.resourceproperties:ResourceProperties versionID="7.0.0.0"
-      lastModified="1416610632812"/>
+      lastModified="1416611550703"/>
   <com.ibm.btools.bom.model.models:ProcessModel xmi:id="FID-00010-df13a34335666a3908f4db598482644b"
       uid="FID-00010-df13a34335666a3908f4db598482644b" name="Processes">
     <ownedComment xmi:id="BLM-8754c0ae3c2732411d25ffa8386e8c30" uid="BLM-8754c0ae3c2732411d25ffa8386e8c30"
         name="###_NAME_COMMENT_###" body=""/>
     <owningPackage href="RID-00001-800aa38791bbceeda69a782c5a1de281.xmi#FID-00001-ad9a45b1154e1f336a7e5b04104a6a31"/>
+    <ownedMember xsi:type="com.ibm.btools.bom.model.processes.activities:Activity"
+        href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-81b28085e59b5bc251a05a931673f79e"/>
   </com.ibm.btools.bom.model.models:ProcessModel>
 </xmi:XMI>

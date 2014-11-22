@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.btools.bom.model.resources="http:///com/ibm/btools/bom/model/resources.ecore"
+    xmlns:com.ibm.btools.model.resourcemanager.resourceproperties="http:///com/ibm/btools/model/resourcemanager/resourceproperties.ecore">
+  <com.ibm.btools.model.resourcemanager.resourceproperties:ResourceProperties versionID="7.0.0.0"
+      lastModified="1416611596718"/>
+  <com.ibm.btools.bom.model.resources:Role xmi:id="BLM-962f0bf5502787e94afc5715a02c92d5"
+      uid="BLM-962f0bf5502787e94afc5715a02c92d5" name="System">
+    <ownedComment xmi:id="BLM-91893d36826d16c105e85c1f8ce75c33" uid="BLM-91893d36826d16c105e85c1f8ce75c33"
+        name="###_NAME_COMMENT_###" body=""/>
+    <ownedComment xmi:id="BLM-6365d00cc163237088fdb6c70e1097f4" uid="BLM-6365d00cc163237088fdb6c70e1097f4"
+        name="###_NAME_COLOR_###" body="255,0,0"/>
+    <owningPackage href="RID-00011-7461ff98022b473173360fc6261f7f95.xmi#FID-00011-f5194ace6dd0e1cc665e3ec41e717504"/>
+  </com.ibm.btools.bom.model.resources:Role>
+</xmi:XMI>
