@@ -6,7 +6,7 @@
     xmlns:com.ibm.btools.cef.gef.model="http:///com/ibm/btools/cef/gef/model.ecore"
     xmlns:com.ibm.btools.cef.model="http:///com/ibm/btools/cef/model.ecore" xmlns:com.ibm.btools.model.resourcemanager.resourceproperties="http:///com/ibm/btools/model/resourcemanager/resourceproperties.ecore">
   <com.ibm.btools.model.resourcemanager.resourceproperties:ResourceProperties versionID="7.0.0.0"
-      lastModified="1416672160406"/>
+      lastModified="1416676017625"/>
   <com.ibm.btools.cef.model:VisualModelDocument xmi:id="CEF-a44e1fd34a92a4c8b8a242fff169f0b9"
       id="CEF-a44e1fd34a92a4c8b8a242fff169f0b9" currentContent="CEF-a9f5010d8044f263dd278d0739379ab7">
     <descriptor xsi:type="com.ibm.btools.cef.descriptor:CommonContainerDescriptor"
@@ -201,7 +201,7 @@
             <properties xmi:id="CEF-3882d7e941c33a38cb6484380c19c911" id="CEF-3882d7e941c33a38cb6484380c19c911"
                 name="TOP_LEVEL_WIDTH" value="java.lang.Integer(1900)"/>
             <properties xmi:id="CEF-7349c897b43affabdafad5c3ab1037de" id="CEF-7349c897b43affabdafad5c3ab1037de"
-                name="TOP_LEVEL_HEIGHT" value="java.lang.Integer(330)"/>
+                name="TOP_LEVEL_HEIGHT" value="java.lang.Integer(333)"/>
             <properties xmi:id="CEF-70c0b14016f2224ceebdc0797f250e09" id="CEF-70c0b14016f2224ceebdc0797f250e09"
                 name="Context" value="java.lang.String()">
               <properties xmi:id="CEF-b2b1ab6271c88fd90b9bbf754c06729a" id="CEF-b2b1ab6271c88fd90b9bbf754c06729a"
@@ -215,7 +215,7 @@
                 <properties xmi:id="CEF-9dfa285627bc4f9beee5e74885942112" id="CEF-9dfa285627bc4f9beee5e74885942112"
                     name="swimlane_assignments" value="java.util.List([BLM-5cfbb4a5d35c1aaeb1c32c46f1bbd240:BLM-962f0bf5502787e94afc5715a02c92d5],[BLM-192d9a746e588f405cbec7c041833d86:BLM-27dd877a16d3687d4d23c37fc335eeba])"/>
                 <properties xmi:id="CEF-f4645fc3f78474f277b152c5f83e758d" id="CEF-f4645fc3f78474f277b152c5f83e758d"
-                    name="swimlane_bounds" value="java.util.List(org.eclipse.draw2d.geometry.Rectangle(0,25,0,164),org.eclipse.draw2d.geometry.Rectangle(0,189,0,101))"/>
+                    name="swimlane_bounds" value="java.util.List(org.eclipse.draw2d.geometry.Rectangle(0,25,0,167),org.eclipse.draw2d.geometry.Rectangle(0,192,0,101))"/>
               </properties>
             </properties>
             <content xmi:id="CEF-355944b21a6cfce0abb71da1338a5aa2" id="CEF-355944b21a6cfce0abb71da1338a5aa2"
@@ -339,7 +339,7 @@
                 <properties xmi:id="CEF-2049c585063a96c164eafaa3b797a5bf" id="CEF-2049c585063a96c164eafaa3b797a5bf"
                     name="user_size_h" value="java.lang.Integer(80)"/>
                 <bounds xmi:id="CEF-d56f47533156a6aa22db8aecddaca4bc" id="CEF-d56f47533156a6aa22db8aecddaca4bc"
-                    layoutId="LAYOUT.DEFAULT.SWIMLANE.role" x="213" y="225" width="85"
+                    layoutId="LAYOUT.DEFAULT.SWIMLANE.role" x="213" y="228" width="85"
                     height="68"/>
                 <compositionChildren xsi:type="com.ibm.btools.cef.model:CommonNodeModel"
                     xmi:id="CEF-63dd1f5551695d13c614abdabc08821a" id="CEF-63dd1f5551695d13c614abdabc08821a"
@@ -406,7 +406,7 @@
                       href="platform:/plugin/com.ibm.btools.blm.gef.processeditor/pe.descriptor#Connector"/>
                   <domainContent href="BLM-e9e7e37b99481607e62a63a3c850f4b1.xmi#BLM-68a276c64115dbf047b51ff56dafe8f6"/>
                   <bounds xmi:id="CEF-43c49c34fbe6feed757df41bd9dba631" id="CEF-43c49c34fbe6feed757df41bd9dba631"
-                      layoutId="LAYOUT.DEFAULT.SWIMLANE.role" x="213" y="250" width="1"
+                      layoutId="LAYOUT.DEFAULT.SWIMLANE.role" x="213" y="253" width="1"
                       height="18"/>
                 </compositionChildren>
                 <compositionChildren xsi:type="com.ibm.btools.cef.gef.model:ConnectorModel"
@@ -416,7 +416,7 @@
                       href="platform:/plugin/com.ibm.btools.blm.gef.processeditor/pe.descriptor#Connector"/>
                   <domainContent href="BLM-e9e7e37b99481607e62a63a3c850f4b1.xmi#BLM-5bd0c65df3936f96dff71ecd892c3b1e"/>
                   <bounds xmi:id="CEF-b54fde366fd6f95131a9633b38003883" id="CEF-b54fde366fd6f95131a9633b38003883"
-                      layoutId="LAYOUT.DEFAULT.SWIMLANE.role" x="297" y="250" width="1"
+                      layoutId="LAYOUT.DEFAULT.SWIMLANE.role" x="297" y="253" width="1"
                       height="18"/>
                 </compositionChildren>
               </contentChildren>
@@ -427,7 +427,7 @@
                     href="platform:/plugin/com.ibm.btools.blm.gef.processeditor/pe.descriptor#start"/>
                 <domainContent href="BLM-e9e7e37b99481607e62a63a3c850f4b1.xmi#BLM-c1a064bfebac795b4ccc50d9ac9e956a"/>
                 <bounds xmi:id="CEF-431f713c1ce7c1df0f4824b58cd04029" id="CEF-431f713c1ce7c1df0f4824b58cd04029"
-                    layoutId="LAYOUT.DEFAULT.SWIMLANE.role" x="34" y="235" width="32"
+                    layoutId="LAYOUT.DEFAULT.SWIMLANE.role" x="34" y="238" width="32"
                     height="32"/>
                 <compositionChildren xsi:type="com.ibm.btools.cef.gef.model:ConnectorModel"
                     xmi:id="CEF-5ef4bb0dced44a6752dcc9b1245b3787" id="CEF-5ef4bb0dced44a6752dcc9b1245b3787"
@@ -435,7 +435,7 @@
                   <descriptor xsi:type="com.ibm.btools.cef.gef.descriptor:ConnectorDescriptor"
                       href="platform:/plugin/com.ibm.btools.blm.gef.processeditor/pe.descriptor#Connector"/>
                   <bounds xmi:id="CEF-b8adde9216fcee4077281b308681f70f" id="CEF-b8adde9216fcee4077281b308681f70f"
-                      layoutId="LAYOUT.DEFAULT.SWIMLANE.role" x="65" y="242" width="1"
+                      layoutId="LAYOUT.DEFAULT.SWIMLANE.role" x="65" y="245" width="1"
                       height="18"/>
                 </compositionChildren>
               </contentChildren>
@@ -446,7 +446,7 @@
                     href="platform:/plugin/com.ibm.btools.blm.gef.processeditor/pe.descriptor#end"/>
                 <domainContent href="BLM-e9e7e37b99481607e62a63a3c850f4b1.xmi#BLM-6b5169d5595c9f950096869a326d16ef"/>
                 <bounds xmi:id="CEF-2b14f034752b707d5500d956b3aedd3a" id="CEF-2b14f034752b707d5500d956b3aedd3a"
-                    layoutId="LAYOUT.DEFAULT.SWIMLANE.role" x="1074" y="105" width="32"
+                    layoutId="LAYOUT.DEFAULT.SWIMLANE.role" x="1181" y="101" width="32"
                     height="32"/>
                 <compositionChildren xsi:type="com.ibm.btools.cef.gef.model:ConnectorModel"
                     xmi:id="CEF-0785f84aeaee3768efdf3f1f3dbd9af3" id="CEF-0785f84aeaee3768efdf3f1f3dbd9af3"
@@ -454,7 +454,7 @@
                   <descriptor xsi:type="com.ibm.btools.cef.gef.descriptor:ConnectorDescriptor"
                       href="platform:/plugin/com.ibm.btools.blm.gef.processeditor/pe.descriptor#Connector"/>
                   <bounds xmi:id="CEF-9bc15458039fd77f208a2a3ed9141a8b" id="CEF-9bc15458039fd77f208a2a3ed9141a8b"
-                      layoutId="LAYOUT.DEFAULT.SWIMLANE.role" x="1074" y="112" width="1"
+                      layoutId="LAYOUT.DEFAULT.SWIMLANE.role" x="1181" y="108" width="1"
                       height="18"/>
                 </compositionChildren>
               </contentChildren>
@@ -472,7 +472,7 @@
                 <properties xmi:id="CEF-1bcbb08583e147ed7487fc7c23196191" id="CEF-1bcbb08583e147ed7487fc7c23196191"
                     name="user_size_h" value="java.lang.Integer(92)"/>
                 <bounds xmi:id="CEF-dea4beae2125a8a673c37597e0ac9f3f" id="CEF-dea4beae2125a8a673c37597e0ac9f3f"
-                    layoutId="LAYOUT.DEFAULT.SWIMLANE.role" x="317" y="212" width="92"
+                    layoutId="LAYOUT.DEFAULT.SWIMLANE.role" x="317" y="215" width="92"
                     height="75"/>
                 <compositionChildren xsi:type="com.ibm.btools.cef.model:CommonNodeModel"
                     xmi:id="CEF-9d43e6b8fdbaf9336a66d2b54cc140f9" id="CEF-9d43e6b8fdbaf9336a66d2b54cc140f9"
@@ -539,7 +539,7 @@
                       href="platform:/plugin/com.ibm.btools.blm.gef.processeditor/pe.descriptor#Connector"/>
                   <domainContent href="BLM-e9e7e37b99481607e62a63a3c850f4b1.xmi#BLM-f1b6576ddcee4ef562b621db7eb20100"/>
                   <bounds xmi:id="CEF-033b12b2a265ae4820d14a7b30713213" id="CEF-033b12b2a265ae4820d14a7b30713213"
-                      layoutId="LAYOUT.DEFAULT.SWIMLANE.role" x="317" y="231" width="1"
+                      layoutId="LAYOUT.DEFAULT.SWIMLANE.role" x="317" y="234" width="1"
                       height="18"/>
                 </compositionChildren>
                 <compositionChildren xsi:type="com.ibm.btools.cef.gef.model:ConnectorModel"
@@ -549,7 +549,7 @@
                       href="platform:/plugin/com.ibm.btools.blm.gef.processeditor/pe.descriptor#Connector"/>
                   <domainContent href="BLM-e9e7e37b99481607e62a63a3c850f4b1.xmi#BLM-5469b024c1eab4a1a5a8bf11a4caa8c3"/>
                   <bounds xmi:id="CEF-4c91981f669e76261f93ad06d4508e21" id="CEF-4c91981f669e76261f93ad06d4508e21"
-                      layoutId="LAYOUT.DEFAULT.SWIMLANE.role" x="317" y="249" width="1"
+                      layoutId="LAYOUT.DEFAULT.SWIMLANE.role" x="317" y="252" width="1"
                       height="18"/>
                 </compositionChildren>
                 <compositionChildren xsi:type="com.ibm.btools.cef.gef.model:ConnectorModel"
@@ -559,7 +559,7 @@
                       href="platform:/plugin/com.ibm.btools.blm.gef.processeditor/pe.descriptor#Connector"/>
                   <domainContent href="BLM-e9e7e37b99481607e62a63a3c850f4b1.xmi#BLM-0abc7c933a4efce3dff30a16c10f1f17"/>
                   <bounds xmi:id="CEF-8c9a3ed7fc49ed3b1a67b997914f0429" id="CEF-8c9a3ed7fc49ed3b1a67b997914f0429"
-                      layoutId="LAYOUT.DEFAULT.SWIMLANE.role" x="408" y="240" width="1"
+                      layoutId="LAYOUT.DEFAULT.SWIMLANE.role" x="408" y="243" width="1"
                       height="18"/>
                 </compositionChildren>
               </contentChildren>
@@ -838,9 +838,9 @@
                   <bendpoints xmi:id="CEF-53615e01f0f49f6acaba8849008819f0" id="CEF-53615e01f0f49f6acaba8849008819f0"
                       x="306" y="180"/>
                   <bendpoints xmi:id="CEF-a0e8ef6e80f9f42a31266dab4307e225" id="CEF-a0e8ef6e80f9f42a31266dab4307e225"
-                      x="306" y="239"/>
+                      x="306" y="242"/>
                   <bendpoints xmi:id="CEF-4e938c570d34e362b880bb6a27e235fb" id="CEF-4e938c570d34e362b880bb6a27e235fb"
-                      x="316" y="239"/>
+                      x="316" y="242"/>
                 </bendpointLists>
               </contentChildren>
               <contentChildren xsi:type="com.ibm.btools.cef.model:CommonContainerModel"
@@ -856,7 +856,7 @@
                 <properties xmi:id="CEF-df8835c842e13e3ecd46daf7bda7e427" id="CEF-df8835c842e13e3ecd46daf7bda7e427"
                     name="user_size_h" value="java.lang.Integer(119)"/>
                 <bounds xmi:id="CEF-b93939797185233d014d44f24ab6803d" id="CEF-b93939797185233d014d44f24ab6803d"
-                    layoutId="LAYOUT.DEFAULT.SWIMLANE.role" x="645" y="210" width="119"
+                    layoutId="LAYOUT.DEFAULT.SWIMLANE.role" x="645" y="213" width="119"
                     height="85"/>
                 <compositionChildren xsi:type="com.ibm.btools.cef.model:CommonNodeModel"
                     xmi:id="CEF-fb38dbd65d5536d07736ed66b943a3bb" id="CEF-fb38dbd65d5536d07736ed66b943a3bb"
@@ -923,7 +923,7 @@
                       href="platform:/plugin/com.ibm.btools.blm.gef.processeditor/pe.descriptor#Connector"/>
                   <domainContent href="BLM-e9e7e37b99481607e62a63a3c850f4b1.xmi#BLM-d28c443888f919689d8e800765003d4c"/>
                   <bounds xmi:id="CEF-f21ab2b3c837755286f462f1d6bdd602" id="CEF-f21ab2b3c837755286f462f1d6bdd602"
-                      layoutId="LAYOUT.DEFAULT.SWIMLANE.role" x="645" y="243" width="1"
+                      layoutId="LAYOUT.DEFAULT.SWIMLANE.role" x="645" y="246" width="1"
                       height="18"/>
                 </compositionChildren>
                 <compositionChildren xsi:type="com.ibm.btools.cef.gef.model:ConnectorModel"
@@ -933,7 +933,7 @@
                       href="platform:/plugin/com.ibm.btools.blm.gef.processeditor/pe.descriptor#Connector"/>
                   <domainContent href="BLM-e9e7e37b99481607e62a63a3c850f4b1.xmi#BLM-cc8713ddfe34aea094e7495dccc20ed5"/>
                   <bounds xmi:id="CEF-cf6b074e1d76e2fe87c45d0b0d846a49" id="CEF-cf6b074e1d76e2fe87c45d0b0d846a49"
-                      layoutId="LAYOUT.DEFAULT.SWIMLANE.role" x="763" y="243" width="1"
+                      layoutId="LAYOUT.DEFAULT.SWIMLANE.role" x="763" y="246" width="1"
                       height="18"/>
                 </compositionChildren>
               </contentChildren>
@@ -964,9 +964,9 @@
                   <bendpoints xmi:id="CEF-a858497685b5652ecd7ae3ba139c539b" id="CEF-a858497685b5652ecd7ae3ba139c539b"
                       x="612" y="86"/>
                   <bendpoints xmi:id="CEF-901cb0ca7414b7d8bd18438e5b0246f9" id="CEF-901cb0ca7414b7d8bd18438e5b0246f9"
-                      x="612" y="251"/>
+                      x="612" y="254"/>
                   <bendpoints xmi:id="CEF-ad3064d1c94df2f5e8a5e4a75439bc47" id="CEF-ad3064d1c94df2f5e8a5e4a75439bc47"
-                      x="644" y="251"/>
+                      x="644" y="254"/>
                 </bendpointLists>
               </contentChildren>
               <contentChildren xsi:type="com.ibm.btools.cef.model:CommonContainerModel"
@@ -982,7 +982,7 @@
                 <properties xmi:id="CEF-b7513edf02753c5abcd2b112063b3785" id="CEF-b7513edf02753c5abcd2b112063b3785"
                     name="user_size_h" value="java.lang.Integer(80)"/>
                 <bounds xmi:id="CEF-2cf173f33d68fbf1f135ee7d39dd8592" id="CEF-2cf173f33d68fbf1f135ee7d39dd8592"
-                    layoutId="LAYOUT.DEFAULT.SWIMLANE.role" x="782" y="210" width="85"
+                    layoutId="LAYOUT.DEFAULT.SWIMLANE.role" x="782" y="213" width="85"
                     height="68"/>
                 <compositionChildren xsi:type="com.ibm.btools.cef.model:CommonNodeModel"
                     xmi:id="CEF-aee63e3921420a6a0cd98b0b4c12831e" id="CEF-aee63e3921420a6a0cd98b0b4c12831e"
@@ -1049,7 +1049,7 @@
                       href="platform:/plugin/com.ibm.btools.blm.gef.processeditor/pe.descriptor#Connector"/>
                   <domainContent href="BLM-e9e7e37b99481607e62a63a3c850f4b1.xmi#BLM-cefc1f9583a3bc3853b8ca736ed387a9"/>
                   <bounds xmi:id="CEF-a467f4bd0a52454df6bd594ae8bb2c77" id="CEF-a467f4bd0a52454df6bd594ae8bb2c77"
-                      layoutId="LAYOUT.DEFAULT.SWIMLANE.role" x="782" y="226" width="1"
+                      layoutId="LAYOUT.DEFAULT.SWIMLANE.role" x="782" y="229" width="1"
                       height="18"/>
                 </compositionChildren>
                 <compositionChildren xsi:type="com.ibm.btools.cef.gef.model:ConnectorModel"
@@ -1059,7 +1059,7 @@
                       href="platform:/plugin/com.ibm.btools.blm.gef.processeditor/pe.descriptor#Connector"/>
                   <domainContent href="BLM-e9e7e37b99481607e62a63a3c850f4b1.xmi#BLM-63b4fb3967491ddac32d06a1dbbdbcdc"/>
                   <bounds xmi:id="CEF-ebad5339e7d476a8ae7543746aa97679" id="CEF-ebad5339e7d476a8ae7543746aa97679"
-                      layoutId="LAYOUT.DEFAULT.SWIMLANE.role" x="866" y="235" width="1"
+                      layoutId="LAYOUT.DEFAULT.SWIMLANE.role" x="866" y="238" width="1"
                       height="18"/>
                 </compositionChildren>
                 <compositionChildren xsi:type="com.ibm.btools.cef.gef.model:ConnectorModel"
@@ -1069,7 +1069,7 @@
                       href="platform:/plugin/com.ibm.btools.blm.gef.processeditor/pe.descriptor#Connector"/>
                   <domainContent href="BLM-e9e7e37b99481607e62a63a3c850f4b1.xmi#BLM-9e7a38ca5b7c6ea164b3216cbf2b300d"/>
                   <bounds xmi:id="CEF-0b290abd45ecb25e19294b797c2e824c" id="CEF-0b290abd45ecb25e19294b797c2e824c"
-                      layoutId="LAYOUT.DEFAULT.SWIMLANE.role" x="782" y="244" width="1"
+                      layoutId="LAYOUT.DEFAULT.SWIMLANE.role" x="782" y="247" width="1"
                       height="18"/>
                 </compositionChildren>
               </contentChildren>
@@ -1087,7 +1087,7 @@
               </contentChildren>
               <contentChildren xsi:type="com.ibm.btools.cef.model:CommonContainerModel"
                   xmi:id="CEF-ded01103b103a8e2fb0edb08ea104493" id="CEF-ded01103b103a8e2fb0edb08ea104493"
-                  inputs="CEF-cb50c0d90f845bb1d0463beba94fe741" outputs="CEF-904b43549b3b9ad3a10aa7048ff60d23">
+                  inputs="CEF-cb50c0d90f845bb1d0463beba94fe741" outputs="CEF-1e59a8843225ede9d000a60ee681d94f">
                 <descriptor xsi:type="com.ibm.btools.cef.descriptor:CommonContainerDescriptor"
                     href="platform:/plugin/com.ibm.btools.blm.gef.processeditor/pe.descriptor#reusable_process"/>
                 <domainContent href="BLM-e9e7e37b99481607e62a63a3c850f4b1.xmi#BLM-05f623cf56d6459400ccbe25cf7debc0"/>
@@ -1127,7 +1127,7 @@
                 </compositionChildren>
                 <compositionChildren xsi:type="com.ibm.btools.cef.model:CommonNodeModel"
                     xmi:id="CEF-11be35ddb23e10a445450c86bcf51f0f" id="CEF-11be35ddb23e10a445450c86bcf51f0f"
-                    elements="CEF-93b0eb200afe6bbae00a9903b7e8faee">
+                    elements="CEF-1d06e7456082a2060873a4c7809fa1f4">
                   <descriptor xsi:type="com.ibm.btools.cef.descriptor:CommonNodeDescriptor"
                       href="platform:/plugin/com.ibm.btools.blm.gef.processeditor/pe.descriptor#output_set"/>
                   <domainContent href="BLM-e9e7e37b99481607e62a63a3c850f4b1.xmi#BLM-8ba364460508f2b7fe61feb600e6849d"/>
@@ -1185,19 +1185,19 @@
                       height="18"/>
                 </compositionChildren>
                 <compositionChildren xsi:type="com.ibm.btools.cef.gef.model:ConnectorModel"
-                    xmi:id="CEF-93b0eb200afe6bbae00a9903b7e8faee" id="CEF-93b0eb200afe6bbae00a9903b7e8faee"
-                    outputsWithConnector="CEF-904b43549b3b9ad3a10aa7048ff60d23" type="SOURCE_TARGET">
+                    xmi:id="CEF-1d06e7456082a2060873a4c7809fa1f4" id="CEF-1d06e7456082a2060873a4c7809fa1f4"
+                    outputsWithConnector="CEF-1e59a8843225ede9d000a60ee681d94f" type="SOURCE_TARGET">
                   <descriptor xsi:type="com.ibm.btools.cef.gef.descriptor:ConnectorDescriptor"
                       href="platform:/plugin/com.ibm.btools.blm.gef.processeditor/pe.descriptor#Connector"/>
-                  <domainContent href="BLM-e9e7e37b99481607e62a63a3c850f4b1.xmi#BLM-c9e9d9154a3110679e7d4f8015a3134d"/>
-                  <bounds xmi:id="CEF-292ca988ad12c76cf52b05ee187005f7" id="CEF-292ca988ad12c76cf52b05ee187005f7"
+                  <domainContent href="BLM-e9e7e37b99481607e62a63a3c850f4b1.xmi#BLM-262081d43ec45c6f77b6e520a7aefd02"/>
+                  <bounds xmi:id="CEF-7fbcda63a6d71d0f70a20d2d23d6d012" id="CEF-7fbcda63a6d71d0f70a20d2d23d6d012"
                       layoutId="LAYOUT.DEFAULT.SWIMLANE.role" x="942" y="109" width="1"
                       height="18"/>
                 </compositionChildren>
               </contentChildren>
               <contentChildren xsi:type="com.ibm.btools.cef.model:CommonContainerModel"
                   xmi:id="CEF-bb0236d591aa3c2dfb98bc6e168e0018" id="CEF-bb0236d591aa3c2dfb98bc6e168e0018"
-                  inputs="CEF-904b43549b3b9ad3a10aa7048ff60d23" outputs="CEF-f503f6695dc488acbb2efb4dbb9e4136">
+                  inputs="CEF-9b53623c04223d1b9ecbaf1b0ad0dcf2" outputs="CEF-f503f6695dc488acbb2efb4dbb9e4136">
                 <descriptor xsi:type="com.ibm.btools.cef.descriptor:CommonContainerDescriptor"
                     href="platform:/plugin/com.ibm.btools.blm.gef.processeditor/pe.descriptor#task"/>
                 <domainContent href="BLM-e9e7e37b99481607e62a63a3c850f4b1.xmi#BLM-5b572023320c74a483fecdf7bae892b1"/>
@@ -1210,11 +1210,11 @@
                 <content xmi:id="CEF-68218de6dde4d0b9849b3873d2122401" id="CEF-68218de6dde4d0b9849b3873d2122401"
                     layoutId="LAYOUT.DEFAULT.SWIMLANE.role"/>
                 <bounds xmi:id="CEF-751be2755b5fd56b28d0be1936b6ea0c" id="CEF-751be2755b5fd56b28d0be1936b6ea0c"
-                    layoutId="LAYOUT.DEFAULT.SWIMLANE.role" x="955" y="80" width="99"
+                    layoutId="LAYOUT.DEFAULT.SWIMLANE.role" x="1061" y="77" width="99"
                     height="81"/>
                 <compositionChildren xsi:type="com.ibm.btools.cef.model:CommonNodeModel"
                     xmi:id="CEF-b6d6df2c15aafe2017dc876006d42c00" id="CEF-b6d6df2c15aafe2017dc876006d42c00"
-                    elements="CEF-3ea80964cda15cbf93bef6cb45a56bcd CEF-1e4a2fc32252abb6f1e30df96797f281">
+                    elements="CEF-3ea80964cda15cbf93bef6cb45a56bcd CEF-1cab72f590da870cdc1ab4f06cd307d5">
                   <descriptor xsi:type="com.ibm.btools.cef.descriptor:CommonNodeDescriptor"
                       href="platform:/plugin/com.ibm.btools.blm.gef.processeditor/pe.descriptor#input_set"/>
                   <domainContent href="BLM-e9e7e37b99481607e62a63a3c850f4b1.xmi#BLM-599894ac8d3eab4b5de78bc5a8c61969"/>
@@ -1277,7 +1277,7 @@
                       href="platform:/plugin/com.ibm.btools.blm.gef.processeditor/pe.descriptor#Connector"/>
                   <domainContent href="BLM-e9e7e37b99481607e62a63a3c850f4b1.xmi#BLM-c67b9edd69c6756e62ed29c15ed12b04"/>
                   <bounds xmi:id="CEF-a4c980ad46ff6df0567aa6ee3e4aa31a" id="CEF-a4c980ad46ff6df0567aa6ee3e4aa31a"
-                      layoutId="LAYOUT.DEFAULT.SWIMLANE.role" x="1053" y="111" width="1"
+                      layoutId="LAYOUT.DEFAULT.SWIMLANE.role" x="1159" y="108" width="1"
                       height="18"/>
                 </compositionChildren>
                 <compositionChildren xsi:type="com.ibm.btools.cef.gef.model:ConnectorModel"
@@ -1287,17 +1287,17 @@
                       href="platform:/plugin/com.ibm.btools.blm.gef.processeditor/pe.descriptor#Connector"/>
                   <domainContent href="BLM-e9e7e37b99481607e62a63a3c850f4b1.xmi#BLM-469df121f361ed88601f8ea3cd67fea4"/>
                   <bounds xmi:id="CEF-7d0ab2de3d876ccc9c7286c0f26b57b8" id="CEF-7d0ab2de3d876ccc9c7286c0f26b57b8"
-                      layoutId="LAYOUT.DEFAULT.SWIMLANE.role" x="955" y="102" width="1"
+                      layoutId="LAYOUT.DEFAULT.SWIMLANE.role" x="1061" y="99" width="1"
                       height="18"/>
                 </compositionChildren>
                 <compositionChildren xsi:type="com.ibm.btools.cef.gef.model:ConnectorModel"
-                    xmi:id="CEF-1e4a2fc32252abb6f1e30df96797f281" id="CEF-1e4a2fc32252abb6f1e30df96797f281"
-                    inputsWithConnector="CEF-904b43549b3b9ad3a10aa7048ff60d23" type="TARGET_SOURCE">
+                    xmi:id="CEF-1cab72f590da870cdc1ab4f06cd307d5" id="CEF-1cab72f590da870cdc1ab4f06cd307d5"
+                    inputsWithConnector="CEF-9b53623c04223d1b9ecbaf1b0ad0dcf2" type="TARGET_SOURCE">
                   <descriptor xsi:type="com.ibm.btools.cef.gef.descriptor:ConnectorDescriptor"
                       href="platform:/plugin/com.ibm.btools.blm.gef.processeditor/pe.descriptor#Connector"/>
-                  <domainContent href="BLM-e9e7e37b99481607e62a63a3c850f4b1.xmi#BLM-65a9f152ff61b33137bec0ffa76f800b"/>
-                  <bounds xmi:id="CEF-799e5dafbd5a97de66a426e7d53d6df1" id="CEF-799e5dafbd5a97de66a426e7d53d6df1"
-                      layoutId="LAYOUT.DEFAULT.SWIMLANE.role" x="955" y="120" width="1"
+                  <domainContent href="BLM-e9e7e37b99481607e62a63a3c850f4b1.xmi#BLM-540d9b23450c0f27066eb3f74d135924"/>
+                  <bounds xmi:id="CEF-debfae6b564d384634eca6b99e14c60f" id="CEF-debfae6b564d384634eca6b99e14c60f"
+                      layoutId="LAYOUT.DEFAULT.SWIMLANE.role" x="1061" y="117" width="1"
                       height="18"/>
                 </compositionChildren>
               </contentChildren>
@@ -1317,16 +1317,16 @@
                       href="platform:/plugin/com.ibm.btools.blm.gef.processeditor/pe.descriptor#Label"/>
                   <domainContent href="BLM-e9e7e37b99481607e62a63a3c850f4b1.xmi#BLM-b64ae997828a233183e08996cf178895"/>
                   <bounds xmi:id="CEF-625d045ef2d2061736c03a5cdfaa644a" id="CEF-625d045ef2d2061736c03a5cdfaa644a"
-                      layoutId="LAYOUT.DEFAULT.SWIMLANE.role" x="71" y="234" height="11"/>
+                      layoutId="LAYOUT.DEFAULT.SWIMLANE.role" x="71" y="237" height="11"/>
                   <bounds xmi:id="CEF-72eaca41fbe8c6da467b0053500430d2" id="CEF-72eaca41fbe8c6da467b0053500430d2"
-                      layoutId="LAYOUT.DEFAULT" x="71" y="234" height="11"/>
+                      layoutId="LAYOUT.DEFAULT" x="71" y="237" height="11"/>
                 </labels>
                 <bendpointLists xmi:id="CEF-43b7b769cd83cb0ce2476b89e7fef254" id="CEF-43b7b769cd83cb0ce2476b89e7fef254"
                     layoutId="LAYOUT.DEFAULT.SWIMLANE.role">
                   <bendpoints xmi:id="CEF-26b60c33a5ab7bf95a620f463ae5a672" id="CEF-26b60c33a5ab7bf95a620f463ae5a672"
-                      x="66" y="250"/>
+                      x="66" y="253"/>
                   <bendpoints xmi:id="CEF-b251f956e85eb81f1f7713b9a92d719c" id="CEF-b251f956e85eb81f1f7713b9a92d719c"
-                      x="72" y="250"/>
+                      x="72" y="253"/>
                   <bendpoints xmi:id="CEF-dc319870f8f455ddbd3bc1ea8fdc0c62" id="CEF-dc319870f8f455ddbd3bc1ea8fdc0c62"
                       x="72" y="90"/>
                   <bendpoints xmi:id="CEF-3d03269579b82782ea8f55cc625071dc" id="CEF-3d03269579b82782ea8f55cc625071dc"
@@ -1360,9 +1360,9 @@
                   <bendpoints xmi:id="CEF-1bf2e1cc5e3969c3832947d6d9f328ec" id="CEF-1bf2e1cc5e3969c3832947d6d9f328ec"
                       x="198" y="90"/>
                   <bendpoints xmi:id="CEF-597f47e60bb35b236e20a2766e40cfde" id="CEF-597f47e60bb35b236e20a2766e40cfde"
-                      x="198" y="258"/>
+                      x="198" y="261"/>
                   <bendpoints xmi:id="CEF-339f2632195e8c76458994f0cb09ced5" id="CEF-339f2632195e8c76458994f0cb09ced5"
-                      x="212" y="258"/>
+                      x="212" y="261"/>
                 </bendpointLists>
               </contentChildren>
               <contentChildren xsi:type="com.ibm.btools.cef.gef.model:LinkWithConnectorModel"
@@ -1381,20 +1381,20 @@
                       href="platform:/plugin/com.ibm.btools.blm.gef.processeditor/pe.descriptor#Label"/>
                   <domainContent href="BLM-e9e7e37b99481607e62a63a3c850f4b1.xmi#BLM-96ea600e993ac9daceb0949b337e6bc8"/>
                   <bounds xmi:id="CEF-caca82d100cc68e1b708ef4f92415a20" id="CEF-caca82d100cc68e1b708ef4f92415a20"
-                      layoutId="LAYOUT.DEFAULT.SWIMLANE.role" x="303" y="242" height="11"/>
+                      layoutId="LAYOUT.DEFAULT.SWIMLANE.role" x="303" y="245" height="11"/>
                   <bounds xmi:id="CEF-416d8d02d9f02a7671b44c6514a7211c" id="CEF-416d8d02d9f02a7671b44c6514a7211c"
-                      layoutId="LAYOUT.DEFAULT" x="303" y="242" height="11"/>
+                      layoutId="LAYOUT.DEFAULT" x="303" y="245" height="11"/>
                 </labels>
                 <bendpointLists xmi:id="CEF-8b257e1738f04ac318d106c5e17b4b05" id="CEF-8b257e1738f04ac318d106c5e17b4b05"
                     layoutId="LAYOUT.DEFAULT.SWIMLANE.role">
                   <bendpoints xmi:id="CEF-d328bf772eb8e57b9db74535b12ffc9b" id="CEF-d328bf772eb8e57b9db74535b12ffc9b"
-                      x="298" y="258"/>
+                      x="298" y="261"/>
                   <bendpoints xmi:id="CEF-092a8ebaa9de79f2a0200c07ca4915cf" id="CEF-092a8ebaa9de79f2a0200c07ca4915cf"
-                      x="312" y="258"/>
+                      x="312" y="261"/>
                   <bendpoints xmi:id="CEF-93c603150b35d6f4e956c4be49f11b58" id="CEF-93c603150b35d6f4e956c4be49f11b58"
-                      x="312" y="258"/>
+                      x="312" y="261"/>
                   <bendpoints xmi:id="CEF-97d2a5fb69b9fb95f12ca78634b535c4" id="CEF-97d2a5fb69b9fb95f12ca78634b535c4"
-                      x="316" y="258"/>
+                      x="316" y="261"/>
                 </bendpointLists>
               </contentChildren>
               <contentChildren xsi:type="com.ibm.btools.cef.gef.model:LinkWithConnectorModel"
@@ -1413,16 +1413,16 @@
                       href="platform:/plugin/com.ibm.btools.blm.gef.processeditor/pe.descriptor#Label"/>
                   <domainContent href="BLM-e9e7e37b99481607e62a63a3c850f4b1.xmi#BLM-e81a8a9fda30cb0dd0924e1f6f417f5b"/>
                   <bounds xmi:id="CEF-699100aa59569289d0db6b696e4181b1" id="CEF-699100aa59569289d0db6b696e4181b1"
-                      layoutId="LAYOUT.DEFAULT.SWIMLANE.role" x="414" y="232" height="11"/>
+                      layoutId="LAYOUT.DEFAULT.SWIMLANE.role" x="414" y="235" height="11"/>
                   <bounds xmi:id="CEF-c72a7e642254cff218403590bb941221" id="CEF-c72a7e642254cff218403590bb941221"
-                      layoutId="LAYOUT.DEFAULT" x="414" y="232" height="11"/>
+                      layoutId="LAYOUT.DEFAULT" x="414" y="235" height="11"/>
                 </labels>
                 <bendpointLists xmi:id="CEF-60165da47092a9ee80b3bb0625f7894a" id="CEF-60165da47092a9ee80b3bb0625f7894a"
                     layoutId="LAYOUT.DEFAULT.SWIMLANE.role">
                   <bendpoints xmi:id="CEF-45ad424f435a3695bd2eae7cceff2f84" id="CEF-45ad424f435a3695bd2eae7cceff2f84"
-                      x="409" y="248"/>
+                      x="409" y="251"/>
                   <bendpoints xmi:id="CEF-49556521c1e457fb4088795dcc904987" id="CEF-49556521c1e457fb4088795dcc904987"
-                      x="414" y="248"/>
+                      x="414" y="251"/>
                   <bendpoints xmi:id="CEF-ff18052f32b576a293e67e05ee4087f7" id="CEF-ff18052f32b576a293e67e05ee4087f7"
                       x="414" y="104"/>
                   <bendpoints xmi:id="CEF-585bf343da6e93f0a5d8e9533a6c7bd8" id="CEF-585bf343da6e93f0a5d8e9533a6c7bd8"
@@ -1477,20 +1477,20 @@
                       href="platform:/plugin/com.ibm.btools.blm.gef.processeditor/pe.descriptor#Label"/>
                   <domainContent href="BLM-e9e7e37b99481607e62a63a3c850f4b1.xmi#BLM-343658332fcaf25ce775df50c9aabd8a"/>
                   <bounds xmi:id="CEF-98f30584016d36e0dbb541f8dccec1e2" id="CEF-98f30584016d36e0dbb541f8dccec1e2"
-                      layoutId="LAYOUT.DEFAULT.SWIMLANE.role" x="769" y="235" height="11"/>
+                      layoutId="LAYOUT.DEFAULT.SWIMLANE.role" x="769" y="238" height="11"/>
                   <bounds xmi:id="CEF-9ab52f9726a6f10a424b9c5f05086be9" id="CEF-9ab52f9726a6f10a424b9c5f05086be9"
-                      layoutId="LAYOUT.DEFAULT" x="769" y="235" height="11"/>
+                      layoutId="LAYOUT.DEFAULT" x="769" y="238" height="11"/>
                 </labels>
                 <bendpointLists xmi:id="CEF-8e2c0606612dc811872105ea9b93d1fa" id="CEF-8e2c0606612dc811872105ea9b93d1fa"
                     layoutId="LAYOUT.DEFAULT.SWIMLANE.role">
                   <bendpoints xmi:id="CEF-7504f18dbcf410873e430fa5734fece2" id="CEF-7504f18dbcf410873e430fa5734fece2"
-                      x="764" y="251"/>
+                      x="764" y="254"/>
                   <bendpoints xmi:id="CEF-b6c5cb60cff302aae89728dcda8787d3" id="CEF-b6c5cb60cff302aae89728dcda8787d3"
-                      x="768" y="251"/>
+                      x="768" y="254"/>
                   <bendpoints xmi:id="CEF-64c9a8ab5a656d628722f3c2fc84e658" id="CEF-64c9a8ab5a656d628722f3c2fc84e658"
-                      x="768" y="251"/>
+                      x="768" y="254"/>
                   <bendpoints xmi:id="CEF-966b645baf6c8145f44dbccc226ebb5c" id="CEF-966b645baf6c8145f44dbccc226ebb5c"
-                      x="781" y="251"/>
+                      x="781" y="254"/>
                 </bendpointLists>
               </contentChildren>
               <contentChildren xsi:type="com.ibm.btools.cef.model:CommonLinkModel"
@@ -1502,16 +1502,16 @@
                     name="USER_BENPOINTS.LAYOUT.DEFAULT.SWIMLANE.role" value="java.lang.Boolean(false)"/>
                 <properties xmi:id="CEF-b579c647c2e1fffd3e31af4df2d7b878" id="CEF-b579c647c2e1fffd3e31af4df2d7b878"
                     name="user_Color"/>
-                <bendpointLists xmi:id="CEF-596f58a3134029369acbf19707f721f4" id="CEF-596f58a3134029369acbf19707f721f4"
+                <bendpointLists xmi:id="CEF-bfee79fa5fa5abf89dfc9f13c14ecbeb" id="CEF-bfee79fa5fa5abf89dfc9f13c14ecbeb"
                     layoutId="LAYOUT.DEFAULT.SWIMLANE.role">
-                  <bendpoints xmi:id="CEF-baf93bf661b297dcca844ca0de4b5134" id="CEF-baf93bf661b297dcca844ca0de4b5134"
-                      x="799" y="209"/>
-                  <bendpoints xmi:id="CEF-8554d26762d153b6c428fbd04b67092a" id="CEF-8554d26762d153b6c428fbd04b67092a"
-                      x="799" y="178"/>
-                  <bendpoints xmi:id="CEF-dd9b1ab9cebc45909c2800ab28dd5dbb" id="CEF-dd9b1ab9cebc45909c2800ab28dd5dbb"
-                      x="755" y="178"/>
-                  <bendpoints xmi:id="CEF-f486085c29d284805f8d479dee2bcbd4" id="CEF-f486085c29d284805f8d479dee2bcbd4"
-                      x="755" y="147"/>
+                  <bendpoints xmi:id="CEF-3ee749bea126b7647b2ddafc29ad6ffd" id="CEF-3ee749bea126b7647b2ddafc29ad6ffd"
+                      x="800" y="212"/>
+                  <bendpoints xmi:id="CEF-433a3cd5fc2d3d473a49474dd861f0fc" id="CEF-433a3cd5fc2d3d473a49474dd861f0fc"
+                      x="800" y="179"/>
+                  <bendpoints xmi:id="CEF-788bea24149d9e1040cae95860f42965" id="CEF-788bea24149d9e1040cae95860f42965"
+                      x="754" y="179"/>
+                  <bendpoints xmi:id="CEF-58f129caaf70a30f777348aceb775f71" id="CEF-58f129caaf70a30f777348aceb775f71"
+                      x="754" y="147"/>
                 </bendpointLists>
               </contentChildren>
               <contentChildren xsi:type="com.ibm.btools.cef.gef.model:LinkWithConnectorModel"
@@ -1530,16 +1530,16 @@
                       href="platform:/plugin/com.ibm.btools.blm.gef.processeditor/pe.descriptor#Label"/>
                   <domainContent href="BLM-e9e7e37b99481607e62a63a3c850f4b1.xmi#BLM-8723f3d8714f09573b0e45d95f27907f"/>
                   <bounds xmi:id="CEF-72c9f73b44027e9d2be3925acdaf6453" id="CEF-72c9f73b44027e9d2be3925acdaf6453"
-                      layoutId="LAYOUT.DEFAULT.SWIMLANE.role" x="872" y="227" height="11"/>
+                      layoutId="LAYOUT.DEFAULT.SWIMLANE.role" x="872" y="230" height="11"/>
                   <bounds xmi:id="CEF-6184909ae8be4a28239716679b158e42" id="CEF-6184909ae8be4a28239716679b158e42"
-                      layoutId="LAYOUT.DEFAULT" x="872" y="227" height="11"/>
+                      layoutId="LAYOUT.DEFAULT" x="872" y="230" height="11"/>
                 </labels>
                 <bendpointLists xmi:id="CEF-cddf99bfad1a93b39dd0e3ba994ea498" id="CEF-cddf99bfad1a93b39dd0e3ba994ea498"
                     layoutId="LAYOUT.DEFAULT.SWIMLANE.role">
                   <bendpoints xmi:id="CEF-1af2b73bdd39080a710e46c41fc64988" id="CEF-1af2b73bdd39080a710e46c41fc64988"
-                      x="867" y="243"/>
+                      x="867" y="246"/>
                   <bendpoints xmi:id="CEF-6bbcd8f99f249b89e036f13685ee66fc" id="CEF-6bbcd8f99f249b89e036f13685ee66fc"
-                      x="876" y="243"/>
+                      x="876" y="246"/>
                   <bendpoints xmi:id="CEF-1a796b1a555f18228ed08bfa67f6319e" id="CEF-1a796b1a555f18228ed08bfa67f6319e"
                       x="876" y="186"/>
                   <bendpoints xmi:id="CEF-e6d5afac0afa9eb3f5bd58fb04d9ac1a" id="CEF-e6d5afac0afa9eb3f5bd58fb04d9ac1a"
@@ -1548,38 +1548,6 @@
                       x="846" y="117"/>
                   <bendpoints xmi:id="CEF-c50f3231d7b772a8b824670fabf26930" id="CEF-c50f3231d7b772a8b824670fabf26930"
                       x="857" y="117"/>
-                </bendpointLists>
-              </contentChildren>
-              <contentChildren xsi:type="com.ibm.btools.cef.gef.model:LinkWithConnectorModel"
-                  xmi:id="CEF-904b43549b3b9ad3a10aa7048ff60d23" id="CEF-904b43549b3b9ad3a10aa7048ff60d23"
-                  target="CEF-bb0236d591aa3c2dfb98bc6e168e0018" source="CEF-ded01103b103a8e2fb0edb08ea104493"
-                  targetConnector="CEF-1e4a2fc32252abb6f1e30df96797f281" sourceConnector="CEF-93b0eb200afe6bbae00a9903b7e8faee">
-                <descriptor xsi:type="com.ibm.btools.cef.gef.descriptor:LinkWithConnectorDescriptor"
-                    href="platform:/plugin/com.ibm.btools.blm.gef.processeditor/pe.descriptor#control_link"/>
-                <domainContent href="BLM-e9e7e37b99481607e62a63a3c850f4b1.xmi#BLM-39fac5c1043d500ffc01cf4c1f94f84f"/>
-                <properties xmi:id="CEF-3dbe0c7378d2268c7ac62efab67366bf" id="CEF-3dbe0c7378d2268c7ac62efab67366bf"
-                    name="USER_BENPOINTS.LAYOUT.DEFAULT.SWIMLANE.role" value="java.lang.Boolean(false)"/>
-                <properties xmi:id="CEF-0f77a25dae8df0826a04ef41be8f9a31" id="CEF-0f77a25dae8df0826a04ef41be8f9a31"
-                    name="user_Color"/>
-                <labels xmi:id="CEF-ba271c6189505713f1a0606a2397f11b" id="CEF-ba271c6189505713f1a0606a2397f11b">
-                  <descriptor xsi:type="com.ibm.btools.cef.descriptor:CommonLabelDescriptor"
-                      href="platform:/plugin/com.ibm.btools.blm.gef.processeditor/pe.descriptor#Label"/>
-                  <domainContent href="BLM-e9e7e37b99481607e62a63a3c850f4b1.xmi#BLM-39fac5c1043d500ffc01cf4c1f94f84f"/>
-                  <bounds xmi:id="CEF-7881394e43b093b102a7a51b7017a687" id="CEF-7881394e43b093b102a7a51b7017a687"
-                      layoutId="LAYOUT.DEFAULT.SWIMLANE.role" x="948" y="101" height="11"/>
-                  <bounds xmi:id="CEF-ffc1fcc40a02f894ed38499765d3574a" id="CEF-ffc1fcc40a02f894ed38499765d3574a"
-                      layoutId="LAYOUT.DEFAULT" x="948" y="101" height="11"/>
-                </labels>
-                <bendpointLists xmi:id="CEF-8268b3199fe5589fc3f2bc5744a4dc78" id="CEF-8268b3199fe5589fc3f2bc5744a4dc78"
-                    layoutId="LAYOUT.DEFAULT.SWIMLANE.role">
-                  <bendpoints xmi:id="CEF-5c5afebeb83caadbd71e73eac30a93ac" id="CEF-5c5afebeb83caadbd71e73eac30a93ac"
-                      x="943" y="117"/>
-                  <bendpoints xmi:id="CEF-b1190522888685328557acf3745236e5" id="CEF-b1190522888685328557acf3745236e5"
-                      x="948" y="117"/>
-                  <bendpoints xmi:id="CEF-4b694021dd772c4bbbea49e3edaec530" id="CEF-4b694021dd772c4bbbea49e3edaec530"
-                      x="948" y="128"/>
-                  <bendpoints xmi:id="CEF-ee62818a3d8ac4fdca956187caf72c6e" id="CEF-ee62818a3d8ac4fdca956187caf72c6e"
-                      x="954" y="128"/>
                 </bendpointLists>
               </contentChildren>
               <contentChildren xsi:type="com.ibm.btools.cef.gef.model:LinkWithConnectorModel"
@@ -1598,20 +1566,194 @@
                       href="platform:/plugin/com.ibm.btools.blm.gef.processeditor/pe.descriptor#Label"/>
                   <domainContent href="BLM-e9e7e37b99481607e62a63a3c850f4b1.xmi#BLM-1fd7e5dcacafabb1df1d31b06bb02d0b"/>
                   <bounds xmi:id="CEF-bbc7778656d18c14128662b61783c90b" id="CEF-bbc7778656d18c14128662b61783c90b"
-                      layoutId="LAYOUT.DEFAULT.SWIMLANE.role" x="1059" y="103" height="11"/>
+                      layoutId="LAYOUT.DEFAULT.SWIMLANE.role" x="1165" y="100" height="11"/>
                   <bounds xmi:id="CEF-a1a77d759157280bd084e737e2098e4b" id="CEF-a1a77d759157280bd084e737e2098e4b"
-                      layoutId="LAYOUT.DEFAULT" x="1059" y="103" height="11"/>
+                      layoutId="LAYOUT.DEFAULT" x="1165" y="100" height="11"/>
                 </labels>
-                <bendpointLists xmi:id="CEF-dc84ce90c235227b2a48224d896b3995" id="CEF-dc84ce90c235227b2a48224d896b3995"
+                <bendpointLists xmi:id="CEF-3e2db99806bffcef1e24bdec7fe4ea78" id="CEF-3e2db99806bffcef1e24bdec7fe4ea78"
                     layoutId="LAYOUT.DEFAULT.SWIMLANE.role">
-                  <bendpoints xmi:id="CEF-fe1932cc572e983a62d0d94a5ddd7985" id="CEF-fe1932cc572e983a62d0d94a5ddd7985"
-                      x="1054" y="119"/>
-                  <bendpoints xmi:id="CEF-a1b5c3c453645875c84269014a079ae9" id="CEF-a1b5c3c453645875c84269014a079ae9"
-                      x="1062" y="119"/>
-                  <bendpoints xmi:id="CEF-6232e5c6eb7d846b7fddeaa4a4dda4fe" id="CEF-6232e5c6eb7d846b7fddeaa4a4dda4fe"
-                      x="1062" y="119"/>
-                  <bendpoints xmi:id="CEF-0c812e64bfc1d23d9a0c0a17a6411380" id="CEF-0c812e64bfc1d23d9a0c0a17a6411380"
-                      x="1073" y="119"/>
+                  <bendpoints xmi:id="CEF-16a617b2f089c30ca942cfdb6ee883b0" id="CEF-16a617b2f089c30ca942cfdb6ee883b0"
+                      x="1160" y="116"/>
+                  <bendpoints xmi:id="CEF-cef40ebe92ee9ade01a884cfa67fc43f" id="CEF-cef40ebe92ee9ade01a884cfa67fc43f"
+                      x="1170" y="116"/>
+                  <bendpoints xmi:id="CEF-66fa8eb03be3f9625fe958aa011b8d3e" id="CEF-66fa8eb03be3f9625fe958aa011b8d3e"
+                      x="1170" y="116"/>
+                  <bendpoints xmi:id="CEF-92b69915a60e39844eb20533aff001ef" id="CEF-92b69915a60e39844eb20533aff001ef"
+                      x="1180" y="116"/>
+                </bendpointLists>
+              </contentChildren>
+              <contentChildren xsi:type="com.ibm.btools.cef.model:CommonContainerModel"
+                  xmi:id="CEF-ef75b39d71430e465661f27e035f0800" id="CEF-ef75b39d71430e465661f27e035f0800"
+                  inputs="CEF-1e59a8843225ede9d000a60ee681d94f" outputs="CEF-9b53623c04223d1b9ecbaf1b0ad0dcf2">
+                <descriptor xsi:type="com.ibm.btools.cef.descriptor:CommonContainerDescriptor"
+                    href="platform:/plugin/com.ibm.btools.blm.gef.processeditor/pe.descriptor#reusable_process"/>
+                <domainContent href="BLM-e9e7e37b99481607e62a63a3c850f4b1.xmi#BLM-665902ff63201b52faac027d98edc8d7"/>
+                <domainContent href="BLM-65ffcf87bb1b528578a1f4cd6a834875.xmi#BLM-16fb977e84e596f79e94300d81e2b4fd"/>
+                <properties xmi:id="CEF-4a2ff7d0d7a48cc0b1017ce443d9376c" id="CEF-4a2ff7d0d7a48cc0b1017ce443d9376c"
+                    name="user_Color"/>
+                <properties xmi:id="CEF-645457fc61b479ede568df545845b139" id="CEF-645457fc61b479ede568df545845b139"
+                    name="user_size_w" value="java.lang.Integer(64)"/>
+                <properties xmi:id="CEF-4c7eadb36a1bb5d88fec66760c02ab11" id="CEF-4c7eadb36a1bb5d88fec66760c02ab11"
+                    name="user_size_h" value="java.lang.Integer(80)"/>
+                <content xmi:id="CEF-a308b94b9d168b6014630b88f228d3d1" id="CEF-a308b94b9d168b6014630b88f228d3d1"
+                    layoutId="LAYOUT.DEFAULT.SWIMLANE.role"/>
+                <bounds xmi:id="CEF-eadf87f553e54a8a111026bac6e0c11a" id="CEF-eadf87f553e54a8a111026bac6e0c11a"
+                    layoutId="LAYOUT.DEFAULT.SWIMLANE.role" x="962" y="83" width="85"
+                    height="68"/>
+                <bounds xmi:id="CEF-16eb62146f9748f70f83388c22a18346" id="CEF-16eb62146f9748f70f83388c22a18346"
+                    layoutId="LAYOUT.DEFAULT.SWIMLANE.role.EDIT" width="580" height="250"/>
+                <compositionChildren xsi:type="com.ibm.btools.cef.model:CommonNodeModel"
+                    xmi:id="CEF-6e5613e795f35b0384532bec34c23844" id="CEF-6e5613e795f35b0384532bec34c23844"
+                    elements="CEF-4b9dd0dc61d06ecee1e7dc9a988c36d1">
+                  <descriptor xsi:type="com.ibm.btools.cef.descriptor:CommonNodeDescriptor"
+                      href="platform:/plugin/com.ibm.btools.blm.gef.processeditor/pe.descriptor#input_set"/>
+                  <domainContent href="BLM-e9e7e37b99481607e62a63a3c850f4b1.xmi#BLM-a957c2924c4366dde374af2fcd2b9781"/>
+                  <domainContent href="BLM-65ffcf87bb1b528578a1f4cd6a834875.xmi#BLM-95e3cde695cdbb3dfa72501d70ec1294"/>
+                  <bounds xmi:id="CEF-f3300b2bd5d1405d7b80866a7e881644" id="CEF-f3300b2bd5d1405d7b80866a7e881644"
+                      layoutId="LAYOUT.DEFAULT.SWIMLANE.role" x="-1" y="-1" width="-1"
+                      height="-1"/>
+                </compositionChildren>
+                <compositionChildren xsi:type="com.ibm.btools.cef.model:CommonNodeModel"
+                    xmi:id="CEF-284b457aa6494f9b3157b1982226fa51" id="CEF-284b457aa6494f9b3157b1982226fa51">
+                  <descriptor xsi:type="com.ibm.btools.cef.descriptor:CommonNodeDescriptor"
+                      href="platform:/plugin/com.ibm.btools.blm.gef.processeditor/pe.descriptor#input_set_container"/>
+                  <domainContent href="BLM-e9e7e37b99481607e62a63a3c850f4b1.xmi#BLM-a957c2924c4366dde374af2fcd2b9781"/>
+                  <bounds xmi:id="CEF-38d0dd90be27a07f67e44b14822b7ece" id="CEF-38d0dd90be27a07f67e44b14822b7ece"
+                      layoutId="LAYOUT.DEFAULT.SWIMLANE.role" x="-1" y="-1" width="-1"
+                      height="-1"/>
+                </compositionChildren>
+                <compositionChildren xsi:type="com.ibm.btools.cef.model:CommonNodeModel"
+                    xmi:id="CEF-b2ff168c9a173a196ad365b8738b179c" id="CEF-b2ff168c9a173a196ad365b8738b179c"
+                    elements="CEF-760513742a1c9631bce488fa94378618">
+                  <descriptor xsi:type="com.ibm.btools.cef.descriptor:CommonNodeDescriptor"
+                      href="platform:/plugin/com.ibm.btools.blm.gef.processeditor/pe.descriptor#output_set"/>
+                  <domainContent href="BLM-e9e7e37b99481607e62a63a3c850f4b1.xmi#BLM-e967c53e25fd8b871542493fa17126da"/>
+                  <domainContent href="BLM-65ffcf87bb1b528578a1f4cd6a834875.xmi#BLM-c307d0597752b3455178071186031010"/>
+                  <bounds xmi:id="CEF-f8dc0ca19fc207b576307b669b5c5239" id="CEF-f8dc0ca19fc207b576307b669b5c5239"
+                      layoutId="LAYOUT.DEFAULT.SWIMLANE.role" x="-1" y="-1" width="-1"
+                      height="-1"/>
+                </compositionChildren>
+                <compositionChildren xsi:type="com.ibm.btools.cef.model:CommonNodeModel"
+                    xmi:id="CEF-6825902ff8168a7a4341162b92d4a20e" id="CEF-6825902ff8168a7a4341162b92d4a20e">
+                  <descriptor xsi:type="com.ibm.btools.cef.descriptor:CommonNodeDescriptor"
+                      href="platform:/plugin/com.ibm.btools.blm.gef.processeditor/pe.descriptor#output_set_container"/>
+                  <domainContent href="BLM-e9e7e37b99481607e62a63a3c850f4b1.xmi#BLM-e967c53e25fd8b871542493fa17126da"/>
+                  <bounds xmi:id="CEF-ea3a444c346cd1e61366b6cf905a4111" id="CEF-ea3a444c346cd1e61366b6cf905a4111"
+                      layoutId="LAYOUT.DEFAULT.SWIMLANE.role" x="-1" y="-1" width="-1"
+                      height="-1"/>
+                </compositionChildren>
+                <compositionChildren xsi:type="com.ibm.btools.cef.model:CommonNodeModel"
+                    xmi:id="CEF-142852fbb8683d8d1a16ed3a7243200a" id="CEF-142852fbb8683d8d1a16ed3a7243200a">
+                  <descriptor xsi:type="com.ibm.btools.cef.descriptor:CommonNodeDescriptor"
+                      href="platform:/plugin/com.ibm.btools.blm.gef.processeditor/pe.descriptor#output_set"/>
+                  <domainContent href="BLM-e9e7e37b99481607e62a63a3c850f4b1.xmi#BLM-06d406debe8075425ab70d8fa56c6cc8"/>
+                  <bounds xmi:id="CEF-a4c61108de12ac45e6d750a9406e666a" id="CEF-a4c61108de12ac45e6d750a9406e666a"
+                      layoutId="LAYOUT.DEFAULT.SWIMLANE.role" x="-1" y="-1" width="-1"
+                      height="-1"/>
+                </compositionChildren>
+                <compositionChildren xsi:type="com.ibm.btools.cef.model:CommonLabelModel"
+                    xmi:id="CEF-159617781fd4459b27dc33c873f7d4df" id="CEF-159617781fd4459b27dc33c873f7d4df">
+                  <descriptor xsi:type="com.ibm.btools.cef.descriptor:CommonLabelDescriptor"
+                      href="platform:/plugin/com.ibm.btools.blm.gef.processeditor/pe.descriptor#data_label"/>
+                  <properties xmi:id="CEF-f205d9ac4d98f6cec649c6e279afbe1a" id="CEF-f205d9ac4d98f6cec649c6e279afbe1a"
+                      name="purpose" value="java.lang.String(data label|top)"/>
+                  <bounds xmi:id="CEF-5b4f922f3fc283d922b8a373901a35f4" id="CEF-5b4f922f3fc283d922b8a373901a35f4"
+                      layoutId="LAYOUT.DEFAULT.SWIMLANE.role" x="-1" y="-1" width="-1"
+                      height="-1"/>
+                </compositionChildren>
+                <compositionChildren xsi:type="com.ibm.btools.cef.model:CommonLabelModel"
+                    xmi:id="CEF-097067a63d6e6b77def09a44da41dd8e" id="CEF-097067a63d6e6b77def09a44da41dd8e">
+                  <descriptor xsi:type="com.ibm.btools.cef.descriptor:CommonLabelDescriptor"
+                      href="platform:/plugin/com.ibm.btools.blm.gef.processeditor/pe.descriptor#data_label"/>
+                  <properties xmi:id="CEF-b0cd470a86032a84831085e34f2a209c" id="CEF-b0cd470a86032a84831085e34f2a209c"
+                      name="purpose" value="java.lang.String(data label|bottom)"/>
+                  <bounds xmi:id="CEF-8c1315ca4ae2f63b4d0da536f5d8d744" id="CEF-8c1315ca4ae2f63b4d0da536f5d8d744"
+                      layoutId="LAYOUT.DEFAULT.SWIMLANE.role" x="-1" y="-1" width="-1"
+                      height="-1"/>
+                </compositionChildren>
+                <compositionChildren xsi:type="com.ibm.btools.cef.gef.model:ConnectorModel"
+                    xmi:id="CEF-4b9dd0dc61d06ecee1e7dc9a988c36d1" id="CEF-4b9dd0dc61d06ecee1e7dc9a988c36d1"
+                    inputsWithConnector="CEF-1e59a8843225ede9d000a60ee681d94f" type="TARGET_SOURCE">
+                  <descriptor xsi:type="com.ibm.btools.cef.gef.descriptor:ConnectorDescriptor"
+                      href="platform:/plugin/com.ibm.btools.blm.gef.processeditor/pe.descriptor#Connector"/>
+                  <domainContent href="BLM-e9e7e37b99481607e62a63a3c850f4b1.xmi#BLM-396650ef7872d40bcdca0300acdd4bf8"/>
+                  <bounds xmi:id="CEF-43246e6b93d0ea6d524fd70d46f84df8" id="CEF-43246e6b93d0ea6d524fd70d46f84df8"
+                      layoutId="LAYOUT.DEFAULT.SWIMLANE.role" x="962" y="108" width="1"
+                      height="18"/>
+                </compositionChildren>
+                <compositionChildren xsi:type="com.ibm.btools.cef.gef.model:ConnectorModel"
+                    xmi:id="CEF-760513742a1c9631bce488fa94378618" id="CEF-760513742a1c9631bce488fa94378618"
+                    outputsWithConnector="CEF-9b53623c04223d1b9ecbaf1b0ad0dcf2" type="SOURCE_TARGET">
+                  <descriptor xsi:type="com.ibm.btools.cef.gef.descriptor:ConnectorDescriptor"
+                      href="platform:/plugin/com.ibm.btools.blm.gef.processeditor/pe.descriptor#Connector"/>
+                  <domainContent href="BLM-e9e7e37b99481607e62a63a3c850f4b1.xmi#BLM-f41a6efeb2f6d38723580638963a14d6"/>
+                  <bounds xmi:id="CEF-2190dff2fa61d0a660405f2ab71263ff" id="CEF-2190dff2fa61d0a660405f2ab71263ff"
+                      layoutId="LAYOUT.DEFAULT.SWIMLANE.role" x="1046" y="108" width="1"
+                      height="18"/>
+                </compositionChildren>
+              </contentChildren>
+              <contentChildren xsi:type="com.ibm.btools.cef.gef.model:LinkWithConnectorModel"
+                  xmi:id="CEF-1e59a8843225ede9d000a60ee681d94f" id="CEF-1e59a8843225ede9d000a60ee681d94f"
+                  target="CEF-ef75b39d71430e465661f27e035f0800" source="CEF-ded01103b103a8e2fb0edb08ea104493"
+                  targetConnector="CEF-4b9dd0dc61d06ecee1e7dc9a988c36d1" sourceConnector="CEF-1d06e7456082a2060873a4c7809fa1f4">
+                <descriptor xsi:type="com.ibm.btools.cef.gef.descriptor:LinkWithConnectorDescriptor"
+                    href="platform:/plugin/com.ibm.btools.blm.gef.processeditor/pe.descriptor#control_link"/>
+                <domainContent href="BLM-e9e7e37b99481607e62a63a3c850f4b1.xmi#BLM-d74fe4f6f4dc51a87ffdb9000fa2ade3"/>
+                <properties xmi:id="CEF-58b60c16dff5f3fe08b250e2071336d4" id="CEF-58b60c16dff5f3fe08b250e2071336d4"
+                    name="USER_BENPOINTS.LAYOUT.DEFAULT.SWIMLANE.role" value="java.lang.Boolean(false)"/>
+                <properties xmi:id="CEF-6d21cbdd3a1a2b991106a854b976e74b" id="CEF-6d21cbdd3a1a2b991106a854b976e74b"
+                    name="user_Color"/>
+                <labels xmi:id="CEF-d658fcf394be01465b8fb94c7561a955" id="CEF-d658fcf394be01465b8fb94c7561a955">
+                  <descriptor xsi:type="com.ibm.btools.cef.descriptor:CommonLabelDescriptor"
+                      href="platform:/plugin/com.ibm.btools.blm.gef.processeditor/pe.descriptor#Label"/>
+                  <domainContent href="BLM-e9e7e37b99481607e62a63a3c850f4b1.xmi#BLM-d74fe4f6f4dc51a87ffdb9000fa2ade3"/>
+                  <bounds xmi:id="CEF-24611ae875633461f26e41853fd656f5" id="CEF-24611ae875633461f26e41853fd656f5"
+                      layoutId="LAYOUT.DEFAULT.SWIMLANE.role" x="948" y="101" height="11"/>
+                  <bounds xmi:id="CEF-678d0bc4cca193991331a253c123d90c" id="CEF-678d0bc4cca193991331a253c123d90c"
+                      layoutId="LAYOUT.DEFAULT" x="948" y="101" height="11"/>
+                </labels>
+                <bendpointLists xmi:id="CEF-4185597597c9a9a0b307716563cdc656" id="CEF-4185597597c9a9a0b307716563cdc656"
+                    layoutId="LAYOUT.DEFAULT.SWIMLANE.role">
+                  <bendpoints xmi:id="CEF-1b786d92efd732336ef67e9343fd5099" id="CEF-1b786d92efd732336ef67e9343fd5099"
+                      x="943" y="117"/>
+                  <bendpoints xmi:id="CEF-837760f30f1e2a3728a40960496862ce" id="CEF-837760f30f1e2a3728a40960496862ce"
+                      x="948" y="117"/>
+                  <bendpoints xmi:id="CEF-24c346530a4af33aa740befa4962ae64" id="CEF-24c346530a4af33aa740befa4962ae64"
+                      x="948" y="117"/>
+                  <bendpoints xmi:id="CEF-39763a2f341c222023f35fb981879dfc" id="CEF-39763a2f341c222023f35fb981879dfc"
+                      x="961" y="117"/>
+                </bendpointLists>
+              </contentChildren>
+              <contentChildren xsi:type="com.ibm.btools.cef.gef.model:LinkWithConnectorModel"
+                  xmi:id="CEF-9b53623c04223d1b9ecbaf1b0ad0dcf2" id="CEF-9b53623c04223d1b9ecbaf1b0ad0dcf2"
+                  target="CEF-bb0236d591aa3c2dfb98bc6e168e0018" source="CEF-ef75b39d71430e465661f27e035f0800"
+                  targetConnector="CEF-1cab72f590da870cdc1ab4f06cd307d5" sourceConnector="CEF-760513742a1c9631bce488fa94378618">
+                <descriptor xsi:type="com.ibm.btools.cef.gef.descriptor:LinkWithConnectorDescriptor"
+                    href="platform:/plugin/com.ibm.btools.blm.gef.processeditor/pe.descriptor#control_link"/>
+                <domainContent href="BLM-e9e7e37b99481607e62a63a3c850f4b1.xmi#BLM-977ee684d5833bf126b69a495049f06d"/>
+                <properties xmi:id="CEF-f32b6be5e1af1f3790a8856c7f38f7df" id="CEF-f32b6be5e1af1f3790a8856c7f38f7df"
+                    name="USER_BENPOINTS.LAYOUT.DEFAULT.SWIMLANE.role" value="java.lang.Boolean(false)"/>
+                <properties xmi:id="CEF-4aa79dcea40e219f73f1f5244749f303" id="CEF-4aa79dcea40e219f73f1f5244749f303"
+                    name="user_Color"/>
+                <labels xmi:id="CEF-199a404c76d195473a11640c7dd4abfe" id="CEF-199a404c76d195473a11640c7dd4abfe">
+                  <descriptor xsi:type="com.ibm.btools.cef.descriptor:CommonLabelDescriptor"
+                      href="platform:/plugin/com.ibm.btools.blm.gef.processeditor/pe.descriptor#Label"/>
+                  <domainContent href="BLM-e9e7e37b99481607e62a63a3c850f4b1.xmi#BLM-977ee684d5833bf126b69a495049f06d"/>
+                  <bounds xmi:id="CEF-7314b5cd9c9a6cc9c8ac2c063c6c4346" id="CEF-7314b5cd9c9a6cc9c8ac2c063c6c4346"
+                      layoutId="LAYOUT.DEFAULT.SWIMLANE.role" x="1052" y="100" height="11"/>
+                  <bounds xmi:id="CEF-83616ae7b63f89e0aaadbb428a50b737" id="CEF-83616ae7b63f89e0aaadbb428a50b737"
+                      layoutId="LAYOUT.DEFAULT" x="1052" y="100" height="11"/>
+                </labels>
+                <bendpointLists xmi:id="CEF-6b900b259ea7c377d7bfc4dae43387e1" id="CEF-6b900b259ea7c377d7bfc4dae43387e1"
+                    layoutId="LAYOUT.DEFAULT.SWIMLANE.role">
+                  <bendpoints xmi:id="CEF-2dd00602c7ae2647848a6460db0b352d" id="CEF-2dd00602c7ae2647848a6460db0b352d"
+                      x="1047" y="116"/>
+                  <bendpoints xmi:id="CEF-5c94b6ecf7391d8cfa05d22425a3696c" id="CEF-5c94b6ecf7391d8cfa05d22425a3696c"
+                      x="1050" y="116"/>
+                  <bendpoints xmi:id="CEF-2caa6acecf9a4457f82f1a5f117ac686" id="CEF-2caa6acecf9a4457f82f1a5f117ac686"
+                      x="1050" y="125"/>
+                  <bendpoints xmi:id="CEF-f511aefb346bc9234fa7b3c6cfcf27ca" id="CEF-f511aefb346bc9234fa7b3c6cfcf27ca"
+                      x="1060" y="125"/>
                 </bendpointLists>
               </contentChildren>
             </content>
@@ -1621,7 +1763,7 @@
                 layoutId="LAYOUT.DEFAULT.EDIT" width="1900" height="720"/>
             <bounds xmi:id="CEF-2d3968d8ea3a79a4ea49cc0a5474beb1" id="CEF-2d3968d8ea3a79a4ea49cc0a5474beb1"
                 layoutId="LAYOUT.DEFAULT.SWIMLANE.role.EDIT" x="44" y="48" width="1900"
-                height="345"/>
+                height="348"/>
             <compositionChildren xsi:type="com.ibm.btools.cef.model:CommonNodeModel"
                 xmi:id="CEF-db914dd01103235965f6d62a075d7b01" id="CEF-db914dd01103235965f6d62a075d7b01">
               <descriptor xsi:type="com.ibm.btools.cef.descriptor:CommonNodeDescriptor"

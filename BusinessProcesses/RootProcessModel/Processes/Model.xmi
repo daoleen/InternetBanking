@@ -5,7 +5,7 @@
     xmlns:com.ibm.btools.bom.model.processes.activities="http:///com/ibm/btools/bom/model/processes/activities.ecore"
     xmlns:com.ibm.btools.model.resourcemanager.resourceproperties="http:///com/ibm/btools/model/resourcemanager/resourceproperties.ecore">
   <com.ibm.btools.model.resourcemanager.resourceproperties:ResourceProperties versionID="7.0.0.0"
-      lastModified="1416669811578"/>
+      lastModified="1416676196875"/>
   <com.ibm.btools.bom.model.models:ProcessModel xmi:id="FID-00010-df13a34335666a3908f4db598482644b"
       uid="FID-00010-df13a34335666a3908f4db598482644b" name="Processes">
     <ownedComment xmi:id="BLM-8754c0ae3c2732411d25ffa8386e8c30" uid="BLM-8754c0ae3c2732411d25ffa8386e8c30"
@@ -22,5 +22,9 @@
     <ownedMember xsi:type="com.ibm.btools.bom.model.processes.activities:Activity"
         href="BLM-d093384c0a19b89eb9b39e9af0407163.xmi#BLM-97394ba6f7dc7b3bc77a27b87e3311db"/>
     <ownedMember xsi:type="com.ibm.btools.bom.model.models:ProcessModel" href="BLM-574b852bf053180b798559984066269d.xmi#BLM-23fb02d7113c37b9b33f992e15486ba5"/>
+    <ownedMember xsi:type="com.ibm.btools.bom.model.processes.activities:Activity"
+        href="BLM-65ffcf87bb1b528578a1f4cd6a834875.xmi#BLM-16fb977e84e596f79e94300d81e2b4fd"/>
+    <ownedMember xsi:type="com.ibm.btools.bom.model.processes.activities:Activity"
+        href="BLM-45fcebd55403ba67ec66a765b4cea843.xmi#BLM-a58b8da92d5d473e4ad273a8da193454"/>
   </com.ibm.btools.bom.model.models:ProcessModel>
 </xmi:XMI>

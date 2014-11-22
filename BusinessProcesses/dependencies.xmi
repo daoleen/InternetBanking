@@ -3,7 +3,7 @@
     xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.btools.model.modelmanager.dependencymanager="http:///com/ibm/btools/model/modelmanager/dependencymanager.ecore"
     xmlns:com.ibm.btools.model.resourcemanager.resourceproperties="http:///com/ibm/btools/model/resourcemanager/resourceproperties.ecore">
   <com.ibm.btools.model.resourcemanager.resourceproperties:ResourceProperties versionID="7.0.0.0"
-      lastModified="1416672160437"/>
+      lastModified="1416676655734"/>
   <com.ibm.btools.model.modelmanager.dependencymanager:DependencyModel>
     <eObjectDescriptors eObjectID="BLM-bab2877bbce758de71fef1d534aa3868" eObjectName="Primary owner"
         dependenciesWhereSource="/1/@dependencies.0">
@@ -362,6 +362,41 @@
         dependenciesWhereSource="/1/@dependencies.81">
       <eObject href="BLM-e9e7e37b99481607e62a63a3c850f4b1.xmi#BLM-014e582d937b17a28b51171c4c6c6cc2"/>
     </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-99efa90678c82fb239fcc47b3fb6816d" eObjectName="Role requirement:1"
+        dependenciesWhereSource="/1/@dependencies.82">
+      <eObject href="BLM-65ffcf87bb1b528578a1f4cd6a834875.xmi#BLM-99efa90678c82fb239fcc47b3fb6816d"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-cf38e7d459bc7d88d714d30f9ae5b34a" eObjectName="Role requirement:1"
+        dependenciesWhereSource="/1/@dependencies.83">
+      <eObject href="BLM-65ffcf87bb1b528578a1f4cd6a834875.xmi#BLM-cf38e7d459bc7d88d714d30f9ae5b34a"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-665902ff63201b52faac027d98edc8d7" eObjectName="Reservation of funds"
+        dependenciesWhereSource="/1/@dependencies.84">
+      <eObject href="BLM-e9e7e37b99481607e62a63a3c850f4b1.xmi#BLM-665902ff63201b52faac027d98edc8d7"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-16fb977e84e596f79e94300d81e2b4fd" eObjectName="Reservation of funds">
+      <eObject href="BLM-65ffcf87bb1b528578a1f4cd6a834875.xmi#BLM-16fb977e84e596f79e94300d81e2b4fd"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-e6cd1f9d5eed423e230f53f546baf3d2" eObjectName="Reservation of funds"
+        dependenciesWhereSource="/1/@dependencies.85">
+      <eObject href="BLM-59c47cfdf1f39d3672d9f56a4a05e90e.xmi#BLM-e6cd1f9d5eed423e230f53f546baf3d2"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-71ad86e0e9039ba5afd048ecad358f30" eObjectName="Role requirement:1"
+        dependenciesWhereSource="/1/@dependencies.86">
+      <eObject href="BLM-45fcebd55403ba67ec66a765b4cea843.xmi#BLM-71ad86e0e9039ba5afd048ecad358f30"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-b250bceb5f40505c3abd0821abcc6527" eObjectName="Role requirement:1"
+        dependenciesWhereSource="/1/@dependencies.87">
+      <eObject href="BLM-45fcebd55403ba67ec66a765b4cea843.xmi#BLM-b250bceb5f40505c3abd0821abcc6527"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-b561e433db3ebc2ef4ea2e724f4b92f1" eObjectName="Role requirement:1"
+        dependenciesWhereSource="/1/@dependencies.88">
+      <eObject href="BLM-45fcebd55403ba67ec66a765b4cea843.xmi#BLM-b561e433db3ebc2ef4ea2e724f4b92f1"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-d2b1231a5107e4a936a2627b0e593630" eObjectName="Role requirement:1"
+        dependenciesWhereSource="/1/@dependencies.89">
+      <eObject href="BLM-45fcebd55403ba67ec66a765b4cea843.xmi#BLM-d2b1231a5107e4a936a2627b0e593630"/>
+    </eObjectDescriptors>
     <dependencies name="role" indirect="false" source="/1/@eObjectDescriptors.0" target="/1/@eObjectDescriptors.1"/>
     <dependencies name="role" indirect="false" source="/1/@eObjectDescriptors.2" target="/1/@eObjectDescriptors.3"/>
     <dependencies name="role" indirect="false" source="/1/@eObjectDescriptors.4" target="/1/@eObjectDescriptors.5"/>
@@ -518,6 +553,22 @@
     <dependencies name="behavior" indirect="false" source="/1/@eObjectDescriptors.90"
         target="/1/@eObjectDescriptors.66"/>
     <dependencies name="role" indirect="false" source="/1/@eObjectDescriptors.91"
+        target="/1/@eObjectDescriptors.5"/>
+    <dependencies name="role" indirect="false" source="/1/@eObjectDescriptors.92"
+        target="/1/@eObjectDescriptors.5"/>
+    <dependencies name="role" indirect="false" source="/1/@eObjectDescriptors.93"
+        target="/1/@eObjectDescriptors.5"/>
+    <dependencies name="behavior" indirect="false" source="/1/@eObjectDescriptors.94"
+        target="/1/@eObjectDescriptors.95"/>
+    <dependencies name="behavior" indirect="false" source="/1/@eObjectDescriptors.96"
+        target="/1/@eObjectDescriptors.95"/>
+    <dependencies name="role" indirect="false" source="/1/@eObjectDescriptors.97"
+        target="/1/@eObjectDescriptors.5"/>
+    <dependencies name="role" indirect="false" source="/1/@eObjectDescriptors.98"
+        target="/1/@eObjectDescriptors.5"/>
+    <dependencies name="role" indirect="false" source="/1/@eObjectDescriptors.99"
+        target="/1/@eObjectDescriptors.5"/>
+    <dependencies name="role" indirect="false" source="/1/@eObjectDescriptors.100"
         target="/1/@eObjectDescriptors.5"/>
   </com.ibm.btools.model.modelmanager.dependencymanager:DependencyModel>
 </xmi:XMI>

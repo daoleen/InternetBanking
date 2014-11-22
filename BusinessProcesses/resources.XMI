@@ -222,5 +222,25 @@
     </idRecords>
     <idRecords id="DM-e471f0e0a834ea72787c42eab1c35faa" uri="RootProcessModel\Processes\Tranfer money\Transfer money to a bank account\Model_dependencies.xmi"
         modelType="0" rootObjType="0" groupID="BLMNAV-daad40981c68c8c6b34805272417df2b"/>
+    <idRecords id="BLM-65ffcf87bb1b528578a1f4cd6a834875" uri="RootProcessModel\Processes\Reservation of funds\Model.xmi"
+        modelType="1" rootObjType="1001" groupID="BLMNAV-dc61b28180a10a0a28d2bfa645188ed6">
+      <rootObjIDs>BLM-16fb977e84e596f79e94300d81e2b4fd</rootObjIDs>
+    </idRecords>
+    <idRecords id="CEF-5ceaaa33eee3057efbffa77cf4210d28" uri="RootProcessModel\Processes\Reservation of funds\View.xmi"
+        modelType="2" rootObjType="107" groupID="BLMNAV-dc61b28180a10a0a28d2bfa645188ed6">
+      <rootObjIDs>CEF-1e01fdf06617966d4f9637353c424fa9</rootObjIDs>
+    </idRecords>
+    <idRecords id="DM-1fa68548b81738b1ca70c2452e5c864f" uri="RootProcessModel\Processes\Reservation of funds\Model_dependencies.xmi"
+        modelType="0" rootObjType="0" groupID="BLMNAV-dc61b28180a10a0a28d2bfa645188ed6"/>
+    <idRecords id="BLM-45fcebd55403ba67ec66a765b4cea843" uri="RootProcessModel\Processes\Processing of transfer queue\Model.xmi"
+        modelType="1" rootObjType="1001" groupID="BLMNAV-a1403fa82fb0fb81e7c9461beaf98ef9">
+      <rootObjIDs>BLM-a58b8da92d5d473e4ad273a8da193454</rootObjIDs>
+    </idRecords>
+    <idRecords id="CEF-6e3e7923ad895cd13f5ecf60dc1649ec" uri="RootProcessModel\Processes\Processing of transfer queue\View.xmi"
+        modelType="2" rootObjType="107" groupID="BLMNAV-a1403fa82fb0fb81e7c9461beaf98ef9">
+      <rootObjIDs>CEF-05f6847bb4f34ce33c377cbdab00ac03</rootObjIDs>
+    </idRecords>
+    <idRecords id="DM-5645cb594abcbc47e7770c304caaa297" uri="RootProcessModel\Processes\Processing of transfer queue\Model_dependencies.xmi"
+        modelType="0" rootObjType="0" groupID="BLMNAV-a1403fa82fb0fb81e7c9461beaf98ef9"/>
   </com.ibm.btools.model.resourcemanager:ProjectResourcesMGR>
 </xmi:XMI>
