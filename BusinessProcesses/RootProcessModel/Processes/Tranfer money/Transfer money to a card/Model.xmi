@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:com.ibm.btools.bom.model.artifacts="http:///com/ibm/btools/bom/model/artifacts.ecore"
+    xmlns:com.ibm.btools.bom.model.processes.actions="http:///com/ibm/btools/bom/model/processes/actions.ecore"
+    xmlns:com.ibm.btools.bom.model.processes.activities="http:///com/ibm/btools/bom/model/processes/activities.ecore"
+    xmlns:com.ibm.btools.bom.model.processes.humantasks="http:///com/ibm/btools/bom/model/processes/humantasks.ecore"
+    xmlns:com.ibm.btools.bom.model.resources="http:///com/ibm/btools/bom/model/resources.ecore"
+    xmlns:com.ibm.btools.expression.bom.model="http:///com/ibm/btools/expression/bom/model.ecore"
+    xmlns:com.ibm.btools.model.resourcemanager.resourceproperties="http:///com/ibm/btools/model/resourcemanager/resourceproperties.ecore">
+  <com.ibm.btools.model.resourcemanager.resourceproperties:ResourceProperties versionID="7.0.0.0"
+      lastModified="1416671199625"/>
+  <com.ibm.btools.bom.model.processes.activities:Activity xmi:id="BLM-9cf586449ef3ddb93a35f6bf86ba191c"
+      uid="BLM-9cf586449ef3ddb93a35f6bf86ba191c" name="Transfer money to a card">
+    <ownedComment xmi:id="BLM-bf40e867278d959efcf0bd69711c11c7" uid="BLM-bf40e867278d959efcf0bd69711c11c7"
+        name="###_NAME_COMMENT_###" body=""/>
+    <owningPackage href="BLM-574b852bf053180b798559984066269d.xmi#BLM-23fb02d7113c37b9b33f992e15486ba5"/>
+    <outputParameterSet xmi:id="BLM-e37bdcdd341af8c38b74b6828c67db33" uid="BLM-e37bdcdd341af8c38b74b6828c67db33"
+        name="Output Criterion" inputParameterSet="BLM-070a0627c82f280f81b7f2893bd682e3"/>
+    <inputParameterSet xmi:id="BLM-070a0627c82f280f81b7f2893bd682e3" uid="BLM-070a0627c82f280f81b7f2893bd682e3"
+        name="Input Criterion" outputParameterSet="BLM-e37bdcdd341af8c38b74b6828c67db33"/>
+    <implementation xmi:id="BLM-88aa79019e696445afb58a1ab9f58ef3" uid="BLM-88aa79019e696445afb58a1ab9f58ef3"
+        name="Transfer money to a card" aspect="PROCESS">
+      <ownedComment xmi:id="BLM-4b0f90df9eede068837a08ab03774303" uid="BLM-4b0f90df9eede068837a08ab03774303"
+          body="Перевод средств на карточку клиента нашего банка" annotatedElement="BLM-88aa79019e696445afb58a1ab9f58ef3"/>
+      <ownedComment xmi:id="BLM-5adba30e88afaf9aa144a2a0cbe8cf57" uid="BLM-5adba30e88afaf9aa144a2a0cbe8cf57"
+          body="Клиент вводит номер карты, на которую планирует пожертвовать средства"
+          annotatedElement="BLM-3777f3debccf6cd8b7990f38fbbd8a3d"/>
+      <ownedComment xmi:id="BLM-0eb75d0ad50c40f7c0ed84379d53ed05" uid="BLM-0eb75d0ad50c40f7c0ed84379d53ed05"
+          body="Клиент еще раз просматривает информацию о платеже, и подтверждает перевод"
+          annotatedElement="BLM-53837e4f7a9085d6683b5059094a21c7"/>
+      <outputPinSet xmi:id="BLM-549780b07aa21683cded8589278e1ca1" uid="BLM-549780b07aa21683cded8589278e1ca1"
+          name="Output Criterion" inputPinSet="BLM-569034e537d17f46032919f3660e6c7a"/>
+      <inputPinSet xmi:id="BLM-569034e537d17f46032919f3660e6c7a" uid="BLM-569034e537d17f46032919f3660e6c7a"
+          name="Input Criterion" outputPinSet="BLM-549780b07aa21683cded8589278e1ca1"/>
+      <nodeContents xsi:type="com.ibm.btools.bom.model.processes.activities:InitialNode"
+          xmi:id="BLM-65e52879e21ccf3f84add7a2aa86a874" uid="BLM-65e52879e21ccf3f84add7a2aa86a874"
+          name="Start Node" visibility="private" outgoing="BLM-318def627ab82b3b2731781a97413fac"/>
+      <nodeContents xsi:type="com.ibm.btools.bom.model.processes.activities:FlowFinalNode"
+          xmi:id="BLM-8c41f764bef07210ab549db412d76882" uid="BLM-8c41f764bef07210ab549db412d76882"
+          name="End Node" visibility="private" incoming="BLM-fc1bc438be0086b4ea6fb9e9c4498a8a"/>
+      <nodeContents xsi:type="com.ibm.btools.bom.model.processes.activities:StructuredActivityNode"
+          xmi:id="BLM-654390ead8c9811c111867e6c9d60932" uid="BLM-654390ead8c9811c111867e6c9d60932"
+          name="Show list of activated client cards" aspect="TASK">
+        <inputControlPin xmi:id="BLM-4acf9077691bf0df0d1a2dbda259d218" uid="BLM-4acf9077691bf0df0d1a2dbda259d218"
+            name="Input" incoming="BLM-318def627ab82b3b2731781a97413fac"/>
+        <outputControlPin xmi:id="BLM-c614b7253d0465d87c74c751e2043b44" uid="BLM-c614b7253d0465d87c74c751e2043b44"
+            name="Output" outgoing="BLM-e47f046509bbf06d1edf6f9e598c290f"/>
+        <outputPinSet xmi:id="BLM-813af25b70349cc221f646c179dc1afd" uid="BLM-813af25b70349cc221f646c179dc1afd"
+            name="Output Criterion" inputPinSet="BLM-c602aaf956f6086b822a4f09ac672af7"
+            outputControlPin="BLM-c614b7253d0465d87c74c751e2043b44"/>
+        <inputPinSet xmi:id="BLM-c602aaf956f6086b822a4f09ac672af7" uid="BLM-c602aaf956f6086b822a4f09ac672af7"
+            name="Input Criterion" outputPinSet="BLM-813af25b70349cc221f646c179dc1afd"
+            inputControlPin="BLM-4acf9077691bf0df0d1a2dbda259d218"/>
+        <resourceRequirement xsi:type="com.ibm.btools.bom.model.resources:RequiredRole"
+            xmi:id="BLM-e9791d1ca0c65575797ba5f5e286cb98" uid="BLM-e9791d1ca0c65575797ba5f5e286cb98"
+            name="Role requirement:1" timeRequired="P0Y0M0DT0H0M0S">
+          <role href="BLM-5cfbb4a5d35c1aaeb1c32c46f1bbd240.xmi#BLM-962f0bf5502787e94afc5715a02c92d5"/>
+          <requiredQuantity xmi:id="BLM-f484f6391fc061b4a46ae21ac972f222" uid="BLM-f484f6391fc061b4a46ae21ac972f222"
+              unitOfMeasure="unit">
+            <quantity xsi:type="com.ibm.btools.bom.model.artifacts:LiteralReal" xmi:id="BLM-1e6179c16c518e6e0d8559aac63fe7e4"
+                uid="BLM-1e6179c16c518e6e0d8559aac63fe7e4" value="1.0"/>
+          </requiredQuantity>
+        </resourceRequirement>
+      </nodeContents>
+      <nodeContents xsi:type="com.ibm.btools.bom.model.processes.humantasks:HumanTask"
+          xmi:id="BLM-d5b93969c95236a4c2f389d51dd4e1e8" uid="BLM-d5b93969c95236a4c2f389d51dd4e1e8"
+          name="Select a card" aspect="HUMAN_TASK" potentialOwner="BLM-52e2087ee66324ef54cd8c4d6a899d6e">
+        <inputControlPin xmi:id="BLM-154cc3b3ebfe0b3649a5ea3cc20df4c4" uid="BLM-154cc3b3ebfe0b3649a5ea3cc20df4c4"
+            name="Input" incoming="BLM-e47f046509bbf06d1edf6f9e598c290f"/>
+        <outputControlPin xmi:id="BLM-7af641b1b9c5ee818a1e9deefcc20a60" uid="BLM-7af641b1b9c5ee818a1e9deefcc20a60"
+            name="Output" outgoing="BLM-5238e21f6885a7a6e4a8ae3051aab825"/>
+        <outputPinSet xmi:id="BLM-f7e76890cbdd9418f6de056657a31b81" uid="BLM-f7e76890cbdd9418f6de056657a31b81"
+            name="Output Criterion" inputPinSet="BLM-1c3c0873cf1a5c01fd8ab04b4bc04ba3"
+            outputControlPin="BLM-7af641b1b9c5ee818a1e9deefcc20a60"/>
+        <inputPinSet xmi:id="BLM-1c3c0873cf1a5c01fd8ab04b4bc04ba3" uid="BLM-1c3c0873cf1a5c01fd8ab04b4bc04ba3"
+            name="Input Criterion" outputPinSet="BLM-f7e76890cbdd9418f6de056657a31b81"
+            inputControlPin="BLM-154cc3b3ebfe0b3649a5ea3cc20df4c4"/>
+        <resourceRequirement xsi:type="com.ibm.btools.bom.model.resources:RequiredRole"
+            xmi:id="BLM-52e2087ee66324ef54cd8c4d6a899d6e" uid="BLM-52e2087ee66324ef54cd8c4d6a899d6e"
+            name="Primary owner" timeRequired="P0Y0M0DT0H0M0S">
+          <role href="BLM-192d9a746e588f405cbec7c041833d86.xmi#BLM-27dd877a16d3687d4d23c37fc335eeba"/>
+          <requiredQuantity xmi:id="BLM-581af6a9fa0b6be3e95cdc66099be05b" uid="BLM-581af6a9fa0b6be3e95cdc66099be05b"
+              unitOfMeasure="unit">
+            <quantity xsi:type="com.ibm.btools.bom.model.artifacts:LiteralReal" xmi:id="BLM-91010ac2c8df81978386b899d9acd22d"
+                uid="BLM-91010ac2c8df81978386b899d9acd22d" value="1.0"/>
+          </requiredQuantity>
+        </resourceRequirement>
+      </nodeContents>
+      <nodeContents xsi:type="com.ibm.btools.bom.model.processes.humantasks:HumanTask"
+          xmi:id="BLM-3777f3debccf6cd8b7990f38fbbd8a3d" uid="BLM-3777f3debccf6cd8b7990f38fbbd8a3d"
+          name="Write the number of card that will get payment" aspect="HUMAN_TASK"
+          potentialOwner="BLM-85696dfaf9d0e85677c452d8a5ba9a4f">
+        <inputControlPin xmi:id="BLM-c130fd71103f660a7c492a04a3ac9d9d" uid="BLM-c130fd71103f660a7c492a04a3ac9d9d"
+            name="Input" incoming="BLM-5238e21f6885a7a6e4a8ae3051aab825"/>
+        <inputControlPin xmi:id="BLM-07a1388f40b2397f3fcd356a66fb535b" uid="BLM-07a1388f40b2397f3fcd356a66fb535b"
+            name="Input:2" incoming="BLM-d3ced1ae1481e46b96a1c06d595400fd"/>
+        <outputControlPin xmi:id="BLM-3c39b15706030f468bc6dcf3fce7fd16" uid="BLM-3c39b15706030f468bc6dcf3fce7fd16"
+            name="Output" outgoing="BLM-eca4f22d100e3c3a7b8571ca5f700509"/>
+        <outputPinSet xmi:id="BLM-f2ffdd51781762dcc505b5bc59ee1887" uid="BLM-f2ffdd51781762dcc505b5bc59ee1887"
+            name="Output Criterion" inputPinSet="BLM-50ab861649e211090c680b109f169a63"
+            outputControlPin="BLM-3c39b15706030f468bc6dcf3fce7fd16"/>
+        <inputPinSet xmi:id="BLM-50ab861649e211090c680b109f169a63" uid="BLM-50ab861649e211090c680b109f169a63"
+            name="Input Criterion" outputPinSet="BLM-f2ffdd51781762dcc505b5bc59ee1887"
+            inputControlPin="BLM-c130fd71103f660a7c492a04a3ac9d9d BLM-07a1388f40b2397f3fcd356a66fb535b"/>
+        <resourceRequirement xsi:type="com.ibm.btools.bom.model.resources:RequiredRole"
+            xmi:id="BLM-85696dfaf9d0e85677c452d8a5ba9a4f" uid="BLM-85696dfaf9d0e85677c452d8a5ba9a4f"
+            name="Primary owner" timeRequired="P0Y0M0DT0H0M0S">
+          <role href="BLM-192d9a746e588f405cbec7c041833d86.xmi#BLM-27dd877a16d3687d4d23c37fc335eeba"/>
+          <requiredQuantity xmi:id="BLM-ba15c07006ea543a0733a76f2a61561c" uid="BLM-ba15c07006ea543a0733a76f2a61561c"
+              unitOfMeasure="unit">
+            <quantity xsi:type="com.ibm.btools.bom.model.artifacts:LiteralReal" xmi:id="BLM-a940812f9aac6276d2bf4e112acb14c4"
+                uid="BLM-a940812f9aac6276d2bf4e112acb14c4" value="1.0"/>
+          </requiredQuantity>
+        </resourceRequirement>
+      </nodeContents>
+      <nodeContents xsi:type="com.ibm.btools.bom.model.processes.activities:StructuredActivityNode"
+          xmi:id="BLM-83d276c9c30aa7ff790a409099383fca" uid="BLM-83d276c9c30aa7ff790a409099383fca"
+          name="Searching the recipient card" aspect="TASK">
+        <inputControlPin xmi:id="BLM-f74687ad9f30bf31edddc35f549a792c" uid="BLM-f74687ad9f30bf31edddc35f549a792c"
+            name="Input" incoming="BLM-eca4f22d100e3c3a7b8571ca5f700509"/>
+        <outputControlPin xmi:id="BLM-59b805f55d3631054335efafe4b889af" uid="BLM-59b805f55d3631054335efafe4b889af"
+            name="Output" outgoing="BLM-a5ab67eea5ec3755a10bb1a0cc4f893b"/>
+        <outputPinSet xmi:id="BLM-fb3668d5f3923fac79b8eb9afcc0e820" uid="BLM-fb3668d5f3923fac79b8eb9afcc0e820"
+            name="Output Criterion" inputPinSet="BLM-1c6683c729b1d924bdf46634143a8d2f"
+            outputControlPin="BLM-59b805f55d3631054335efafe4b889af"/>
+        <inputPinSet xmi:id="BLM-1c6683c729b1d924bdf46634143a8d2f" uid="BLM-1c6683c729b1d924bdf46634143a8d2f"
+            name="Input Criterion" outputPinSet="BLM-fb3668d5f3923fac79b8eb9afcc0e820"
+            inputControlPin="BLM-f74687ad9f30bf31edddc35f549a792c"/>
+        <resourceRequirement xsi:type="com.ibm.btools.bom.model.resources:RequiredRole"
+            xmi:id="BLM-84d2aa506aab69c714e85693906397f5" uid="BLM-84d2aa506aab69c714e85693906397f5"
+            name="Role requirement:1" timeRequired="P0Y0M0DT0H0M0S">
+          <role href="BLM-5cfbb4a5d35c1aaeb1c32c46f1bbd240.xmi#BLM-962f0bf5502787e94afc5715a02c92d5"/>
+          <requiredQuantity xmi:id="BLM-e74d93a9bb06bf381510851ef2ad182b" uid="BLM-e74d93a9bb06bf381510851ef2ad182b"
+              unitOfMeasure="unit">
+            <quantity xsi:type="com.ibm.btools.bom.model.artifacts:LiteralReal" xmi:id="BLM-67fa9f4cb46302804db28a7e995a6cd7"
+                uid="BLM-67fa9f4cb46302804db28a7e995a6cd7" value="1.0"/>
+          </requiredQuantity>
+        </resourceRequirement>
+      </nodeContents>
+      <nodeContents xsi:type="com.ibm.btools.bom.model.processes.actions:Decision"
+          xmi:id="BLM-90780c00a9cbdb905a9c97dfaa5d054a" uid="BLM-90780c00a9cbdb905a9c97dfaa5d054a"
+          name="did card was found?">
+        <inputControlPin xmi:id="BLM-df77ddeeb25a23680e6cf37dd1802808" uid="BLM-df77ddeeb25a23680e6cf37dd1802808"
+            name="Input" incoming="BLM-a5ab67eea5ec3755a10bb1a0cc4f893b"/>
+        <outputControlPin xmi:id="BLM-1453d4b3e49df7dd5f78ddbbe8f95ec4" uid="BLM-1453d4b3e49df7dd5f78ddbbe8f95ec4"
+            name="Output" outgoing="BLM-ccd810dd4a31f466d89087135959edbe"/>
+        <outputControlPin xmi:id="BLM-8b63383dec74230735e8df1972ce76dc" uid="BLM-8b63383dec74230735e8df1972ce76dc"
+            name="Output:2" outgoing="BLM-5aa785bbe6c39df9a7605dd8d615fdff"/>
+        <outputPinSet xsi:type="com.ibm.btools.bom.model.processes.activities:DecisionOutputSet"
+            xmi:id="BLM-f28b07dfc769cb59e26ec119e2af8b10" uid="BLM-f28b07dfc769cb59e26ec119e2af8b10"
+            name="Yes" inputPinSet="BLM-98ccc48072364ce1a4ffdbc668528dac" outputControlPin="BLM-8b63383dec74230735e8df1972ce76dc"
+            outputSetProbability="BLM-fe2e0970580e3376836ea93a9e2bfec5">
+          <condition xsi:type="com.ibm.btools.expression.bom.model:StructuredOpaqueExpression"
+              xmi:id="BLM-b8e47b480c7ccacc09219375dcb027ad" uid="BLM-b8e47b480c7ccacc09219375dcb027ad"
+              name="Yes"/>
+        </outputPinSet>
+        <outputPinSet xsi:type="com.ibm.btools.bom.model.processes.activities:DecisionOutputSet"
+            xmi:id="BLM-3fcd0f731e6eff5283554e43206509da" uid="BLM-3fcd0f731e6eff5283554e43206509da"
+            name="No" inputPinSet="BLM-98ccc48072364ce1a4ffdbc668528dac" outputControlPin="BLM-1453d4b3e49df7dd5f78ddbbe8f95ec4"
+            outputSetProbability="BLM-aa89669e4a0e6969b303dd6e4581153b">
+          <condition xsi:type="com.ibm.btools.expression.bom.model:StructuredOpaqueExpression"
+              xmi:id="BLM-da8cc14495bb9c93fd56ec5b0b3bff55" uid="BLM-da8cc14495bb9c93fd56ec5b0b3bff55"
+              name="No"/>
+        </outputPinSet>
+        <inputPinSet xmi:id="BLM-98ccc48072364ce1a4ffdbc668528dac" uid="BLM-98ccc48072364ce1a4ffdbc668528dac"
+            name="Input Criterion" outputPinSet="BLM-f28b07dfc769cb59e26ec119e2af8b10 BLM-3fcd0f731e6eff5283554e43206509da"
+            inputControlPin="BLM-df77ddeeb25a23680e6cf37dd1802808"/>
+        <operationalProbabilities xmi:id="BLM-436d93d1a77c8b7403450e6d9ff7082d" uid="BLM-436d93d1a77c8b7403450e6d9ff7082d">
+          <outputSetProbabilities xmi:id="BLM-44fea4dbcd4fa816717ebb92b3ede9d2" uid="BLM-44fea4dbcd4fa816717ebb92b3ede9d2">
+            <outputSetProbability xmi:id="BLM-fe2e0970580e3376836ea93a9e2bfec5" uid="BLM-fe2e0970580e3376836ea93a9e2bfec5"
+                outputPinSet="BLM-f28b07dfc769cb59e26ec119e2af8b10">
+              <value xsi:type="com.ibm.btools.bom.model.artifacts:LiteralReal" xmi:id="BLM-ea3bf9007a7d5368a9cf1001fc9ca237"
+                  uid="BLM-ea3bf9007a7d5368a9cf1001fc9ca237" value="50.0"/>
+            </outputSetProbability>
+            <outputSetProbability xmi:id="BLM-aa89669e4a0e6969b303dd6e4581153b" uid="BLM-aa89669e4a0e6969b303dd6e4581153b"
+                outputPinSet="BLM-3fcd0f731e6eff5283554e43206509da">
+              <value xsi:type="com.ibm.btools.bom.model.artifacts:LiteralReal" xmi:id="BLM-63da47c038d86af9cb9d32dfad92d5ad"
+                  uid="BLM-63da47c038d86af9cb9d32dfad92d5ad" value="50.0"/>
+            </outputSetProbability>
+          </outputSetProbabilities>
+        </operationalProbabilities>
+      </nodeContents>
+      <nodeContents xsi:type="com.ibm.btools.bom.model.processes.actions:Decision"
+          xmi:id="BLM-836198957c4a4b9b14281448b4b4ecb1" uid="BLM-836198957c4a4b9b14281448b4b4ecb1"
+          name="Is number of attempts more than 3?">
+        <inputControlPin xmi:id="BLM-0c6ca73792f40b26b45efa7e42217ffd" uid="BLM-0c6ca73792f40b26b45efa7e42217ffd"
+            name="Input" incoming="BLM-ccd810dd4a31f466d89087135959edbe"/>
+        <outputControlPin xmi:id="BLM-50a174fd9c3dd533efc3ae7d9c785033" uid="BLM-50a174fd9c3dd533efc3ae7d9c785033"
+            name="Output" outgoing="BLM-24f1a89980479b0387c9156ca88ba7b1"/>
+        <outputControlPin xmi:id="BLM-78a448da300de60009903ded4124bc01" uid="BLM-78a448da300de60009903ded4124bc01"
+            name="Output:2" outgoing="BLM-d3ced1ae1481e46b96a1c06d595400fd"/>
+        <outputPinSet xsi:type="com.ibm.btools.bom.model.processes.activities:DecisionOutputSet"
+            xmi:id="BLM-87d81330943b2c007f220df1985f077f" uid="BLM-87d81330943b2c007f220df1985f077f"
+            name="Yes" inputPinSet="BLM-aa27ee7841cb27269a774f4507f271e6" outputControlPin="BLM-50a174fd9c3dd533efc3ae7d9c785033"
+            outputSetProbability="BLM-1990cf59d4ffc057ce051c6aa95023d6">
+          <condition xsi:type="com.ibm.btools.expression.bom.model:StructuredOpaqueExpression"
+              xmi:id="BLM-640ae609a40ee5eb98bedc080fcff522" uid="BLM-640ae609a40ee5eb98bedc080fcff522"
+              name="Yes"/>
+        </outputPinSet>
+        <outputPinSet xsi:type="com.ibm.btools.bom.model.processes.activities:DecisionOutputSet"
+            xmi:id="BLM-ef70d792a3849b995fb62684e6ea0d47" uid="BLM-ef70d792a3849b995fb62684e6ea0d47"
+            name="No" inputPinSet="BLM-aa27ee7841cb27269a774f4507f271e6" outputControlPin="BLM-78a448da300de60009903ded4124bc01"
+            outputSetProbability="BLM-4cec8c80a1e3735b075eae8acfb0665c">
+          <condition xsi:type="com.ibm.btools.expression.bom.model:StructuredOpaqueExpression"
+              xmi:id="BLM-497834cf3439480fe2508b6be275c1ed" uid="BLM-497834cf3439480fe2508b6be275c1ed"
+              name="No"/>
+        </outputPinSet>
+        <inputPinSet xmi:id="BLM-aa27ee7841cb27269a774f4507f271e6" uid="BLM-aa27ee7841cb27269a774f4507f271e6"
+            name="Input Criterion" outputPinSet="BLM-87d81330943b2c007f220df1985f077f BLM-ef70d792a3849b995fb62684e6ea0d47"
+            inputControlPin="BLM-0c6ca73792f40b26b45efa7e42217ffd"/>
+        <operationalProbabilities xmi:id="BLM-262fe0741dba06014fc4163c93fa2cab" uid="BLM-262fe0741dba06014fc4163c93fa2cab">
+          <outputSetProbabilities xmi:id="BLM-43f16ed954272da71723dcd82306de5c" uid="BLM-43f16ed954272da71723dcd82306de5c">
+            <outputSetProbability xmi:id="BLM-1990cf59d4ffc057ce051c6aa95023d6" uid="BLM-1990cf59d4ffc057ce051c6aa95023d6"
+                outputPinSet="BLM-87d81330943b2c007f220df1985f077f">
+              <value xsi:type="com.ibm.btools.bom.model.artifacts:LiteralReal" xmi:id="BLM-a2bac51308650ad0271c3bafa01c307a"
+                  uid="BLM-a2bac51308650ad0271c3bafa01c307a" value="50.0"/>
+            </outputSetProbability>
+            <outputSetProbability xmi:id="BLM-4cec8c80a1e3735b075eae8acfb0665c" uid="BLM-4cec8c80a1e3735b075eae8acfb0665c"
+                outputPinSet="BLM-ef70d792a3849b995fb62684e6ea0d47">
+              <value xsi:type="com.ibm.btools.bom.model.artifacts:LiteralReal" xmi:id="BLM-70db1cab647e13f054b45231dec93854"
+                  uid="BLM-70db1cab647e13f054b45231dec93854" value="50.0"/>
+            </outputSetProbability>
+          </outputSetProbabilities>
+        </operationalProbabilities>
+      </nodeContents>
+      <nodeContents xsi:type="com.ibm.btools.bom.model.processes.activities:StructuredActivityNode"
+          xmi:id="BLM-bd28357a186a24e7db4cbdb0e77cce1e" uid="BLM-bd28357a186a24e7db4cbdb0e77cce1e"
+          name="Blocking account for a 1 hour" aspect="TASK">
+        <inputControlPin xmi:id="BLM-d26bbd02641c488960d3f68cbb6a69d2" uid="BLM-d26bbd02641c488960d3f68cbb6a69d2"
+            name="Input:2"/>
+        <inputControlPin xmi:id="BLM-866887ced344ef2f9a2efd4845b3a184" uid="BLM-866887ced344ef2f9a2efd4845b3a184"
+            name="Input" incoming="BLM-24f1a89980479b0387c9156ca88ba7b1"/>
+        <outputControlPin xmi:id="BLM-c1fe6b3aa1516e15e220eb763748faec" uid="BLM-c1fe6b3aa1516e15e220eb763748faec"
+            name="Output" outgoing="BLM-8b473f015cc79f3fa6431cde9a8030f6"/>
+        <outputPinSet xmi:id="BLM-79a5b25639640c188a8bcee22c04cc80" uid="BLM-79a5b25639640c188a8bcee22c04cc80"
+            name="Output Criterion" inputPinSet="BLM-45f95cc0b6776cdb4037293396967c1e"
+            outputControlPin="BLM-c1fe6b3aa1516e15e220eb763748faec"/>
+        <inputPinSet xmi:id="BLM-45f95cc0b6776cdb4037293396967c1e" uid="BLM-45f95cc0b6776cdb4037293396967c1e"
+            name="Input Criterion" outputPinSet="BLM-79a5b25639640c188a8bcee22c04cc80"
+            inputControlPin="BLM-d26bbd02641c488960d3f68cbb6a69d2 BLM-866887ced344ef2f9a2efd4845b3a184"/>
+        <resourceRequirement xsi:type="com.ibm.btools.bom.model.resources:RequiredRole"
+            xmi:id="BLM-5eab599c28b18b03e1be499df6e8800e" uid="BLM-5eab599c28b18b03e1be499df6e8800e"
+            name="Role requirement:1" timeRequired="P0Y0M0DT0H0M0S">
+          <role href="BLM-5cfbb4a5d35c1aaeb1c32c46f1bbd240.xmi#BLM-962f0bf5502787e94afc5715a02c92d5"/>
+          <requiredQuantity xmi:id="BLM-e423c9464973ab974ed57786567c4b6d" uid="BLM-e423c9464973ab974ed57786567c4b6d"
+              unitOfMeasure="unit">
+            <quantity xsi:type="com.ibm.btools.bom.model.artifacts:LiteralReal" xmi:id="BLM-6e93077ad66442cd3da6d46dad74f0f8"
+                uid="BLM-6e93077ad66442cd3da6d46dad74f0f8" value="1.0"/>
+          </requiredQuantity>
+        </resourceRequirement>
+      </nodeContents>
+      <nodeContents xsi:type="com.ibm.btools.bom.model.processes.activities:StructuredActivityNode"
+          xmi:id="BLM-d02ed59e41949b47bb2b8b2241e49dcf" uid="BLM-d02ed59e41949b47bb2b8b2241e49dcf"
+          name="Show notification about blocking to user" aspect="TASK">
+        <inputControlPin xmi:id="BLM-6c0e6f610b24203d558eb1393c7085ad" uid="BLM-6c0e6f610b24203d558eb1393c7085ad"
+            name="Input" incoming="BLM-8b473f015cc79f3fa6431cde9a8030f6"/>
+        <outputControlPin xmi:id="BLM-9b1f85f4bbfb04ad9e2ef69716f2cef8" uid="BLM-9b1f85f4bbfb04ad9e2ef69716f2cef8"
+            name="Output" outgoing="BLM-8d1e4ac65c8fe9d00b495d1f76496c40"/>
+        <outputPinSet xmi:id="BLM-e97020b120a3ee8b20d61f8f9792f44a" uid="BLM-e97020b120a3ee8b20d61f8f9792f44a"
+            name="Output Criterion" inputPinSet="BLM-7e01175cb8e34396cd0f552806450922"
+            outputControlPin="BLM-9b1f85f4bbfb04ad9e2ef69716f2cef8"/>
+        <inputPinSet xmi:id="BLM-7e01175cb8e34396cd0f552806450922" uid="BLM-7e01175cb8e34396cd0f552806450922"
+            name="Input Criterion" outputPinSet="BLM-e97020b120a3ee8b20d61f8f9792f44a"
+            inputControlPin="BLM-6c0e6f610b24203d558eb1393c7085ad"/>
+        <resourceRequirement xsi:type="com.ibm.btools.bom.model.resources:RequiredRole"
+            xmi:id="BLM-0a692f907a0dcc2227145fa1c913d743" uid="BLM-0a692f907a0dcc2227145fa1c913d743"
+            name="Role requirement:1" timeRequired="P0Y0M0DT0H0M0S">
+          <role href="BLM-5cfbb4a5d35c1aaeb1c32c46f1bbd240.xmi#BLM-962f0bf5502787e94afc5715a02c92d5"/>
+          <requiredQuantity xmi:id="BLM-0fb789bc03e034d3f0f0a291c345a0fd" uid="BLM-0fb789bc03e034d3f0f0a291c345a0fd"
+              unitOfMeasure="unit">
+            <quantity xsi:type="com.ibm.btools.bom.model.artifacts:LiteralReal" xmi:id="BLM-93c1de8c92989b25307a283bf875ee27"
+                uid="BLM-93c1de8c92989b25307a283bf875ee27" value="1.0"/>
+          </requiredQuantity>
+        </resourceRequirement>
+      </nodeContents>
+      <nodeContents xsi:type="com.ibm.btools.bom.model.processes.activities:TerminationNode"
+          xmi:id="BLM-65db3d7e896ea9e3e8f1f4ff5860aad5" uid="BLM-65db3d7e896ea9e3e8f1f4ff5860aad5"
+          name="Terminate Node" visibility="private" incoming="BLM-8d1e4ac65c8fe9d00b495d1f76496c40"
+          outcome="BLM-549780b07aa21683cded8589278e1ca1"/>
+      <nodeContents xsi:type="com.ibm.btools.bom.model.processes.actions:CallBehaviorAction"
+          xmi:id="BLM-8af5994b5b50d5ac8d817da4ea8474e6" uid="BLM-8af5994b5b50d5ac8d817da4ea8474e6"
+          name="Sms verification" aspect="PROCESS">
+        <inputControlPin xmi:id="BLM-31e9d4f19d78d304881e67a4c19bf3c5" uid="BLM-31e9d4f19d78d304881e67a4c19bf3c5"
+            name="Input" incoming="BLM-f8741cce6e70c9053100c4e7203ab41b"/>
+        <outputControlPin xmi:id="BLM-248d0b366ea7fa01e7dc817765f991a8" uid="BLM-248d0b366ea7fa01e7dc817765f991a8"
+            name="Output" outgoing="BLM-85b0aeae5d0a8985fda08e4d0cfde2c9"/>
+        <outputPinSet xmi:id="BLM-bfcdcb7b336eca1407c5db8130ec2679" uid="BLM-bfcdcb7b336eca1407c5db8130ec2679"
+            name="Output Criterion" inputPinSet="BLM-ad0bced30f80014fd630f806a77b7a4f"
+            outputControlPin="BLM-248d0b366ea7fa01e7dc817765f991a8"/>
+        <outputPinSet xmi:id="BLM-c5bd5daaaaaab7680efc1749b79e9455" uid="BLM-c5bd5daaaaaab7680efc1749b79e9455"
+            name="Asynchronous Criterion"/>
+        <inputPinSet xmi:id="BLM-ad0bced30f80014fd630f806a77b7a4f" uid="BLM-ad0bced30f80014fd630f806a77b7a4f"
+            name="Input Criterion" outputPinSet="BLM-bfcdcb7b336eca1407c5db8130ec2679"
+            inputControlPin="BLM-31e9d4f19d78d304881e67a4c19bf3c5"/>
+        <behavior xsi:type="com.ibm.btools.bom.model.processes.activities:Activity"
+            href="BLM-d093384c0a19b89eb9b39e9af0407163.xmi#BLM-97394ba6f7dc7b3bc77a27b87e3311db"/>
+      </nodeContents>
+      <nodeContents xsi:type="com.ibm.btools.bom.model.processes.humantasks:HumanTask"
+          xmi:id="BLM-53837e4f7a9085d6683b5059094a21c7" uid="BLM-53837e4f7a9085d6683b5059094a21c7"
+          name="Transfer confirmation" aspect="HUMAN_TASK" potentialOwner="BLM-8491e6982bdcca82d4e059fbc45108f7">
+        <inputControlPin xmi:id="BLM-9b2238923617704d4aa80d29bb4ae23c" uid="BLM-9b2238923617704d4aa80d29bb4ae23c"
+            name="Input:2" incoming="BLM-5aa785bbe6c39df9a7605dd8d615fdff"/>
+        <outputControlPin xmi:id="BLM-80867349a84fd95d3b439cced03a4319" uid="BLM-80867349a84fd95d3b439cced03a4319"
+            name="Output" outgoing="BLM-f8741cce6e70c9053100c4e7203ab41b"/>
+        <outputPinSet xmi:id="BLM-1219d61bc953d75def2f375d8e7d5e7c" uid="BLM-1219d61bc953d75def2f375d8e7d5e7c"
+            name="Output Criterion" inputPinSet="BLM-eaaa1f6fd02a1989a323641a9c27751a"
+            outputControlPin="BLM-80867349a84fd95d3b439cced03a4319"/>
+        <inputPinSet xmi:id="BLM-eaaa1f6fd02a1989a323641a9c27751a" uid="BLM-eaaa1f6fd02a1989a323641a9c27751a"
+            name="Input Criterion" outputPinSet="BLM-1219d61bc953d75def2f375d8e7d5e7c"
+            inputControlPin="BLM-9b2238923617704d4aa80d29bb4ae23c"/>
+        <resourceRequirement xsi:type="com.ibm.btools.bom.model.resources:RequiredRole"
+            xmi:id="BLM-8491e6982bdcca82d4e059fbc45108f7" uid="BLM-8491e6982bdcca82d4e059fbc45108f7"
+            name="Primary owner" timeRequired="P0Y0M0DT0H0M0S">
+          <role href="BLM-192d9a746e588f405cbec7c041833d86.xmi#BLM-27dd877a16d3687d4d23c37fc335eeba"/>
+          <requiredQuantity xmi:id="BLM-d456dd7ed3e649c7f8a96e9d3c3c0a9d" uid="BLM-d456dd7ed3e649c7f8a96e9d3c3c0a9d"
+              unitOfMeasure="unit">
+            <quantity xsi:type="com.ibm.btools.bom.model.artifacts:LiteralReal" xmi:id="BLM-b5ceca57c74c8f5599bb43747d5b340f"
+                uid="BLM-b5ceca57c74c8f5599bb43747d5b340f" value="1.0"/>
+          </requiredQuantity>
+        </resourceRequirement>
+      </nodeContents>
+      <nodeContents xsi:type="com.ibm.btools.bom.model.processes.activities:StructuredActivityNode"
+          xmi:id="BLM-c856016762be176a8c5ddebba6d5b4a6" uid="BLM-c856016762be176a8c5ddebba6d5b4a6"
+          name="Add transfer to processing queue" aspect="TASK">
+        <inputControlPin xmi:id="BLM-b950b5c0374b7e1b63e6d4a6ace3437c" uid="BLM-b950b5c0374b7e1b63e6d4a6ace3437c"
+            name="Input" incoming="BLM-85b0aeae5d0a8985fda08e4d0cfde2c9"/>
+        <outputControlPin xmi:id="BLM-9635816da158d7c62189550281d1096b" uid="BLM-9635816da158d7c62189550281d1096b"
+            name="Output" outgoing="BLM-fc1bc438be0086b4ea6fb9e9c4498a8a"/>
+        <outputPinSet xmi:id="BLM-cd4d0d4a6bffbb703567a8baa814e468" uid="BLM-cd4d0d4a6bffbb703567a8baa814e468"
+            name="Output Criterion" inputPinSet="BLM-f31c374a2ae4d66c77a7240be68d537b"
+            outputControlPin="BLM-9635816da158d7c62189550281d1096b"/>
+        <inputPinSet xmi:id="BLM-f31c374a2ae4d66c77a7240be68d537b" uid="BLM-f31c374a2ae4d66c77a7240be68d537b"
+            name="Input Criterion" outputPinSet="BLM-cd4d0d4a6bffbb703567a8baa814e468"
+            inputControlPin="BLM-b950b5c0374b7e1b63e6d4a6ace3437c"/>
+        <resourceRequirement xsi:type="com.ibm.btools.bom.model.resources:RequiredRole"
+            xmi:id="BLM-75e1eca1efb473da07738ef5b260ff8b" uid="BLM-75e1eca1efb473da07738ef5b260ff8b"
+            name="Role requirement:1" timeRequired="P0Y0M0DT0H0M0S">
+          <role href="BLM-5cfbb4a5d35c1aaeb1c32c46f1bbd240.xmi#BLM-962f0bf5502787e94afc5715a02c92d5"/>
+          <requiredQuantity xmi:id="BLM-4819daaf4ccf52de2f67990a2a5bca37" uid="BLM-4819daaf4ccf52de2f67990a2a5bca37"
+              unitOfMeasure="unit">
+            <quantity xsi:type="com.ibm.btools.bom.model.artifacts:LiteralReal" xmi:id="BLM-195af0409d39dfbc0c7fa3ef5b9ef61d"
+                uid="BLM-195af0409d39dfbc0c7fa3ef5b9ef61d" value="1.0"/>
+          </requiredQuantity>
+        </resourceRequirement>
+      </nodeContents>
+      <edgeContents xsi:type="com.ibm.btools.bom.model.processes.activities:ControlFlow"
+          xmi:id="BLM-318def627ab82b3b2731781a97413fac" uid="BLM-318def627ab82b3b2731781a97413fac"
+          name="Connection" target="BLM-4acf9077691bf0df0d1a2dbda259d218" source="BLM-65e52879e21ccf3f84add7a2aa86a874"/>
+      <edgeContents xsi:type="com.ibm.btools.bom.model.processes.activities:ControlFlow"
+          xmi:id="BLM-e47f046509bbf06d1edf6f9e598c290f" uid="BLM-e47f046509bbf06d1edf6f9e598c290f"
+          name="Connection:2" target="BLM-154cc3b3ebfe0b3649a5ea3cc20df4c4" source="BLM-c614b7253d0465d87c74c751e2043b44"/>
+      <edgeContents xsi:type="com.ibm.btools.bom.model.processes.activities:ControlFlow"
+          xmi:id="BLM-5238e21f6885a7a6e4a8ae3051aab825" uid="BLM-5238e21f6885a7a6e4a8ae3051aab825"
+          name="Connection:3" target="BLM-c130fd71103f660a7c492a04a3ac9d9d" source="BLM-7af641b1b9c5ee818a1e9deefcc20a60"/>
+      <edgeContents xsi:type="com.ibm.btools.bom.model.processes.activities:ControlFlow"
+          xmi:id="BLM-eca4f22d100e3c3a7b8571ca5f700509" uid="BLM-eca4f22d100e3c3a7b8571ca5f700509"
+          name="Connection:4" target="BLM-f74687ad9f30bf31edddc35f549a792c" source="BLM-3c39b15706030f468bc6dcf3fce7fd16"/>
+      <edgeContents xsi:type="com.ibm.btools.bom.model.processes.activities:ControlFlow"
+          xmi:id="BLM-a5ab67eea5ec3755a10bb1a0cc4f893b" uid="BLM-a5ab67eea5ec3755a10bb1a0cc4f893b"
+          name="Connection:5" target="BLM-df77ddeeb25a23680e6cf37dd1802808" source="BLM-59b805f55d3631054335efafe4b889af"/>
+      <edgeContents xsi:type="com.ibm.btools.bom.model.processes.activities:ControlFlow"
+          xmi:id="BLM-ccd810dd4a31f466d89087135959edbe" uid="BLM-ccd810dd4a31f466d89087135959edbe"
+          name="Connection:6" target="BLM-0c6ca73792f40b26b45efa7e42217ffd" source="BLM-1453d4b3e49df7dd5f78ddbbe8f95ec4"/>
+      <edgeContents xsi:type="com.ibm.btools.bom.model.processes.activities:ControlFlow"
+          xmi:id="BLM-24f1a89980479b0387c9156ca88ba7b1" uid="BLM-24f1a89980479b0387c9156ca88ba7b1"
+          name="Connection:7" target="BLM-866887ced344ef2f9a2efd4845b3a184" source="BLM-50a174fd9c3dd533efc3ae7d9c785033"/>
+      <edgeContents xsi:type="com.ibm.btools.bom.model.processes.activities:ControlFlow"
+          xmi:id="BLM-8b473f015cc79f3fa6431cde9a8030f6" uid="BLM-8b473f015cc79f3fa6431cde9a8030f6"
+          name="Connection:8" target="BLM-6c0e6f610b24203d558eb1393c7085ad" source="BLM-c1fe6b3aa1516e15e220eb763748faec"/>
+      <edgeContents xsi:type="com.ibm.btools.bom.model.processes.activities:ControlFlow"
+          xmi:id="BLM-8d1e4ac65c8fe9d00b495d1f76496c40" uid="BLM-8d1e4ac65c8fe9d00b495d1f76496c40"
+          name="Connection:9" target="BLM-65db3d7e896ea9e3e8f1f4ff5860aad5" source="BLM-9b1f85f4bbfb04ad9e2ef69716f2cef8"/>
+      <edgeContents xsi:type="com.ibm.btools.bom.model.processes.activities:ControlFlow"
+          xmi:id="BLM-d3ced1ae1481e46b96a1c06d595400fd" uid="BLM-d3ced1ae1481e46b96a1c06d595400fd"
+          name="Connection:10" target="BLM-07a1388f40b2397f3fcd356a66fb535b" source="BLM-78a448da300de60009903ded4124bc01"/>
+      <edgeContents xsi:type="com.ibm.btools.bom.model.processes.activities:ControlFlow"
+          xmi:id="BLM-5aa785bbe6c39df9a7605dd8d615fdff" uid="BLM-5aa785bbe6c39df9a7605dd8d615fdff"
+          name="Connection:11" target="BLM-9b2238923617704d4aa80d29bb4ae23c" source="BLM-8b63383dec74230735e8df1972ce76dc"/>
+      <edgeContents xsi:type="com.ibm.btools.bom.model.processes.activities:ControlFlow"
+          xmi:id="BLM-fc1bc438be0086b4ea6fb9e9c4498a8a" uid="BLM-fc1bc438be0086b4ea6fb9e9c4498a8a"
+          name="Connection:14" target="BLM-8c41f764bef07210ab549db412d76882" source="BLM-9635816da158d7c62189550281d1096b"/>
+      <edgeContents xsi:type="com.ibm.btools.bom.model.processes.activities:ControlFlow"
+          xmi:id="BLM-85b0aeae5d0a8985fda08e4d0cfde2c9" uid="BLM-85b0aeae5d0a8985fda08e4d0cfde2c9"
+          name="Connection:12" target="BLM-b950b5c0374b7e1b63e6d4a6ace3437c" source="BLM-248d0b366ea7fa01e7dc817765f991a8"/>
+      <edgeContents xsi:type="com.ibm.btools.bom.model.processes.activities:ControlFlow"
+          xmi:id="BLM-f8741cce6e70c9053100c4e7203ab41b" uid="BLM-f8741cce6e70c9053100c4e7203ab41b"
+          name="Connection:13" target="BLM-31e9d4f19d78d304881e67a4c19bf3c5" source="BLM-80867349a84fd95d3b439cced03a4319"/>
+    </implementation>
+  </com.ibm.btools.bom.model.processes.activities:Activity>
+</xmi:XMI>

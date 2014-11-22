@@ -17,6 +17,9 @@
             <businessEntityNodes id="Login" label="Login" uid="BLMNAV-7fe998bda5c1dfeb40aa941a784d80a3" bomUID="BLM-2611e1977b1ce978f735531067a2db0c" projectNode="BLMNAV-cc30b2dea2f5ce89c44affa59efdbf89">
               <navigationURINodes uri="BLM-d596ecc698233118ae9cccda17060c11"/>
             </businessEntityNodes>
+            <businessEntityNodes id="BankAccountDetails" label="BankAccountDetails" uid="BLMNAV-ac138ab43606ebfdb3500563fc546e84" bomUID="BLM-be66291aacb5f40f8435ece58f4920a2" projectNode="BLMNAV-cc30b2dea2f5ce89c44affa59efdbf89">
+              <navigationURINodes uri="BLM-1a7861a05e04e1c6bc616366f84e05d6"/>
+            </businessEntityNodes>
           </businessEntitiesNode>
           <categoriesNode label="Business item templates" projectNode="BLMNAV-cc30b2dea2f5ce89c44affa59efdbf89">
             <categoryNodes id="LoginTemplate" label="LoginTemplate" uid="BLMNAV-753a3c5007b34ae3f6226c4514c123e0" bomUID="BLM-fff19cf4d66c4d3095417423dcae3295" projectNode="BLMNAV-cc30b2dea2f5ce89c44affa59efdbf89">
@@ -34,6 +37,12 @@
           <businessEntityNodes id="User" label="User" uid="BLMNAV-9c3d5c75c3b1917d779d671f66968787" bomUID="BLM-18fd020eef949f7932da7bf76e6f4f21" projectNode="BLMNAV-cc30b2dea2f5ce89c44affa59efdbf89">
             <navigationURINodes uri="BLM-1f8ea2e145c88665143351474256873e"/>
           </businessEntityNodes>
+          <businessEntityNodes id="PaymentCard" label="PaymentCard" uid="BLMNAV-b0ae11439544c08485070aa00f1854b0" bomUID="BLM-2f5cc2078b6c2b430c0fffb15197e906" projectNode="BLMNAV-cc30b2dea2f5ce89c44affa59efdbf89">
+            <navigationURINodes uri="BLM-b2c4689e9386a922728426f48ac9c302"/>
+          </businessEntityNodes>
+          <businessEntityNodes id="Bank" label="Bank" uid="BLMNAV-a33b71a56669903ed8dd6f945dd58cbd" bomUID="BLM-7296bc273bc601e6a6bb4baac066cdd7" projectNode="BLMNAV-cc30b2dea2f5ce89c44affa59efdbf89">
+            <navigationURINodes uri="BLM-94cfb0e87439c2632f8842b6a7a37b28"/>
+          </businessEntityNodes>
         </businessEntitiesNode>
       </dataCatalogNodes>
     </dataCatalogsNode>
@@ -41,10 +50,39 @@
       <navigationURINode uri="RID-00001-800aa38791bbceeda69a782c5a1de281"/>
       <processCatalogNodes id="DEFAULT_CATALOG" label="Processes" state="2" uid="BLMNAV-934d396ce87ff85e6037f722766052cd" bomUID="FID-00010-df13a34335666a3908f4db598482644b" projectNode="BLMNAV-cc30b2dea2f5ce89c44affa59efdbf89">
         <navigationURINode uri="RID-00010-2f692ef5ad7eb5a95f165d75a6b139c0"/>
+        <processCatalogNodeChildren id="Tranfer money" label="Tranfer money" state="2" uid="BLMNAV-adf7da6e08fe8af66f697ac3d4e3ecff" bomUID="BLM-23fb02d7113c37b9b33f992e15486ba5" projectNode="BLMNAV-cc30b2dea2f5ce89c44affa59efdbf89">
+          <navigationURINode uri="BLM-574b852bf053180b798559984066269d"/>
+          <processesNode label="Processes" projectNode="BLMNAV-cc30b2dea2f5ce89c44affa59efdbf89">
+            <processNodes id="Transfer money to a card" label="Transfer money to a card" uid="BLMNAV-23ec3376416775e3bac29506e068b77d" bomUID="BLM-9cf586449ef3ddb93a35f6bf86ba191c" attribute4="PROCESS_DEFAULTS,SWIMLANE_EDITOR,role" attribute5="USED_SWIMLANE_TYPES;role" projectNode="BLMNAV-cc30b2dea2f5ce89c44affa59efdbf89">
+              <navigationURINodes uri="BLM-59c47cfdf1f39d3672d9f56a4a05e90e"/>
+              <navigationURINodes uri="CEF-11ade4ad9db25b7ca6f8d502069d82e5"/>
+            </processNodes>
+            <processNodes id="Transfer money to a bank account" label="Transfer money to a bank account" uid="BLMNAV-daad40981c68c8c6b34805272417df2b" bomUID="BLM-f73136e635240649709c08aa01f786e7" attribute4="PROCESS_DEFAULTS,SWIMLANE_EDITOR,role" attribute5="USED_SWIMLANE_TYPES;role" projectNode="BLMNAV-cc30b2dea2f5ce89c44affa59efdbf89">
+              <navigationURINodes uri="BLM-e9e7e37b99481607e62a63a3c850f4b1"/>
+              <navigationURINodes uri="CEF-f29cd48a9433ffa8ee74fa4d9eff51df"/>
+            </processNodes>
+          </processesNode>
+        </processCatalogNodeChildren>
         <processesNode label="Processes" projectNode="BLMNAV-cc30b2dea2f5ce89c44affa59efdbf89">
           <processNodes id="Registration for new client" label="Registration for new client" uid="BLMNAV-a189ddb8e2ab2fb2264621ed202e19c4" bomUID="BLM-81b28085e59b5bc251a05a931673f79e" attribute4="PROCESS_DEFAULTS,SWIMLANE_EDITOR,role" attribute5="USED_SWIMLANE_TYPES;role" projectNode="BLMNAV-cc30b2dea2f5ce89c44affa59efdbf89">
             <navigationURINodes uri="BLM-c0d0c391793918de8ef7bab8b93293c1"/>
             <navigationURINodes uri="CEF-d029a49eb1d99fdeac3a45d110154976"/>
+          </processNodes>
+          <processNodes id="Authorization" label="Authorization" uid="BLMNAV-b1aa877612df258d95ea8e6065721ca8" bomUID="BLM-278adea912c236fdac5ae4c97653bec6" attribute4="PROCESS_DEFAULTS,SWIMLANE_EDITOR,role" attribute5="USED_SWIMLANE_TYPES;role" projectNode="BLMNAV-cc30b2dea2f5ce89c44affa59efdbf89">
+            <navigationURINodes uri="BLM-30f1cba0e3a9a83e451dfe3e04c5418a"/>
+            <navigationURINodes uri="CEF-85fcd33cdb6edff01c8f9c06a1b2e2fe"/>
+          </processNodes>
+          <processNodes id="Registration a payment card" label="Registration a payment card" uid="BLMNAV-2de540f41eeee3e96a36764153a3b7b5" bomUID="BLM-42a8125e48791f50b2b3dc2b08e06221" attribute4="PROCESS_DEFAULTS,SWIMLANE_EDITOR,role" attribute5="USED_SWIMLANE_TYPES;role" projectNode="BLMNAV-cc30b2dea2f5ce89c44affa59efdbf89">
+            <navigationURINodes uri="BLM-9aa696ee1071de2116b6a49016103391"/>
+            <navigationURINodes uri="CEF-802f5198cddcaaeae4040821cfb62448"/>
+          </processNodes>
+          <processNodes id="Activation a payment card" label="Activation a payment card" uid="BLMNAV-8b1b4b709012eb0e18a4be740a0f02c3" bomUID="BLM-1f899cbc2e6937928b5d3d2c607d76c1" attribute4="PROCESS_DEFAULTS,SWIMLANE_EDITOR,role" attribute5="USED_SWIMLANE_TYPES;role" projectNode="BLMNAV-cc30b2dea2f5ce89c44affa59efdbf89">
+            <navigationURINodes uri="BLM-7012e217b77489bcbe509edb75273ade"/>
+            <navigationURINodes uri="CEF-2187ed2361b911d847f0c4c0402a9db2"/>
+          </processNodes>
+          <processNodes id="Sms verification" label="Sms verification" uid="BLMNAV-607dd50d66b900dadbf7f4ad93c11cb5" bomUID="BLM-97394ba6f7dc7b3bc77a27b87e3311db" attribute4="PROCESS_DEFAULTS,SWIMLANE_EDITOR,role" attribute5="USED_SWIMLANE_TYPES;role" projectNode="BLMNAV-cc30b2dea2f5ce89c44affa59efdbf89">
+            <navigationURINodes uri="BLM-d093384c0a19b89eb9b39e9af0407163"/>
+            <navigationURINodes uri="CEF-0a052dcf6d0fb68d3e6e3f4566b4e8ea"/>
           </processNodes>
         </processesNode>
       </processCatalogNodes>

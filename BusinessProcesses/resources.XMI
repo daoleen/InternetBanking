@@ -146,5 +146,81 @@
         modelType="1" rootObjType="1015" groupID="BLMNAV-753a3c5007b34ae3f6226c4514c123e0">
       <rootObjIDs>BLM-fff19cf4d66c4d3095417423dcae3295</rootObjIDs>
     </idRecords>
+    <idRecords id="BLM-30f1cba0e3a9a83e451dfe3e04c5418a" uri="RootProcessModel\Processes\Authorization\Model.xmi"
+        modelType="1" rootObjType="1001" groupID="BLMNAV-b1aa877612df258d95ea8e6065721ca8">
+      <rootObjIDs>BLM-278adea912c236fdac5ae4c97653bec6</rootObjIDs>
+    </idRecords>
+    <idRecords id="CEF-85fcd33cdb6edff01c8f9c06a1b2e2fe" uri="RootProcessModel\Processes\Authorization\View.xmi"
+        modelType="2" rootObjType="107" groupID="BLMNAV-b1aa877612df258d95ea8e6065721ca8">
+      <rootObjIDs>CEF-220eb820eacf88d9ea47da8c6db0c748</rootObjIDs>
+    </idRecords>
+    <idRecords id="DM-6381061312e356681d2b9b8d06d3e358" uri="RootProcessModel\Processes\Authorization\Model_dependencies.xmi"
+        modelType="0" rootObjType="0" groupID="BLMNAV-b1aa877612df258d95ea8e6065721ca8"/>
+    <idRecords id="BLM-9aa696ee1071de2116b6a49016103391" uri="RootProcessModel\Processes\Registration a payment card\Model.xmi"
+        modelType="1" rootObjType="1001" groupID="BLMNAV-2de540f41eeee3e96a36764153a3b7b5">
+      <rootObjIDs>BLM-42a8125e48791f50b2b3dc2b08e06221</rootObjIDs>
+    </idRecords>
+    <idRecords id="CEF-802f5198cddcaaeae4040821cfb62448" uri="RootProcessModel\Processes\Registration a payment card\View.xmi"
+        modelType="2" rootObjType="107" groupID="BLMNAV-2de540f41eeee3e96a36764153a3b7b5">
+      <rootObjIDs>CEF-4a8239a42a2cd6669f664918d3a2972e</rootObjIDs>
+    </idRecords>
+    <idRecords id="DM-b3013174edaca0318e54d6dbdd974052" uri="RootProcessModel\Processes\Registration a payment card\Model_dependencies.xmi"
+        modelType="0" rootObjType="0" groupID="BLMNAV-2de540f41eeee3e96a36764153a3b7b5"/>
+    <idRecords id="BLM-b2c4689e9386a922728426f48ac9c302" uri="RootInformationModel\Business items\PaymentCard\Model.xmi"
+        modelType="1" rootObjType="1015" groupID="BLMNAV-b0ae11439544c08485070aa00f1854b0">
+      <rootObjIDs>BLM-2f5cc2078b6c2b430c0fffb15197e906</rootObjIDs>
+    </idRecords>
+    <idRecords id="BLM-94cfb0e87439c2632f8842b6a7a37b28" uri="RootInformationModel\Business items\Bank\Model.xmi"
+        modelType="1" rootObjType="1015" groupID="BLMNAV-a33b71a56669903ed8dd6f945dd58cbd">
+      <rootObjIDs>BLM-7296bc273bc601e6a6bb4baac066cdd7</rootObjIDs>
+    </idRecords>
+    <idRecords id="BLM-7012e217b77489bcbe509edb75273ade" uri="RootProcessModel\Processes\Activation a payment card\Model.xmi"
+        modelType="1" rootObjType="1001" groupID="BLMNAV-8b1b4b709012eb0e18a4be740a0f02c3">
+      <rootObjIDs>BLM-1f899cbc2e6937928b5d3d2c607d76c1</rootObjIDs>
+    </idRecords>
+    <idRecords id="CEF-2187ed2361b911d847f0c4c0402a9db2" uri="RootProcessModel\Processes\Activation a payment card\View.xmi"
+        modelType="2" rootObjType="107" groupID="BLMNAV-8b1b4b709012eb0e18a4be740a0f02c3">
+      <rootObjIDs>CEF-3cede7223ad7e49d237abc57e184803c</rootObjIDs>
+    </idRecords>
+    <idRecords id="BLM-d093384c0a19b89eb9b39e9af0407163" uri="RootProcessModel\Processes\Sms verification\Model.xmi"
+        modelType="1" rootObjType="1001" groupID="BLMNAV-607dd50d66b900dadbf7f4ad93c11cb5">
+      <rootObjIDs>BLM-97394ba6f7dc7b3bc77a27b87e3311db</rootObjIDs>
+    </idRecords>
+    <idRecords id="CEF-0a052dcf6d0fb68d3e6e3f4566b4e8ea" uri="RootProcessModel\Processes\Sms verification\View.xmi"
+        modelType="2" rootObjType="107" groupID="BLMNAV-607dd50d66b900dadbf7f4ad93c11cb5">
+      <rootObjIDs>CEF-33384016b81edb89585428c0d265d20a</rootObjIDs>
+    </idRecords>
+    <idRecords id="DM-a809871dfcf378567d79097567461057" uri="RootProcessModel\Processes\Sms verification\Model_dependencies.xmi"
+        modelType="0" rootObjType="0" groupID="BLMNAV-607dd50d66b900dadbf7f4ad93c11cb5"/>
+    <idRecords id="DM-e5d4adea1e3a729b06cd3eedc1de719d" uri="RootProcessModel\Processes\Activation a payment card\Model_dependencies.xmi"
+        modelType="0" rootObjType="0" groupID="BLMNAV-8b1b4b709012eb0e18a4be740a0f02c3"/>
+    <idRecords id="BLM-574b852bf053180b798559984066269d" uri="RootProcessModel\Processes\Tranfer money\Model.xmi"
+        modelType="1" rootObjType="101" groupID="BLMNAV-adf7da6e08fe8af66f697ac3d4e3ecff">
+      <rootObjIDs>BLM-23fb02d7113c37b9b33f992e15486ba5</rootObjIDs>
+    </idRecords>
+    <idRecords id="BLM-59c47cfdf1f39d3672d9f56a4a05e90e" uri="RootProcessModel\Processes\Tranfer money\Transfer money to a card\Model.xmi"
+        modelType="1" rootObjType="1001" groupID="BLMNAV-23ec3376416775e3bac29506e068b77d">
+      <rootObjIDs>BLM-9cf586449ef3ddb93a35f6bf86ba191c</rootObjIDs>
+    </idRecords>
+    <idRecords id="CEF-11ade4ad9db25b7ca6f8d502069d82e5" uri="RootProcessModel\Processes\Tranfer money\Transfer money to a card\View.xmi"
+        modelType="2" rootObjType="107" groupID="BLMNAV-23ec3376416775e3bac29506e068b77d">
+      <rootObjIDs>CEF-644f63a8344156704ead6202f6aeed16</rootObjIDs>
+    </idRecords>
+    <idRecords id="DM-46dad315ea72b851f544f4dc94a8fee1" uri="RootProcessModel\Processes\Tranfer money\Transfer money to a card\Model_dependencies.xmi"
+        modelType="0" rootObjType="0" groupID="BLMNAV-23ec3376416775e3bac29506e068b77d"/>
+    <idRecords id="BLM-e9e7e37b99481607e62a63a3c850f4b1" uri="RootProcessModel\Processes\Tranfer money\Transfer money to a bank account\Model.xmi"
+        modelType="1" rootObjType="1001" groupID="BLMNAV-daad40981c68c8c6b34805272417df2b">
+      <rootObjIDs>BLM-f73136e635240649709c08aa01f786e7</rootObjIDs>
+    </idRecords>
+    <idRecords id="CEF-f29cd48a9433ffa8ee74fa4d9eff51df" uri="RootProcessModel\Processes\Tranfer money\Transfer money to a bank account\View.xmi"
+        modelType="2" rootObjType="107" groupID="BLMNAV-daad40981c68c8c6b34805272417df2b">
+      <rootObjIDs>CEF-a44e1fd34a92a4c8b8a242fff169f0b9</rootObjIDs>
+    </idRecords>
+    <idRecords id="BLM-1a7861a05e04e1c6bc616366f84e05d6" uri="RootInformationModel\Business items\ViewModels\BankAccountDetails\Model.xmi"
+        modelType="1" rootObjType="1015" groupID="BLMNAV-ac138ab43606ebfdb3500563fc546e84">
+      <rootObjIDs>BLM-be66291aacb5f40f8435ece58f4920a2</rootObjIDs>
+    </idRecords>
+    <idRecords id="DM-e471f0e0a834ea72787c42eab1c35faa" uri="RootProcessModel\Processes\Tranfer money\Transfer money to a bank account\Model_dependencies.xmi"
+        modelType="0" rootObjType="0" groupID="BLMNAV-daad40981c68c8c6b34805272417df2b"/>
   </com.ibm.btools.model.resourcemanager:ProjectResourcesMGR>
 </xmi:XMI>

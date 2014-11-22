@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.btools.model.modelmanager.dependencymanager="http:///com/ibm/btools/model/modelmanager/dependencymanager.ecore"
+    xmlns:com.ibm.btools.model.resourcemanager.resourceproperties="http:///com/ibm/btools/model/resourcemanager/resourceproperties.ecore">
+  <com.ibm.btools.model.resourcemanager.resourceproperties:ResourceProperties versionID="7.0.0.0"
+      lastModified="1416669290187"/>
+  <com.ibm.btools.model.modelmanager.dependencymanager:DependencyModel>
+    <eObjectDescriptors eObjectID="BLM-f79fa7125963042ef99caab6854ed08b" eObjectName="Output Criterion"
+        dependenciesWhereSource="/1/@dependencies.0">
+      <eObject href="BLM-d093384c0a19b89eb9b39e9af0407163.xmi#BLM-f79fa7125963042ef99caab6854ed08b"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-03f91cf47d7f5f9eda6d353757bac823" eObjectName="smsCode">
+      <eObject href="BLM-d093384c0a19b89eb9b39e9af0407163.xmi#BLM-03f91cf47d7f5f9eda6d353757bac823"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-fc4adb3deb6d43c8877af75c656f70e7" eObjectName="Submitting the sms code from mobile phone"
+        dependenciesWhereSource="/1/@dependencies.1">
+      <eObject href="BLM-d093384c0a19b89eb9b39e9af0407163.xmi#BLM-fc4adb3deb6d43c8877af75c656f70e7"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-cf5bba8167826aec37c31b3139ba7247" eObjectName="Primary owner">
+      <eObject href="BLM-d093384c0a19b89eb9b39e9af0407163.xmi#BLM-cf5bba8167826aec37c31b3139ba7247"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-71c25e544c13897f9d3876bac58fc354" eObjectName="Input Criterion"
+        dependenciesWhereSource="/1/@dependencies.2 /1/@dependencies.12 /1/@dependencies.13">
+      <eObject href="BLM-d093384c0a19b89eb9b39e9af0407163.xmi#BLM-71c25e544c13897f9d3876bac58fc354"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-d58c7d629ebb10d55e9f4d702ec59a72" eObjectName="Input:2">
+      <eObject href="BLM-d093384c0a19b89eb9b39e9af0407163.xmi#BLM-d58c7d629ebb10d55e9f4d702ec59a72"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-f35f1019ddab58d9137b4dc76ff4cac5" eObjectName="Output Criterion"
+        dependenciesWhereSource="/1/@dependencies.3">
+      <eObject href="BLM-d093384c0a19b89eb9b39e9af0407163.xmi#BLM-f35f1019ddab58d9137b4dc76ff4cac5"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-f1e6e6a930f53d7aa667629ec8aab875" eObjectName="isValid">
+      <eObject href="BLM-d093384c0a19b89eb9b39e9af0407163.xmi#BLM-f1e6e6a930f53d7aa667629ec8aab875"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-ffd1ecd32830bc96fe118f188ae93181" eObjectName="Input Criterion"
+        dependenciesWhereSource="/1/@dependencies.4">
+      <eObject href="BLM-d093384c0a19b89eb9b39e9af0407163.xmi#BLM-ffd1ecd32830bc96fe118f188ae93181"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-233ab29cef2d585d22ce16980077a1af" eObjectName="Input">
+      <eObject href="BLM-d093384c0a19b89eb9b39e9af0407163.xmi#BLM-233ab29cef2d585d22ce16980077a1af"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-610fd3cdabf4c033b1e849ae1537beaf" eObjectName="Yes"
+        dependenciesWhereSource="/1/@dependencies.17">
+      <eObject href="BLM-d093384c0a19b89eb9b39e9af0407163.xmi#BLM-610fd3cdabf4c033b1e849ae1537beaf"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-465ca31e9ffee0fd618ff978ff8965a5" eObjectName="Input Criterion"
+        dependenciesWhereSource="/1/@dependencies.16">
+      <eObject href="BLM-d093384c0a19b89eb9b39e9af0407163.xmi#BLM-465ca31e9ffee0fd618ff978ff8965a5"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-413ab9f3635f07e1513d6ac9bc7f7b72" eObjectName="Yes"
+        dependenciesWhereSource="/1/@dependencies.20">
+      <eObject href="BLM-d093384c0a19b89eb9b39e9af0407163.xmi#BLM-413ab9f3635f07e1513d6ac9bc7f7b72"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-b3750860efbe3bb342c5c0c04460078c" eObjectName="No"
+        dependenciesWhereSource="/1/@dependencies.21">
+      <eObject href="BLM-d093384c0a19b89eb9b39e9af0407163.xmi#BLM-b3750860efbe3bb342c5c0c04460078c"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-754e866c4a0309f8c6aeaabf84d8e664" eObjectName="Input Criterion"
+        dependenciesWhereSource="/1/@dependencies.5">
+      <eObject href="BLM-d093384c0a19b89eb9b39e9af0407163.xmi#BLM-754e866c4a0309f8c6aeaabf84d8e664"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-c7d3369ecd69186125dcc0eb293f40f7" eObjectName="Input">
+      <eObject href="BLM-d093384c0a19b89eb9b39e9af0407163.xmi#BLM-c7d3369ecd69186125dcc0eb293f40f7"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-b757de6c4e48320a36d0e2b34c9abb7f" eObjectName="Output Criterion"
+        dependenciesWhereSource="/1/@dependencies.6">
+      <eObject href="BLM-d093384c0a19b89eb9b39e9af0407163.xmi#BLM-b757de6c4e48320a36d0e2b34c9abb7f"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-86595cc95e43a519e33972ec2e99df55" eObjectName="Output">
+      <eObject href="BLM-d093384c0a19b89eb9b39e9af0407163.xmi#BLM-86595cc95e43a519e33972ec2e99df55"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-675a7faed543a7b721d864ff2c21dd8b" eObjectName="Output Criterion"
+        dependenciesWhereSource="/1/@dependencies.7">
+      <eObject href="BLM-d093384c0a19b89eb9b39e9af0407163.xmi#BLM-675a7faed543a7b721d864ff2c21dd8b"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-47b1a738ae7a9a229241d45b2f5bdb2b" eObjectName="Output">
+      <eObject href="BLM-d093384c0a19b89eb9b39e9af0407163.xmi#BLM-47b1a738ae7a9a229241d45b2f5bdb2b"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-896c36a98c72ac7fb31e175129eb7ed0" eObjectName="Input Criterion"
+        dependenciesWhereSource="/1/@dependencies.8 /1/@dependencies.9">
+      <eObject href="BLM-d093384c0a19b89eb9b39e9af0407163.xmi#BLM-896c36a98c72ac7fb31e175129eb7ed0"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-db71f8878c8bd031f3fb7287a0744dc2" eObjectName="Input">
+      <eObject href="BLM-d093384c0a19b89eb9b39e9af0407163.xmi#BLM-db71f8878c8bd031f3fb7287a0744dc2"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-38ae9bfd9f6989999eeceebd87d5874f" eObjectName="Input:2">
+      <eObject href="BLM-d093384c0a19b89eb9b39e9af0407163.xmi#BLM-38ae9bfd9f6989999eeceebd87d5874f"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-0c3a85d0d31b65310861112f8587d967" eObjectName="Input Criterion"
+        dependenciesWhereSource="/1/@dependencies.10">
+      <eObject href="BLM-d093384c0a19b89eb9b39e9af0407163.xmi#BLM-0c3a85d0d31b65310861112f8587d967"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-a125e1da6c5aba1611daad1318afbcf1" eObjectName="Input">
+      <eObject href="BLM-d093384c0a19b89eb9b39e9af0407163.xmi#BLM-a125e1da6c5aba1611daad1318afbcf1"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-15cd16e22dc5d36c913ef52c4b7b5db9" eObjectName="Output Criterion"
+        dependenciesWhereSource="/1/@dependencies.11">
+      <eObject href="BLM-d093384c0a19b89eb9b39e9af0407163.xmi#BLM-15cd16e22dc5d36c913ef52c4b7b5db9"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-63fa6e710d3668710162b702c7d55071" eObjectName="Output">
+      <eObject href="BLM-d093384c0a19b89eb9b39e9af0407163.xmi#BLM-63fa6e710d3668710162b702c7d55071"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-b499b7c1aaa67beb0d1575b4ebc7df9d" eObjectName="Input:3">
+      <eObject href="BLM-d093384c0a19b89eb9b39e9af0407163.xmi#BLM-b499b7c1aaa67beb0d1575b4ebc7df9d"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-f43d4549b0dfff09bf031b93de842438" eObjectName="Input">
+      <eObject href="BLM-d093384c0a19b89eb9b39e9af0407163.xmi#BLM-f43d4549b0dfff09bf031b93de842438"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-145f88eee53d09bfcfa7da96d30c2a73" eObjectName="No"
+        dependenciesWhereSource="/1/@dependencies.18">
+      <eObject href="BLM-d093384c0a19b89eb9b39e9af0407163.xmi#BLM-145f88eee53d09bfcfa7da96d30c2a73"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-34fbe77ffdcbe700100b311245bfa5ea" eObjectName="Input Criterion"
+        dependenciesWhereSource="/1/@dependencies.19">
+      <eObject href="BLM-d093384c0a19b89eb9b39e9af0407163.xmi#BLM-34fbe77ffdcbe700100b311245bfa5ea"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-85be1d55ca5034f29ac98f005c98fef9" eObjectName="Terminate Node"
+        dependenciesWhereSource="/1/@dependencies.14">
+      <eObject href="BLM-d093384c0a19b89eb9b39e9af0407163.xmi#BLM-85be1d55ca5034f29ac98f005c98fef9"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-b80911cf6d601ff907bd22264aec6f86" eObjectName="Output Criterion">
+      <eObject href="BLM-d093384c0a19b89eb9b39e9af0407163.xmi#BLM-b80911cf6d601ff907bd22264aec6f86"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-b10a3bdfc475b66282a8aa09413d3614" eObjectName="###_NAME_COMMENT_###"
+        dependenciesWhereSource="/1/@dependencies.15">
+      <eObject href="BLM-d093384c0a19b89eb9b39e9af0407163.xmi#BLM-b10a3bdfc475b66282a8aa09413d3614"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-1c9a15dd827fb1b3b0a6b886f8e6841f" eObjectName="End Node">
+      <eObject href="BLM-d093384c0a19b89eb9b39e9af0407163.xmi#BLM-1c9a15dd827fb1b3b0a6b886f8e6841f"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-1053bb52c93dac4fab297bdbfc4394f8" eObjectName="isValid">
+      <eObject href="BLM-d093384c0a19b89eb9b39e9af0407163.xmi#BLM-1053bb52c93dac4fab297bdbfc4394f8"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-7801227c018ecb57dba74e098eb366ff" eObjectName="Output:2">
+      <eObject href="BLM-d093384c0a19b89eb9b39e9af0407163.xmi#BLM-7801227c018ecb57dba74e098eb366ff"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-d8f13cc6e57f30380312dc6042e693eb" eObjectName="Output">
+      <eObject href="BLM-d093384c0a19b89eb9b39e9af0407163.xmi#BLM-d8f13cc6e57f30380312dc6042e693eb"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-eb39c01ea7fed3eed79852f16b186e5a" eObjectName="Input">
+      <eObject href="BLM-d093384c0a19b89eb9b39e9af0407163.xmi#BLM-eb39c01ea7fed3eed79852f16b186e5a"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-78f72f20afd1d2e5ae02c9b9b47e28da" eObjectName="Output">
+      <eObject href="BLM-d093384c0a19b89eb9b39e9af0407163.xmi#BLM-78f72f20afd1d2e5ae02c9b9b47e28da"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-c14ffe3c3e50dd7bca923a64c18873e3" eObjectName="Output:2">
+      <eObject href="BLM-d093384c0a19b89eb9b39e9af0407163.xmi#BLM-c14ffe3c3e50dd7bca923a64c18873e3"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-e21bce677858830e7c291c99b75a7576" eObjectName="###_NAME_COMMENT_###:2"
+        dependenciesWhereSource="/1/@dependencies.22">
+      <eObject href="BLM-d093384c0a19b89eb9b39e9af0407163.xmi#BLM-e21bce677858830e7c291c99b75a7576"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-3a644560d9fc72cbb713fad5ffc58f54" eObjectName="###_NAME_COMMENT_###:3"
+        dependenciesWhereSource="/1/@dependencies.23">
+      <eObject href="BLM-d093384c0a19b89eb9b39e9af0407163.xmi#BLM-3a644560d9fc72cbb713fad5ffc58f54"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-e9094a6474103bb22c1ccc58cf159f14" eObjectName="Send a verification code via sms">
+      <eObject href="BLM-d093384c0a19b89eb9b39e9af0407163.xmi#BLM-e9094a6474103bb22c1ccc58cf159f14"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-f4110eaec9623d8916a97527b8290c50" eObjectName="###_NAME_COMMENT_###"
+        dependenciesWhereSource="/1/@dependencies.24">
+      <eObject href="BLM-d093384c0a19b89eb9b39e9af0407163.xmi#BLM-f4110eaec9623d8916a97527b8290c50"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-7ca4579082f11a85ce337aa18a2a46bd" eObjectName="Blocking user account. Client need to contact with bank employee">
+      <eObject href="BLM-d093384c0a19b89eb9b39e9af0407163.xmi#BLM-7ca4579082f11a85ce337aa18a2a46bd"/>
+    </eObjectDescriptors>
+    <dependencies name="outputObjectPin" indirect="false" source="/1/@eObjectDescriptors.0"
+        target="/1/@eObjectDescriptors.1"/>
+    <dependencies name="potentialOwner" indirect="false" source="/1/@eObjectDescriptors.2"
+        target="/1/@eObjectDescriptors.3"/>
+    <dependencies name="inputObjectPin" indirect="false" source="/1/@eObjectDescriptors.4"
+        target="/1/@eObjectDescriptors.5"/>
+    <dependencies name="outputObjectPin" indirect="false" source="/1/@eObjectDescriptors.6"
+        target="/1/@eObjectDescriptors.7"/>
+    <dependencies name="inputObjectPin" indirect="false" source="/1/@eObjectDescriptors.8"
+        target="/1/@eObjectDescriptors.9"/>
+    <dependencies name="inputObjectPin" indirect="false" source="/1/@eObjectDescriptors.14"
+        target="/1/@eObjectDescriptors.15"/>
+    <dependencies name="outputControlPin" indirect="false" source="/1/@eObjectDescriptors.16"
+        target="/1/@eObjectDescriptors.17"/>
+    <dependencies name="outputControlPin" indirect="false" source="/1/@eObjectDescriptors.18"
+        target="/1/@eObjectDescriptors.19"/>
+    <dependencies name="inputControlPin" indirect="false" source="/1/@eObjectDescriptors.20"
+        target="/1/@eObjectDescriptors.21"/>
+    <dependencies name="inputControlPin" indirect="false" source="/1/@eObjectDescriptors.20"
+        target="/1/@eObjectDescriptors.22"/>
+    <dependencies name="inputControlPin" indirect="false" source="/1/@eObjectDescriptors.23"
+        target="/1/@eObjectDescriptors.24"/>
+    <dependencies name="outputControlPin" indirect="false" source="/1/@eObjectDescriptors.25"
+        target="/1/@eObjectDescriptors.26"/>
+    <dependencies name="inputControlPin" indirect="false" source="/1/@eObjectDescriptors.4"
+        target="/1/@eObjectDescriptors.27"/>
+    <dependencies name="inputObjectPin" indirect="false" source="/1/@eObjectDescriptors.4"
+        target="/1/@eObjectDescriptors.28"/>
+    <dependencies name="outcome" indirect="false" source="/1/@eObjectDescriptors.31"
+        target="/1/@eObjectDescriptors.32"/>
+    <dependencies name="annotatedElement" indirect="false" source="/1/@eObjectDescriptors.33"
+        target="/1/@eObjectDescriptors.34"/>
+    <dependencies name="inputObjectPin" indirect="false" source="/1/@eObjectDescriptors.11"
+        target="/1/@eObjectDescriptors.35"/>
+    <dependencies name="outputObjectPin" indirect="false" source="/1/@eObjectDescriptors.10"
+        target="/1/@eObjectDescriptors.36"/>
+    <dependencies name="outputObjectPin" indirect="false" source="/1/@eObjectDescriptors.29"
+        target="/1/@eObjectDescriptors.37"/>
+    <dependencies name="inputObjectPin" indirect="false" source="/1/@eObjectDescriptors.30"
+        target="/1/@eObjectDescriptors.38"/>
+    <dependencies name="outputObjectPin" indirect="false" source="/1/@eObjectDescriptors.12"
+        target="/1/@eObjectDescriptors.39"/>
+    <dependencies name="outputObjectPin" indirect="false" source="/1/@eObjectDescriptors.13"
+        target="/1/@eObjectDescriptors.40"/>
+    <dependencies name="annotatedElement" indirect="false" source="/1/@eObjectDescriptors.41"
+        target="/1/@eObjectDescriptors.2"/>
+    <dependencies name="annotatedElement" indirect="false" source="/1/@eObjectDescriptors.42"
+        target="/1/@eObjectDescriptors.43"/>
+    <dependencies name="annotatedElement" indirect="false" source="/1/@eObjectDescriptors.44"
+        target="/1/@eObjectDescriptors.45"/>
+  </com.ibm.btools.model.modelmanager.dependencymanager:DependencyModel>
+</xmi:XMI>

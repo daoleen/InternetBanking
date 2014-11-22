@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:com.ibm.btools.bom.model.models="http:///com/ibm/btools/bom/model/models.ecore"
+    xmlns:com.ibm.btools.bom.model.processes.activities="http:///com/ibm/btools/bom/model/processes/activities.ecore"
+    xmlns:com.ibm.btools.model.resourcemanager.resourceproperties="http:///com/ibm/btools/model/resourcemanager/resourceproperties.ecore">
+  <com.ibm.btools.model.resourcemanager.resourceproperties:ResourceProperties versionID="7.0.0.0"
+      lastModified="1416671312859"/>
+  <com.ibm.btools.bom.model.models:ProcessModel xmi:id="BLM-23fb02d7113c37b9b33f992e15486ba5"
+      uid="BLM-23fb02d7113c37b9b33f992e15486ba5" name="Tranfer money">
+    <ownedComment xmi:id="BLM-9621cb7b83698d4dd1043f67d0cc32ac" uid="BLM-9621cb7b83698d4dd1043f67d0cc32ac"
+        name="###_NAME_COMMENT_###" body=""/>
+    <owningPackage href="RID-00010-2f692ef5ad7eb5a95f165d75a6b139c0.xmi#FID-00010-df13a34335666a3908f4db598482644b"/>
+    <ownedMember xsi:type="com.ibm.btools.bom.model.processes.activities:Activity"
+        href="BLM-59c47cfdf1f39d3672d9f56a4a05e90e.xmi#BLM-9cf586449ef3ddb93a35f6bf86ba191c"/>
+    <ownedMember xsi:type="com.ibm.btools.bom.model.processes.activities:Activity"
+        href="BLM-e9e7e37b99481607e62a63a3c850f4b1.xmi#BLM-f73136e635240649709c08aa01f786e7"/>
+  </com.ibm.btools.bom.model.models:ProcessModel>
+</xmi:XMI>

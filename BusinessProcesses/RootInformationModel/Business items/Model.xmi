@@ -5,7 +5,7 @@
     xmlns:com.ibm.btools.bom.model.models="http:///com/ibm/btools/bom/model/models.ecore"
     xmlns:com.ibm.btools.model.resourcemanager.resourceproperties="http:///com/ibm/btools/model/resourcemanager/resourceproperties.ecore">
   <com.ibm.btools.model.resourcemanager.resourceproperties:ResourceProperties versionID="7.0.0.0"
-      lastModified="1416615232281"/>
+      lastModified="1416667550796"/>
   <com.ibm.btools.bom.model.models:InformationModel xmi:id="FID-00008-354282317f740a5ad70315d7196a3df1"
       uid="FID-00008-354282317f740a5ad70315d7196a3df1" name="Business items">
     <ownedComment xmi:id="BLM-0396e91c4662e09146e69fcbe7102af4" uid="BLM-0396e91c4662e09146e69fcbe7102af4"
@@ -15,5 +15,7 @@
     <ownedMember xsi:type="com.ibm.btools.bom.model.artifacts:Class" href="BLM-597ec7f1abb9c3f364b486dd00d689b1.xmi#BLM-c85dcd8a5b2d0e5e13a2ebf249152e33"/>
     <ownedMember xsi:type="com.ibm.btools.bom.model.artifacts:Class" href="BLM-1464b861d61247900db15e9d33768728.xmi#BLM-4835eeddbf850dfcf0e93773ea600059"/>
     <ownedMember xsi:type="com.ibm.btools.bom.model.artifacts:Class" href="BLM-1f8ea2e145c88665143351474256873e.xmi#BLM-18fd020eef949f7932da7bf76e6f4f21"/>
+    <ownedMember xsi:type="com.ibm.btools.bom.model.artifacts:Class" href="BLM-b2c4689e9386a922728426f48ac9c302.xmi#BLM-2f5cc2078b6c2b430c0fffb15197e906"/>
+    <ownedMember xsi:type="com.ibm.btools.bom.model.artifacts:Class" href="BLM-94cfb0e87439c2632f8842b6a7a37b28.xmi#BLM-7296bc273bc601e6a6bb4baac066cdd7"/>
   </com.ibm.btools.bom.model.models:InformationModel>
 </xmi:XMI>

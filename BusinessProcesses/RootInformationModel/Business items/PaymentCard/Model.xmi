@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:com.ibm.btools.bom.model.artifacts="http:///com/ibm/btools/bom/model/artifacts.ecore"
+    xmlns:com.ibm.btools.model.resourcemanager.resourceproperties="http:///com/ibm/btools/model/resourcemanager/resourceproperties.ecore">
+  <com.ibm.btools.model.resourcemanager.resourceproperties:ResourceProperties versionID="7.0.0.0"
+      lastModified="1416667626437"/>
+  <com.ibm.btools.bom.model.artifacts:Class xmi:id="BLM-2f5cc2078b6c2b430c0fffb15197e906"
+      uid="BLM-2f5cc2078b6c2b430c0fffb15197e906" name="PaymentCard">
+    <ownedComment xmi:id="BLM-6db8da0678575ad37d590293b6bb7b62" uid="BLM-6db8da0678575ad37d590293b6bb7b62"
+        name="###_NAME_COMMENT_###" body=""/>
+    <owningPackage href="RID-00008-e87895b3279b312b975d4207b37ed076.xmi#FID-00008-354282317f740a5ad70315d7196a3df1"/>
+    <ownedAttribute xmi:id="BLM-d13bcf518363800e898dfb6dfac9bf74" uid="BLM-d13bcf518363800e898dfb6dfac9bf74"
+        name="id" isUnique="false">
+      <type xsi:type="com.ibm.btools.bom.model.artifacts:PrimitiveType" href="RID-00000000000000000000000000000210.xmi#FID-00000000000000000000000000000210"/>
+      <upperBound xsi:type="com.ibm.btools.bom.model.artifacts:LiteralInteger" xmi:id="BLM-48ca214f2488d3968ecab031a7963be7"
+          uid="BLM-48ca214f2488d3968ecab031a7963be7" value="1"/>
+      <lowerBound xsi:type="com.ibm.btools.bom.model.artifacts:LiteralInteger" xmi:id="BLM-c1bcc70bab500666c325e317bd742b23"
+          uid="BLM-c1bcc70bab500666c325e317bd742b23" value="0"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="BLM-c07e90f57613d5c58406d4f432904465" uid="BLM-c07e90f57613d5c58406d4f432904465"
+        name="client" isUnique="false">
+      <type xsi:type="com.ibm.btools.bom.model.artifacts:Class" href="BLM-1464b861d61247900db15e9d33768728.xmi#BLM-4835eeddbf850dfcf0e93773ea600059"/>
+      <upperBound xsi:type="com.ibm.btools.bom.model.artifacts:LiteralInteger" xmi:id="BLM-5e60b3d973993c0ef34c6c5b10ff02f0"
+          uid="BLM-5e60b3d973993c0ef34c6c5b10ff02f0" value="1"/>
+      <lowerBound xsi:type="com.ibm.btools.bom.model.artifacts:LiteralInteger" xmi:id="BLM-3085ae92c5485ebf3b8cbae66e087d22"
+          uid="BLM-3085ae92c5485ebf3b8cbae66e087d22" value="0"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="BLM-318b6e86339ff2be99f570d116f6c975" uid="BLM-318b6e86339ff2be99f570d116f6c975"
+        name="amount" isUnique="false">
+      <ownedComment xmi:id="BLM-0a6a4f375cc2d03db3ed9c5e498f92a2" uid="BLM-0a6a4f375cc2d03db3ed9c5e498f92a2"
+          body="Банк выдает карточку только в национальной валюте. &#xD;&#xA;Специфика нашего банка"/>
+      <type xsi:type="com.ibm.btools.bom.model.artifacts:PrimitiveType" href="RID-00000000000000000000000000000215.xmi#FID-00000000000000000000000000000215"/>
+      <upperBound xsi:type="com.ibm.btools.bom.model.artifacts:LiteralInteger" xmi:id="BLM-8ddbbee7038faa4047e2fe7ea6ce9a44"
+          uid="BLM-8ddbbee7038faa4047e2fe7ea6ce9a44" value="1"/>
+      <lowerBound xsi:type="com.ibm.btools.bom.model.artifacts:LiteralInteger" xmi:id="BLM-9701ac76dc0f71df8ce5ca8ad4d2d6a8"
+          uid="BLM-9701ac76dc0f71df8ce5ca8ad4d2d6a8" value="0"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="BLM-1a8ec83cceac27e325d8d65f8b3d0620" uid="BLM-1a8ec83cceac27e325d8d65f8b3d0620"
+        name="pinCode" isUnique="false">
+      <type xsi:type="com.ibm.btools.bom.model.artifacts:PrimitiveType" href="RID-00000000000000000000000000000203.xmi#FID-00000000000000000000000000000203"/>
+      <upperBound xsi:type="com.ibm.btools.bom.model.artifacts:LiteralInteger" xmi:id="BLM-fa3ce5f8bd08fa781ec8e23f87968146"
+          uid="BLM-fa3ce5f8bd08fa781ec8e23f87968146" value="1"/>
+      <lowerBound xsi:type="com.ibm.btools.bom.model.artifacts:LiteralInteger" xmi:id="BLM-3097192f8f38f3a82bae3cae46c30dbf"
+          uid="BLM-3097192f8f38f3a82bae3cae46c30dbf" value="0"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="BLM-aec657d743ed3e0a4196faf444efcf50" uid="BLM-aec657d743ed3e0a4196faf444efcf50"
+        name="createdDate" isUnique="false">
+      <type xsi:type="com.ibm.btools.bom.model.artifacts:PrimitiveType" href="RID-00000000000000000000000000000204.xmi#FID-00000000000000000000000000000204"/>
+      <upperBound xsi:type="com.ibm.btools.bom.model.artifacts:LiteralInteger" xmi:id="BLM-df33718fef653cc9429bca625635fb0b"
+          uid="BLM-df33718fef653cc9429bca625635fb0b" value="1"/>
+      <lowerBound xsi:type="com.ibm.btools.bom.model.artifacts:LiteralInteger" xmi:id="BLM-a4198e471e9e47d1c3b1837cf4cdb5c2"
+          uid="BLM-a4198e471e9e47d1c3b1837cf4cdb5c2" value="0"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="BLM-239e30594c3b667694b4ba801ef00a97" uid="BLM-239e30594c3b667694b4ba801ef00a97"
+        name="bank" isUnique="false">
+      <type xsi:type="com.ibm.btools.bom.model.artifacts:Class" href="BLM-94cfb0e87439c2632f8842b6a7a37b28.xmi#BLM-7296bc273bc601e6a6bb4baac066cdd7"/>
+      <upperBound xsi:type="com.ibm.btools.bom.model.artifacts:LiteralInteger" xmi:id="BLM-21fcd0d509f107b2f675c728eca70646"
+          uid="BLM-21fcd0d509f107b2f675c728eca70646" value="1"/>
+      <lowerBound xsi:type="com.ibm.btools.bom.model.artifacts:LiteralInteger" xmi:id="BLM-c6415c1335ebaf45597d1c4a07e54664"
+          uid="BLM-c6415c1335ebaf45597d1c4a07e54664" value="0"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="BLM-44de2d596cc047d83067f346fbf6fb19" uid="BLM-44de2d596cc047d83067f346fbf6fb19"
+        name="cardNumber" isUnique="false">
+      <type xsi:type="com.ibm.btools.bom.model.artifacts:PrimitiveType" href="RID-00000000000000000000000000000210.xmi#FID-00000000000000000000000000000210"/>
+      <upperBound xsi:type="com.ibm.btools.bom.model.artifacts:LiteralInteger" xmi:id="BLM-b54c63461a3543143f318397b52d8a5a"
+          uid="BLM-b54c63461a3543143f318397b52d8a5a" value="1"/>
+      <lowerBound xsi:type="com.ibm.btools.bom.model.artifacts:LiteralInteger" xmi:id="BLM-ac48f490ee7b9ee05eb7c0a51408eb98"
+          uid="BLM-ac48f490ee7b9ee05eb7c0a51408eb98" value="0"/>
+    </ownedAttribute>
+  </com.ibm.btools.bom.model.artifacts:Class>
+</xmi:XMI>

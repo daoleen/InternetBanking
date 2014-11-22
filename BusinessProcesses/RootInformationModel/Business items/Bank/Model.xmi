@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:com.ibm.btools.bom.model.artifacts="http:///com/ibm/btools/bom/model/artifacts.ecore"
+    xmlns:com.ibm.btools.model.resourcemanager.resourceproperties="http:///com/ibm/btools/model/resourcemanager/resourceproperties.ecore">
+  <com.ibm.btools.model.resourcemanager.resourceproperties:ResourceProperties versionID="7.0.0.0"
+      lastModified="1416667614484"/>
+  <com.ibm.btools.bom.model.artifacts:Class xmi:id="BLM-7296bc273bc601e6a6bb4baac066cdd7"
+      uid="BLM-7296bc273bc601e6a6bb4baac066cdd7" name="Bank">
+    <ownedComment xmi:id="BLM-cd0ca22b0418130d7dba4b13a126475d" uid="BLM-cd0ca22b0418130d7dba4b13a126475d"
+        name="###_NAME_COMMENT_###" body=""/>
+    <owningPackage href="RID-00008-e87895b3279b312b975d4207b37ed076.xmi#FID-00008-354282317f740a5ad70315d7196a3df1"/>
+    <ownedAttribute xmi:id="BLM-ecebff858b9e3c5a214d9b5663ca3d2d" uid="BLM-ecebff858b9e3c5a214d9b5663ca3d2d"
+        name="id" isUnique="false">
+      <type xsi:type="com.ibm.btools.bom.model.artifacts:PrimitiveType" href="RID-00000000000000000000000000000211.xmi#FID-00000000000000000000000000000211"/>
+      <upperBound xsi:type="com.ibm.btools.bom.model.artifacts:LiteralInteger" xmi:id="BLM-4303c82738421e1f2b9c2c236a836868"
+          uid="BLM-4303c82738421e1f2b9c2c236a836868" value="1"/>
+      <lowerBound xsi:type="com.ibm.btools.bom.model.artifacts:LiteralInteger" xmi:id="BLM-de2662053b438345283fd0fba42d1e91"
+          uid="BLM-de2662053b438345283fd0fba42d1e91" value="0"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="BLM-914aa952fc47c9b432f63108f909814a" uid="BLM-914aa952fc47c9b432f63108f909814a"
+        name="name" isUnique="false">
+      <type xsi:type="com.ibm.btools.bom.model.artifacts:PrimitiveType" href="RID-00000000000000000000000000000203.xmi#FID-00000000000000000000000000000203"/>
+      <upperBound xsi:type="com.ibm.btools.bom.model.artifacts:LiteralInteger" xmi:id="BLM-40197d05841ac9f6153d55802ba91ce9"
+          uid="BLM-40197d05841ac9f6153d55802ba91ce9" value="1"/>
+      <lowerBound xsi:type="com.ibm.btools.bom.model.artifacts:LiteralInteger" xmi:id="BLM-2f0af009a6b5e90188b00de39414a72d"
+          uid="BLM-2f0af009a6b5e90188b00de39414a72d" value="0"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="BLM-19dc384fd1757ad669ac48c47985df6d" uid="BLM-19dc384fd1757ad669ac48c47985df6d"
+        name="bik" isUnique="false">
+      <type xsi:type="com.ibm.btools.bom.model.artifacts:PrimitiveType" href="RID-00000000000000000000000000000203.xmi#FID-00000000000000000000000000000203"/>
+      <upperBound xsi:type="com.ibm.btools.bom.model.artifacts:LiteralInteger" xmi:id="BLM-17ff24f0d2b12499dc8adb25c4bd4189"
+          uid="BLM-17ff24f0d2b12499dc8adb25c4bd4189" value="1"/>
+      <lowerBound xsi:type="com.ibm.btools.bom.model.artifacts:LiteralInteger" xmi:id="BLM-b61cfa52787284a31580c87a7b25e5e5"
+          uid="BLM-b61cfa52787284a31580c87a7b25e5e5" value="0"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="BLM-7260690e64e33aa4d3f62df2e1cc71ca" uid="BLM-7260690e64e33aa4d3f62df2e1cc71ca"
+        name="bankAccountNumber" isUnique="false">
+      <type xsi:type="com.ibm.btools.bom.model.artifacts:PrimitiveType" href="RID-00000000000000000000000000000210.xmi#FID-00000000000000000000000000000210"/>
+      <upperBound xsi:type="com.ibm.btools.bom.model.artifacts:LiteralInteger" xmi:id="BLM-8bb73bb6cf6afabba56a26f40d40a043"
+          uid="BLM-8bb73bb6cf6afabba56a26f40d40a043" value="1"/>
+      <lowerBound xsi:type="com.ibm.btools.bom.model.artifacts:LiteralInteger" xmi:id="BLM-4f6ccc44fb5e107d90453dc66d29e6fb"
+          uid="BLM-4f6ccc44fb5e107d90453dc66d29e6fb" value="0"/>
+    </ownedAttribute>
+  </com.ibm.btools.bom.model.artifacts:Class>
+</xmi:XMI>

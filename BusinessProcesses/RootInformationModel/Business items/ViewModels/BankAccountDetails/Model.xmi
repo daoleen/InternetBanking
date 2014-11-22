@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:com.ibm.btools.bom.model.artifacts="http:///com/ibm/btools/bom/model/artifacts.ecore"
+    xmlns:com.ibm.btools.model.resourcemanager.resourceproperties="http:///com/ibm/btools/model/resourcemanager/resourceproperties.ecore">
+  <com.ibm.btools.model.resourcemanager.resourceproperties:ResourceProperties versionID="7.0.0.0"
+      lastModified="1416671742953"/>
+  <com.ibm.btools.bom.model.artifacts:Class xmi:id="BLM-be66291aacb5f40f8435ece58f4920a2"
+      uid="BLM-be66291aacb5f40f8435ece58f4920a2" name="BankAccountDetails">
+    <ownedComment xmi:id="BLM-f2ba89d3465e46d6f397107af09a2e26" uid="BLM-f2ba89d3465e46d6f397107af09a2e26"
+        name="###_NAME_COMMENT_###" body="Данные счета банка получателя для пересылки денег на счет в банке"/>
+    <owningPackage href="BLM-ee9bd22a30cb0e0add28f5ef8d6462fb.xmi#BLM-6cc56f1647ce05b6c6dede13822c50f7"/>
+    <ownedAttribute xmi:id="BLM-1eaaa51f1f9733dd807bf9f4ae0ca55e" uid="BLM-1eaaa51f1f9733dd807bf9f4ae0ca55e"
+        name="accountNumber" isUnique="false">
+      <ownedComment xmi:id="BLM-35affb9d09281ce5ea3f3968722dafb9" uid="BLM-35affb9d09281ce5ea3f3968722dafb9"
+          body="Номер счета в банке- получателе"/>
+      <type xsi:type="com.ibm.btools.bom.model.artifacts:PrimitiveType" href="RID-00000000000000000000000000000210.xmi#FID-00000000000000000000000000000210"/>
+      <upperBound xsi:type="com.ibm.btools.bom.model.artifacts:LiteralInteger" xmi:id="BLM-886fd396fa1d067d39275aba38dab7d2"
+          uid="BLM-886fd396fa1d067d39275aba38dab7d2" value="1"/>
+      <lowerBound xsi:type="com.ibm.btools.bom.model.artifacts:LiteralInteger" xmi:id="BLM-b04b603c8ec1f7523d3ee1de4997b208"
+          uid="BLM-b04b603c8ec1f7523d3ee1de4997b208" value="0"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="BLM-b01180d02489998f9f324dcc4eae8970" uid="BLM-b01180d02489998f9f324dcc4eae8970"
+        name="firstName" isUnique="false">
+      <ownedComment xmi:id="BLM-5ebb7b6142616875f1d05b35a405d652" uid="BLM-5ebb7b6142616875f1d05b35a405d652"
+          body="Фамилия получателя"/>
+      <type xsi:type="com.ibm.btools.bom.model.artifacts:PrimitiveType" href="RID-00000000000000000000000000000203.xmi#FID-00000000000000000000000000000203"/>
+      <upperBound xsi:type="com.ibm.btools.bom.model.artifacts:LiteralInteger" xmi:id="BLM-b28d97319f8ce099837e16a9ba12baf1"
+          uid="BLM-b28d97319f8ce099837e16a9ba12baf1" value="1"/>
+      <lowerBound xsi:type="com.ibm.btools.bom.model.artifacts:LiteralInteger" xmi:id="BLM-1bb500553c8e4dc4f24c913e734c764b"
+          uid="BLM-1bb500553c8e4dc4f24c913e734c764b" value="0"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="BLM-e282115eda5e79c1a8b7d9d35418e8cf" uid="BLM-e282115eda5e79c1a8b7d9d35418e8cf"
+        name="lastName" isUnique="false">
+      <ownedComment xmi:id="BLM-7240fefadd1126605229ca3a168566d5" uid="BLM-7240fefadd1126605229ca3a168566d5"
+          body="Имя получателя"/>
+      <type xsi:type="com.ibm.btools.bom.model.artifacts:PrimitiveType" href="RID-00000000000000000000000000000203.xmi#FID-00000000000000000000000000000203"/>
+      <upperBound xsi:type="com.ibm.btools.bom.model.artifacts:LiteralInteger" xmi:id="BLM-96cdf4c021421a6c9c34563698eead01"
+          uid="BLM-96cdf4c021421a6c9c34563698eead01" value="1"/>
+      <lowerBound xsi:type="com.ibm.btools.bom.model.artifacts:LiteralInteger" xmi:id="BLM-e994d68b1cca2528962d9b5a213b47e2"
+          uid="BLM-e994d68b1cca2528962d9b5a213b47e2" value="0"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="BLM-aa0923a0f73664689545407d20bab386" uid="BLM-aa0923a0f73664689545407d20bab386"
+        name="patronymicName" isUnique="false">
+      <ownedComment xmi:id="BLM-d419f804a82b61fcd6890dc5fc63903a" uid="BLM-d419f804a82b61fcd6890dc5fc63903a"
+          body="Отчество получателя"/>
+      <type xsi:type="com.ibm.btools.bom.model.artifacts:PrimitiveType" href="RID-00000000000000000000000000000203.xmi#FID-00000000000000000000000000000203"/>
+      <upperBound xsi:type="com.ibm.btools.bom.model.artifacts:LiteralInteger" xmi:id="BLM-570cbdad6013077ec1b9a2d056741324"
+          uid="BLM-570cbdad6013077ec1b9a2d056741324" value="1"/>
+      <lowerBound xsi:type="com.ibm.btools.bom.model.artifacts:LiteralInteger" xmi:id="BLM-918406266bfd3276f6141a31ca0d64dc"
+          uid="BLM-918406266bfd3276f6141a31ca0d64dc" value="0"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="BLM-4ab661532b3abddd4f2bfc3bb77a06d6" uid="BLM-4ab661532b3abddd4f2bfc3bb77a06d6"
+        name="bank" isUnique="false">
+      <ownedComment xmi:id="BLM-9db5b10dbb3421e21a2436c25f7a73b2" uid="BLM-9db5b10dbb3421e21a2436c25f7a73b2"
+          body="Банк получателя"/>
+      <type xsi:type="com.ibm.btools.bom.model.artifacts:Class" href="BLM-94cfb0e87439c2632f8842b6a7a37b28.xmi#BLM-7296bc273bc601e6a6bb4baac066cdd7"/>
+      <upperBound xsi:type="com.ibm.btools.bom.model.artifacts:LiteralInteger" xmi:id="BLM-2d5301199b5065f91caf403340ede9c1"
+          uid="BLM-2d5301199b5065f91caf403340ede9c1" value="1"/>
+      <lowerBound xsi:type="com.ibm.btools.bom.model.artifacts:LiteralInteger" xmi:id="BLM-2976b5cc2acdf505352f51e769781786"
+          uid="BLM-2976b5cc2acdf505352f51e769781786" value="0"/>
+    </ownedAttribute>
+  </com.ibm.btools.bom.model.artifacts:Class>
+</xmi:XMI>
