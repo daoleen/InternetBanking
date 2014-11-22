@@ -50,7 +50,7 @@
       <navigationURINode uri="RID-00001-800aa38791bbceeda69a782c5a1de281"/>
       <processCatalogNodes id="DEFAULT_CATALOG" label="Processes" state="2" uid="BLMNAV-934d396ce87ff85e6037f722766052cd" bomUID="FID-00010-df13a34335666a3908f4db598482644b" projectNode="BLMNAV-cc30b2dea2f5ce89c44affa59efdbf89">
         <navigationURINode uri="RID-00010-2f692ef5ad7eb5a95f165d75a6b139c0"/>
-        <processCatalogNodeChildren id="Tranfer money" label="Tranfer money" state="2" uid="BLMNAV-adf7da6e08fe8af66f697ac3d4e3ecff" bomUID="BLM-23fb02d7113c37b9b33f992e15486ba5" projectNode="BLMNAV-cc30b2dea2f5ce89c44affa59efdbf89">
+        <processCatalogNodeChildren id="Tranfer money" label="Tranfer money" uid="BLMNAV-adf7da6e08fe8af66f697ac3d4e3ecff" bomUID="BLM-23fb02d7113c37b9b33f992e15486ba5" projectNode="BLMNAV-cc30b2dea2f5ce89c44affa59efdbf89">
           <navigationURINode uri="BLM-574b852bf053180b798559984066269d"/>
           <processesNode label="Processes" projectNode="BLMNAV-cc30b2dea2f5ce89c44affa59efdbf89">
             <processNodes id="Transfer money to a card" label="Transfer money to a card" uid="BLMNAV-23ec3376416775e3bac29506e068b77d" bomUID="BLM-9cf586449ef3ddb93a35f6bf86ba191c" attribute4="PROCESS_DEFAULTS,SWIMLANE_EDITOR,role" attribute5="USED_SWIMLANE_TYPES;role" projectNode="BLMNAV-cc30b2dea2f5ce89c44affa59efdbf89">
