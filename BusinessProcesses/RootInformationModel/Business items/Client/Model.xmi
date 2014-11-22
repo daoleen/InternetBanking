@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:com.ibm.btools.bom.model.artifacts="http:///com/ibm/btools/bom/model/artifacts.ecore"
+    xmlns:com.ibm.btools.model.resourcemanager.resourceproperties="http:///com/ibm/btools/model/resourcemanager/resourceproperties.ecore">
+  <com.ibm.btools.model.resourcemanager.resourceproperties:ResourceProperties versionID="7.0.0.0"
+      lastModified="1416615190812"/>
+  <com.ibm.btools.bom.model.artifacts:Class xmi:id="BLM-4835eeddbf850dfcf0e93773ea600059"
+      uid="BLM-4835eeddbf850dfcf0e93773ea600059" name="Client">
+    <ownedComment xmi:id="BLM-e364506fbebbe1b3d0055b511d393420" uid="BLM-e364506fbebbe1b3d0055b511d393420"
+        name="###_NAME_COMMENT_###" body=""/>
+    <owningPackage href="RID-00008-e87895b3279b312b975d4207b37ed076.xmi#FID-00008-354282317f740a5ad70315d7196a3df1"/>
+    <ownedAttribute xmi:id="BLM-adcd852ec580bfecd70c6c2007225bfe" uid="BLM-adcd852ec580bfecd70c6c2007225bfe"
+        name="id" isUnique="false">
+      <type xsi:type="com.ibm.btools.bom.model.artifacts:PrimitiveType" href="RID-00000000000000000000000000000210.xmi#FID-00000000000000000000000000000210"/>
+      <upperBound xsi:type="com.ibm.btools.bom.model.artifacts:LiteralInteger" xmi:id="BLM-77b881c4a67c3b20d2c3f2731e66c52b"
+          uid="BLM-77b881c4a67c3b20d2c3f2731e66c52b" value="1"/>
+      <lowerBound xsi:type="com.ibm.btools.bom.model.artifacts:LiteralInteger" xmi:id="BLM-e8cfa1be226e28e3c5879d1d6a9440a8"
+          uid="BLM-e8cfa1be226e28e3c5879d1d6a9440a8" value="0"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="BLM-016daa48bd5de8f9328c4db9efd0f694" uid="BLM-016daa48bd5de8f9328c4db9efd0f694"
+        name="firstName" isUnique="false">
+      <type xsi:type="com.ibm.btools.bom.model.artifacts:PrimitiveType" href="RID-00000000000000000000000000000203.xmi#FID-00000000000000000000000000000203"/>
+      <upperBound xsi:type="com.ibm.btools.bom.model.artifacts:LiteralInteger" xmi:id="BLM-3602843258b8f0e2b0cb997cec8302c3"
+          uid="BLM-3602843258b8f0e2b0cb997cec8302c3" value="1"/>
+      <lowerBound xsi:type="com.ibm.btools.bom.model.artifacts:LiteralInteger" xmi:id="BLM-66bbe47b7f08c2db094580c71c2a680b"
+          uid="BLM-66bbe47b7f08c2db094580c71c2a680b" value="0"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="BLM-fb5f455ac9c3227d60bab25abcf960a8" uid="BLM-fb5f455ac9c3227d60bab25abcf960a8"
+        name="lastName" isUnique="false">
+      <type xsi:type="com.ibm.btools.bom.model.artifacts:PrimitiveType" href="RID-00000000000000000000000000000203.xmi#FID-00000000000000000000000000000203"/>
+      <upperBound xsi:type="com.ibm.btools.bom.model.artifacts:LiteralInteger" xmi:id="BLM-d0f4ca65159e9343184bfa24c9549500"
+          uid="BLM-d0f4ca65159e9343184bfa24c9549500" value="1"/>
+      <lowerBound xsi:type="com.ibm.btools.bom.model.artifacts:LiteralInteger" xmi:id="BLM-c193fcbbe0f7a0f5223951f36cb6c83c"
+          uid="BLM-c193fcbbe0f7a0f5223951f36cb6c83c" value="0"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="BLM-3c2a5570aa4a07c24f51d1c5202a5e15" uid="BLM-3c2a5570aa4a07c24f51d1c5202a5e15"
+        name="patronymicName" isUnique="false">
+      <type xsi:type="com.ibm.btools.bom.model.artifacts:PrimitiveType" href="RID-00000000000000000000000000000203.xmi#FID-00000000000000000000000000000203"/>
+      <upperBound xsi:type="com.ibm.btools.bom.model.artifacts:LiteralInteger" xmi:id="BLM-c7906766747a2eac44e3de6f14fc57ea"
+          uid="BLM-c7906766747a2eac44e3de6f14fc57ea" value="1"/>
+      <lowerBound xsi:type="com.ibm.btools.bom.model.artifacts:LiteralInteger" xmi:id="BLM-ae906472b88a0ac2932f835e7f43e869"
+          uid="BLM-ae906472b88a0ac2932f835e7f43e869" value="0"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="BLM-7c1c14adc9a573143775282a36b0fdb7" uid="BLM-7c1c14adc9a573143775282a36b0fdb7"
+        name="birthDate" isUnique="false">
+      <type xsi:type="com.ibm.btools.bom.model.artifacts:PrimitiveType" href="RID-00000000000000000000000000000204.xmi#FID-00000000000000000000000000000204"/>
+      <upperBound xsi:type="com.ibm.btools.bom.model.artifacts:LiteralInteger" xmi:id="BLM-8a2b545e3021ead5e6a4412a6792f90d"
+          uid="BLM-8a2b545e3021ead5e6a4412a6792f90d" value="1"/>
+      <lowerBound xsi:type="com.ibm.btools.bom.model.artifacts:LiteralInteger" xmi:id="BLM-58014bee0f884b6426f01df0dbf5d7d4"
+          uid="BLM-58014bee0f884b6426f01df0dbf5d7d4" value="0"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="BLM-8b48b889831d4af64bead553cb4294db" uid="BLM-8b48b889831d4af64bead553cb4294db"
+        name="passport" isUnique="false">
+      <type xsi:type="com.ibm.btools.bom.model.artifacts:Class" href="BLM-98162eeea7dc651284cc53bc8ddc9b39.xmi#BLM-408674e041718d42417b6af6d6eb9160"/>
+      <upperBound xsi:type="com.ibm.btools.bom.model.artifacts:LiteralInteger" xmi:id="BLM-285b72e6da2da77ab02c23392b86bd7a"
+          uid="BLM-285b72e6da2da77ab02c23392b86bd7a" value="1"/>
+      <lowerBound xsi:type="com.ibm.btools.bom.model.artifacts:LiteralInteger" xmi:id="BLM-e3941012f042224300fe8b9f15deecf6"
+          uid="BLM-e3941012f042224300fe8b9f15deecf6" value="0"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="BLM-435be4c14c4a31fe68801b56ddcd5797" uid="BLM-435be4c14c4a31fe68801b56ddcd5797"
+        name="address" isUnique="false">
+      <type xsi:type="com.ibm.btools.bom.model.artifacts:Class" href="BLM-574e0d783a3d28c58563112382fabd8b.xmi#BLM-9ec3cee7384caa9a72641a56926e2c24"/>
+      <upperBound xsi:type="com.ibm.btools.bom.model.artifacts:LiteralInteger" xmi:id="BLM-21673a41f9b89315e359829a28d363af"
+          uid="BLM-21673a41f9b89315e359829a28d363af" value="1"/>
+      <lowerBound xsi:type="com.ibm.btools.bom.model.artifacts:LiteralInteger" xmi:id="BLM-eded96a683c7ff273926266bbb419d0d"
+          uid="BLM-eded96a683c7ff273926266bbb419d0d" value="0"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="BLM-66cd7ab982fc79d5ada85f2a6e0cd4bd" uid="BLM-66cd7ab982fc79d5ada85f2a6e0cd4bd"
+        name="registrationDate" isUnique="false">
+      <type xsi:type="com.ibm.btools.bom.model.artifacts:PrimitiveType" href="RID-00000000000000000000000000000206.xmi#FID-00000000000000000000000000000206"/>
+      <upperBound xsi:type="com.ibm.btools.bom.model.artifacts:LiteralInteger" xmi:id="BLM-59fa62ccdf0e4082d219702725949b63"
+          uid="BLM-59fa62ccdf0e4082d219702725949b63" value="1"/>
+      <lowerBound xsi:type="com.ibm.btools.bom.model.artifacts:LiteralInteger" xmi:id="BLM-3e53a983d6edf9cf860009f0a1f59cca"
+          uid="BLM-3e53a983d6edf9cf860009f0a1f59cca" value="0"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="BLM-987a53ecab5efde6cf9147bd99754e1b" uid="BLM-987a53ecab5efde6cf9147bd99754e1b"
+        name="mobileNumber" isUnique="false">
+      <type xsi:type="com.ibm.btools.bom.model.artifacts:PrimitiveType" href="RID-00000000000000000000000000000203.xmi#FID-00000000000000000000000000000203"/>
+      <upperBound xsi:type="com.ibm.btools.bom.model.artifacts:LiteralInteger" xmi:id="BLM-e20f49adcf771d2dfe0142c014359f7e"
+          uid="BLM-e20f49adcf771d2dfe0142c014359f7e" value="1"/>
+      <lowerBound xsi:type="com.ibm.btools.bom.model.artifacts:LiteralInteger" xmi:id="BLM-700b976a15a954b44dd153980b03235d"
+          uid="BLM-700b976a15a954b44dd153980b03235d" value="0"/>
+    </ownedAttribute>
+  </com.ibm.btools.bom.model.artifacts:Class>
+</xmi:XMI>

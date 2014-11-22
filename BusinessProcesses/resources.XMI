@@ -114,5 +114,37 @@
     </idRecords>
     <idRecords id="DM-8f0c85eb9a678717a5b97ddba37bc8c2" uri="RootProcessModel\Processes\Registration for new client\Model_dependencies.xmi"
         modelType="0" rootObjType="0" groupID="BLMNAV-a189ddb8e2ab2fb2264621ed202e19c4"/>
+    <idRecords id="BLM-ee9bd22a30cb0e0add28f5ef8d6462fb" uri="RootInformationModel\Business items\ViewModels\Model.xmi"
+        modelType="1" rootObjType="102" groupID="BLMNAV-d924d1f4ec87c31b1f94b167a1c034b1">
+      <rootObjIDs>BLM-6cc56f1647ce05b6c6dede13822c50f7</rootObjIDs>
+    </idRecords>
+    <idRecords id="BLM-574e0d783a3d28c58563112382fabd8b" uri="RootInformationModel\Business items\ViewModels\Address\Model.xmi"
+        modelType="1" rootObjType="1015" groupID="BLMNAV-35e221ce2a51d1d6882e3568ef1ea093">
+      <rootObjIDs>BLM-9ec3cee7384caa9a72641a56926e2c24</rootObjIDs>
+    </idRecords>
+    <idRecords id="BLM-597ec7f1abb9c3f364b486dd00d689b1" uri="RootInformationModel\Business items\City\Model.xmi"
+        modelType="1" rootObjType="1015" groupID="BLMNAV-106968c3dcf6b6385392bc3941ad2d70">
+      <rootObjIDs>BLM-c85dcd8a5b2d0e5e13a2ebf249152e33</rootObjIDs>
+    </idRecords>
+    <idRecords id="BLM-98162eeea7dc651284cc53bc8ddc9b39" uri="RootInformationModel\Business items\ViewModels\Passport\Model.xmi"
+        modelType="1" rootObjType="1015" groupID="BLMNAV-5fdde428afaeb2c2400c0500fc9d906c">
+      <rootObjIDs>BLM-408674e041718d42417b6af6d6eb9160</rootObjIDs>
+    </idRecords>
+    <idRecords id="BLM-1464b861d61247900db15e9d33768728" uri="RootInformationModel\Business items\Client\Model.xmi"
+        modelType="1" rootObjType="1015" groupID="BLMNAV-5b5365caea1940c7fdb1816800b95300">
+      <rootObjIDs>BLM-4835eeddbf850dfcf0e93773ea600059</rootObjIDs>
+    </idRecords>
+    <idRecords id="BLM-1f8ea2e145c88665143351474256873e" uri="RootInformationModel\Business items\User\Model.xmi"
+        modelType="1" rootObjType="1015" groupID="BLMNAV-9c3d5c75c3b1917d779d671f66968787">
+      <rootObjIDs>BLM-18fd020eef949f7932da7bf76e6f4f21</rootObjIDs>
+    </idRecords>
+    <idRecords id="BLM-d596ecc698233118ae9cccda17060c11" uri="RootInformationModel\Business items\ViewModels\Login\Model.xmi"
+        modelType="1" rootObjType="1015" groupID="BLMNAV-7fe998bda5c1dfeb40aa941a784d80a3">
+      <rootObjIDs>BLM-2611e1977b1ce978f735531067a2db0c</rootObjIDs>
+    </idRecords>
+    <idRecords id="BLM-5d8fe7f108d8163b60a27f3af392956e" uri="RootInformationModel\Business items\ViewModels\LoginTemplate\Model.xmi"
+        modelType="1" rootObjType="1015" groupID="BLMNAV-753a3c5007b34ae3f6226c4514c123e0">
+      <rootObjIDs>BLM-fff19cf4d66c4d3095417423dcae3295</rootObjIDs>
+    </idRecords>
   </com.ibm.btools.model.resourcemanager:ProjectResourcesMGR>
 </xmi:XMI>

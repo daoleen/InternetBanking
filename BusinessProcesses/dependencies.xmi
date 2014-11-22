@@ -3,7 +3,7 @@
     xmlns:xmi="http://www.omg.org/XMI" xmlns:com.ibm.btools.model.modelmanager.dependencymanager="http:///com/ibm/btools/model/modelmanager/dependencymanager.ecore"
     xmlns:com.ibm.btools.model.resourcemanager.resourceproperties="http:///com/ibm/btools/model/resourcemanager/resourceproperties.ecore">
   <com.ibm.btools.model.resourcemanager.resourceproperties:ResourceProperties versionID="7.0.0.0"
-      lastModified="1416613823390"/>
+      lastModified="1416616223843"/>
   <com.ibm.btools.model.modelmanager.dependencymanager:DependencyModel>
     <eObjectDescriptors eObjectID="BLM-bab2877bbce758de71fef1d534aa3868" eObjectName="Primary owner"
         dependenciesWhereSource="/1/@dependencies.0">
@@ -62,6 +62,111 @@
         dependenciesWhereSource="/1/@dependencies.11">
       <eObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-93f135e24f05cf7df548b285e2de0f32"/>
     </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-c85dcd8a5b2d0e5e13a2ebf249152e33" eObjectName="City">
+      <eObject href="BLM-597ec7f1abb9c3f364b486dd00d689b1.xmi#BLM-c85dcd8a5b2d0e5e13a2ebf249152e33"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-6cc56f1647ce05b6c6dede13822c50f7" eObjectName="ViewModels">
+      <eObject href="BLM-ee9bd22a30cb0e0add28f5ef8d6462fb.xmi#BLM-6cc56f1647ce05b6c6dede13822c50f7"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-9ec3cee7384caa9a72641a56926e2c24" eObjectName="Address"
+        dependenciesWhereSource="/1/@dependencies.12">
+      <eObject href="BLM-574e0d783a3d28c58563112382fabd8b.xmi#BLM-9ec3cee7384caa9a72641a56926e2c24"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-9d9fe1060df7626df98407dbdf92222f" eObjectName="city"
+        dependenciesWhereSource="/1/@dependencies.13">
+      <eObject href="BLM-574e0d783a3d28c58563112382fabd8b.xmi#BLM-9d9fe1060df7626df98407dbdf92222f"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-408674e041718d42417b6af6d6eb9160" eObjectName="Passport"
+        dependenciesWhereSource="/1/@dependencies.14">
+      <eObject href="BLM-98162eeea7dc651284cc53bc8ddc9b39.xmi#BLM-408674e041718d42417b6af6d6eb9160"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-8b48b889831d4af64bead553cb4294db" eObjectName="passport"
+        dependenciesWhereSource="/1/@dependencies.15">
+      <eObject href="BLM-1464b861d61247900db15e9d33768728.xmi#BLM-8b48b889831d4af64bead553cb4294db"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-435be4c14c4a31fe68801b56ddcd5797" eObjectName="address"
+        dependenciesWhereSource="/1/@dependencies.16">
+      <eObject href="BLM-1464b861d61247900db15e9d33768728.xmi#BLM-435be4c14c4a31fe68801b56ddcd5797"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-2611e1977b1ce978f735531067a2db0c" eObjectName="Login"
+        dependenciesWhereSource="/1/@dependencies.17 /1/@dependencies.19">
+      <eObject href="BLM-d596ecc698233118ae9cccda17060c11.xmi#BLM-2611e1977b1ce978f735531067a2db0c"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-fff19cf4d66c4d3095417423dcae3295" eObjectName="LoginTemplate"
+        dependenciesWhereSource="/1/@dependencies.18">
+      <eObject href="BLM-5d8fe7f108d8163b60a27f3af392956e.xmi#BLM-fff19cf4d66c4d3095417423dcae3295"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-18fd020eef949f7932da7bf76e6f4f21" eObjectName="User"
+        dependenciesWhereSource="/1/@dependencies.20">
+      <eObject href="BLM-1f8ea2e145c88665143351474256873e.xmi#BLM-18fd020eef949f7932da7bf76e6f4f21"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-78bf37967e72928edcaf801702542480" eObjectName="client"
+        dependenciesWhereSource="/1/@dependencies.21">
+      <eObject href="BLM-1f8ea2e145c88665143351474256873e.xmi#BLM-78bf37967e72928edcaf801702542480"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-4835eeddbf850dfcf0e93773ea600059" eObjectName="Client">
+      <eObject href="BLM-1464b861d61247900db15e9d33768728.xmi#BLM-4835eeddbf850dfcf0e93773ea600059"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-e0e7c161fe8fabf49fcb45db742c7e1c" eObjectName="client"
+        dependenciesWhereSource="/1/@dependencies.22">
+      <eObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-e0e7c161fe8fabf49fcb45db742c7e1c"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-a7855d75d49be29a41c66912e67d4c94" eObjectName="client"
+        dependenciesWhereSource="/1/@dependencies.23">
+      <eObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-a7855d75d49be29a41c66912e67d4c94"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-528688a78214663ddd64ecc6c5141344" eObjectName="client"
+        dependenciesWhereSource="/1/@dependencies.24">
+      <eObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-528688a78214663ddd64ecc6c5141344"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-5cb4108726f5242fb40f99e413dc9fc1" eObjectName="client"
+        dependenciesWhereSource="/1/@dependencies.25">
+      <eObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-5cb4108726f5242fb40f99e413dc9fc1"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-3bce05782274fd5677349f484e7a5498" eObjectName="passport"
+        dependenciesWhereSource="/1/@dependencies.26">
+      <eObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-3bce05782274fd5677349f484e7a5498"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-9ca742a2c65494303c5eda8361e20b2d" eObjectName="passport"
+        dependenciesWhereSource="/1/@dependencies.27">
+      <eObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-9ca742a2c65494303c5eda8361e20b2d"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-7f2ea38b007248c1ad094a7b53af6f4d" eObjectName="client"
+        dependenciesWhereSource="/1/@dependencies.28">
+      <eObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-7f2ea38b007248c1ad094a7b53af6f4d"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-8ce6c540c8fc325728b3a9cbaa664c33" eObjectName="client"
+        dependenciesWhereSource="/1/@dependencies.29">
+      <eObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-8ce6c540c8fc325728b3a9cbaa664c33"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-773450afdbb759f1ecac84805323a482" eObjectName="Input"
+        dependenciesWhereSource="/1/@dependencies.30">
+      <eObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-773450afdbb759f1ecac84805323a482"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-8597a17c3d6c17fafaa76454277612b6" eObjectName="client"
+        dependenciesWhereSource="/1/@dependencies.31">
+      <eObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-8597a17c3d6c17fafaa76454277612b6"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-272dbf02587cc9572b5db8bcae8c798a" eObjectName="client"
+        dependenciesWhereSource="/1/@dependencies.32">
+      <eObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-272dbf02587cc9572b5db8bcae8c798a"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-3dfa6b4be92bb78ba02d233327665d06" eObjectName="clientNull"
+        dependenciesWhereSource="/1/@dependencies.33">
+      <eObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-3dfa6b4be92bb78ba02d233327665d06"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-f3c9acee0df8e5e440ee2fdc41568d4d" eObjectName="Role requirement:1"
+        dependenciesWhereSource="/1/@dependencies.34">
+      <eObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-f3c9acee0df8e5e440ee2fdc41568d4d"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-7864dd8a1e0bf4d66182a75a9b2be315" eObjectName="loginData"
+        dependenciesWhereSource="/1/@dependencies.35">
+      <eObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-7864dd8a1e0bf4d66182a75a9b2be315"/>
+    </eObjectDescriptors>
+    <eObjectDescriptors eObjectID="BLM-472b5ae6f561d0a1d7ecf69964afda34" eObjectName="login"
+        dependenciesWhereSource="/1/@dependencies.36">
+      <eObject href="BLM-c0d0c391793918de8ef7bab8b93293c1.xmi#BLM-472b5ae6f561d0a1d7ecf69964afda34"/>
+    </eObjectDescriptors>
     <dependencies name="role" indirect="false" source="/1/@eObjectDescriptors.0" target="/1/@eObjectDescriptors.1"/>
     <dependencies name="role" indirect="false" source="/1/@eObjectDescriptors.2" target="/1/@eObjectDescriptors.3"/>
     <dependencies name="role" indirect="false" source="/1/@eObjectDescriptors.4" target="/1/@eObjectDescriptors.5"/>
@@ -79,5 +184,55 @@
         target="/1/@eObjectDescriptors.1"/>
     <dependencies name="role" indirect="false" source="/1/@eObjectDescriptors.14"
         target="/1/@eObjectDescriptors.5"/>
+    <dependencies name="owningPackage" indirect="false" source="/1/@eObjectDescriptors.17"
+        target="/1/@eObjectDescriptors.16"/>
+    <dependencies name="type" indirect="false" source="/1/@eObjectDescriptors.18"
+        target="/1/@eObjectDescriptors.15"/>
+    <dependencies name="owningPackage" indirect="false" source="/1/@eObjectDescriptors.19"
+        target="/1/@eObjectDescriptors.16"/>
+    <dependencies name="type" indirect="false" source="/1/@eObjectDescriptors.20"
+        target="/1/@eObjectDescriptors.19"/>
+    <dependencies name="type" indirect="false" source="/1/@eObjectDescriptors.21"
+        target="/1/@eObjectDescriptors.17"/>
+    <dependencies name="owningPackage" indirect="false" source="/1/@eObjectDescriptors.22"
+        target="/1/@eObjectDescriptors.16"/>
+    <dependencies name="owningPackage" indirect="false" source="/1/@eObjectDescriptors.23"
+        target="/1/@eObjectDescriptors.16"/>
+    <dependencies name="superClassifier" indirect="false" source="/1/@eObjectDescriptors.22"
+        target="/1/@eObjectDescriptors.23"/>
+    <dependencies name="superClassifier" indirect="false" source="/1/@eObjectDescriptors.24"
+        target="/1/@eObjectDescriptors.23"/>
+    <dependencies name="type" indirect="false" source="/1/@eObjectDescriptors.25"
+        target="/1/@eObjectDescriptors.26"/>
+    <dependencies name="type" indirect="false" source="/1/@eObjectDescriptors.27"
+        target="/1/@eObjectDescriptors.26"/>
+    <dependencies name="type" indirect="false" source="/1/@eObjectDescriptors.28"
+        target="/1/@eObjectDescriptors.26"/>
+    <dependencies name="type" indirect="false" source="/1/@eObjectDescriptors.29"
+        target="/1/@eObjectDescriptors.26"/>
+    <dependencies name="type" indirect="false" source="/1/@eObjectDescriptors.30"
+        target="/1/@eObjectDescriptors.26"/>
+    <dependencies name="type" indirect="false" source="/1/@eObjectDescriptors.31"
+        target="/1/@eObjectDescriptors.19"/>
+    <dependencies name="type" indirect="false" source="/1/@eObjectDescriptors.32"
+        target="/1/@eObjectDescriptors.19"/>
+    <dependencies name="type" indirect="false" source="/1/@eObjectDescriptors.33"
+        target="/1/@eObjectDescriptors.26"/>
+    <dependencies name="type" indirect="false" source="/1/@eObjectDescriptors.34"
+        target="/1/@eObjectDescriptors.26"/>
+    <dependencies name="type" indirect="false" source="/1/@eObjectDescriptors.35"
+        target="/1/@eObjectDescriptors.26"/>
+    <dependencies name="type" indirect="false" source="/1/@eObjectDescriptors.36"
+        target="/1/@eObjectDescriptors.26"/>
+    <dependencies name="type" indirect="false" source="/1/@eObjectDescriptors.37"
+        target="/1/@eObjectDescriptors.26"/>
+    <dependencies name="type" indirect="false" source="/1/@eObjectDescriptors.38"
+        target="/1/@eObjectDescriptors.26"/>
+    <dependencies name="role" indirect="false" source="/1/@eObjectDescriptors.39"
+        target="/1/@eObjectDescriptors.5"/>
+    <dependencies name="type" indirect="false" source="/1/@eObjectDescriptors.40"
+        target="/1/@eObjectDescriptors.22"/>
+    <dependencies name="type" indirect="false" source="/1/@eObjectDescriptors.41"
+        target="/1/@eObjectDescriptors.22"/>
   </com.ibm.btools.model.modelmanager.dependencymanager:DependencyModel>
 </xmi:XMI>

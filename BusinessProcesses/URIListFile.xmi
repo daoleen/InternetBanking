@@ -9,6 +9,8 @@
       RelativePath="RootResourceModel\Resources\Bank Employee" ParentRelativePath="RootResourceModel\Resources"/>
   <com.ibm.btools.model.filemanager:URIRelativePath URI="RootOrganizationModel\Organizations\Model.xmi"
       RelativePath="RootOrganizationModel\Organizations" ParentRelativePath="RootOrganizationModel"/>
+  <com.ibm.btools.model.filemanager:URIRelativePath URI="RootInformationModel\Business items\ViewModels\Login\Model.xmi"
+      RelativePath="RootInformationModel\Business items\ViewModels\Login" ParentRelativePath="RootInformationModel\Business items\ViewModels"/>
   <com.ibm.btools.model.filemanager:URIRelativePath URI="RootQueryModel\Intermediate profile\Model.xmi"
       RelativePath="RootQueryModel\Intermediate profile" ParentRelativePath="RootQueryModel"/>
   <com.ibm.btools.model.filemanager:URIRelativePath URI="RootExternalModel\Model.xmi"
@@ -21,20 +23,31 @@
       RelativePath="RootExternalModel\Business services" ParentRelativePath="RootExternalModel"/>
   <com.ibm.btools.model.filemanager:URIRelativePath URI="RootInformationModel\Model.xmi"
       RelativePath="RootInformationModel" ParentRelativePath=""/>
+  <com.ibm.btools.model.filemanager:URIRelativePath URI="RootInformationModel\Business items\ViewModels\Passport\Model.xmi"
+      RelativePath="RootInformationModel\Business items\ViewModels\Passport" ParentRelativePath="RootInformationModel\Business items\ViewModels"/>
   <com.ibm.btools.model.filemanager:URIRelativePath URI="RootSimulationModel\Model.xmi"
       RelativePath="RootSimulationModel" ParentRelativePath=""/>
   <com.ibm.btools.model.filemanager:URIRelativePath URI="RootResourceModel\Resources\Model.xmi"
       RelativePath="RootResourceModel\Resources" ParentRelativePath="RootResourceModel"/>
   <com.ibm.btools.model.filemanager:URIRelativePath URI="RootResourceModel\Resources\Client\Model.xmi"
       RelativePath="RootResourceModel\Resources\Client" ParentRelativePath="RootResourceModel\Resources"/>
+  <com.ibm.btools.model.filemanager:URIRelativePath URI="RootInformationModel\Business items\ViewModels\Address\Model.xmi"
+      RelativePath="RootInformationModel\Business items\ViewModels\Address" ParentRelativePath="RootInformationModel\Business items\ViewModels"/>
   <com.ibm.btools.model.filemanager:URIRelativePath URI="RootExternalModel\Business service objects\Model.xmi"
       RelativePath="RootExternalModel\Business service objects" ParentRelativePath="RootExternalModel"/>
   <com.ibm.btools.model.filemanager:URIRelativePath URI="RootServicesModel\Model.xmi"
       RelativePath="RootServicesModel" ParentRelativePath=""/>
+  <com.ibm.btools.model.filemanager:URIRelativePath URI="RootInformationModel\Business items\City\Model.xmi"
+      RelativePath="RootInformationModel\Business items\City" ParentRelativePath="RootInformationModel\Business items"/>
   <com.ibm.btools.model.filemanager:URIRelativePath URI="RootProcessModel\Processes\Registration for new client\Model.xmi"
       RelativePath="RootProcessModel\Processes\Registration for new client" ParentRelativePath="RootProcessModel\Processes"/>
+  <com.ibm.btools.model.filemanager:URIRelativePath URI="RootInformationModel\Business items\ViewModels\Model.xmi"
+      RelativePath="RootInformationModel\Business items\ViewModels" ParentRelativePath="RootInformationModel\Business items"/>
   <com.ibm.btools.model.filemanager:URIRelativePath URI="RootOrganizationModel\Model.xmi"
       RelativePath="RootOrganizationModel" ParentRelativePath=""/>
+  <com.ibm.btools.model.filemanager:URIRelativePath URI="RootInformationModel\Business items\ViewModels\LoginTemplate\Model.xmi"
+      RelativePath="RootInformationModel\Business items\ViewModels\LoginTemplate"
+      ParentRelativePath="RootInformationModel\Business items\ViewModels"/>
   <com.ibm.btools.model.filemanager:URIRelativePath URI="RootResourceModel\Model.xmi"
       RelativePath="RootResourceModel" ParentRelativePath=""/>
   <com.ibm.btools.model.filemanager:URIRelativePath URI="RootClassifierModel\Classifiers\Model.xmi"
@@ -51,6 +64,10 @@
       RelativePath="RootClassifierModel" ParentRelativePath=""/>
   <com.ibm.btools.model.filemanager:URIRelativePath URI="RootResourceModel\Resources\System\Model.xmi"
       RelativePath="RootResourceModel\Resources\System" ParentRelativePath="RootResourceModel\Resources"/>
+  <com.ibm.btools.model.filemanager:URIRelativePath URI="RootInformationModel\Business items\User\Model.xmi"
+      RelativePath="RootInformationModel\Business items\User" ParentRelativePath="RootInformationModel\Business items"/>
+  <com.ibm.btools.model.filemanager:URIRelativePath URI="RootInformationModel\Business items\Client\Model.xmi"
+      RelativePath="RootInformationModel\Business items\Client" ParentRelativePath="RootInformationModel\Business items"/>
   <com.ibm.btools.model.filemanager:URIRelativePath URI="RootProcessModel\Processes\Registration for new client\View.xmi"
       RelativePath="RootProcessModel\Processes\Registration for new client" ParentRelativePath="RootProcessModel\Processes\Registration for new client"/>
 </xmi:XMI>

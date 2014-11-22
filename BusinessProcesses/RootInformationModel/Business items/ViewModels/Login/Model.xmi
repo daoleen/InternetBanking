@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:com.ibm.btools.bom.model.artifacts="http:///com/ibm/btools/bom/model/artifacts.ecore"
+    xmlns:com.ibm.btools.model.resourcemanager.resourceproperties="http:///com/ibm/btools/model/resourcemanager/resourceproperties.ecore">
+  <com.ibm.btools.model.resourcemanager.resourceproperties:ResourceProperties versionID="7.0.0.0"
+      lastModified="1416615413515"/>
+  <com.ibm.btools.bom.model.artifacts:Class xmi:id="BLM-2611e1977b1ce978f735531067a2db0c"
+      uid="BLM-2611e1977b1ce978f735531067a2db0c" name="Login">
+    <ownedComment xmi:id="BLM-0d0f6b70f2d209b390003233e3a494b4" uid="BLM-0d0f6b70f2d209b390003233e3a494b4"
+        name="###_NAME_COMMENT_###" body=""/>
+    <owningPackage href="BLM-ee9bd22a30cb0e0add28f5ef8d6462fb.xmi#BLM-6cc56f1647ce05b6c6dede13822c50f7"/>
+    <superClassifier xsi:type="com.ibm.btools.bom.model.artifacts:Class" href="BLM-5d8fe7f108d8163b60a27f3af392956e.xmi#BLM-fff19cf4d66c4d3095417423dcae3295"/>
+  </com.ibm.btools.bom.model.artifacts:Class>
+</xmi:XMI>

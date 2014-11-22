@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:com.ibm.btools.bom.model.artifacts="http:///com/ibm/btools/bom/model/artifacts.ecore"
+    xmlns:com.ibm.btools.model.resourcemanager.resourceproperties="http:///com/ibm/btools/model/resourcemanager/resourceproperties.ecore">
+  <com.ibm.btools.model.resourcemanager.resourceproperties:ResourceProperties versionID="7.0.0.0"
+      lastModified="1416614864546"/>
+  <com.ibm.btools.bom.model.artifacts:Class xmi:id="BLM-9ec3cee7384caa9a72641a56926e2c24"
+      uid="BLM-9ec3cee7384caa9a72641a56926e2c24" name="Address">
+    <ownedComment xmi:id="BLM-51adfeaa256ed17e847ed92421057e05" uid="BLM-51adfeaa256ed17e847ed92421057e05"
+        name="###_NAME_COMMENT_###" body=""/>
+    <owningPackage href="BLM-ee9bd22a30cb0e0add28f5ef8d6462fb.xmi#BLM-6cc56f1647ce05b6c6dede13822c50f7"/>
+    <ownedAttribute xmi:id="BLM-9d9fe1060df7626df98407dbdf92222f" uid="BLM-9d9fe1060df7626df98407dbdf92222f"
+        name="city" isUnique="false">
+      <type xsi:type="com.ibm.btools.bom.model.artifacts:Class" href="BLM-597ec7f1abb9c3f364b486dd00d689b1.xmi#BLM-c85dcd8a5b2d0e5e13a2ebf249152e33"/>
+      <upperBound xsi:type="com.ibm.btools.bom.model.artifacts:LiteralInteger" xmi:id="BLM-b9f2d64adc6d42d33ebabe85ce13f74b"
+          uid="BLM-b9f2d64adc6d42d33ebabe85ce13f74b" value="1"/>
+      <lowerBound xsi:type="com.ibm.btools.bom.model.artifacts:LiteralInteger" xmi:id="BLM-2f3da03b17119db0a3828580184e89ba"
+          uid="BLM-2f3da03b17119db0a3828580184e89ba" value="0"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="BLM-a8f41691224397bd6793a1df4a6ececf" uid="BLM-a8f41691224397bd6793a1df4a6ececf"
+        name="street" isUnique="false">
+      <type xsi:type="com.ibm.btools.bom.model.artifacts:PrimitiveType" href="RID-00000000000000000000000000000203.xmi#FID-00000000000000000000000000000203"/>
+      <upperBound xsi:type="com.ibm.btools.bom.model.artifacts:LiteralInteger" xmi:id="BLM-0f91a3816a9b2b0dfa0a51be86eaa7b7"
+          uid="BLM-0f91a3816a9b2b0dfa0a51be86eaa7b7" value="1"/>
+      <lowerBound xsi:type="com.ibm.btools.bom.model.artifacts:LiteralInteger" xmi:id="BLM-394e681955abc8655da949c437613a52"
+          uid="BLM-394e681955abc8655da949c437613a52" value="0"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="BLM-36fb17626261f7dcfbd6b927a5f35cf9" uid="BLM-36fb17626261f7dcfbd6b927a5f35cf9"
+        name="houseNumber" isUnique="false">
+      <ownedComment xmi:id="BLM-d6a9110fb74c284858984fac29fcad43" uid="BLM-d6a9110fb74c284858984fac29fcad43"
+          body="номер дома"/>
+      <type xsi:type="com.ibm.btools.bom.model.artifacts:PrimitiveType" href="RID-00000000000000000000000000000211.xmi#FID-00000000000000000000000000000211"/>
+      <upperBound xsi:type="com.ibm.btools.bom.model.artifacts:LiteralInteger" xmi:id="BLM-e186cb65d1b46e0494400ed5ab4f8f97"
+          uid="BLM-e186cb65d1b46e0494400ed5ab4f8f97" value="1"/>
+      <lowerBound xsi:type="com.ibm.btools.bom.model.artifacts:LiteralInteger" xmi:id="BLM-55c7cdf117e3dc98f2bf59a28ca9bb0f"
+          uid="BLM-55c7cdf117e3dc98f2bf59a28ca9bb0f" value="0"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="BLM-fa661664499b0d12395d2725dd0875e9" uid="BLM-fa661664499b0d12395d2725dd0875e9"
+        name="housingNumber" isUnique="false">
+      <ownedComment xmi:id="BLM-554c3729139eed9d0b19ec0fb75d63d8" uid="BLM-554c3729139eed9d0b19ec0fb75d63d8"
+          body="номер корпуса"/>
+      <type xsi:type="com.ibm.btools.bom.model.artifacts:PrimitiveType" href="RID-00000000000000000000000000000211.xmi#FID-00000000000000000000000000000211"/>
+      <upperBound xsi:type="com.ibm.btools.bom.model.artifacts:LiteralInteger" xmi:id="BLM-6875c85bbaaba860df6fcec8f039fa8e"
+          uid="BLM-6875c85bbaaba860df6fcec8f039fa8e" value="1"/>
+      <lowerBound xsi:type="com.ibm.btools.bom.model.artifacts:LiteralInteger" xmi:id="BLM-3f732825c40f52e77b1752d12b782a24"
+          uid="BLM-3f732825c40f52e77b1752d12b782a24" value="0"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:id="BLM-050ad8713b43ef73d078e965ac7617e2" uid="BLM-050ad8713b43ef73d078e965ac7617e2"
+        name="apartmentNumber" isUnique="false">
+      <ownedComment xmi:id="BLM-51840b22d1499a38d09f93557f1bf0d2" uid="BLM-51840b22d1499a38d09f93557f1bf0d2"
+          body="номер квартиры"/>
+      <type xsi:type="com.ibm.btools.bom.model.artifacts:PrimitiveType" href="RID-00000000000000000000000000000211.xmi#FID-00000000000000000000000000000211"/>
+      <upperBound xsi:type="com.ibm.btools.bom.model.artifacts:LiteralInteger" xmi:id="BLM-b5838b9b2cb443ead95a9a00fe87a550"
+          uid="BLM-b5838b9b2cb443ead95a9a00fe87a550" value="1"/>
+      <lowerBound xsi:type="com.ibm.btools.bom.model.artifacts:LiteralInteger" xmi:id="BLM-0a4379e464f55a6a4a8452d846e49fe9"
+          uid="BLM-0a4379e464f55a6a4a8452d846e49fe9" value="0"/>
+    </ownedAttribute>
+  </com.ibm.btools.bom.model.artifacts:Class>
+</xmi:XMI>
