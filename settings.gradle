@@ -1,0 +1,3 @@
+rootProject.name = 'InternetBanking'
+include 'InternetBankingEJB'
+
