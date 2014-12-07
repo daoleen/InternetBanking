@@ -9,7 +9,7 @@
 
     <container qualifier="websphere" default="true">
         <configuration>
-            <property name="remoteServerAddress">localhost</property>
+            <property name="remoteServerAddress">192.168.1.10</property>
             <property name="remoteServerSoapPort">8880</property>
             <property name="securityEnabled">true</property>
             <property name="username">admin</property>
