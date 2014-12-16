@@ -1,8 +1,8 @@
 package com.daoleen.banking.ejb.test.integration;
 
-import com.daoleen.banking.domain.City;
-import com.daoleen.banking.ejb.CityBean;
-import com.daoleen.banking.ejb.interfaces.local.CityRepository;
+import com.daoleen.banking.domain.BaseEntity;
+import com.daoleen.banking.ejb.AbstractCrudBean;
+import com.daoleen.banking.repository.local.CrudService;
 import org.jboss.arquillian.container.test.api.Deployment;
 import org.jboss.arquillian.junit.Arquillian;
 import org.jboss.shrinkwrap.api.ShrinkWrap;
@@ -19,10 +19,11 @@ public abstract class AbstractIntegrationTest {
     public static JavaArchive createDeployment() {
         JavaArchive archive = ShrinkWrap.create(JavaArchive.class, "InternetBankingEJB.jar")
                 .addPackage(AbstractIntegrationTest.class.getPackage())
-                .addPackage(CityBean.class.getPackage())
-                .addPackage(CityRepository.class.getPackage())
-                .addPackage(City.class.getPackage())
+                .addPackage(AbstractCrudBean.class.getPackage())
+                .addPackage(CrudService.class.getPackage())
+                .addPackage(BaseEntity.class.getPackage())
                 .addAsResource("META-INF/log4j.properties")
+                .addAsResource("log4j.properties")
                 .addAsResource("META-INF/logging.configuration")
                 .addAsResource("META-INF/persistence.xml")
                 .addAsResource("sql/city.sql")

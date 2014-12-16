@@ -11,7 +11,10 @@ import java.io.Serializable;
  */
 @Entity
 @Table(name = "city")
-public class City implements Serializable {
+@NamedQueries({
+        @NamedQuery(name = "findByName", query = "select c from City c where c.name = :name")
+})
+public class City extends BaseEntity<Integer> implements Serializable {
     private static final long serialVersionUID = 3460842343712412283L;
 
     @Id
@@ -24,6 +27,18 @@ public class City implements Serializable {
     @Column(name = "name", unique = true)
     private String name;
 
+
+    @Override
+    public Integer getIdentifier() {
+        if(id == 0) return null;
+        return id;
+    }
+
+    public City() {}
+
+    public City(String name) {
+        this.name = name;
+    }
 
     public int getId() {
         return id;
@@ -39,5 +54,10 @@ public class City implements Serializable {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("City{ id = %d, name = %s }", id, name);
     }
 }

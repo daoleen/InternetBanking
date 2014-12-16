@@ -1,32 +1,26 @@
 package com.daoleen.banking.ejb.test.integration;
 
+import com.daoleen.banking.domain.BaseEntity;
 import com.daoleen.banking.domain.City;
-import com.daoleen.banking.ejb.interfaces.local.CityRepository;
-import org.junit.Before;
-import org.junit.Test;
+import com.daoleen.banking.repository.local.CityService;
 
 import javax.ejb.EJB;
-import java.util.List;
-
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
 
 /**
  * Created by alex on 12/7/14.
  */
-public class CityBeanTest extends AbstractIntegrationTest {
+public class CityBeanTest extends AbstractCrudBeanTest {
 
     @EJB
-    private CityRepository cityRepository;
+    private CityService cityService;
 
-    @Test
-    public void testIsLoaded() {
-        assertNotNull(cityRepository);
+    @Override
+    protected CityService getCrudService() {
+        return cityService;
     }
 
-    @Before
-    public void testCount() {
-        List<City> all = cityRepository.findAll();
-        assertEquals(2, all.size());
+    @Override
+    protected BaseEntity createNewEntity() {
+        return new City("Kiev");
     }
 }
