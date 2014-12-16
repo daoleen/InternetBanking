@@ -1,20 +1,20 @@
 package com.daoleen.banking.ejb;
 
 import com.daoleen.banking.domain.City;
-import com.daoleen.banking.repository.local.CityService;
+import com.daoleen.banking.repository.local.CityRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import javax.ejb.Local;
 import javax.ejb.Stateless;
-import javax.persistence.EntityNotFoundException;
+import javax.persistence.NoResultException;
 
 /**
  * Created by alex on 12/6/14.
  */
 @Stateless
-@Local(CityService.class)
-public class CityBean extends AbstractCrudBean<City, Integer> implements CityService {
+@Local(CityRepository.class)
+public class CityBean extends AbstractBean<City, Integer> implements CityRepository {
     private static final Logger logger = LoggerFactory.getLogger(CityBean.class);
 
     public CityBean() {
@@ -28,8 +28,7 @@ public class CityBean extends AbstractCrudBean<City, Integer> implements CitySer
             return (City) em.createNamedQuery("findByName")
                     .setParameter("name", name)
                     .getSingleResult();
-        }
-        catch (EntityNotFoundException e) {
+        } catch (NoResultException e) {
             logger.debug("City has not been found");
         }
         return null;

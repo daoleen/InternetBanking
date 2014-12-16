@@ -1,6 +1,6 @@
 package com.daoleen.banking.repository.local;
 
-import com.daoleen.banking.domain.BaseEntity;
+import com.daoleen.banking.domain.Identifiable;
 
 import java.io.Serializable;
 import java.util.List;
@@ -15,7 +15,7 @@ import java.util.List;
  * @type T : the entity object
  * @type I : type of id field
  */
-public interface CrudService<T extends BaseEntity<I>, I extends Serializable> {
+public interface Repository<T extends Identifiable<I>, I extends Serializable> {
     public List<T> findAll();
     public T findById(I id);
     public void save(T entity);

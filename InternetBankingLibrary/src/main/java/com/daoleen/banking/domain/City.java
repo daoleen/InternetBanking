@@ -14,13 +14,13 @@ import java.io.Serializable;
 @NamedQueries({
         @NamedQuery(name = "findByName", query = "select c from City c where c.name = :name")
 })
-public class City extends BaseEntity<Integer> implements Serializable {
+public class City implements Identifiable<Integer>, Serializable {
     private static final long serialVersionUID = 3460842343712412283L;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
-    private int id;
+    private Integer id;
 
     @NotEmpty
     @Size(min = 3, max = 64, message = "Длина поля должна быть между {min} и {max}")
@@ -28,23 +28,18 @@ public class City extends BaseEntity<Integer> implements Serializable {
     private String name;
 
 
-    @Override
-    public Integer getIdentifier() {
-        if(id == 0) return null;
-        return id;
-    }
-
     public City() {}
 
     public City(String name) {
         this.name = name;
     }
 
-    public int getId() {
+    @Override
+    public Integer getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
