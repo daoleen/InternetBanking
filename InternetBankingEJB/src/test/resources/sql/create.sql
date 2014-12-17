@@ -34,3 +34,9 @@ CREATE TABLE IF NOT EXISTS user (
   client_id      BIGINT      NOT NULL,
   FOREIGN KEY (client_id) REFERENCES client (id) ON DELETE CASCADE
 );
+
+CREATE TABLE IF NOT EXISTS bank (
+  bic                 INTEGER      NOT NULL PRIMARY KEY,
+  name                VARCHAR(255) NOT NULL,
+  bank_account_number BIGINT       NOT NULL
+);

@@ -6,3 +6,4 @@ VALUES ('Alexander', 'Kozlov', 'Valerevich', '2010-02-02', 'MP', 100000000, 1, C
   ('Alex', 'Kozlov', 'Petrovich', '2010-07-02', 'MP', 100200000, 1, CURRENT_TIME(), '200-01-02');
 INSERT INTO user (username, password, is_enabled, is_blocked, client_id)
 VALUES ('alexssource@gmail.com', '11111', TRUE, FALSE, 1), ('admin@localhost', '22222', TRUE, FALSE, 2);
+INSERT INTO bank (bic, name, bank_account_number) VALUES (1000000, 'БПС', 100000000000000001);

@@ -886,7 +886,7 @@
       <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_5BeM0HJ7EeS_Mo0ZUQqqgA" name="INTEGER" primitiveType="INTEGER"/>
     </columns>
     <columns xsi:type="LUW:LUWColumn" xmi:id="_Vn5QIHJ7EeS_Mo0ZUQqqgA" name="name" nullable="false">
-      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_dCMegHJ7EeS_Mo0ZUQqqgA" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="255"/>
+      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_dCMegHJ7EeS_Mo0ZUQqqgA" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="32"/>
     </columns>
     <columns xsi:type="LUW:LUWColumn" xmi:id="_W8Fb4HJ7EeS_Mo0ZUQqqgA" name="bank_account_number" nullable="false">
       <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_LSnB4HJ8EeS_Mo0ZUQqqgA" name="BIGINT" primitiveType="BIGINT"/>
