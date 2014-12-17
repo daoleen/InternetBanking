@@ -11,7 +11,6 @@ public interface UserRepository extends Repository<User, Long> {
 
     /**
      * Retrieve a list of ACTIVE (non-blocked) users
-     *
      * @return list of active users
      */
     @Override

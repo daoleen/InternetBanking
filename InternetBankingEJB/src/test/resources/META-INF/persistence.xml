@@ -18,7 +18,10 @@
             <property name="hibernate.show_sql" value="true"/>
             <!--<property name="hibernate.hbm2ddl.auto" value="create" />-->
             <property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>
-            <property name="javax.persistence.sql-load-script-source" value="sql/data.sql"/>
+            <property name="javax.persistence.create-script-source" value="sql/create.sql"/>
+            <property name="javax.persistence.sql-load-script-source" value="sql/insert.sql"/>
+            <property name="javax.persistence.schema-generation.drop-script-source" value="sql/drop.sql"/>
+            <!--<property name="javax.persistence.sql-load-script-source" value="sql/data.sql"/>-->
         </properties>
     </persistence-unit>
 </persistence>

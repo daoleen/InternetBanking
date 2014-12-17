@@ -9,12 +9,8 @@ import java.util.List;
  */
 public interface ClientRepository extends Repository<Client, Long> {
     public Client findByPassport(String series, int number);
-
     public Client findByMobileNumber(String number);
-
     public List<Client> findByAddressId(long addressId);
-
     public List<Client> findbyAddress(String street, String city, int houseNumber, int apartmentNumber);
-
     public List<Client> findByFIO(String firstName, String lastName, String patronymicName);
 }

@@ -65,11 +65,12 @@ public class Client implements Identifiable<Long>, Serializable {
     private String mobileNumber;
 
 
+
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "address_id")
     private ClientAddress address;
 
-    @OneToOne(mappedBy = "client")
+    @OneToOne(mappedBy = "client", orphanRemoval = true)
     private User user;
 
 

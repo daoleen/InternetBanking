@@ -26,7 +26,10 @@ public abstract class AbstractIntegrationTest {
                 .addAsResource("log4j.properties")
                 .addAsResource("META-INF/logging.configuration")
                 .addAsResource("META-INF/persistence.xml")
-                .addAsResource("sql/data.sql")
+//                .addAsResource("sql/data.sql")
+                .addAsResource("sql/create.sql")
+                .addAsResource("sql/drop.sql")
+                .addAsResource("sql/insert.sql")
                 .addAsResource("META-INF/beans.xml");
         System.out.println("Jar contains: " + archive.toString(true));
         return archive;
