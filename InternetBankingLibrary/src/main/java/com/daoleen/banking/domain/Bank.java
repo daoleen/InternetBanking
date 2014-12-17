@@ -4,6 +4,7 @@ import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.io.Serializable;
+import java.util.List;
 
 /**
  * Created by alex on 12/17/14.
@@ -29,6 +30,10 @@ public class Bank implements Identifiable<Integer>, Serializable {
     @NotNull
     @Column(name = "bank_account_number")
     private Long bankAccountNumber;
+
+
+    @OneToMany(mappedBy = "bank", fetch = FetchType.LAZY, orphanRemoval = true)
+    private List<PaymentCard> paymentCards;
 
     public Bank() {
     }

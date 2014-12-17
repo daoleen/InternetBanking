@@ -1,4 +1,4 @@
-package com.daoleen.banking.repository.local;
+package com.daoleen.banking.repository;
 
 import com.daoleen.banking.domain.User;
 

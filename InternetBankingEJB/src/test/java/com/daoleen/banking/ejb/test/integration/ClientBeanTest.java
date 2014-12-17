@@ -3,8 +3,8 @@ package com.daoleen.banking.ejb.test.integration;
 import com.daoleen.banking.domain.Client;
 import com.daoleen.banking.domain.ClientAddress;
 import com.daoleen.banking.domain.Identifiable;
-import com.daoleen.banking.repository.local.ClientAddressRepository;
-import com.daoleen.banking.repository.local.ClientRepository;
+import com.daoleen.banking.repository.ClientAddressRepository;
+import com.daoleen.banking.repository.ClientRepository;
 import org.junit.Test;
 
 import javax.ejb.EJB;

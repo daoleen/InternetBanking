@@ -1,7 +1,7 @@
 package com.daoleen.banking.ejb;
 
 import com.daoleen.banking.domain.User;
-import com.daoleen.banking.repository.local.UserRepository;
+import com.daoleen.banking.repository.UserRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

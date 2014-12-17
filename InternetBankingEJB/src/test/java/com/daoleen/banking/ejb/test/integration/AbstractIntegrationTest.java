@@ -2,7 +2,7 @@ package com.daoleen.banking.ejb.test.integration;
 
 import com.daoleen.banking.domain.Identifiable;
 import com.daoleen.banking.ejb.AbstractBean;
-import com.daoleen.banking.repository.local.Repository;
+import com.daoleen.banking.repository.Repository;
 import org.jboss.arquillian.container.test.api.Deployment;
 import org.jboss.arquillian.junit.Arquillian;
 import org.jboss.shrinkwrap.api.ShrinkWrap;

@@ -5,6 +5,7 @@ import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.io.Serializable;
 import java.util.Date;
+import java.util.List;
 
 /**
  * Created by alex on 12/17/14.
@@ -70,8 +71,11 @@ public class Client implements Identifiable<Long>, Serializable {
     @JoinColumn(name = "address_id")
     private ClientAddress address;
 
-    @OneToOne(mappedBy = "client", orphanRemoval = true)
+    @OneToOne(mappedBy = "client", fetch = FetchType.LAZY, orphanRemoval = true)
     private User user;
+
+    @OneToMany(mappedBy = "client", fetch = FetchType.LAZY, orphanRemoval = true)
+    private List<PaymentCard> paymentCards;
 
 
     public Client() {

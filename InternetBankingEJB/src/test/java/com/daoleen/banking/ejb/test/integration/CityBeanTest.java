@@ -2,7 +2,7 @@ package com.daoleen.banking.ejb.test.integration;
 
 import com.daoleen.banking.domain.City;
 import com.daoleen.banking.domain.Identifiable;
-import com.daoleen.banking.repository.local.CityRepository;
+import com.daoleen.banking.repository.CityRepository;
 import org.junit.Test;
 
 import javax.ejb.EJB;

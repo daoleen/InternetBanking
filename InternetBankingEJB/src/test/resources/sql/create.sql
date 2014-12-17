@@ -40,3 +40,14 @@ CREATE TABLE IF NOT EXISTS bank (
   name                VARCHAR(255) NOT NULL,
   bank_account_number BIGINT       NOT NULL
 );
+
+CREATE TABLE IF NOT EXISTS payment_card (
+  card_number CHAR(19) NOT NULL PRIMARY KEY,
+  bank_id INTEGER NOT NULL,
+  client_id BIGINT NOT NULL,
+  amount DOUBLE NOT NULL DEFAULT '0.0',
+  pin_code VARCHAR(32) NOT NULL,
+  created_date DATE NOT NULL DEFAULT CURRENT_DATE(),
+  FOREIGN KEY (bank_id) REFERENCES bank(bic) ON DELETE CASCADE,
+  FOREIGN KEY (client_id) REFERENCES client(id) ON DELETE CASCADE
+);

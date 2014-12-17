@@ -2,7 +2,7 @@ package com.daoleen.banking.ejb.test.integration;
 
 import com.daoleen.banking.domain.Bank;
 import com.daoleen.banking.domain.Identifiable;
-import com.daoleen.banking.repository.local.BankRepository;
+import com.daoleen.banking.repository.BankRepository;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
