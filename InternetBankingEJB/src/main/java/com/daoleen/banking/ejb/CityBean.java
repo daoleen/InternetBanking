@@ -7,6 +7,7 @@ import org.slf4j.LoggerFactory;
 
 import javax.ejb.Local;
 import javax.ejb.Stateless;
+import javax.enterprise.inject.Typed;
 import javax.persistence.NoResultException;
 
 /**
@@ -14,6 +15,7 @@ import javax.persistence.NoResultException;
  */
 @Stateless
 @Local(CityRepository.class)
+@Typed(CityRepository.class)
 public class CityBean extends AbstractBean<City, Integer> implements CityRepository {
     private static final Logger logger = LoggerFactory.getLogger(CityBean.class);
 
@@ -29,7 +31,7 @@ public class CityBean extends AbstractBean<City, Integer> implements CityReposit
                     .setParameter("name", name)
                     .getSingleResult();
         } catch (NoResultException e) {
-            logger.debug("City has not been found");
+            logger.info("City has not been found");
         }
         return null;
     }

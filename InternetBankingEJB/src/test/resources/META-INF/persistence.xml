@@ -9,6 +9,7 @@
         <jta-data-source>java:/jdbc/h2</jta-data-source>
 
         <class>com.daoleen.banking.domain.City</class>
+        <class>com.daoleen.banking.domain.User</class>
 
         <properties>
             <property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect"/>
@@ -17,7 +18,7 @@
             <property name="hibernate.show_sql" value="true"/>
             <!--<property name="hibernate.hbm2ddl.auto" value="create" />-->
             <property name="javax.persistence.schema-generation.database.action" value="drop-and-create"/>
-            <property name="javax.persistence.sql-load-script-source" value="sql/city.sql"/>
+            <property name="javax.persistence.sql-load-script-source" value="sql/data.sql"/>
         </properties>
     </persistence-unit>
 </persistence>

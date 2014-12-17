@@ -230,6 +230,12 @@
               <styles xsi:type="notation:FontStyle" xmi:id="_WObWk3J5EeS_Mo0ZUQqqgA"/>
               <layoutConstraint xsi:type="notation:Bounds" xmi:id="_WObWlHJ5EeS_Mo0ZUQqqgA"/>
             </children>
+            <children xmi:id="_R-TzYIWMEeSGIIZn_uykNQ" type="Column" element="_R-SlQIWMEeSGIIZn_uykNQ">
+              <children xmi:id="_R-UacIWMEeSGIIZn_uykNQ" type="DiagramName"/>
+              <children xmi:id="_R-UacYWMEeSGIIZn_uykNQ" type="Description"/>
+              <styles xsi:type="notation:FontStyle" xmi:id="_R-TzYYWMEeSGIIZn_uykNQ" fontName="Sans"/>
+              <layoutConstraint xsi:type="notation:Bounds" xmi:id="_R-TzYoWMEeSGIIZn_uykNQ"/>
+            </children>
             <styles xsi:type="datanotation:DataListCompartmentStyle" xmi:id="_QyocS3J5EeS_Mo0ZUQqqgA"/>
           </children>
           <children xmi:id="_QyocTHJ5EeS_Mo0ZUQqqgA" visible="false" type="Index.Compartment">
@@ -517,48 +523,6 @@
           <bendpoints xsi:type="notation:RelativeBendpoints" xmi:id="_sUg5YnJ4EeS_Mo0ZUQqqgA" points="[-397, -197, 6404, 239]$[-2831, -197, 3970, 239]$[-2831, -1123, 3970, -687]$[-4657, -1123, 2144, -687]"/>
           <sourceAnchor xsi:type="notation:IdentityAnchor" xmi:id="_sU9lUHJ4EeS_Mo0ZUQqqgA" id="(0.0,0.259828)"/>
         </edges>
-        <edges xmi:id="_uWVxwHJ5EeS_Mo0ZUQqqgA" element="_t7zx4HJ5EeS_Mo0ZUQqqgA" source="_QyocQHJ5EeS_Mo0ZUQqqgA" target="_4ZjAQHJyEeS_Mo0ZUQqqgA">
-          <children xmi:id="_uWVxw3J5EeS_Mo0ZUQqqgA" type="ForeignKey.Name.Label">
-            <children xmi:id="_uWVxxXJ5EeS_Mo0ZUQqqgA" type="FKRelationshipName">
-              <children xmi:id="_uWVxyHJ5EeS_Mo0ZUQqqgA" type="DiagramName"/>
-              <children xmi:id="_uWVxyXJ5EeS_Mo0ZUQqqgA" type="Description"/>
-              <styles xsi:type="notation:FontStyle" xmi:id="_uWVxxnJ5EeS_Mo0ZUQqqgA"/>
-              <layoutConstraint xsi:type="notation:Bounds" xmi:id="_uWVxx3J5EeS_Mo0ZUQqqgA"/>
-            </children>
-            <layoutConstraint xsi:type="notation:Location" xmi:id="_uWVxxHJ5EeS_Mo0ZUQqqgA" y="-186"/>
-          </children>
-          <children xmi:id="_uWVxynJ5EeS_Mo0ZUQqqgA" type="Child.RoleName">
-            <children xmi:id="_uWVxzHJ5EeS_Mo0ZUQqqgA" type="ChildRoleName">
-              <children xmi:id="_uWVxz3J5EeS_Mo0ZUQqqgA" type="DiagramName"/>
-              <children xmi:id="_uWVx0HJ5EeS_Mo0ZUQqqgA" type="Description"/>
-              <styles xsi:type="notation:FontStyle" xmi:id="_uWVxzXJ5EeS_Mo0ZUQqqgA"/>
-              <layoutConstraint xsi:type="notation:Bounds" xmi:id="_uWVxznJ5EeS_Mo0ZUQqqgA"/>
-            </children>
-            <layoutConstraint xsi:type="notation:Location" xmi:id="_uWVxy3J5EeS_Mo0ZUQqqgA" x="-265" y="-662"/>
-          </children>
-          <children xmi:id="_uWVx0XJ5EeS_Mo0ZUQqqgA" type="Parent.RoleName">
-            <children xmi:id="_uWVx03J5EeS_Mo0ZUQqqgA" type="ParentRoleName">
-              <children xmi:id="_uWe7sHJ5EeS_Mo0ZUQqqgA" type="DiagramName"/>
-              <children xmi:id="_uWe7sXJ5EeS_Mo0ZUQqqgA" type="Description"/>
-              <styles xsi:type="notation:FontStyle" xmi:id="_uWVx1HJ5EeS_Mo0ZUQqqgA"/>
-              <layoutConstraint xsi:type="notation:Bounds" xmi:id="_uWVx1XJ5EeS_Mo0ZUQqqgA"/>
-            </children>
-            <layoutConstraint xsi:type="notation:Location" xmi:id="_uWVx0nJ5EeS_Mo0ZUQqqgA" y="-397"/>
-          </children>
-          <children xmi:id="_uWe7snJ5EeS_Mo0ZUQqqgA" type="Child.ReferentialIntegrity">
-            <children xmi:id="_uWe7tHJ5EeS_Mo0ZUQqqgA" type="ChildRiName">
-              <children xmi:id="_uWe7t3J5EeS_Mo0ZUQqqgA" type="DiagramName"/>
-              <children xmi:id="_uWe7uHJ5EeS_Mo0ZUQqqgA" type="Description"/>
-              <styles xsi:type="notation:FontStyle" xmi:id="_uWe7tXJ5EeS_Mo0ZUQqqgA"/>
-              <layoutConstraint xsi:type="notation:Bounds" xmi:id="_uWe7tnJ5EeS_Mo0ZUQqqgA"/>
-            </children>
-            <layoutConstraint xsi:type="notation:Location" xmi:id="_uWe7s3J5EeS_Mo0ZUQqqgA" x="264" y="661"/>
-          </children>
-          <styles xsi:type="datanotation:DataLineStyle" xmi:id="_uWVxwXJ5EeS_Mo0ZUQqqgA"/>
-          <bendpoints xsi:type="notation:RelativeBendpoints" xmi:id="_uWVxwnJ5EeS_Mo0ZUQqqgA" points="[91, 27, 1788, 7285]$[91, -2249, 1788, 5009]"/>
-          <sourceAnchor xsi:type="notation:IdentityAnchor" xmi:id="_uXFYoHJ5EeS_Mo0ZUQqqgA" id="(0.36256927,0.0)"/>
-          <targetAnchor xsi:type="notation:IdentityAnchor" xmi:id="_uXFYoXJ5EeS_Mo0ZUQqqgA" id="(0.14899842,0.1427848)"/>
-        </edges>
         <edges xmi:id="_npKLQHJ9EeS_Mo0ZUQqqgA" element="_nlSX4HJ9EeS_Mo0ZUQqqgA" source="_TXM_4HJ7EeS_Mo0ZUQqqgA" target="_hHmYMHJ8EeS_Mo0ZUQqqgA">
           <children xmi:id="_npKLQ3J9EeS_Mo0ZUQqqgA" type="ForeignKey.Name.Label">
             <children xmi:id="_npT8QHJ9EeS_Mo0ZUQqqgA" type="FKRelationshipName">
@@ -727,42 +691,84 @@
           <sourceAnchor xsi:type="notation:IdentityAnchor" xmi:id="_Y28voHKHEeS_Mo0ZUQqqgA" id="(1.0,0.39959738)"/>
           <targetAnchor xsi:type="notation:IdentityAnchor" xmi:id="_Y28voXKHEeS_Mo0ZUQqqgA" id="(0.19103825,0.24148203)"/>
         </edges>
+        <edges xmi:id="_gmAckIWMEeSGIIZn_uykNQ" element="_gVla8IWMEeSGIIZn_uykNQ" source="_4ZjAQHJyEeS_Mo0ZUQqqgA" target="_QyocQHJ5EeS_Mo0ZUQqqgA">
+          <children xmi:id="_gmBDoIWMEeSGIIZn_uykNQ" type="ForeignKey.Name.Label">
+            <children xmi:id="_gmBDooWMEeSGIIZn_uykNQ" type="FKRelationshipName">
+              <children xmi:id="_gmBqsIWMEeSGIIZn_uykNQ" type="DiagramName"/>
+              <children xmi:id="_gmBqsYWMEeSGIIZn_uykNQ" type="Description"/>
+              <styles xsi:type="notation:FontStyle" xmi:id="_gmBDo4WMEeSGIIZn_uykNQ" fontName="Sans"/>
+              <layoutConstraint xsi:type="notation:Bounds" xmi:id="_gmBDpIWMEeSGIIZn_uykNQ"/>
+            </children>
+            <layoutConstraint xsi:type="notation:Location" xmi:id="_gmBDoYWMEeSGIIZn_uykNQ" y="-186"/>
+          </children>
+          <children xmi:id="_gmBqsoWMEeSGIIZn_uykNQ" type="Child.RoleName">
+            <children xmi:id="_gmCRwIWMEeSGIIZn_uykNQ" type="ChildRoleName">
+              <children xmi:id="_gmEG8IWMEeSGIIZn_uykNQ" type="DiagramName"/>
+              <children xmi:id="_gmEuAIWMEeSGIIZn_uykNQ" type="Description"/>
+              <styles xsi:type="notation:FontStyle" xmi:id="_gmCRwYWMEeSGIIZn_uykNQ" fontName="Sans"/>
+              <layoutConstraint xsi:type="notation:Bounds" xmi:id="_gmCRwoWMEeSGIIZn_uykNQ"/>
+            </children>
+            <layoutConstraint xsi:type="notation:Location" xmi:id="_gmBqs4WMEeSGIIZn_uykNQ" x="-265" y="-662"/>
+          </children>
+          <children xmi:id="_gmEuAYWMEeSGIIZn_uykNQ" type="Parent.RoleName">
+            <children xmi:id="_gmEuA4WMEeSGIIZn_uykNQ" type="ParentRoleName">
+              <children xmi:id="_gmEuBoWMEeSGIIZn_uykNQ" type="DiagramName"/>
+              <children xmi:id="_gmF8IIWMEeSGIIZn_uykNQ" type="Description"/>
+              <styles xsi:type="notation:FontStyle" xmi:id="_gmEuBIWMEeSGIIZn_uykNQ" fontName="Sans"/>
+              <layoutConstraint xsi:type="notation:Bounds" xmi:id="_gmEuBYWMEeSGIIZn_uykNQ"/>
+            </children>
+            <layoutConstraint xsi:type="notation:Location" xmi:id="_gmEuAoWMEeSGIIZn_uykNQ" y="-397"/>
+          </children>
+          <children xmi:id="_gmF8IYWMEeSGIIZn_uykNQ" type="Child.ReferentialIntegrity">
+            <children xmi:id="_gmF8I4WMEeSGIIZn_uykNQ" type="ChildRiName">
+              <children xmi:id="_gmGjMIWMEeSGIIZn_uykNQ" type="DiagramName"/>
+              <children xmi:id="_gmHKQIWMEeSGIIZn_uykNQ" type="Description"/>
+              <styles xsi:type="notation:FontStyle" xmi:id="_gmF8JIWMEeSGIIZn_uykNQ" fontName="Sans"/>
+              <layoutConstraint xsi:type="notation:Bounds" xmi:id="_gmF8JYWMEeSGIIZn_uykNQ"/>
+            </children>
+            <layoutConstraint xsi:type="notation:Location" xmi:id="_gmF8IoWMEeSGIIZn_uykNQ" x="264" y="661"/>
+          </children>
+          <styles xsi:type="datanotation:DataLineStyle" xmi:id="_gmAckYWMEeSGIIZn_uykNQ" fontName="Sans"/>
+          <bendpoints xsi:type="notation:RelativeBendpoints" xmi:id="_gmAckoWMEeSGIIZn_uykNQ" points="[37, 550, -149, -2223]$[37, 1503, -149, -1270]$[-1004, 1503, -1190, -1270]$[-1004, 4612, -1190, 1839]$[186, 4612, 0, 1839]"/>
+          <sourceAnchor xsi:type="notation:IdentityAnchor" xmi:id="_gmN38IWMEeSGIIZn_uykNQ" id="(0.25005627,0.9064979)"/>
+          <targetAnchor xsi:type="notation:IdentityAnchor" xmi:id="_gmN38YWMEeSGIIZn_uykNQ" id="(0.0,0.0)"/>
+        </edges>
       </contents>
     </eAnnotations>
   </DB2Model:DB2Schema>
-  <LUW:LUWTable xmi:id="_4YWtcHJyEeS_Mo0ZUQqqgA" name="Client" schema="_oSsRcHJyEeS_Mo0ZUQqqgA" index="_Gr9RwHJ6EeS_Mo0ZUQqqgA" referencingForeignKeys="_2vf4QHJ9EeS_Mo0ZUQqqgA">
+  <LUW:LUWTable xmi:id="_4YWtcHJyEeS_Mo0ZUQqqgA" name="Client" schema="_oSsRcHJyEeS_Mo0ZUQqqgA" index="_Gr9RwHJ6EeS_Mo0ZUQqqgA" referencingForeignKeys="_2vf4QHJ9EeS_Mo0ZUQqqgA _gVla8IWMEeSGIIZn_uykNQ">
     <columns xsi:type="LUW:LUWColumn" xmi:id="_7VAr0HJyEeS_Mo0ZUQqqgA" name="id" nullable="false">
       <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_9LxZIHJyEeS_Mo0ZUQqqgA" name="BIGINT" primitiveType="BIGINT"/>
       <identitySpecifier xsi:type="DB2Model:DB2IdentitySpecifier" xmi:id="__Yu_8HJyEeS_Mo0ZUQqqgA" startValue="1" increment="1" minimum="1" maximum="9223372036854775807" systemGenerated="true"/>
     </columns>
-    <columns xsi:type="LUW:LUWColumn" xmi:id="_Bv-kIHJzEeS_Mo0ZUQqqgA" name="firstName" nullable="false">
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_Bv-kIHJzEeS_Mo0ZUQqqgA" name="first_name" nullable="false">
       <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_zK57sHJzEeS_Mo0ZUQqqgA" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="32"/>
     </columns>
-    <columns xsi:type="LUW:LUWColumn" xmi:id="_CwNSEHJzEeS_Mo0ZUQqqgA" name="lastName" nullable="false">
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_CwNSEHJzEeS_Mo0ZUQqqgA" name="last_name" nullable="false">
       <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_2CfM0HJzEeS_Mo0ZUQqqgA" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="32"/>
     </columns>
-    <columns xsi:type="LUW:LUWColumn" xmi:id="_DlZ0sHJzEeS_Mo0ZUQqqgA" name="patronymicName" nullable="false">
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_DlZ0sHJzEeS_Mo0ZUQqqgA" name="patronymic_name" nullable="false">
       <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_3n9V0HJzEeS_Mo0ZUQqqgA" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="32"/>
     </columns>
-    <columns xsi:type="LUW:LUWColumn" xmi:id="_F18T8HJzEeS_Mo0ZUQqqgA" name="birthDate" nullable="false">
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_F18T8HJzEeS_Mo0ZUQqqgA" name="birth_date" nullable="false">
       <containedType xsi:type="SQLDataTypes:DateDataType" xmi:id="_56lfwHJzEeS_Mo0ZUQqqgA" name="DATE" primitiveType="DATE"/>
     </columns>
-    <columns xsi:type="LUW:LUWColumn" xmi:id="_KKD0gHJzEeS_Mo0ZUQqqgA" name="passportSeries" nullable="false">
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_KKD0gHJzEeS_Mo0ZUQqqgA" name="passport_series" nullable="false">
       <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_KKD0gXJzEeS_Mo0ZUQqqgA" name="CHAR" length="2"/>
     </columns>
-    <columns xsi:type="LUW:LUWColumn" xmi:id="_LOnBwHJzEeS_Mo0ZUQqqgA" name="passportNumber" nullable="false">
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_LOnBwHJzEeS_Mo0ZUQqqgA" name="passport_number" nullable="false">
       <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_9mnsoHJzEeS_Mo0ZUQqqgA" name="INTEGER" primitiveType="INTEGER"/>
     </columns>
-    <columns xsi:type="LUW:LUWColumn" xmi:id="_i_uGgHJzEeS_Mo0ZUQqqgA" name="addressId" nullable="false">
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_i_uGgHJzEeS_Mo0ZUQqqgA" name="address_id" nullable="false">
       <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="__tercHJzEeS_Mo0ZUQqqgA" name="BIGINT" primitiveType="BIGINT"/>
     </columns>
-    <columns xsi:type="LUW:LUWColumn" xmi:id="_mA-4EHJzEeS_Mo0ZUQqqgA" name="registrationDate" nullable="false" defaultValue="CURRENT DATE">
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_mA-4EHJzEeS_Mo0ZUQqqgA" name="registration_date" nullable="false" defaultValue="CURRENT DATE">
       <containedType xsi:type="SQLDataTypes:DateDataType" xmi:id="_B7yWEHJ0EeS_Mo0ZUQqqgA" name="DATE" primitiveType="DATE"/>
     </columns>
-    <columns xsi:type="LUW:LUWColumn" xmi:id="_n5_BEHJzEeS_Mo0ZUQqqgA" name="mobileNumber" nullable="false">
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_n5_BEHJzEeS_Mo0ZUQqqgA" name="mobile_number" nullable="false">
       <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_E4uoUHJ0EeS_Mo0ZUQqqgA" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="16"/>
     </columns>
-    <constraints xsi:type="SQLConstraints:PrimaryKey" xmi:id="_-omjgHJyEeS_Mo0ZUQqqgA" name="Client_PK" members="_7VAr0HJyEeS_Mo0ZUQqqgA" ForeignKey="_2vf4QHJ9EeS_Mo0ZUQqqgA"/>
+    <constraints xsi:type="SQLConstraints:PrimaryKey" xmi:id="_-omjgHJyEeS_Mo0ZUQqqgA" name="Client_PK" members="_7VAr0HJyEeS_Mo0ZUQqqgA" ForeignKey="_2vf4QHJ9EeS_Mo0ZUQqqgA _gVla8IWMEeSGIIZn_uykNQ"/>
     <constraints xsi:type="SQLConstraints:ForeignKey" xmi:id="_r-wr0HJ4EeS_Mo0ZUQqqgA" name="Clie_ClientAddr_FK" members="_i_uGgHJzEeS_Mo0ZUQqqgA" onDelete="RESTRICT" uniqueConstraint="_dxXV0HJ0EeS_Mo0ZUQqqgA" referencedTable="_aD_sMHJ0EeS_Mo0ZUQqqgA">
       <eAnnotations xmi:id="_r-wr0XJ4EeS_Mo0ZUQqqgA" source="FK_MODELING_RELATIONSHIP">
         <details xmi:id="_r-wr0nJ4EeS_Mo0ZUQqqgA" key="FK_IS_IDENTIFYING_RELATIONSHIP" value="false"/>
@@ -781,24 +787,33 @@
         <details xmi:id="_t7zx5nJ5EeS_Mo0ZUQqqgA" key="FK_PARENT_ROLE_NAME" value="Client"/>
       </eAnnotations>
     </constraints>
+    <constraints xsi:type="SQLConstraints:ForeignKey" xmi:id="_biNLgIWMEeSGIIZn_uykNQ" name="Client_User_FK1" members="_7VAr0HJyEeS_Mo0ZUQqqgA" onDelete="RESTRICT" uniqueConstraint="_YxABAHJ5EeS_Mo0ZUQqqgA" referencedTable="_QyfSUHJ5EeS_Mo0ZUQqqgA">
+      <eAnnotations xmi:id="_biNLgYWMEeSGIIZn_uykNQ" source="FK_MODELING_RELATIONSHIP">
+        <details xmi:id="_biNLgoWMEeSGIIZn_uykNQ" key="FK_IS_IDENTIFYING_RELATIONSHIP" value="false"/>
+        <details xmi:id="_biNLg4WMEeSGIIZn_uykNQ" key="FK_CHILD_MULTIPLICITY" value="0..1"/>
+        <details xmi:id="_biNLhIWMEeSGIIZn_uykNQ" key="FK_CHILD_ROLE_NAME" value="Verb1"/>
+        <details xmi:id="_biNLhYWMEeSGIIZn_uykNQ" key="FK_PARENT_MULTIPLICITY" value="1"/>
+        <details xmi:id="_biNLhoWMEeSGIIZn_uykNQ" key="FK_PARENT_ROLE_NAME" value=""/>
+      </eAnnotations>
+    </constraints>
   </LUW:LUWTable>
   <LUW:LUWTable xmi:id="_aD_sMHJ0EeS_Mo0ZUQqqgA" name="ClientAddress" schema="_oSsRcHJyEeS_Mo0ZUQqqgA" referencingForeignKeys="_r-wr0HJ4EeS_Mo0ZUQqqgA">
     <columns xsi:type="LUW:LUWColumn" xmi:id="_dJbzIHJ0EeS_Mo0ZUQqqgA" name="id" nullable="false">
       <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_il0jUHJ0EeS_Mo0ZUQqqgA" name="BIGINT" primitiveType="BIGINT"/>
     </columns>
-    <columns xsi:type="LUW:LUWColumn" xmi:id="_jel-YHJ0EeS_Mo0ZUQqqgA" name="cityId" nullable="false">
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_jel-YHJ0EeS_Mo0ZUQqqgA" name="city_id" nullable="false">
       <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_mroiIHJ0EeS_Mo0ZUQqqgA" name="INTEGER" primitiveType="INTEGER"/>
     </columns>
     <columns xsi:type="LUW:LUWColumn" xmi:id="_ooNjkHJ0EeS_Mo0ZUQqqgA" name="street" nullable="false">
       <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_uEvdsHJ0EeS_Mo0ZUQqqgA" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="255"/>
     </columns>
-    <columns xsi:type="LUW:LUWColumn" xmi:id="_qNF2sHJ0EeS_Mo0ZUQqqgA" name="houseNumber" nullable="false">
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_qNF2sHJ0EeS_Mo0ZUQqqgA" name="house_number" nullable="false">
       <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_wMDIcHJ0EeS_Mo0ZUQqqgA" name="INTEGER" primitiveType="INTEGER"/>
     </columns>
-    <columns xsi:type="LUW:LUWColumn" xmi:id="_rsJ1sHJ0EeS_Mo0ZUQqqgA" name="housingNumber">
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_rsJ1sHJ0EeS_Mo0ZUQqqgA" name="housing_number">
       <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_xcXg0HJ0EeS_Mo0ZUQqqgA" name="INTEGER" primitiveType="INTEGER"/>
     </columns>
-    <columns xsi:type="LUW:LUWColumn" xmi:id="_smuAgHJ0EeS_Mo0ZUQqqgA" name="apartmentNumber" nullable="false">
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_smuAgHJ0EeS_Mo0ZUQqqgA" name="apartment_number" nullable="false">
       <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_ypjssHJ0EeS_Mo0ZUQqqgA" name="INTEGER" primitiveType="INTEGER"/>
     </columns>
     <constraints xsi:type="SQLConstraints:PrimaryKey" xmi:id="_dxXV0HJ0EeS_Mo0ZUQqqgA" name="ClientAddress_PK" members="_dJbzIHJ0EeS_Mo0ZUQqqgA" ForeignKey="_r-wr0HJ4EeS_Mo0ZUQqqgA"/>
@@ -826,7 +841,7 @@
   <LUW:LUWIndex xmi:id="_FZPe8HJ1EeS_Mo0ZUQqqgA" name="City_name_uq_IDX" Schema="_oSsRcHJyEeS_Mo0ZUQqqgA" unique="true" table="_1-C8QHJ0EeS_Mo0ZUQqqgA">
     <members xmi:id="_fH09AHJ1EeS_Mo0ZUQqqgA" column="_4gBJwHJ0EeS_Mo0ZUQqqgA"/>
   </LUW:LUWIndex>
-  <LUW:LUWTable xmi:id="_QyfSUHJ5EeS_Mo0ZUQqqgA" name="User" schema="_oSsRcHJyEeS_Mo0ZUQqqgA" index="_66G0UHJ5EeS_Mo0ZUQqqgA" referencingForeignKeys="_t7zx4HJ5EeS_Mo0ZUQqqgA">
+  <LUW:LUWTable xmi:id="_QyfSUHJ5EeS_Mo0ZUQqqgA" name="User" schema="_oSsRcHJyEeS_Mo0ZUQqqgA" index="_66G0UHJ5EeS_Mo0ZUQqqgA" referencingForeignKeys="_t7zx4HJ5EeS_Mo0ZUQqqgA _biNLgIWMEeSGIIZn_uykNQ">
     <columns xsi:type="LUW:LUWColumn" xmi:id="_Riw4sHJ5EeS_Mo0ZUQqqgA" name="id" nullable="false">
       <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_ZpB1MHJ5EeS_Mo0ZUQqqgA" name="BIGINT" primitiveType="BIGINT"/>
     </columns>
@@ -836,16 +851,28 @@
     <columns xsi:type="LUW:LUWColumn" xmi:id="_Sb-_sHJ5EeS_Mo0ZUQqqgA" name="password" nullable="false">
       <containedType xsi:type="SQLDataTypes:BinaryStringDataType" xmi:id="_lFrLwHKGEeS_Mo0ZUQqqgA" name="CHAR FOR BIT DATA" primitiveType="BINARY" length="16"/>
     </columns>
-    <columns xsi:type="LUW:LUWColumn" xmi:id="_URGuQHJ5EeS_Mo0ZUQqqgA" name="isEnabled" nullable="false">
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_URGuQHJ5EeS_Mo0ZUQqqgA" name="is_enabled" nullable="false">
       <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_iUZC0HJ5EeS_Mo0ZUQqqgA" name="SMALLINT" primitiveType="SMALLINT"/>
     </columns>
-    <columns xsi:type="LUW:LUWColumn" xmi:id="_U86rYHJ5EeS_Mo0ZUQqqgA" name="isBlocked" nullable="false">
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_U86rYHJ5EeS_Mo0ZUQqqgA" name="is_blocked" nullable="false">
       <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_jrHlMHJ5EeS_Mo0ZUQqqgA" name="SMALLINT" primitiveType="SMALLINT"/>
     </columns>
-    <columns xsi:type="LUW:LUWColumn" xmi:id="_WObWkHJ5EeS_Mo0ZUQqqgA" name="blockedReason">
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_WObWkHJ5EeS_Mo0ZUQqqgA" name="blocked_reason">
       <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_khqLoHJ5EeS_Mo0ZUQqqgA" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="255"/>
     </columns>
-    <constraints xsi:type="SQLConstraints:PrimaryKey" xmi:id="_YxABAHJ5EeS_Mo0ZUQqqgA" name="User_PK" members="_Riw4sHJ5EeS_Mo0ZUQqqgA" ForeignKey="_t7zx4HJ5EeS_Mo0ZUQqqgA"/>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_R-SlQIWMEeSGIIZn_uykNQ" name="client_id" nullable="false">
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_UHqskIWMEeSGIIZn_uykNQ" name="BIGINT" primitiveType="BIGINT"/>
+    </columns>
+    <constraints xsi:type="SQLConstraints:PrimaryKey" xmi:id="_YxABAHJ5EeS_Mo0ZUQqqgA" name="User_PK" members="_Riw4sHJ5EeS_Mo0ZUQqqgA" ForeignKey="_t7zx4HJ5EeS_Mo0ZUQqqgA _biNLgIWMEeSGIIZn_uykNQ"/>
+    <constraints xsi:type="SQLConstraints:ForeignKey" xmi:id="_gVla8IWMEeSGIIZn_uykNQ" name="User_Client_FK" members="_R-SlQIWMEeSGIIZn_uykNQ" onDelete="RESTRICT" uniqueConstraint="_-omjgHJyEeS_Mo0ZUQqqgA" referencedTable="_4YWtcHJyEeS_Mo0ZUQqqgA">
+      <eAnnotations xmi:id="_gVla8YWMEeSGIIZn_uykNQ" source="FK_MODELING_RELATIONSHIP">
+        <details xmi:id="_gVla8oWMEeSGIIZn_uykNQ" key="FK_IS_IDENTIFYING_RELATIONSHIP" value="false"/>
+        <details xmi:id="_gVla84WMEeSGIIZn_uykNQ" key="FK_CHILD_MULTIPLICITY" value="0..1"/>
+        <details xmi:id="_gVla9IWMEeSGIIZn_uykNQ" key="FK_CHILD_ROLE_NAME" value="UserClient"/>
+        <details xmi:id="_gVla9YWMEeSGIIZn_uykNQ" key="FK_PARENT_MULTIPLICITY" value="1"/>
+        <details xmi:id="_gVla9oWMEeSGIIZn_uykNQ" key="FK_PARENT_ROLE_NAME" value=""/>
+      </eAnnotations>
+    </constraints>
   </LUW:LUWTable>
   <LUW:LUWIndex xmi:id="_66G0UHJ5EeS_Mo0ZUQqqgA" name="User_uname_uq_IDX" label="username unique index" Schema="_oSsRcHJyEeS_Mo0ZUQqqgA" unique="true" table="_QyfSUHJ5EeS_Mo0ZUQqqgA">
     <members xmi:id="_DHhhsHJ6EeS_Mo0ZUQqqgA" column="_R780wHJ5EeS_Mo0ZUQqqgA"/>
@@ -861,7 +888,7 @@
     <columns xsi:type="LUW:LUWColumn" xmi:id="_Vn5QIHJ7EeS_Mo0ZUQqqgA" name="name" nullable="false">
       <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_dCMegHJ7EeS_Mo0ZUQqqgA" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="255"/>
     </columns>
-    <columns xsi:type="LUW:LUWColumn" xmi:id="_W8Fb4HJ7EeS_Mo0ZUQqqgA" name="bankAccountNumber" nullable="false">
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_W8Fb4HJ7EeS_Mo0ZUQqqgA" name="bank_account_number" nullable="false">
       <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_LSnB4HJ8EeS_Mo0ZUQqqgA" name="BIGINT" primitiveType="BIGINT"/>
     </columns>
     <constraints xsi:type="SQLConstraints:PrimaryKey" xmi:id="_4VDywHJ7EeS_Mo0ZUQqqgA" name="Bank_PK" members="_WAL0UHJ7EeS_Mo0ZUQqqgA" ForeignKey="_nlSX4HJ9EeS_Mo0ZUQqqgA _YwPqsHKHEeS_Mo0ZUQqqgA"/>
@@ -873,22 +900,22 @@
     <members xmi:id="_G3C1gHJ8EeS_Mo0ZUQqqgA" column="_W8Fb4HJ7EeS_Mo0ZUQqqgA"/>
   </LUW:LUWIndex>
   <LUW:LUWTable xmi:id="_hHcnMHJ8EeS_Mo0ZUQqqgA" name="PaymentCard" schema="_oSsRcHJyEeS_Mo0ZUQqqgA" referencingForeignKeys="_yonzYHKGEeS_Mo0ZUQqqgA">
-    <columns xsi:type="LUW:LUWColumn" xmi:id="_oylt8HJ8EeS_Mo0ZUQqqgA" name="cardNumber" nullable="false">
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_oylt8HJ8EeS_Mo0ZUQqqgA" name="card_number" nullable="false">
       <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_oylt8XJ8EeS_Mo0ZUQqqgA" name="CHAR" length="19"/>
     </columns>
-    <columns xsi:type="LUW:LUWColumn" xmi:id="_jv-vsHJ8EeS_Mo0ZUQqqgA" name="bankId" nullable="false">
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_jv-vsHJ8EeS_Mo0ZUQqqgA" name="bank_id" nullable="false">
       <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_W56mwHJ9EeS_Mo0ZUQqqgA" name="INTEGER" primitiveType="INTEGER"/>
     </columns>
-    <columns xsi:type="LUW:LUWColumn" xmi:id="_knHMAHJ8EeS_Mo0ZUQqqgA" name="clientId" nullable="false">
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_knHMAHJ8EeS_Mo0ZUQqqgA" name="client_id" nullable="false">
       <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_YWvxIHJ9EeS_Mo0ZUQqqgA" name="BIGINT" primitiveType="BIGINT"/>
     </columns>
     <columns xsi:type="LUW:LUWColumn" xmi:id="_mHq_0HJ8EeS_Mo0ZUQqqgA" name="amount" nullable="false" defaultValue="0.0">
       <containedType xsi:type="SQLDataTypes:ApproximateNumericDataType" xmi:id="_aWATIHJ9EeS_Mo0ZUQqqgA" name="DOUBLE" primitiveType="DOUBLE_PRECISION"/>
     </columns>
-    <columns xsi:type="LUW:LUWColumn" xmi:id="_mqGXcHJ8EeS_Mo0ZUQqqgA" name="pinCode" nullable="false">
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_mqGXcHJ8EeS_Mo0ZUQqqgA" name="pin_code" nullable="false">
       <containedType xsi:type="SQLDataTypes:BinaryStringDataType" xmi:id="_iuIFkHKGEeS_Mo0ZUQqqgA" name="CHAR FOR BIT DATA" primitiveType="BINARY" length="16"/>
     </columns>
-    <columns xsi:type="LUW:LUWColumn" xmi:id="_nzaI4HJ8EeS_Mo0ZUQqqgA" name="createdDate" nullable="false" defaultValue="CURRENT DATE">
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_nzaI4HJ8EeS_Mo0ZUQqqgA" name="created_date" nullable="false" defaultValue="CURRENT DATE">
       <containedType xsi:type="SQLDataTypes:DateDataType" xmi:id="_g1mMwHJ9EeS_Mo0ZUQqqgA" name="DATE" primitiveType="DATE"/>
     </columns>
     <constraints xsi:type="SQLConstraints:PrimaryKey" xmi:id="_B1qJ0HJ9EeS_Mo0ZUQqqgA" name="PaymentCard_PK" members="_oylt8HJ8EeS_Mo0ZUQqqgA" ForeignKey="_yonzYHKGEeS_Mo0ZUQqqgA"/>
@@ -915,34 +942,34 @@
     <columns xsi:type="LUW:LUWColumn" xmi:id="_UvkuwHKAEeS_Mo0ZUQqqgA" name="uuid" nullable="false">
       <containedType xsi:type="SQLDataTypes:BinaryStringDataType" xmi:id="_eHFpAHKGEeS_Mo0ZUQqqgA" name="CHAR FOR BIT DATA" primitiveType="BINARY" length="16"/>
     </columns>
-    <columns xsi:type="LUW:LUWColumn" xmi:id="_fTMegHKAEeS_Mo0ZUQqqgA" name="recipientBankId">
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_fTMegHKAEeS_Mo0ZUQqqgA" name="recipient_bank_id">
       <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_zko-cHKAEeS_Mo0ZUQqqgA" name="INTEGER" primitiveType="INTEGER"/>
     </columns>
-    <columns xsi:type="LUW:LUWColumn" xmi:id="_VJqCsHKAEeS_Mo0ZUQqqgA" name="recipientAccountNumber">
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_VJqCsHKAEeS_Mo0ZUQqqgA" name="recipient_account_number">
       <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_3z1iwHKAEeS_Mo0ZUQqqgA" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="255"/>
     </columns>
-    <columns xsi:type="LUW:LUWColumn" xmi:id="_Y0MawHKAEeS_Mo0ZUQqqgA" name="recipientFirstName">
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_Y0MawHKAEeS_Mo0ZUQqqgA" name="recipient_first_name">
       <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_Y0WLwHKAEeS_Mo0ZUQqqgA" name="CHAR" length="32"/>
     </columns>
-    <columns xsi:type="LUW:LUWColumn" xmi:id="_bpZGQHKAEeS_Mo0ZUQqqgA" name="recipientLastName">
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_bpZGQHKAEeS_Mo0ZUQqqgA" name="recipient_last_name">
       <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_bpZGQXKAEeS_Mo0ZUQqqgA" name="CHAR" length="32"/>
     </columns>
-    <columns xsi:type="LUW:LUWColumn" xmi:id="_dhM8cHKAEeS_Mo0ZUQqqgA" name="recipientPatronymicName">
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_dhM8cHKAEeS_Mo0ZUQqqgA" name="recipient_patronymic_name">
       <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_dhM8cXKAEeS_Mo0ZUQqqgA" name="CHAR" length="32"/>
     </columns>
-    <columns xsi:type="LUW:LUWColumn" xmi:id="_ifCvcHKAEeS_Mo0ZUQqqgA" name="recipientCardNumber">
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_ifCvcHKAEeS_Mo0ZUQqqgA" name="recipient_card_number">
       <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_ifCvcXKAEeS_Mo0ZUQqqgA" name="CHAR" length="19"/>
     </columns>
-    <columns xsi:type="LUW:LUWColumn" xmi:id="_qgF0wHKAEeS_Mo0ZUQqqgA" name="createdAt" nullable="false" defaultValue="CURRENT TIMESTAMP">
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_qgF0wHKAEeS_Mo0ZUQqqgA" name="created_at" nullable="false" defaultValue="CURRENT TIMESTAMP">
       <containedType xsi:type="SQLDataTypes:TimeDataType" xmi:id="_JSRBIHKEEeS_Mo0ZUQqqgA" name="TIMESTAMP" primitiveType="TIMESTAMP"/>
     </columns>
-    <columns xsi:type="LUW:LUWColumn" xmi:id="_sX5D4HKAEeS_Mo0ZUQqqgA" name="transactionStatus">
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_sX5D4HKAEeS_Mo0ZUQqqgA" name="transaction_status">
       <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_MzH4wHKEEeS_Mo0ZUQqqgA" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="16"/>
     </columns>
-    <columns xsi:type="LUW:LUWColumn" xmi:id="_O291QHKDEeS_Mo0ZUQqqgA" name="senderCardNumber" nullable="false">
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_O291QHKDEeS_Mo0ZUQqqgA" name="card_number" nullable="false">
       <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_O291QXKDEeS_Mo0ZUQqqgA" name="CHAR" length="19"/>
     </columns>
-    <columns xsi:type="LUW:LUWColumn" xmi:id="_OlgVAHKHEeS_Mo0ZUQqqgA" name="completedAt">
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_OlgVAHKHEeS_Mo0ZUQqqgA" name="completed_at">
       <containedType xsi:type="SQLDataTypes:TimeDataType" xmi:id="_RC3IQHKHEeS_Mo0ZUQqqgA" name="TIMESTAMP" primitiveType="TIMESTAMP"/>
     </columns>
     <constraints xsi:type="SQLConstraints:PrimaryKey" xmi:id="_vp2j4HKAEeS_Mo0ZUQqqgA" name="PaymentTransactio1" members="_UvkuwHKAEeS_Mo0ZUQqqgA"/>

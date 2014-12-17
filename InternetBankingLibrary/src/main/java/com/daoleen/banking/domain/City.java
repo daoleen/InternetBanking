@@ -5,6 +5,7 @@ import org.hibernate.validator.constraints.NotEmpty;
 import javax.persistence.*;
 import javax.validation.constraints.Size;
 import java.io.Serializable;
+import java.util.List;
 
 /**
  * Created by alex on 12/6/14.
@@ -27,6 +28,8 @@ public class City implements Identifiable<Integer>, Serializable {
     @Column(name = "name", unique = true)
     private String name;
 
+    @OneToMany(mappedBy = "city", fetch = FetchType.LAZY, orphanRemoval = true)
+    private List<ClientAddress> clientAddresses;
 
     public City() {}
 
@@ -49,6 +52,14 @@ public class City implements Identifiable<Integer>, Serializable {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public List<ClientAddress> getClientAddresses() {
+        return clientAddresses;
+    }
+
+    public void setClientAddresses(List<ClientAddress> clientAddresses) {
+        this.clientAddresses = clientAddresses;
     }
 
     @Override
