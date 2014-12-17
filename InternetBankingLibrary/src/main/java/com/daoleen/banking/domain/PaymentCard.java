@@ -5,6 +5,7 @@ import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 import java.util.Date;
+import java.util.List;
 
 /**
  * Created by alex on 12/17/14.
@@ -35,6 +36,8 @@ public class PaymentCard implements Identifiable<String>, Serializable {
     @Column(name = "created_date")
     private Date createdDate;
 
+
+
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "bank_id")
     private Bank bank;
@@ -42,6 +45,10 @@ public class PaymentCard implements Identifiable<String>, Serializable {
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "client_id")
     private Client client;
+
+    @OneToMany(mappedBy = "card", fetch = FetchType.LAZY, orphanRemoval = true)
+    private List<PaymentTransaction> paymentTransactions;
+
 
     @Override
     public String getId() {

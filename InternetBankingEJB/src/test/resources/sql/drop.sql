@@ -1,3 +1,4 @@
+DROP TABLE IF EXISTS payment_transaction;
 DROP TABLE IF EXISTS payment_card;
 DROP TABLE IF EXISTS bank;
 DROP TABLE IF EXISTS user;

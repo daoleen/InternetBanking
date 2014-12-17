@@ -51,3 +51,20 @@ CREATE TABLE IF NOT EXISTS payment_card (
   FOREIGN KEY (bank_id) REFERENCES bank(bic) ON DELETE CASCADE,
   FOREIGN KEY (client_id) REFERENCES client(id) ON DELETE CASCADE
 );
+
+CREATE TABLE IF NOT EXISTS payment_transaction (
+  uuid UUID NOT NULL PRIMARY KEY,
+  recepient_bank_id INTEGER,
+  recepient_account_number VARCHAR(255),
+  recepient_first_name VARCHAR(32),
+  recepient_last_name VARCHAR(32),
+  recepient_patronymic_name VARCHAR(32),
+  recepient_card_number CHAR(19),
+  created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP(),
+  transaction_status VARCHAR(16),
+  card_number CHAR(19) NOT NULL ,
+  completed_at TIMESTAMP,
+  FOREIGN KEY (recepient_bank_id) REFERENCES bank(id),
+  FOREIGN KEY (recepient_card_number) REFERENCES payment_card(card_number),
+  FOREIGN KEY (card_number) REFERENCES payment_card(card_number)
+);

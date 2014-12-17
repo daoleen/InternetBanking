@@ -4,3 +4,4 @@ INSERT INTO client (first_name, last_name, patronymic_name, birth_date, passport
 INSERT INTO user (username, password, is_enabled, is_blocked, client_id) VALUES ('alexssource@gmail.com', '11111', TRUE, FALSE, 1), ('admin@localhost', '22222', TRUE, FALSE, 2);
 INSERT INTO bank (bic, name, bank_account_number) VALUES (1000000, 'БПС', 100000000000000001);
 INSERT INTO payment_card(card_number, bank_id, client_id, amount, pin_code) VALUES ('0000-0000-0000-0001', 1000000, 1, '150.0', 'passssssssssssssHASHED');
+INSERT INTO payment_transaction(uuid, card_number, created_at) VALUES (RANDOM_UUID(), '0000-0000-0000-0001', CURRENT_TIMESTAMP());
