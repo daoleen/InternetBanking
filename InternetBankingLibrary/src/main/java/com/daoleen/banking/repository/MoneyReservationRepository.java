@@ -1,6 +1,7 @@
 package com.daoleen.banking.repository;
 
 import com.daoleen.banking.domain.MoneyReservation;
+import com.daoleen.banking.domain.PaymentCard;
 import com.daoleen.banking.domain.PaymentTransaction;
 import com.daoleen.banking.exception.NoEnoughMoneyException;
 
@@ -11,8 +12,9 @@ import java.util.List;
  */
 public interface MoneyReservationRepository extends Repository<MoneyReservation, Long> {
     public List<MoneyReservation> getActiveReservations(String cardNumber);
-    public double getActiveReservationSum(String cardNumber);
-    public MoneyReservation createReservation(String cardNumber, double amount, PaymentTransaction paymentTransaction) throws NoEnoughMoneyException;
+    public double getActiveReservationSum(PaymentCard card);
+    public MoneyReservation createReservation(PaymentCard card, double amount) throws NoEnoughMoneyException;
+    public MoneyReservation createReservation(PaymentCard card, double amount, PaymentTransaction paymentTransaction) throws NoEnoughMoneyException;
     public void closeActiveReservation(Long id);
     public void closeActiveReservation(PaymentTransaction transaction);
 }

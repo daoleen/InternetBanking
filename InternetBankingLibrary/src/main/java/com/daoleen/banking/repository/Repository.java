@@ -18,7 +18,7 @@ import java.util.List;
 public interface Repository<T extends Identifiable<I>, I extends Serializable> {
     public List<T> findAll();
     public T findById(I id);
-    public void save(T entity);
+    public T save(T entity);
     public void delete(T entity);
     public void detach(T entity);
 }

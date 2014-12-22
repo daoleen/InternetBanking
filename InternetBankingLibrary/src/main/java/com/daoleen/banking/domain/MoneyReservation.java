@@ -13,7 +13,7 @@ import java.util.Date;
 @Table(name = "money_reservation")
 @NamedQueries({
         @NamedQuery(name = "getActiveReservations", query = "select r from MoneyReservation r where r.paymentCard.cardNumber = :cardNumber and r.status = :openedStatus"),
-        @NamedQuery(name = "getActiveReservationSum", query = "select sum(r.amount) from MoneyReservation r where r.paymentCard.cardNumber = :cardNumber and r.status = :openedStatus"),
+        @NamedQuery(name = "getActiveReservationSum", query = "select sum(r.amount) from MoneyReservation r where r.paymentCard = :card and r.status = 1"),
         @NamedQuery(name = "closeReservation", query = "update MoneyReservation r set r.status = :closedStatus where r.id = :id")
 })
 public class MoneyReservation implements Identifiable<Long>, Serializable {
@@ -49,8 +49,7 @@ public class MoneyReservation implements Identifiable<Long>, Serializable {
     @JoinColumn(name = "payment_card")
     private PaymentCard paymentCard;
 
-    @OneToOne
-    @JoinColumn(name = "payment_transaction_id")
+    @OneToOne(mappedBy = "moneyReservation", cascade = CascadeType.ALL)
     private PaymentTransaction paymentTransaction;
 
 

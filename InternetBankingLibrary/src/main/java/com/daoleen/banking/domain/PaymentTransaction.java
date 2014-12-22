@@ -1,7 +1,6 @@
 package com.daoleen.banking.domain;
 
 import javax.persistence.*;
-import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.io.Serializable;
 import java.util.Date;
@@ -19,7 +18,8 @@ public class PaymentTransaction implements Identifiable<UUID>, Serializable {
     private static final long serialVersionUID = 3742187395769719621L;
 
     @Id
-    @NotNull
+//    @Id @GeneratedValue(generator = "system-uuid")
+//    @GenericGenerator()
     @Column(name = "uuid")
     private UUID uuid;
 
@@ -64,12 +64,13 @@ public class PaymentTransaction implements Identifiable<UUID>, Serializable {
     @JoinColumn(name = "card_number")
     private PaymentCard card;
 
-    @OneToOne(mappedBy = "paymentTransaction", orphanRemoval = true)
+    @OneToOne(cascade = CascadeType.ALL)
+    @JoinColumn(name = "money_reservation_id")
     private MoneyReservation moneyReservation;
 
 
     public PaymentTransaction() {
-        this.uuid = UUID.randomUUID();
+        //this.uuid = UUID.randomUUID();
         this.transactionStatus = "created";
         this.createdAt = new Date();
     }
@@ -77,6 +78,13 @@ public class PaymentTransaction implements Identifiable<UUID>, Serializable {
     public PaymentTransaction(PaymentCard card) {
         this();
         this.card = card;
+    }
+
+    @PrePersist
+    public void ensureId() {
+        if(this.uuid == null) {
+            this.uuid = UUID.randomUUID();
+        }
     }
 
     @Override

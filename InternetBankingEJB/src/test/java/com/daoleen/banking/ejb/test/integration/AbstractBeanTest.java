@@ -44,7 +44,8 @@ public abstract class AbstractBeanTest<B extends Repository<Identifiable<Seriali
         System.out.println("INSERT TEST");
         Identifiable newEntity = createNewEntity();
         System.out.println("-- initial size: " + recordsCount);
-        repository.save(newEntity);
+        newEntity = repository.save(newEntity);
+        assertNotNull("The entity id can't be null", newEntity.getId());
         int updatedSize = repository.findAll().size();
         System.out.println("-- updated size: " + updatedSize);
         assertEquals(recordsCount + 1, updatedSize);

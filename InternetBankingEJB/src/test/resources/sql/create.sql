@@ -62,11 +62,13 @@ CREATE TABLE IF NOT EXISTS payment_transaction (
   recepient_card_number CHAR(19),
   created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP(),
   transaction_status VARCHAR(16),
-  card_number CHAR(19) NOT NULL ,
+  card_number CHAR(19) NOT NULL,
   completed_at TIMESTAMP,
+  money_reservation_id BIGINT NOT NULL,
   FOREIGN KEY (recepient_bank_id) REFERENCES bank(id),
   FOREIGN KEY (recepient_card_number) REFERENCES payment_card(card_number),
-  FOREIGN KEY (card_number) REFERENCES payment_card(card_number)
+  FOREIGN KEY (card_number) REFERENCES payment_card(card_number),
+  FOREIGN KEY (money_reservation_id) REFERENCES money_reservation(id) ON DELETE CASCADE
 );
 
 CREATE TABLE IF NOT EXISTS money_reservation(
@@ -75,8 +77,6 @@ CREATE TABLE IF NOT EXISTS money_reservation(
   status SMALLINT NOT NULL DEFAULT 1,
   payment_card CHAR(19) NOT NULL,
   created_at TIME NOT NULL DEFAULT CURRENT_TIME(),
-  payment_transaction_id UUID NOT NULL,
   version BIGINT NOT NULL,
-  FOREIGN KEY (payment_card) REFERENCES payment_card(card_number) ON DELETE CASCADE ,
-  FOREIGN KEY (payment_transaction_id) REFERENCES payment_transaction(uuid) ON DELETE CASCADE
+  FOREIGN KEY (payment_card) REFERENCES payment_card(card_number) ON DELETE CASCADE
 );

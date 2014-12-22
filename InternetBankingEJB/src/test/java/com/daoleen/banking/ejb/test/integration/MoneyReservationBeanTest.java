@@ -14,6 +14,7 @@ import javax.ejb.EJB;
 import java.util.List;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
 
 /**
  * Created by alex on 12/21/14.
@@ -58,7 +59,8 @@ public class MoneyReservationBeanTest extends AbstractBeanTest {
 
     @Test
     public void getZeroActiveReservationSum() {
-        double activeReservationSum = moneyReservationRepository.getActiveReservationSum("0000-0000-0000-0002");
+        PaymentCard card = paymentCardRepository.findById("0000-0000-0000-0002");
+        double activeReservationSum = moneyReservationRepository.getActiveReservationSum(card);
         assertEquals(0f, activeReservationSum, 0.001);
     }
 
@@ -87,7 +89,7 @@ public class MoneyReservationBeanTest extends AbstractBeanTest {
         int initialSize = moneyReservationRepository.getActiveReservations(card.getId()).size();
         PaymentTransaction paymentTransaction = new PaymentTransaction(card);
         paymentTransactionRepository.save(paymentTransaction);
-        moneyReservationRepository.createReservation("0000-0000-0000-0001", 1.0, paymentTransaction);
+        moneyReservationRepository.createReservation(card, 1.0, paymentTransaction);
         int updatedSize = moneyReservationRepository.getActiveReservations("0000-0000-0000-0001").size();
         assertEquals(initialSize+1, updatedSize);
     }
@@ -95,33 +97,44 @@ public class MoneyReservationBeanTest extends AbstractBeanTest {
     @Test(expected = NoEnoughMoneyException.class)
     public void noEnoughMoneyForReservation() throws NoEnoughMoneyException {
         PaymentCard card = paymentCardRepository.findById("0000-0000-0000-0001");
-        double activeReservationSum = moneyReservationRepository.getActiveReservationSum("0000-0000-0000-0001");
+        double activeReservationSum = moneyReservationRepository.getActiveReservationSum(card);
         double amount = card.getAmount().doubleValue();
         double residual = amount - activeReservationSum;
         PaymentTransaction paymentTransaction = new PaymentTransaction(card);
         paymentTransactionRepository.save(paymentTransaction);
-        moneyReservationRepository.createReservation("0000-0000-0000-0001", residual + 0.0001, paymentTransaction);
+        moneyReservationRepository.createReservation(card, residual + 0.0001, paymentTransaction);
     }
 
     @Test
     public void getActiveReservationsSum() throws NoEnoughMoneyException {
         PaymentCard card2 = paymentCardRepository.findById("0000-0000-0000-0002");
         PaymentTransaction paymentTransactionActive = new PaymentTransaction(card2);
-        paymentTransactionRepository.save(paymentTransactionActive);
-        MoneyReservation reservationActive = moneyReservationRepository.createReservation(card2.getCardNumber(), 2.3, paymentTransactionActive);
+        paymentTransactionActive = paymentTransactionRepository.save(paymentTransactionActive);
+        assertNotNull("Payment transaction id can't be null", paymentTransactionActive.getId());
+        MoneyReservation reservationActive = moneyReservationRepository.createReservation(card2, 2.3, paymentTransactionActive);
+        assertNotNull(reservationActive.getId());
         reservationActive.setStatus(MoneyReservation.STATUS_OPENED);
-        moneyReservationRepository.save(reservationActive);
+        reservationActive = moneyReservationRepository.save(reservationActive);
 
         PaymentTransaction paymentTransactionClosed = new PaymentTransaction(card2);
         paymentTransactionClosed.setTransactionStatus("closed");
-        paymentTransactionRepository.save(paymentTransactionClosed);
-        MoneyReservation reservationClosed = moneyReservationRepository.createReservation(card2.getCardNumber(), 56.7, paymentTransactionClosed);
-        reservationClosed.setStatus(MoneyReservation.STATUS_CLOSED);
-        moneyReservationRepository.save(reservationClosed);
+        paymentTransactionClosed = paymentTransactionRepository.save(paymentTransactionClosed);
+        MoneyReservation reservationClosed = moneyReservationRepository.createReservation(card2, 56.7, paymentTransactionClosed);
+        reservationClosed.setStatus(0);
+        reservationClosed = moneyReservationRepository.save(reservationClosed);
+
+
+        System.out.println("UUID1: " + paymentTransactionActive.getId().toString() + "   " + paymentTransactionActive.getId());
+        System.out.println("UUID2: " + paymentTransactionClosed.getId().toString() + "   " + paymentTransactionClosed.getId());
 
         List<MoneyReservation> activeReservations = moneyReservationRepository.getActiveReservations(card2.getCardNumber());
+
+        for(MoneyReservation reservation : activeReservations) {
+            System.out.println("Reservation["+reservation.getId()+"]: "+reservation.getPaymentCard().getCardNumber()+": "+reservation.getStatus()+" -> "+reservation.getAmount());
+        }
+
         assertEquals(1, activeReservations.size());
-        double activeReservationSum = moneyReservationRepository.getActiveReservationSum(card2.getCardNumber());
+        double activeReservationSum = moneyReservationRepository.getActiveReservationSum(card2);
         assertEquals(2.3, activeReservationSum, 0.001);
     }
 }

@@ -39,27 +39,40 @@ public class MoneyReservationBean extends AbstractBean<MoneyReservation, Long>
     }
 
     @Override
-    public double getActiveReservationSum(String cardNumber) {
+    public double getActiveReservationSum(PaymentCard card) {
         Double sum = em.createNamedQuery("getActiveReservationSum", Double.class)
-                .setParameter("cardNumber", cardNumber)
-                .setParameter("openedStatus", MoneyReservation.STATUS_OPENED)
+                .setParameter("card", card)
                 .getSingleResult();
         return (sum != null) ? sum : 0;
     }
 
-    @Override
-    public MoneyReservation createReservation(String cardNumber, double amount, PaymentTransaction paymentTransaction) throws NoEnoughMoneyException {
-        PaymentCard paymentCard = paymentCardRepository.findById(cardNumber);
-        double reservedSum = getActiveReservationSum(cardNumber);
 
-        if(reservedSum + amount > paymentCard.getAmount()) {
-            throw new NoEnoughMoneyException(String.format("%s (%.2f)", cardNumber, paymentCard.getAmount()), reservedSum + amount);
+    private MoneyReservation getMoneyReservation(PaymentCard card, double amount) throws NoEnoughMoneyException {
+        double reservedSum = getActiveReservationSum(card);
+
+        if(reservedSum + amount > card.getAmount()) {
+            throw new NoEnoughMoneyException(String.format("%s (%.2f)", card.getCardNumber(), card.getAmount()), reservedSum + amount);
         }
 
-        MoneyReservation moneyReservation = new MoneyReservation(paymentCard, MoneyReservation.STATUS_OPENED, amount);
+        return new MoneyReservation(card, amount);
+    }
+
+
+
+    @Override
+    public MoneyReservation createReservation(PaymentCard card, double amount)
+            throws NoEnoughMoneyException
+    {
+        MoneyReservation moneyReservation = getMoneyReservation(card, amount);
+        return save(moneyReservation);
+    }
+
+    @Override
+    public MoneyReservation createReservation(PaymentCard card, double amount, PaymentTransaction paymentTransaction)
+            throws NoEnoughMoneyException {
+        MoneyReservation moneyReservation = getMoneyReservation(card, amount);
         moneyReservation.setPaymentTransaction(paymentTransaction);
-        save(moneyReservation);
-        return moneyReservation;
+        return save(moneyReservation);
     }
 
     @Override

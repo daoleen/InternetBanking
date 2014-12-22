@@ -50,17 +50,9 @@ public abstract class AbstractBean<T extends Identifiable<I>, I extends Serializ
     }
 
     @Override
-    public void save(T entity) {
-//        if(entity.getId() != null) {
-//            logger.debug("Updating the existing entity");
-//            System.out.println("SAVE: UPDATE");
-//            em.merge(entity);
-//        } else {
-//            logger.debug("Persist new entity");
-//            System.out.println("SAVE: INSERT");
-//            em.persist(entity);
-//        }
-        em.persist(em.merge(entity));
+    public T save(T entity) {
+        em.persist(entity = em.merge(entity));
+        return entity;
     }
 
     @Override
