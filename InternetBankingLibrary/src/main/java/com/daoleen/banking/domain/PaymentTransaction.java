@@ -1,8 +1,8 @@
 package com.daoleen.banking.domain;
 
 import javax.persistence.*;
-import javax.validation.constraints.Max;
 import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 import java.io.Serializable;
 import java.util.Date;
 import java.util.UUID;
@@ -26,19 +26,19 @@ public class PaymentTransaction implements Identifiable<UUID>, Serializable {
     @Column(name = "recepient_bank_id")
     private Integer recepientBankId;
 
-    @Max(value = 255, message = "Максимальная длина поля - {value} символов")
+    @Size(max = 255, message = "Максимальная длина поля - {max} символов")
     @Column(name = "recepient_account_number")
     private String recepientAccountNumber;
 
-    @Max(value = 32, message = "Максимальная длина поля - {value} символов")
+    @Size(max = 32, message = "Максимальная длина поля - {max} символов")
     @Column(name = "recepient_first_name")
     private String recepientFirstName;
 
-    @Max(value = 32, message = "Максимальная длина поля - {value} символов")
+    @Size(max = 32, message = "Максимальная длина поля - {max} символов")
     @Column(name = "recepient_last_name")
     private String recepientLastName;
 
-    @Max(value = 32, message = "Максимальная длина поля - {value} символов")
+    @Size(max = 32, message = "Максимальная длина поля - {max} символов")
     @Column(name = "recepient_patronymic_name")
     private String recepientPatronymicName;
 
@@ -46,7 +46,7 @@ public class PaymentTransaction implements Identifiable<UUID>, Serializable {
     @Column(name = "created_at")
     private Date createdAt;
 
-    @Max(value = 16, message = "Максимальная длина поля - {value} символов")
+    @Size(max = 16, message = "Максимальная длина поля - {max} символов")
     @Column(name = "transaction_status")
     private String transactionStatus;
 
@@ -60,13 +60,23 @@ public class PaymentTransaction implements Identifiable<UUID>, Serializable {
     @JoinColumn(name = "recepient_card_number")
     private PaymentCard recepientCard;
 
-    @ManyToOne(fetch = FetchType.EAGER, optional = false)
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "card_number")
     private PaymentCard card;
 
+    @OneToOne(mappedBy = "paymentTransaction", orphanRemoval = true)
+    private MoneyReservation moneyReservation;
+
 
     public PaymentTransaction() {
-        uuid = UUID.randomUUID();
+        this.uuid = UUID.randomUUID();
+        this.transactionStatus = "created";
+        this.createdAt = new Date();
+    }
+
+    public PaymentTransaction(PaymentCard card) {
+        this();
+        this.card = card;
     }
 
     @Override
@@ -178,5 +188,13 @@ public class PaymentTransaction implements Identifiable<UUID>, Serializable {
 
     public void setCard(PaymentCard card) {
         this.card = card;
+    }
+
+    public MoneyReservation getMoneyReservation() {
+        return moneyReservation;
+    }
+
+    public void setMoneyReservation(MoneyReservation moneyReservation) {
+        this.moneyReservation = moneyReservation;
     }
 }

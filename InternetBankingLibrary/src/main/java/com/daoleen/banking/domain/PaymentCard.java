@@ -49,6 +49,9 @@ public class PaymentCard implements Identifiable<String>, Serializable {
     @OneToMany(mappedBy = "card", fetch = FetchType.LAZY, orphanRemoval = true)
     private List<PaymentTransaction> paymentTransactions;
 
+    @OneToMany(mappedBy = "paymentCard", fetch = FetchType.LAZY)
+    private List<MoneyReservation> moneyReservations;
+
 
     @Override
     public String getId() {

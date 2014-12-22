@@ -38,7 +38,7 @@ public class PaymentCardBeanTest extends AbstractBeanTest {
     protected Identifiable createNewEntity() {
         Bank bank = bankRepository.findAll().get(0);
         Client client = clientRepository.findAll().get(0);
-        return new PaymentCard("0000-0000-0000-0002", 320.0,
+        return new PaymentCard("1000-0000-0000-0002", 320.0,
                 "hashedPass", new Date(), bank, client);
     }
 

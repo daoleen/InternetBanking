@@ -68,3 +68,15 @@ CREATE TABLE IF NOT EXISTS payment_transaction (
   FOREIGN KEY (recepient_card_number) REFERENCES payment_card(card_number),
   FOREIGN KEY (card_number) REFERENCES payment_card(card_number)
 );
+
+CREATE TABLE IF NOT EXISTS money_reservation(
+  id BIGINT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  amount DOUBLE NOT NULL DEFAULT '0.00',
+  status SMALLINT NOT NULL DEFAULT 1,
+  payment_card CHAR(19) NOT NULL,
+  created_at TIME NOT NULL DEFAULT CURRENT_TIME(),
+  payment_transaction_id UUID NOT NULL,
+  version BIGINT NOT NULL,
+  FOREIGN KEY (payment_card) REFERENCES payment_card(card_number) ON DELETE CASCADE ,
+  FOREIGN KEY (payment_transaction_id) REFERENCES payment_transaction(uuid) ON DELETE CASCADE
+);

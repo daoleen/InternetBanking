@@ -1,7 +1,10 @@
 package com.daoleen.banking.ejb.test.integration;
 
+import com.daoleen.banking.converter.MoneyReservationStatusConverter;
 import com.daoleen.banking.domain.Identifiable;
 import com.daoleen.banking.ejb.AbstractBean;
+import com.daoleen.banking.enums.MoneyReservationStatus;
+import com.daoleen.banking.exception.NoEnoughMoneyException;
 import com.daoleen.banking.repository.Repository;
 import org.jboss.arquillian.container.test.api.Deployment;
 import org.jboss.arquillian.junit.Arquillian;
@@ -22,6 +25,9 @@ public abstract class AbstractIntegrationTest {
                 .addPackage(AbstractBean.class.getPackage())
                 .addPackage(Repository.class.getPackage())
                 .addPackage(Identifiable.class.getPackage())
+                .addPackage(NoEnoughMoneyException.class.getPackage())
+                .addPackage(MoneyReservationStatusConverter.class.getPackage())
+                .addPackage(MoneyReservationStatus.class.getPackage())
                 .addAsResource("META-INF/log4j.properties")
                 .addAsResource("log4j.properties")
                 .addAsResource("META-INF/logging.configuration")
