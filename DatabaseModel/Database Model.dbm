@@ -1160,8 +1160,8 @@
     <columns xsi:type="LUW:LUWColumn" xmi:id="_qgF0wHKAEeS_Mo0ZUQqqgA" name="created_at" nullable="false" defaultValue="CURRENT TIMESTAMP">
       <containedType xsi:type="SQLDataTypes:TimeDataType" xmi:id="_JSRBIHKEEeS_Mo0ZUQqqgA" name="TIMESTAMP" primitiveType="TIMESTAMP"/>
     </columns>
-    <columns xsi:type="LUW:LUWColumn" xmi:id="_sX5D4HKAEeS_Mo0ZUQqqgA" name="transaction_status">
-      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_MzH4wHKEEeS_Mo0ZUQqqgA" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="16"/>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_sX5D4HKAEeS_Mo0ZUQqqgA" name="transaction_status" nullable="false" defaultValue="1">
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="__U2GEIo6EeSoI_w0MDi9PA" name="SMALLINT" primitiveType="SMALLINT"/>
     </columns>
     <columns xsi:type="LUW:LUWColumn" xmi:id="_O291QHKDEeS_Mo0ZUQqqgA" name="card_number" nullable="false">
       <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_O291QXKDEeS_Mo0ZUQqqgA" name="CHAR" length="19"/>
@@ -1224,8 +1224,8 @@
     <columns xsi:type="LUW:LUWColumn" xmi:id="_0QTngIf-EeSd5Yj1F1FtAw" name="amount" nullable="false">
       <containedType xsi:type="SQLDataTypes:ApproximateNumericDataType" xmi:id="_3eQxQIf-EeSd5Yj1F1FtAw" name="DOUBLE" primitiveType="DOUBLE_PRECISION"/>
     </columns>
-    <columns xsi:type="LUW:LUWColumn" xmi:id="_4TTi4If-EeSd5Yj1F1FtAw" name="status" nullable="false" defaultValue="open">
-      <containedType xsi:type="SQLDataTypes:CharacterStringDataType" xmi:id="_6qe1oIf-EeSd5Yj1F1FtAw" name="VARCHAR" primitiveType="CHARACTER_VARYING" length="10"/>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_4TTi4If-EeSd5Yj1F1FtAw" name="status" nullable="false" defaultValue="1">
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_7uSPEIo6EeSoI_w0MDi9PA" name="SMALLINT" primitiveType="SMALLINT"/>
     </columns>
     <columns xsi:type="LUW:LUWColumn" xmi:id="_udTkEIkwEeSVfeUytdmj6g" name="created_at" nullable="false" defaultValue="CURRENT TIME">
       <containedType xsi:type="SQLDataTypes:TimeDataType" xmi:id="_z7C_IIkwEeSVfeUytdmj6g" name="TIME" primitiveType="TIME"/>
