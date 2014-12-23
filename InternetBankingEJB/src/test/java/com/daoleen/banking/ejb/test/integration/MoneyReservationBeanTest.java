@@ -4,6 +4,8 @@ import com.daoleen.banking.domain.Identifiable;
 import com.daoleen.banking.domain.MoneyReservation;
 import com.daoleen.banking.domain.PaymentCard;
 import com.daoleen.banking.domain.PaymentTransaction;
+import com.daoleen.banking.enums.MoneyReservationStatus;
+import com.daoleen.banking.enums.PaymentTransactionStatus;
 import com.daoleen.banking.exception.NoEnoughMoneyException;
 import com.daoleen.banking.repository.MoneyReservationRepository;
 import com.daoleen.banking.repository.PaymentCardRepository;
@@ -38,15 +40,15 @@ public class MoneyReservationBeanTest extends AbstractBeanTest {
     @Override
     protected Identifiable createNewEntity() {
         List<PaymentCard> all = paymentCardRepository.findAll();
-        return new MoneyReservation(all.get(0), MoneyReservation.STATUS_OPENED, 12.5);
+        return new MoneyReservation(all.get(0), MoneyReservationStatus.OPENED, 12.5);
     }
 
 
     @Test
     public void getActiveReservations() {
         PaymentCard card = paymentCardRepository.findAll().get(0);
-        MoneyReservation activeReservation = new MoneyReservation(card, MoneyReservation.STATUS_OPENED, 12.5);
-        MoneyReservation closedReservation = new MoneyReservation(card, MoneyReservation.STATUS_CLOSED, 12.5);
+        MoneyReservation activeReservation = new MoneyReservation(card, MoneyReservationStatus.OPENED, 12.5);
+        MoneyReservation closedReservation = new MoneyReservation(card, MoneyReservationStatus.CLOSED, 12.5);
         int initialCount = moneyReservationRepository.getActiveReservations(card.getCardNumber()).size();
         int allInitialCount = moneyReservationRepository.findAll().size();
         moneyReservationRepository.save(activeReservation);
@@ -71,7 +73,7 @@ public class MoneyReservationBeanTest extends AbstractBeanTest {
         int updatedSize = moneyReservationRepository.findAll().size();
         assertEquals(initialSize, updatedSize); // size doesn't change
         MoneyReservation moneyReservation = moneyReservationRepository.findById(1L);
-        assertEquals(MoneyReservation.STATUS_CLOSED, moneyReservation.getStatus());
+        assertEquals(MoneyReservationStatus.CLOSED, moneyReservation.getStatus());
     }
 
     @Test
@@ -79,7 +81,7 @@ public class MoneyReservationBeanTest extends AbstractBeanTest {
         PaymentTransaction paymentTransaction = moneyReservationRepository.findById(1L).getPaymentTransaction();
         moneyReservationRepository.closeActiveReservation(paymentTransaction);
         MoneyReservation moneyReservation = moneyReservationRepository.findById(1L);
-        assertEquals(MoneyReservation.STATUS_CLOSED, moneyReservation.getStatus());
+        assertEquals(MoneyReservationStatus.CLOSED, moneyReservation.getStatus());
     }
 
 
@@ -101,7 +103,8 @@ public class MoneyReservationBeanTest extends AbstractBeanTest {
         double amount = card.getAmount().doubleValue();
         double residual = amount - activeReservationSum;
         PaymentTransaction paymentTransaction = new PaymentTransaction(card);
-        paymentTransactionRepository.save(paymentTransaction);
+        paymentTransaction = paymentTransactionRepository.save(paymentTransaction);
+        assertNotNull("Payment transaction can't be null", paymentTransaction);
         moneyReservationRepository.createReservation(card, residual + 0.0001, paymentTransaction);
     }
 
@@ -113,14 +116,14 @@ public class MoneyReservationBeanTest extends AbstractBeanTest {
         assertNotNull("Payment transaction id can't be null", paymentTransactionActive.getId());
         MoneyReservation reservationActive = moneyReservationRepository.createReservation(card2, 2.3, paymentTransactionActive);
         assertNotNull(reservationActive.getId());
-        reservationActive.setStatus(MoneyReservation.STATUS_OPENED);
+        reservationActive.setStatus(MoneyReservationStatus.OPENED);
         reservationActive = moneyReservationRepository.save(reservationActive);
 
         PaymentTransaction paymentTransactionClosed = new PaymentTransaction(card2);
-        paymentTransactionClosed.setTransactionStatus("closed");
+        paymentTransactionClosed.setTransactionStatus(PaymentTransactionStatus.CLOSED);
         paymentTransactionClosed = paymentTransactionRepository.save(paymentTransactionClosed);
         MoneyReservation reservationClosed = moneyReservationRepository.createReservation(card2, 56.7, paymentTransactionClosed);
-        reservationClosed.setStatus(0);
+        reservationClosed.setStatus(MoneyReservationStatus.CLOSED);
         reservationClosed = moneyReservationRepository.save(reservationClosed);
 
 

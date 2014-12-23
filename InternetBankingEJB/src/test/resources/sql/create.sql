@@ -61,7 +61,7 @@ CREATE TABLE IF NOT EXISTS payment_transaction (
   recepient_patronymic_name VARCHAR(32),
   recepient_card_number CHAR(19),
   created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP(),
-  transaction_status VARCHAR(16),
+  transaction_status SMALLINT NOT NULL DEFAULT '1',
   card_number CHAR(19) NOT NULL,
   completed_at TIMESTAMP,
   money_reservation_id BIGINT NOT NULL,

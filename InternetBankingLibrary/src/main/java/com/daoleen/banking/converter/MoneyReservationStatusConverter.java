@@ -8,7 +8,7 @@ import javax.persistence.Converter;
 /**
  * Created by alex on 12/22/14.
  */
-@Converter(autoApply = true)
+@Converter
 public class MoneyReservationStatusConverter implements AttributeConverter<MoneyReservationStatus, Integer> {
     @Override
     public Integer convertToDatabaseColumn(MoneyReservationStatus attribute) {
@@ -17,8 +17,9 @@ public class MoneyReservationStatusConverter implements AttributeConverter<Money
 
     @Override
     public MoneyReservationStatus convertToEntityAttribute(Integer dbData) {
-        MoneyReservationStatus moneyReservationStatus = MoneyReservationStatus.CLOSED;
-        moneyReservationStatus.setValue(dbData);
-        return moneyReservationStatus;
+        if(dbData.equals(MoneyReservationStatus.OPENED.getValue())) {
+            return MoneyReservationStatus.OPENED;
+        }
+        return MoneyReservationStatus.CLOSED;
     }
 }

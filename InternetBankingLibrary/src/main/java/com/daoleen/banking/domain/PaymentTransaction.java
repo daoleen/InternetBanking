@@ -1,6 +1,10 @@
 package com.daoleen.banking.domain;
 
+import com.daoleen.banking.converter.PaymentTransactionStatusConverter;
+import com.daoleen.banking.enums.PaymentTransactionStatus;
+
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.io.Serializable;
 import java.util.Date;
@@ -18,8 +22,6 @@ public class PaymentTransaction implements Identifiable<UUID>, Serializable {
     private static final long serialVersionUID = 3742187395769719621L;
 
     @Id
-//    @Id @GeneratedValue(generator = "system-uuid")
-//    @GenericGenerator()
     @Column(name = "uuid")
     private UUID uuid;
 
@@ -46,9 +48,10 @@ public class PaymentTransaction implements Identifiable<UUID>, Serializable {
     @Column(name = "created_at")
     private Date createdAt;
 
-    @Size(max = 16, message = "Максимальная длина поля - {max} символов")
+    @NotNull
+    @Convert(converter = PaymentTransactionStatusConverter.class)
     @Column(name = "transaction_status")
-    private String transactionStatus;
+    private PaymentTransactionStatus transactionStatus;
 
     @Temporal(TemporalType.TIMESTAMP)
     @Column(name = "completed_at")
@@ -69,22 +72,21 @@ public class PaymentTransaction implements Identifiable<UUID>, Serializable {
     private MoneyReservation moneyReservation;
 
 
+    @PrePersist
+    public void generateId() {
+        if(this.uuid == null) {
+            this.uuid = UUID.randomUUID();
+        }
+    }
+
     public PaymentTransaction() {
-        //this.uuid = UUID.randomUUID();
-        this.transactionStatus = "created";
+        this.transactionStatus = PaymentTransactionStatus.OPENED;
         this.createdAt = new Date();
     }
 
     public PaymentTransaction(PaymentCard card) {
         this();
         this.card = card;
-    }
-
-    @PrePersist
-    public void ensureId() {
-        if(this.uuid == null) {
-            this.uuid = UUID.randomUUID();
-        }
     }
 
     @Override
@@ -166,11 +168,11 @@ public class PaymentTransaction implements Identifiable<UUID>, Serializable {
         this.createdAt = createdAt;
     }
 
-    public String getTransactionStatus() {
+    public PaymentTransactionStatus getTransactionStatus() {
         return transactionStatus;
     }
 
-    public void setTransactionStatus(String transactionStatus) {
+    public void setTransactionStatus(PaymentTransactionStatus transactionStatus) {
         this.transactionStatus = transactionStatus;
     }
 

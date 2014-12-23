@@ -6,7 +6,7 @@ package com.daoleen.banking.enums;
 public enum MoneyReservationStatus {
     OPENED(1), CLOSED(0);
 
-    private int value;
+    private final int value;
 
     private MoneyReservationStatus(int value) {
         this.value = value;
@@ -14,9 +14,5 @@ public enum MoneyReservationStatus {
 
     public int getValue() {
         return value;
-    }
-
-    public void setValue(int value) {
-        this.value = value;
     }
 }

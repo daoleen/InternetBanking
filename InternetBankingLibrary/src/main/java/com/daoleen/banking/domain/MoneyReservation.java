@@ -1,5 +1,8 @@
 package com.daoleen.banking.domain;
 
+import com.daoleen.banking.converter.MoneyReservationStatusConverter;
+import com.daoleen.banking.enums.MoneyReservationStatus;
+
 import javax.persistence.*;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
@@ -13,13 +16,11 @@ import java.util.Date;
 @Table(name = "money_reservation")
 @NamedQueries({
         @NamedQuery(name = "getActiveReservations", query = "select r from MoneyReservation r where r.paymentCard.cardNumber = :cardNumber and r.status = :openedStatus"),
-        @NamedQuery(name = "getActiveReservationSum", query = "select sum(r.amount) from MoneyReservation r where r.paymentCard = :card and r.status = 1"),
+        @NamedQuery(name = "getActiveReservationSum", query = "select sum(r.amount) from MoneyReservation r where r.paymentCard = :card and r.status = :openedStatus"),
         @NamedQuery(name = "closeReservation", query = "update MoneyReservation r set r.status = :closedStatus where r.id = :id")
 })
 public class MoneyReservation implements Identifiable<Long>, Serializable {
     private static final long serialVersionUID = -6174020065678295704L;
-    public final static int STATUS_OPENED = 1;
-    public final static int STATUS_CLOSED = 0;
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
@@ -30,11 +31,11 @@ public class MoneyReservation implements Identifiable<Long>, Serializable {
     @Column(name = "amount")
     private Double amount;
 
-//    @NotNull
-    //@Enumerated(EnumType.STRING)
-//    @Convert(converter = MoneyReservationStatusConverter.class)
+    @NotNull
+//    @Enumerated(EnumType.STRING)
+    @Convert(converter = MoneyReservationStatusConverter.class)
     @Column(name = "status")
-    private int status;
+    private MoneyReservationStatus status;
 
     @Temporal(TemporalType.TIME)
     @Column(name = "created_at")
@@ -54,7 +55,7 @@ public class MoneyReservation implements Identifiable<Long>, Serializable {
 
 
     public MoneyReservation() {
-        this.status = STATUS_OPENED;
+        this.status = MoneyReservationStatus.OPENED;
     }
 
     public MoneyReservation(PaymentCard paymentCard, Double amount) {
@@ -63,7 +64,7 @@ public class MoneyReservation implements Identifiable<Long>, Serializable {
         this.amount = amount;
     }
 
-    public MoneyReservation(PaymentCard paymentCard, int status, Double amount) {
+    public MoneyReservation(PaymentCard paymentCard, MoneyReservationStatus status, Double amount) {
         this(paymentCard, amount);
         this.status = status;
     }
@@ -102,11 +103,11 @@ public class MoneyReservation implements Identifiable<Long>, Serializable {
         this.amount = amount;
     }
 
-    public int getStatus() {
+    public MoneyReservationStatus getStatus() {
         return status;
     }
 
-    public void setStatus(int status) {
+    public void setStatus(MoneyReservationStatus status) {
         this.status = status;
     }
 
