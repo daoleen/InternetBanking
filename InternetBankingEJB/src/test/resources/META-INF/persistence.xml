@@ -15,6 +15,7 @@
         <class>com.daoleen.banking.domain.ClientAddress</class>
         <class>com.daoleen.banking.domain.PaymentCard</class>
         <class>com.daoleen.banking.domain.PaymentTransaction</class>
+        <class>com.daoleen.banking.domain.MoneyReservation</class>
 
         <properties>
             <property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect"/>
