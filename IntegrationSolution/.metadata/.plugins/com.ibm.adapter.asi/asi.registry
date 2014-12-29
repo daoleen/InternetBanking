@@ -1,0 +1,7 @@
+<ApplicationSpecificSchemaProperties
+  description="Email ASI schema"
+  displayName="Email ASI schema"
+  namespaceURI="http://www.ibm.com/xmlns/prod/websphere/j2ca/datatransformation/databindingmapping"
+  xsdFileURL="file:/E:/IBM/Projects/InternetBanking/IntegrationSolution/CWYEM_EMail/connectorModule/EmailASI.xsd"
+  linkage="1"
+/>

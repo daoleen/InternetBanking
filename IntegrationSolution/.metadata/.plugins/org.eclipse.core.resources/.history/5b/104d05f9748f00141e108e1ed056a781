@@ -1,0 +1,12 @@
+public class GeneratedCompilationUnitName_1419869328458 {public void fakeMethod1419869328458() {java.util.Random r = new java.util.Random();
+smsCode = r.nextInt(1000);
+String smsMessage = String.format("Ваш смс код для проверки: %d.\nInternet Banking", smsCode);
+//smsEmailMessage = smsEmailMessage.createDataObject("smsEmailMessage");
+smsEmailMessage = new SimpleAle
+smsEmailMessage.setString("To", "alexssource@gmail.com");
+smsEmailMessage.setString("From", "notify@ibank.loc");
+smsEmailMessage.setString("Encoding", "utf-8");
+smsEmailMessage.setString("Subject", "Код смс подтверждения");
+smsEmailMessage.setString("mailContent", smsMessage);
+
+}}

@@ -1,0 +1,4 @@
+public class GeneratedCompilationUnitName_1419868458940 {public void fakeMethod1419868458940() {java.util.Random r = new java.util.Random();
+smsCode = r.nextInt(1000);
+smsEmail
+}}

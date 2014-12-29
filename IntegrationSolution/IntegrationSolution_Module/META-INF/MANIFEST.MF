@@ -1,0 +1,5 @@
+Manifest-Version: 1.0
+Class-Path: IntegrationSolution_Library.jar 
+ CWYEM_EMail.rar
+Created-By: 1.5.0 (IBM Corporation)
+

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="com.ibm.wbit.ui.InterfaceSelectionDialog">
+		<item value="471" key="width"/>
+		<item value="749" key="height"/>
+		<item value="564" key="x"/>
+		<item value="0" key="y"/>
+	</section>
+	<section name="com.ibm.wbit.ui.dialogs.ReferenceSelectionDialog">
+		<item value="646" key="width"/>
+		<item value="819" key="height"/>
+		<item value="565" key="x"/>
+		<item value="0" key="y"/>
+	</section>
+	<section name="com.ibm.wbit.bpel.ui.dialogs.BPELDataTypeSelectionDialog">
+		<item value="485" key="width"/>
+		<item value="753" key="height"/>
+		<item value="558" key="x"/>
+		<item value="0" key="y"/>
+	</section>
+	<section name="com.ibm.wbit.ui.dialogs.VariableSelectionDialog">
+		<item value="485" key="width"/>
+		<item value="819" key="height"/>
+		<item value="584" key="x"/>
+		<item value="0" key="y"/>
+	</section>
+</section>

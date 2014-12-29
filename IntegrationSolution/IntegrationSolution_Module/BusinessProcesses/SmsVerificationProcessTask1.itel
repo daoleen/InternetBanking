@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ ##[lineageStampBegin]##
+ ##[generatedBy:/IntegrationSolution_Module/BusinessProcesses/SmsVerificationProcess.bpel]##
+ ##[lineageStampEnd]##
+-->
+<tel:task xmlns:tel="http://www.ibm.com/xmlns/prod/websphere/human-task/6.0.0/" xmlns:wsdl="http://IntegrationSolution_Library/Interfaces/HumanTasks/SmsCodeHumanTaskInterface" allowClaimWhenSuspended="no" autoClaim="yes" businessRelevance="no" calendarName="Simple" contextAuthorizationForOwner="none" defaultLocale="ru-RU" jndiNameStaffPluginProvider="bpe/staff/samplevmmconfiguration" kind="pTask" name="SmsCodeProcessTask" priorityDefinition="5" supportsDelegation="yes" supportsFollowOnTask="yes" supportsSubTask="yes" targetNamespace="http://IntegrationSolution_Module/BusinessProcesses/Task1">
+  <tel:import importType="http://schemas.xmlsoap.org/wsdl/" location="../Interfaces/HumanTasks/SmsCodeHumanTaskInterface.wsdl" namespace="http://IntegrationSolution_Library/Interfaces/HumanTasks/SmsCodeHumanTaskInterface"/>
+  <tel:interface kind="inbound" operation="submit" portType="wsdl:SmsCodeHumanTaskInterface"/>
+  <tel:staffSettings>
+    <tel:potentialOwner>
+      <tel:verb>
+        <tel:name>Everybody</tel:name>
+      </tel:verb>
+    </tel:potentialOwner>
+  </tel:staffSettings>
+  <tel:uiSettings>
+    <tel:webClientSettings clientType="Web Client V6"/>
+  </tel:uiSettings>
+  <tel:escalationSettings/>
+</tel:task>
