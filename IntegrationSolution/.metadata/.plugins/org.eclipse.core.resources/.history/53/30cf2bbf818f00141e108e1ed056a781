@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.ibm.wbit.bpel.ui.uiextensionmodel="http:///com/ibm/wbit/bpel/ui/uiextensionmodel.ecore" xmlns:extensionmodel="http:///extensionmodel.ecore" xmlns:sb="http://com.ibm.wbit.stickyboard.model/model/StickyBoard.xsd">
+  <extensionmodel:ExtensionMap namespace="http://com.ibm.wbit.bpel.ui/">
+    <extensions>
+      <extendedObject href="SmsVerificationProcess.bpel#/"/>
+      <extensionObject xsi:type="com.ibm.wbit.bpel.ui.uiextensionmodel:ProcessExtension" modificationStamp="1419874797837" autoLayout="true" maxWpcId="37" minWpcId="0"/>
+    </extensions>
+    <extensions>
+      <extendedObject href="SmsVerificationProcess.bpel#//@activity"/>
+      <extensionObject xsi:type="com.ibm.wbit.bpel.ui.uiextensionmodel:ActivityExtension" x="-2147483648" implicit="true"/>
+    </extensions>
+    <extensions>
+      <extendedObject href="SmsVerificationProcess.bpel#//@activity/@activities.0"/>
+      <extensionObject xsi:type="com.ibm.wbit.bpel.ui.uiextensionmodel:ActivityExtension" x="-2147483648"/>
+    </extensions>
+    <extensions>
+      <extendedObject href="SmsVerificationProcess.bpel#//@activity/@activities.2"/>
+      <extensionObject xsi:type="com.ibm.wbit.bpel.ui.uiextensionmodel:ActivityExtension" x="-2147483648"/>
+    </extensions>
+    <extensions>
+      <extendedObject href="file:/E:/IBM/Projects/InternetBanking/IntegrationSolution/IntegrationSolution_Module/BusinessProcesses/SmsVerificationProcess.bpel#//@activity/@activities.0"/>
+      <extensionObject xsi:type="com.ibm.wbit.bpel.ui.uiextensionmodel:ActivityExtension" x="-2147483648"/>
+    </extensions>
+    <extensions>
+      <extendedObject href="file:/E:/IBM/Projects/InternetBanking/IntegrationSolution/IntegrationSolution_Module/BusinessProcesses/SmsVerificationProcess.bpel#//@activity/@activities.1"/>
+      <extensionObject xsi:type="com.ibm.wbit.bpel.ui.uiextensionmodel:ActivityExtension" x="-2147483648"/>
+    </extensions>
+    <extensions>
+      <extendedObject href="file:/E:/IBM/Projects/InternetBanking/IntegrationSolution/IntegrationSolution_Module/BusinessProcesses/SmsVerificationProcess.bpel#//@activity/@activities.2"/>
+      <extensionObject xsi:type="com.ibm.wbit.bpel.ui.uiextensionmodel:ActivityExtension" x="-2147483648"/>
+    </extensions>
+    <extensions>
+      <extendedObject href="file:/E:/IBM/Projects/InternetBanking/IntegrationSolution/IntegrationSolution_Module/BusinessProcesses/SmsVerificationProcess.bpel#//@activity"/>
+      <extensionObject xsi:type="com.ibm.wbit.bpel.ui.uiextensionmodel:ActivityExtension" x="-2147483648"/>
+    </extensions>
+    <extensions>
+      <extendedObject href="file:/E:/IBM/Projects/InternetBanking/IntegrationSolution/IntegrationSolution_Module/BusinessProcesses/SmsVerificationProcess.bpel#/"/>
+      <extensionObject xsi:type="com.ibm.wbit.bpel.ui.uiextensionmodel:ProcessExtension"/>
+    </extensions>
+    <extensions>
+      <extendedObject href="SmsVerificationProcess.bpel#//@activity/@activities.1/@activities.0/@eExtensibilityElements.0"/>
+      <extensionObject xsi:type="com.ibm.wbit.bpel.ui.uiextensionmodel:ActivityExtension" x="-2147483648"/>
+    </extensions>
+    <extensions>
+      <extendedObject href="SmsVerificationProcess.bpel#//@activity/@activities.1/@activities.0"/>
+      <extensionObject xsi:type="com.ibm.wbit.bpel.ui.uiextensionmodel:ActivityExtension" x="112"/>
+    </extensions>
+    <extensions>
+      <extendedObject href="SmsVerificationProcess.bpel#//@variables/@children.0"/>
+      <extensionObject xsi:type="com.ibm.wbit.bpel.ui.uiextensionmodel:VariableExtension"/>
+    </extensions>
+    <extensions>
+      <extendedObject href="SmsVerificationProcess.bpel#//@activity/@activities.1/@activities.1/@eExtensibilityElements.0"/>
+      <extensionObject xsi:type="com.ibm.wbit.bpel.ui.uiextensionmodel:ActivityExtension" x="-2147483648"/>
+    </extensions>
+    <extensions>
+      <extendedObject href="SmsVerificationProcess.bpel#//@activity/@activities.1/@activities.1"/>
+      <extensionObject xsi:type="com.ibm.wbit.bpel.ui.uiextensionmodel:ActivityExtension" x="187" y="48"/>
+    </extensions>
+    <extensions>
+      <extendedObject href="SmsVerificationProcess.bpel#//@activity/@activities.1/@activities.2"/>
+      <extensionObject xsi:type="com.ibm.wbit.bpel.ui.uiextensionmodel:ActivityExtension" x="177" y="98"/>
+    </extensions>
+    <extensions>
+      <extendedObject href="SmsVerificationProcess.bpel#//@variables/@children.2"/>
+      <extensionObject xsi:type="com.ibm.wbit.bpel.ui.uiextensionmodel:VariableExtension"/>
+    </extensions>
+    <extensions>
+      <extendedObject href="SmsVerificationProcess.bpel#//@activity/@activities.1"/>
+      <extensionObject xsi:type="com.ibm.wbit.bpel.ui.uiextensionmodel:ActivityExtension" x="-2147483648"/>
+    </extensions>
+    <extensions>
+      <extendedObject href="SmsVerificationProcess.bpel#//@activity/@activities.1/@links/@children.0"/>
+      <extensionObject xsi:type="com.ibm.wbit.bpel.ui.uiextensionmodel:LinkExtension"/>
+    </extensions>
+    <extensions>
+      <extendedObject href="SmsVerificationProcess.bpel#//@activity/@activities.1/@links/@children.1"/>
+      <extensionObject xsi:type="com.ibm.wbit.bpel.ui.uiextensionmodel:LinkExtension"/>
+    </extensions>
+    <extensions>
+      <extendedObject href="SmsVerificationProcess.bpel#//@variables/@children.3"/>
+      <extensionObject xsi:type="com.ibm.wbit.bpel.ui.uiextensionmodel:VariableExtension"/>
+    </extensions>
+    <extensions>
+      <extendedObject href="SmsVerificationProcess.bpel#//@activity/@activities.1/@activities.3"/>
+      <extensionObject xsi:type="com.ibm.wbit.bpel.ui.uiextensionmodel:ActivityExtension" x="1" y="187" width="-1" height="-1"/>
+    </extensions>
+    <extensions>
+      <extendedObject href="SmsVerificationProcess.bpel#//@activity/@activities.1/@links/@children.2"/>
+      <extensionObject xsi:type="com.ibm.wbit.bpel.ui.uiextensionmodel:LinkExtension"/>
+    </extensions>
+    <extensions>
+      <extendedObject href="SmsVerificationProcess.bpel#//@activity/@activities.1/@links/@children.3"/>
+      <extensionObject xsi:type="com.ibm.wbit.bpel.ui.uiextensionmodel:LinkExtension"/>
+    </extensions>
+    <extensions>
+      <extendedObject href="SmsVerificationProcess.bpel#//@activity/@activities.1/@activities.3/@cases.0/@activity/@cases.0/@activity"/>
+      <extensionObject xsi:type="com.ibm.wbit.bpel.ui.uiextensionmodel:ActivityExtension" x="-2147483648"/>
+    </extensions>
+    <extensions>
+      <extendedObject href="SmsVerificationProcess.bpel#//@activity/@activities.1/@activities.3/@cases.0/@activity/@cases.0"/>
+      <extensionObject xsi:type="com.ibm.wbit.bpel.ui.uiextensionmodel:CaseExtension"/>
+    </extensions>
+    <extensions>
+      <extendedObject href="SmsVerificationProcess.bpel#//@activity/@activities.1/@activities.3/@cases.0/@activity"/>
+      <extensionObject xsi:type="com.ibm.wbit.bpel.ui.uiextensionmodel:ActivityExtension" x="-2147483648"/>
+    </extensions>
+    <extensions>
+      <extendedObject href="SmsVerificationProcess.bpel#//@activity/@activities.1/@activities.3/@cases.0"/>
+      <extensionObject xsi:type="com.ibm.wbit.bpel.ui.uiextensionmodel:CaseExtension"/>
+    </extensions>
+    <extensions>
+      <extendedObject href="SmsVerificationProcess.bpel#//@activity/@activities.1/@activities.3/@cases.0/@condition"/>
+      <extensionObject xsi:type="com.ibm.wbit.bpel.ui.uiextensionmodel:ExpressionExtension" condition="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;le:Condition xmi:version=&quot;2.0&quot; xmlns:xmi=&quot;http://www.omg.org/XMI&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:le=&quot;http://www.ibm.com/xmlns/prod/websphere/wbi/le/6.0.0&quot;>&#xD;&#xA;  &lt;conditionExpression xsi:type=&quot;le:BooleanExpression&quot; expString=&quot;smsCode != enteredSmsCode&quot;/>&#xD;&#xA;&lt;/le:Condition>&#xD;&#xA;"/>
+    </extensions>
+    <extensions>
+      <extendedObject href="SmsVerificationProcess.bpel#//@activity/@activities.1/@activities.3/@cases.0/@activity/@cases.0/@condition"/>
+      <extensionObject xsi:type="com.ibm.wbit.bpel.ui.uiextensionmodel:ExpressionExtension" condition="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?>&#xD;&#xA;&lt;le:Condition xmi:version=&quot;2.0&quot; xmlns:xmi=&quot;http://www.omg.org/XMI&quot; xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:le=&quot;http://www.ibm.com/xmlns/prod/websphere/wbi/le/6.0.0&quot;>&#xD;&#xA;  &lt;conditionExpression xsi:type=&quot;le:LogicalOrExpression&quot;>&#xD;&#xA;    &lt;conditionExpression xsi:type=&quot;le:BooleanExpression&quot; expString=&quot;numberOfAttempts >=3&quot;/>&#xD;&#xA;    &lt;conditionExpression xsi:type=&quot;le:BooleanExpression&quot; expString=&quot;&quot;/>&#xD;&#xA;  &lt;/conditionExpression>&#xD;&#xA;&lt;/le:Condition>&#xD;&#xA;"/>
+    </extensions>
+    <extensions>
+      <extendedObject href="SmsVerificationProcess.bpel#//@activity/@activities.1/@activities.3/@cases.0/@activity/@otherwise/@activity"/>
+      <extensionObject xsi:type="com.ibm.wbit.bpel.ui.uiextensionmodel:ActivityExtension" x="-2147483648"/>
+    </extensions>
+    <extensions>
+      <extendedObject href="SmsVerificationProcess.bpel#//@activity/@activities.1/@activities.3/@cases.0/@activity/@otherwise/@activity/@eExtensibilityElements.0"/>
+      <extensionObject xsi:type="com.ibm.wbit.bpel.ui.uiextensionmodel:ActivityExtension" x="-2147483648"/>
+    </extensions>
+    <extensions>
+      <extendedObject href="SmsVerificationProcess.bpel#//@activity/@activities.1/@activities.4"/>
+      <extensionObject xsi:type="com.ibm.wbit.bpel.ui.uiextensionmodel:ActivityExtension" x="486" width="-1" height="-1"/>
+    </extensions>
+    <extensions>
+      <extendedObject href="SmsVerificationProcess.bpel#//@activity/@activities.1/@activities.5"/>
+      <extensionObject xsi:type="com.ibm.wbit.bpel.ui.uiextensionmodel:ActivityExtension" x="200" y="509" width="-1" height="-1"/>
+    </extensions>
+    <extensions>
+      <extendedObject href="SmsVerificationProcess.bpel#//@activity/@activities.1/@links/@children.4"/>
+      <extensionObject xsi:type="com.ibm.wbit.bpel.ui.uiextensionmodel:LinkExtension"/>
+    </extensions>
+  </extensionmodel:ExtensionMap>
+  <extensionmodel:ExtensionMap namespace="http://com.ibm.wbit.stickyboard.model/model/StickyBoard.xsd">
+    <extensions>
+      <extendedObject href="SmsVerificationProcess.bpel#/"/>
+      <extensionObject xsi:type="sb:StickyDocument">
+        <stickyBoard id="default"/>
+      </extensionObject>
+    </extensions>
+  </extensionmodel:ExtensionMap>
+</xmi:XMI>

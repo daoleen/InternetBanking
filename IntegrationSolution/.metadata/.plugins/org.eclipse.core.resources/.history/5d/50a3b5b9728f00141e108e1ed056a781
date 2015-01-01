@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><wsdl:definitions name="SmsVerificationProcess" targetNamespace="http://IntegrationSolution_Module/BusinessProcesses/SmsVerificationProcessArtifacts" xmlns:plnk="http://schemas.xmlsoap.org/ws/2004/03/partner-link/" xmlns:tns="http://IntegrationSolution_Module/BusinessProcesses/SmsVerificationProcessArtifacts" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:wsdl0="http://IntegrationSolution_Library/Interfaces/BusinessProcesses/SmsVerificationProcessInterface" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <plnk:partnerLinkType name="SmsVerificationProcessInterfacePLT">
+    <plnk:role name="Interface">
+      <plnk:portType name="wsdl0:SmsVerificationProcessInterface"/>
+    </plnk:role>
+  </plnk:partnerLinkType>
+  <wsdl:import location="../Interfaces/BusinessProcesses/SmsVerificationProcessInterface.wsdl" namespace="http://IntegrationSolution_Library/Interfaces/BusinessProcesses/SmsVerificationProcessInterface"/>
+</wsdl:definitions>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="http://www.ibm.com/xmlns/prod/websphere/j2ca/email/simplealertemail">
+
+<xsd:annotation xml:space="preserve">
+<xsd:appinfo source="http://www.ibm.com/xmlns/prod/j2ca/versionCompatability">
+<info:resourceAdapter xmlns:info="http://www.ibm.com/xmlns/prod/j2ca/versionCompatability" version="7.0.0.0"/>
+</xsd:appinfo>
+</xsd:annotation>
+
+<xsd:annotation xml:space="preserve">
+<xsd:appinfo source="commonj.connector.asi">
+<asi:annotationSet xmlns:asi="commonj.connector.asi" asiNSURI=""/>
+</xsd:appinfo>
+</xsd:annotation>
+<xsd:complexType name="SimpleAlertEmail">
+<xsd:annotation xml:space="preserve">
+
+
+</xsd:annotation>
+<xsd:sequence minOccurs="1" maxOccurs="1">
+<xsd:element name="To" type="xsd:string" nillable="true" minOccurs="0" maxOccurs="1"/>
+<xsd:element name="From" type="xsd:string" nillable="true" minOccurs="0" maxOccurs="1"/>
+<xsd:element name="CC" type="xsd:string" nillable="true" minOccurs="0" maxOccurs="1"/>
+<xsd:element name="BCC" type="xsd:string" nillable="true" minOccurs="0" maxOccurs="1"/>
+<xsd:element name="Reply-To" type="xsd:string" nillable="true" minOccurs="0" maxOccurs="1"/>
+<xsd:element name="Subject" type="xsd:string" nillable="true" minOccurs="0" maxOccurs="1"/>
+<xsd:element name="Encoding" type="xsd:string" nillable="true" minOccurs="0" maxOccurs="1"/>
+<xsd:element name="mailContent" type="xsd:string" nillable="true" minOccurs="0" maxOccurs="1"/>
+</xsd:sequence>
+</xsd:complexType>
+
+</xsd:schema>

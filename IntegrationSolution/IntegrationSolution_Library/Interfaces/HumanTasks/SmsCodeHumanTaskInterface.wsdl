@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?><wsdl:definitions name="SmsCodeHumanTaskInterface" targetNamespace="http://IntegrationSolution_Library/Interfaces/HumanTasks/SmsCodeHumanTaskInterface" xmlns:tns="http://IntegrationSolution_Library/Interfaces/HumanTasks/SmsCodeHumanTaskInterface" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <wsdl:types>
+    <xsd:schema targetNamespace="http://IntegrationSolution_Library/Interfaces/HumanTasks/SmsCodeHumanTaskInterface">
+      <xsd:element name="submit">
+        <xsd:complexType>
+          <xsd:sequence/>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="submitResponse">
+        <xsd:complexType>
+          <xsd:sequence>
+            <xsd:element name="smsCode" nillable="true" type="xsd:int"/>
+          </xsd:sequence>
+        </xsd:complexType>
+      </xsd:element>
+    </xsd:schema>
+  </wsdl:types>
+    <wsdl:message name="submitRequestMsg">
+    <wsdl:part element="tns:submit" name="submitParameters"/>
+  </wsdl:message>
+    <wsdl:message name="submitResponseMsg">
+    <wsdl:part element="tns:submitResponse" name="submitResult"/>
+  </wsdl:message>
+    <wsdl:portType name="SmsCodeHumanTaskInterface">
+    <wsdl:operation name="submit">
+      <wsdl:input message="tns:submitRequestMsg" name="submitRequest"/>
+      <wsdl:output message="tns:submitResponseMsg" name="submitResponse"/>
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><wsdl:definitions name="SmsVerificationProcessInterface" targetNamespace="http://IntegrationSolution_Library/Interfaces/BusinessProcesses/SmsVerificationProcessInterface" xmlns:tns="http://IntegrationSolution_Library/Interfaces/BusinessProcesses/SmsVerificationProcessInterface" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <wsdl:types>
+    <xsd:schema targetNamespace="http://IntegrationSolution_Library/Interfaces/BusinessProcesses/SmsVerificationProcessInterface">
+      <xsd:element name="invoke">
+        <xsd:complexType>
+          <xsd:sequence/>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="invokeResponse">
+        <xsd:complexType>
+          <xsd:sequence/>
+        </xsd:complexType>
+      </xsd:element>
+      <xsd:element name="invokeFault1_wrongSmsCode" nillable="true" type="xsd:string"/>
+    </xsd:schema>
+  </wsdl:types>
+    <wsdl:message name="invokeRequestMsg">
+    <wsdl:part element="tns:invoke" name="invokeParameters"/>
+  </wsdl:message>
+    <wsdl:message name="invokeResponseMsg">
+    <wsdl:part element="tns:invokeResponse" name="invokeResult"/>
+  </wsdl:message>
+    <wsdl:message name="invoke_wrongSmsCodeMsg">
+    <wsdl:part element="tns:invokeFault1_wrongSmsCode" name="wrongSmsCode"/>
+  </wsdl:message>
+    <wsdl:portType name="SmsVerificationProcessInterface">
+    <wsdl:operation name="invoke">
+      <wsdl:input message="tns:invokeRequestMsg" name="invokeRequest"/>
+      <wsdl:output message="tns:invokeResponseMsg" name="invokeResponse"/>
+      <wsdl:fault message="tns:invoke_wrongSmsCodeMsg" name="wrongSmsCode"/>
+    </wsdl:operation>
+  </wsdl:portType>
+</wsdl:definitions>

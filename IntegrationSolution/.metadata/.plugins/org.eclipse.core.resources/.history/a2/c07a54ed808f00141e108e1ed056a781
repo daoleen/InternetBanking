@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?><bpws:process xmlns:bpws="http://schemas.xmlsoap.org/ws/2004/03/business-process/" xmlns:ns="http://IntegrationSolution_Module/BusinessProcesses/SmsVerificationProcessArtifacts" xmlns:ns0="http://IntegrationSolution_Library/Interfaces/BusinessProcesses/SmsVerificationProcessInterface" xmlns:ns1="http://IntegrationSolution_Module/Services/EmailServiceImport" xmlns:ns2="http://www.ibm.com/xmlns/prod/websphere/j2ca/email/simplealertemail" xmlns:ns3="http://IntegrationSolution_Library/Interfaces/HumanTasks/SmsCodeHumanTaskInterface" xmlns:tel="http://IntegrationSolution_Module/BusinessProcesses/Task1" xmlns:wpc="http://www.ibm.com/xmlns/prod/websphere/business-process/6.0.0/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" expressionLanguage="http://www.ibm.com/xmlns/prod/websphere/business-process/expression-lang/java/6.0.0/" name="SmsVerificationProcess" suppressJoinFailure="yes" targetNamespace="http://IntegrationSolution_Module/BusinessProcesses" wpc:continueOnError="no" wpc:displayName="SmsVerificationProcess" wpc:executionMode="longRunning" wpc:id="1" wpc:validFrom="2014-12-29T15:42:41" wpc:version="IBM_7.0.100">
+  <wpc:javaGlobals>
+    <wpc:import packages="commonj.sdo.DataObject"/>
+    <wpc:import packages="commonj.sdo.Type"/>
+    <wpc:import packages="com.ibm.websphere.sca.ServiceManager"/>
+    <wpc:import packages="com.ibm.websphere.bo.BOFactory"/>
+    <wpc:import packages="com.ibm.websphere.bo.BOCopy"/>
+  </wpc:javaGlobals>
+  <bpws:import importType="http://schemas.xmlsoap.org/wsdl/" location="/resource/IntegrationSolution_Library/Interfaces/BusinessProcesses/SmsVerificationProcessInterface.wsdl" namespace="http://IntegrationSolution_Library/Interfaces/BusinessProcesses/SmsVerificationProcessInterface"/>
+  <bpws:import importType="http://schemas.xmlsoap.org/wsdl/" location="SmsVerificationProcessArtifacts.wsdl" namespace="http://IntegrationSolution_Module/BusinessProcesses/SmsVerificationProcessArtifacts"/>
+  <bpws:import importType="http://schemas.xmlsoap.org/wsdl/" location="../Interfaces/BusinessProcesses/SmsVerificationProcessInterface.wsdl" namespace="http://IntegrationSolution_Library/Interfaces/BusinessProcesses/SmsVerificationProcessInterface"/>
+  <bpws:import importType="http://schemas.xmlsoap.org/wsdl/" location="../Services/EmailServiceImport.wsdl" namespace="http://IntegrationSolution_Module/Services/EmailServiceImport"/>
+  <bpws:import importType="http://www.w3.org/2001/XMLSchema" location="../CommonSchemas/SimpleAlertEmail.xsd" namespace="http://www.ibm.com/xmlns/prod/websphere/j2ca/email/simplealertemail"/>
+  <bpws:import importType="http://schemas.xmlsoap.org/wsdl/" location="../Interfaces/HumanTasks/SmsCodeHumanTaskInterface.wsdl" namespace="http://IntegrationSolution_Library/Interfaces/HumanTasks/SmsCodeHumanTaskInterface"/>
+  <bpws:partnerLinks>
+    <bpws:partnerLink myRole="Interface" name="SmsVerificationProcessInterface" partnerLinkType="ns:SmsVerificationProcessInterfacePLT" wpc:id="2"/>
+  </bpws:partnerLinks>
+  <bpws:variables>
+    <bpws:variable name="smsEmailMessage" type="ns2:SimpleAlertEmail" wpc:id="9"/>
+    <bpws:variable name="smsCode" type="xsd:int" wpc:id="10"/>
+    <bpws:variable name="enteredSmsCode" type="xsd:int" wpc:id="13"/>
+    <bpws:variable name="numberOfAttempts" type="xsd:int" wpc:id="20">
+      <bpws:from>1</bpws:from>
+    </bpws:variable>
+  </bpws:variables>
+  <bpws:sequence name="HiddenSequence" wpc:id="1073741827">
+    <bpws:receive createInstance="yes" name="Receive" operation="invoke" partnerLink="SmsVerificationProcessInterface" portType="ns0:SmsVerificationProcessInterface" wpc:displayName="Receive" wpc:id="4" wpc:transactionalBehavior="commitAfter">
+      <wpc:output/>
+    </bpws:receive>
+    <bpws:extensionActivity>
+      <wpc:flow name="GeneralizedFlow" wpc:displayName="Sms Verification Process" wpc:id="14">
+        <bpws:links>
+          <bpws:link name="Link" wpc:displayName="Link" wpc:id="15"/>
+          <bpws:link name="Link1" wpc:displayName="Link1" wpc:id="16"/>
+          <bpws:link name="Link2" wpc:displayName="Link2" wpc:id="29"/>
+          <bpws:link name="Link3" wpc:displayName="Link3" wpc:id="30"/>
+        </bpws:links>
+        <bpws:invoke name="GenerateSmsEmailSnippet" operation="null" partnerLink="null" portType="wpc:null" wpc:continueOnError="inherit" wpc:displayName="Generation sms code and email message" wpc:id="8">
+          <wpc:script>
+            <wpc:javaCode><![CDATA[java.util.Random r = new java.util.Random();
+smsCode = r.nextInt(1000);
+String smsMessage = String.format("Ваш смс код для проверки: %d.\nInternet Banking", smsCode);
+
+BOFactory boFactory = (BOFactory)ServiceManager.INSTANCE.locateService("com/ibm/websphere/bo/BOFactory");
+Type type = getVariableType("smsEmailMessage");
+smsEmailMessage = boFactory.createByType(type);
+
+//smsEmailMessage = smsEmailMessage.createDataObject("smsEmailMessage"); // works for nested BO
+smsEmailMessage.setString("To", "alexssource@gmail.com");
+smsEmailMessage.setString("From", "notify@ibank.loc");
+smsEmailMessage.setString("Encoding", "utf-8");
+smsEmailMessage.setString("CC", "");
+smsEmailMessage.setString("BCC", "");
+smsEmailMessage.setString("Reply-To", "");
+smsEmailMessage.setString("Subject", "Код смс подтверждения");
+smsEmailMessage.setString("mailContent", smsMessage);
+]]></wpc:javaCode>
+          </wpc:script>
+          <bpws:sources wpc:type="split">
+            <bpws:source linkName="Link"/>
+          </bpws:sources>
+        </bpws:invoke>
+        <bpws:invoke name="LogMailMessage" operation="null" partnerLink="null" portType="wpc:null" wpc:continueOnError="inherit" wpc:displayName="Log mail message" wpc:id="11">
+          <wpc:script>
+            <wpc:javaCode><![CDATA[System.out.println("Email was sent. Content: " + smsEmailMessage.getString("mailContent"));]]></wpc:javaCode>
+          </wpc:script>
+          <bpws:targets wpc:type="merge">
+            <bpws:target linkName="Link"/>
+          </bpws:targets>
+          <bpws:sources wpc:type="split">
+            <bpws:source linkName="Link1"/>
+          </bpws:sources>
+        </bpws:invoke>
+        <bpws:invoke name="SmsCodeHumanTask" operation="submit" partnerLink="null" portType="ns3:SmsCodeHumanTaskInterface" wpc:continueOnError="inherit" wpc:displayName="Submitting the sms code" wpc:id="12" wpc:transactionalBehavior="participates">
+          <wpc:task name="tel:SmsCodeProcessTask"/>
+          <wpc:input/>
+          <wpc:output>
+            <wpc:parameter name="smsCode" variable="enteredSmsCode"/>
+          </wpc:output>
+          <bpws:targets wpc:type="merge">
+            <bpws:target linkName="Link1"/>
+            <bpws:target linkName="Link3"/>
+          </bpws:targets>
+          <bpws:sources wpc:type="split">
+            <bpws:source linkName="Link2"/>
+          </bpws:sources>
+        </bpws:invoke>
+        <bpws:switch name="Choice" wpc:displayName="Is received code is INcorrect?" wpc:id="17">
+          <bpws:targets wpc:type="merge">
+            <bpws:target linkName="Link2"/>
+          </bpws:targets>
+          <bpws:sources wpc:type="split">
+            <bpws:source linkName="Link3"/>
+          </bpws:sources>
+          <bpws:case wpc:displayName="Yes" wpc:id="31">
+            <bpws:condition expressionLanguage="http://www.w3.org/TR/1999/REC-xpath-19991116"><![CDATA[($smsCode != $enteredSmsCode)]]></bpws:condition>
+            <bpws:switch name="Choice1" wpc:displayName="Is number of attempts more than 3?" wpc:id="21">
+              <bpws:case wpc:displayName="Yes" wpc:id="22">
+                <bpws:condition expressionLanguage="http://www.w3.org/TR/1999/REC-xpath-19991116"><![CDATA[(($numberOfAttempts >=3) or (true()))]]></bpws:condition>
+                <bpws:throw name="Throw" wpc:displayName="IncorrectSmsCodeFault" wpc:id="23"/>
+              </bpws:case>
+              <bpws:otherwise wpc:id="32">
+                <bpws:invoke name="Snippet" operation="null" partnerLink="null" portType="wpc:null" wpc:continueOnError="inherit" wpc:displayName="Increment number of attempts" wpc:id="34">
+                  <wpc:script>
+                    <wpc:javaCode><![CDATA[//@generated:com.ibm.wbit.activity.ui]]></wpc:javaCode>
+                  </wpc:script>
+                </bpws:invoke>
+              </bpws:otherwise>
+            </bpws:switch>
+          </bpws:case>
+        </bpws:switch>
+      </wpc:flow>
+    </bpws:extensionActivity>
+    <bpws:reply name="Reply" operation="invoke" partnerLink="SmsVerificationProcessInterface" portType="ns0:SmsVerificationProcessInterface" wpc:displayName="Reply" wpc:id="5">
+      <wpc:input/>
+    </bpws:reply>
+  </bpws:sequence>
+</bpws:process>

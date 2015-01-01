@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><launchConfiguration type="com.ibm.ws.ast.st.v7.core.batchProcessLaunchConfigurationType">
+<stringAttribute key="launchMode" value="run"/>
+<stringAttribute key="wasInstallPath" value="C:/Program Files (x86)/IBM/WID7_WTE/runtimes/bi_v7/profiles/qwps"/>
+<stringAttribute key="wasServerName" value="server1"/>
+</launchConfiguration>

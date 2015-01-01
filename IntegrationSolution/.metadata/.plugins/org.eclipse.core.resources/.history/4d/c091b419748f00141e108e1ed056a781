@@ -1,0 +1,2 @@
+public class GeneratedCompilationUnitName_1419868952921 {public void fakeMethod1419868952921() {System.out.println("Email was sent. Content: " + smsEmailMessage.);
+}}

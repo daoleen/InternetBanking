@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><bpws:process xmlns:bpws="http://schemas.xmlsoap.org/ws/2004/03/business-process/" xmlns:ns="http://IntegrationSolution_Module/BusinessProcesses/SmsVerificationProcessArtifacts" xmlns:ns0="http://IntegrationSolution_Library/Interfaces/BusinessProcesses/SmsVerificationProcessInterface" xmlns:ns1="http://IntegrationSolution_Module/Services/EmailServiceImport" xmlns:ns2="http://www.ibm.com/xmlns/prod/websphere/j2ca/email/simplealertemail" xmlns:wpc="http://www.ibm.com/xmlns/prod/websphere/business-process/6.0.0/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" expressionLanguage="http://www.ibm.com/xmlns/prod/websphere/business-process/expression-lang/java/6.0.0/" name="SmsVerificationProcess" suppressJoinFailure="yes" targetNamespace="http://IntegrationSolution_Module/BusinessProcesses" wpc:continueOnError="no" wpc:displayName="SmsVerificationProcess" wpc:executionMode="longRunning" wpc:id="1" wpc:validFrom="2014-12-29T15:42:41" wpc:version="IBM_7.0.100">
+  <wpc:javaGlobals>
+    <wpc:import packages="commonj.sdo.DataObject"/>
+    <wpc:import packages="commonj.sdo.Type"/>
+    <wpc:import packages="com.ibm.websphere.sca.ServiceManager"/>
+    <wpc:import packages="com.ibm.websphere.bo.BOFactory"/>
+    <wpc:import packages="com.ibm.websphere.bo.BOCopy"/>
+  </wpc:javaGlobals>
+  <bpws:import importType="http://schemas.xmlsoap.org/wsdl/" location="/resource/IntegrationSolution_Library/Interfaces/BusinessProcesses/SmsVerificationProcessInterface.wsdl" namespace="http://IntegrationSolution_Library/Interfaces/BusinessProcesses/SmsVerificationProcessInterface"/>
+  <bpws:import importType="http://schemas.xmlsoap.org/wsdl/" location="SmsVerificationProcessArtifacts.wsdl" namespace="http://IntegrationSolution_Module/BusinessProcesses/SmsVerificationProcessArtifacts"/>
+  <bpws:import importType="http://schemas.xmlsoap.org/wsdl/" location="../Interfaces/BusinessProcesses/SmsVerificationProcessInterface.wsdl" namespace="http://IntegrationSolution_Library/Interfaces/BusinessProcesses/SmsVerificationProcessInterface"/>
+  <bpws:import importType="http://schemas.xmlsoap.org/wsdl/" location="../Services/EmailServiceImport.wsdl" namespace="http://IntegrationSolution_Module/Services/EmailServiceImport"/>
+  <bpws:import importType="http://www.w3.org/2001/XMLSchema" location="../CommonSchemas/SimpleAlertEmail.xsd" namespace="http://www.ibm.com/xmlns/prod/websphere/j2ca/email/simplealertemail"/>
+  <bpws:partnerLinks>
+    <bpws:partnerLink myRole="Interface" name="SmsVerificationProcessInterface" partnerLinkType="ns:SmsVerificationProcessInterfacePLT" wpc:id="2"/>
+    <bpws:partnerLink name="EmailServiceSmsCodePartner" partnerLinkType="ns:EmailServiceSmsCodePartnerPLT" partnerRole="Reference" wpc:id="7"/>
+  </bpws:partnerLinks>
+  <bpws:variables>
+    <bpws:variable name="smsEmailMessage" type="ns2:SimpleAlertEmail" wpc:id="9"/>
+    <bpws:variable name="smsCode" type="xsd:int" wpc:id="10"/>
+  </bpws:variables>
+  <bpws:sequence name="HiddenSequence" wpc:id="1073741827">
+    <bpws:receive createInstance="yes" name="Receive" operation="invoke" partnerLink="SmsVerificationProcessInterface" portType="ns0:SmsVerificationProcessInterface" wpc:displayName="Receive" wpc:id="4" wpc:transactionalBehavior="commitAfter">
+      <wpc:output/>
+    </bpws:receive>
+    <bpws:invoke name="GenerateSmsEmailSnippet" operation="null" partnerLink="null" portType="wpc:null" wpc:continueOnError="inherit" wpc:displayName="Generation sms code and email message" wpc:id="8">
+      <wpc:script>
+        <wpc:javaCode><![CDATA[java.util.Random r = new java.util.Random();
+smsCode = r.nextInt(1000);
+String smsMessage = String.format("Ваш смс код для проверки: %d.\nInternet Banking", smsCode);
+BOFactory boFactory = (BOFactory)ServiceManager.INSTANCE.locateService("com/ibm/websphere/bo/BOFactory");
+//smsEmailMessage = smsEmailMessage.createDataObject("smsEmailMessage");
+smsEmailMessage.setString("To", "alexssource@gmail.com");
+smsEmailMessage.setString("From", "notify@ibank.loc");
+smsEmailMessage.setString("Encoding", "utf-8");
+smsEmailMessage.setString("Subject", "Код смс подтверждения");
+smsEmailMessage.setString("mailContent", smsMessage);
+]]></wpc:javaCode>
+      </wpc:script>
+    </bpws:invoke>
+    <bpws:invoke name="SendSmsCodeToClient" operation="sendSimpleAlertEmail" partnerLink="EmailServiceSmsCodePartner" portType="ns1:EmailServiceImport" wpc:continueOnError="inherit" wpc:displayName="Send code via sms (email in that case)" wpc:id="6">
+      <wpc:input>
+        <wpc:parameter name="sendSimpleAlertEmailInput" variable="smsEmailMessage"/>
+      </wpc:input>
+    </bpws:invoke>
+    <bpws:invoke name="LogMailMessage" operation="null" partnerLink="null" portType="wpc:null" wpc:continueOnError="inherit" wpc:displayName="Log mail message" wpc:id="11">
+      <wpc:script>
+        <wpc:javaCode><![CDATA[System.out.println("Email was sent. Content: " + smsEmailMessage.getString("mailContent"));]]></wpc:javaCode>
+      </wpc:script>
+    </bpws:invoke>
+    <bpws:reply name="Reply" operation="invoke" partnerLink="SmsVerificationProcessInterface" portType="ns0:SmsVerificationProcessInterface" wpc:displayName="Reply" wpc:id="5">
+      <wpc:input/>
+    </bpws:reply>
+  </bpws:sequence>
+</bpws:process>
