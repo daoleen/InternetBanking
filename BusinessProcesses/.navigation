@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<navigation:NavigationProjectNode xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:navigation="http://navigation" id="BusinessProcesses_id" label="BusinessProcesses" state="2" overridingImageKey="" uid="BLMNAV-cc30b2dea2f5ce89c44affa59efdbf89" attribute4="PROCESS_DEFAULTS,SWIMLANE_EDITOR,role">
+<navigation:NavigationProjectNode xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:navigation="http://navigation" id="BusinessProcesses_id" label="BusinessProcesses" overridingImageKey="" uid="BLMNAV-cc30b2dea2f5ce89c44affa59efdbf89" attribute4="PROCESS_DEFAULTS,SWIMLANE_EDITOR,role">
   <libraryNode label="Library" uid="BLMNAV-a3893695910a9fcb4d9abc28715c5d1b">
     <dataCatalogsNode id="Data catalogs" label="Data catalogs" uid="BLMNAV-77e01fcf2f67ecb9f521f46392b6f467" bomUID="FID-00002-d2c1045764ff3fae68e3ec2ef479d01c" projectNode="BLMNAV-cc30b2dea2f5ce89c44affa59efdbf89">
       <navigationURINode uri="RID-00002-e584ec7b0fa9b419ddffabc5fe974cb3"/>

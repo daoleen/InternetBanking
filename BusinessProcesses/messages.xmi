@@ -4,7 +4,7 @@
     xmlns:com.ibm.btools.model.modelmanager.validation="http:///com/ibm/btools/model/modelmanager/validation.ecore"
     xmlns:com.ibm.btools.model.resourcemanager.resourceproperties="http:///com/ibm/btools/model/resourcemanager/resourceproperties.ecore">
   <com.ibm.btools.model.resourcemanager.resourceproperties:ResourceProperties versionID="7.0.0.0"
-      lastModified="1416684311921"/>
+      lastModified="1420193151254"/>
   <com.ibm.btools.model.modelmanager.validation:ProjectMessageSet ownerObjectID="BusinessProcesses"
       projectName="BusinessProcesses">
     <composedChildren xsi:type="com.ibm.btools.model.modelmanager.validation:RootMessageSet"

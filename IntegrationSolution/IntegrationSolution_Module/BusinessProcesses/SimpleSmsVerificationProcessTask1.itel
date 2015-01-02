@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
  ##[lineageStampBegin]##
- ##[generatedBy:/IntegrationSolution_Module/BusinessProcesses/SmsVerificationProcess.bpel]##
+ ##[generatedBy:/IntegrationSolution_Module/BusinessProcesses/SimpleSmsVerificationProcess.bpel]##
  ##[lineageStampEnd]##
 -->
 <tel:task xmlns:tel="http://www.ibm.com/xmlns/prod/websphere/human-task/6.0.0/" xmlns:wsdl="http://IntegrationSolution_Library/Interfaces/HumanTasks/SmsCodeHumanTaskInterface" allowClaimWhenSuspended="no" autoClaim="yes" businessRelevance="no" calendarName="Simple" contextAuthorizationForOwner="none" defaultLocale="ru-RU" jndiNameStaffPluginProvider="bpe/staff/samplevmmconfiguration" kind="pTask" name="SmsCodeProcessTask" priorityDefinition="5" supportsDelegation="yes" supportsFollowOnTask="yes" supportsSubTask="yes" targetNamespace="http://IntegrationSolution_Module/BusinessProcesses/Task1">
