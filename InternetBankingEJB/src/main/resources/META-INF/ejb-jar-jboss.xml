@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ejb-jar xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/ejb-jar_3_1.xsd"
+         version="3.1">
+
+    <description>Enterprise Java Beans 3.1</description>
+    <display-name>InternetBanking EJBs</display-name>
+
+    <enterprise-beans>
+        <session>
+            <ejb-name>BankBean</ejb-name>
+            <business-local>com.daoleen.banking.repository.BankRepository</business-local>
+            <ejb-class>com.daoleen.banking.ejb.BankBean</ejb-class>
+            <init-on-startup>true</init-on-startup>
+            <transaction-type>Container</transaction-type>
+        </session>
+        <session>
+            <ejb-name>CityBean</ejb-name>
+            <business-local>com.daoleen.banking.repository.CityRepository</business-local>
+            <ejb-class>com.daoleen.banking.ejb.CityBean</ejb-class>
+            <init-on-startup>true</init-on-startup>
+            <transaction-type>Container</transaction-type>
+        </session>
+        <session>
+            <ejb-name>ClientAddressBean</ejb-name>
+            <business-local>com.daoleen.banking.repository.ClientAddressRepository</business-local>
+            <ejb-class>com.daoleen.banking.ejb.ClientAddressBean</ejb-class>
+            <init-on-startup>true</init-on-startup>
+            <transaction-type>Container</transaction-type>
+        </session>
+        <session>
+            <ejb-name>ClientBean</ejb-name>
+            <business-local>com.daoleen.banking.repository.ClientRepository</business-local>
+            <ejb-class>com.daoleen.banking.ejb.ClientBean</ejb-class>
+            <init-on-startup>true</init-on-startup>
+            <transaction-type>Container</transaction-type>
+        </session>
+        <session>
+            <ejb-name>MoneyReservationBean</ejb-name>
+            <business-local>com.daoleen.banking.repository.MoneyReservationRepository</business-local>
+            <ejb-class>com.daoleen.banking.ejb.MoneyReservationBean</ejb-class>
+            <init-on-startup>true</init-on-startup>
+            <transaction-type>Container</transaction-type>
+        </session>
+        <session>
+            <ejb-name>PaymentCardBean</ejb-name>
+            <business-local>com.daoleen.banking.repository.PaymentCardRepository</business-local>
+            <ejb-class>com.daoleen.banking.ejb.PaymentCardBean</ejb-class>
+            <init-on-startup>true</init-on-startup>
+            <transaction-type>Container</transaction-type>
+        </session>
+        <session>
+            <ejb-name>PaymentTransactionBean</ejb-name>
+            <business-local>com.daoleen.banking.repository.PaymentTransactionRepository</business-local>
+            <ejb-class>com.daoleen.banking.ejb.PaymentTransactionBean</ejb-class>
+            <init-on-startup>true</init-on-startup>
+            <transaction-type>Container</transaction-type>
+        </session>
+        <session>
+            <ejb-name>UserBean</ejb-name>
+            <business-local>com.daoleen.banking.repository.UserRepository</business-local>
+            <ejb-class>com.daoleen.banking.ejb.UserBean</ejb-class>
+            <init-on-startup>true</init-on-startup>
+            <transaction-type>Container</transaction-type>
+        </session>
+    </enterprise-beans>
+
+</ejb-jar>

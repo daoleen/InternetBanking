@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ejb-jar-bnd
+        xmlns="http://websphere.ibm.com/xml/ns/javaee"
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://websphere.ibm.com/xml/ns/javaee
+    http://websphere.ibm.com/xml/ns/javaee/ibm-ejb-jar-bnd_1_0.xsd" version="1.0">
+
+    <session name="BankBean">
+        <interface binding-name="BankBean" class="com.daoleen.banking.repository.BankRepository" />
+    </session>
+
+    <session name="CityBean">
+        <interface binding-name="CityBean" class="com.daoleen.banking.repository.CityRepository" />
+    </session>
+
+    <session name="ClientAddressBean">
+        <interface binding-name="ClientAddressBean" class="com.daoleen.banking.repository.ClientAddressRepository" />
+    </session>
+
+    <session name="ClientBean">
+        <interface binding-name="ClientBean" class="com.daoleen.banking.repository.ClientRepository" />
+    </session>
+
+    <session name="MoneyReservationBean">
+        <interface binding-name="MoneyReservationBean" class="com.daoleen.banking.repository.MoneyReservationRepository" />
+    </session>
+
+    <session name="PaymentCardBean">
+        <interface binding-name="PaymentCardBean" class="com.daoleen.banking.repository.PaymentCardRepository" />
+    </session>
+
+    <session name="PaymentTransactionBean">
+        <interface binding-name="PaymentTransactionBean" class="com.daoleen.banking.repository.PaymentTransactionRepository" />
+    </session>
+
+    <session name="UserBean">
+        <interface binding-name="UserBean" class="com.daoleen.banking.repository.UserRepository" />
+    </session>
+
+</ejb-jar-bnd>
