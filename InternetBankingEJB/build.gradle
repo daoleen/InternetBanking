@@ -44,7 +44,8 @@ test {
      * Installation of JBOSS to use for testing, this can be set here
      * or in the arquillian.xml.
      */
-    environment 'JBOSS_HOME', '/opt/wildfly-8.2.0.Final'
+//    environment 'JBOSS_HOME', '/opt/wildfly-8.2.0.Final'
+    environment 'JBOSS_HOME', 'C:\\Program Files (x86)\\wildfly-8.2.0.Final'
     /**
      * WildFly embedded default logging
      */

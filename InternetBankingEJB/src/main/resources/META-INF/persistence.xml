@@ -6,13 +6,19 @@
 
     <persistence-unit name="dataSource" transaction-type="JTA">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-        <jta-data-source>java:/jdbc/db2</jta-data-source>
+        <jta-data-source>jdbc:was/db2</jta-data-source>
 
         <class>com.daoleen.banking.domain.City</class>
+        <class>com.daoleen.banking.domain.User</class>
+        <class>com.daoleen.banking.domain.Bank</class>
+        <class>com.daoleen.banking.domain.Client</class>
+        <class>com.daoleen.banking.domain.ClientAddress</class>
+        <class>com.daoleen.banking.domain.PaymentCard</class>
+        <class>com.daoleen.banking.domain.PaymentTransaction</class>
+        <class>com.daoleen.banking.domain.MoneyReservation</class>
 
         <properties>
-            <!--<property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect" />-->
-            <!--<property name="javax.persistence.jdbc.driver" value="org.h2.Driver" />-->
+            <property name="hibernate.dialect" value="org.hibernate.dialect.DB2Dialect" />
             <property name="hibernate.connection.charSet" value="UTF-8"/>
             <property name="hibernate.show_sql" value="true"/>
         </properties>
