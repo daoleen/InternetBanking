@@ -6,7 +6,7 @@
 
     <persistence-unit name="dataSource" transaction-type="JTA">
         <provider>org.hibernate.jpa.HibernatePersistenceProvider</provider>
-        <jta-data-source>jdbc:was/db2</jta-data-source>
+        <jta-data-source>java:/datasource/ibank</jta-data-source>
 
         <class>com.daoleen.banking.domain.City</class>
         <class>com.daoleen.banking.domain.User</class>
