@@ -23,7 +23,7 @@ public class PaymentTransactionBean extends AbstractBean<PaymentTransaction, UUI
 
     @Override
     public List<PaymentTransaction> findByCardNumber(String cardNumber) {
-        return em.createNamedQuery("findByCardNumber", PaymentTransaction.class)
+        return em.createNamedQuery(PaymentTransaction.FIND_BY_CARD_NUMBER, PaymentTransaction.class)
                 .setParameter("cardNumber", cardNumber)
                 .getResultList();
     }

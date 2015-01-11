@@ -1,8 +1,8 @@
 INSERT INTO city (name) VALUES ('Minsk'), ('Moscow');
 INSERT INTO client_address (city_id, street, house_number, housing_number, apartment_number) VALUES (1, 'Masherova', 12, 0, 17);
-INSERT INTO client (first_name, last_name, patronymic_name, birth_date, passport_series, passport_number, address_id, registration_date, mobile_number) VALUES ('Alexander', 'Kozlov', 'Valerevich', '2010-02-02', 'MP', 100000000, 1, CURRENT_TIME(), '217-20-20'), ('Alex', 'Kozlov', 'Petrovich', '2010-07-02', 'MP', 100200000, 1, CURRENT_TIME(), '200-01-02');
-INSERT INTO user (username, password, is_enabled, is_blocked, client_id) VALUES ('alexssource@gmail.com', '11111', TRUE, FALSE, 1), ('admin@localhost', '22222', TRUE, FALSE, 2);
+INSERT INTO client (first_name, last_name, patronymic_name, birth_date, passport_series, passport_number, address_id, registration_date, mobile_number) VALUES ('Alexander', 'Kozlov', 'Valerevich', '2010-02-02', 'MP', 100000000, 1, CURRENT_TIME(), '217-20-20'), ('Alex', 'Kozlov', 'Petrovich', '2010-07-02', 'MP', 100200000, 1, CURRENT_TIME(), '200-01-02'), ('Vasya', 'Unknown', 'Petrovich', '2000-07-02', 'MP', 100200300, 1, CURRENT_TIME(), '243-31-02');
+INSERT INTO user (username, password, is_enabled, is_blocked, client_id) VALUES ('alexssource@gmail.com', '11111', TRUE, FALSE, 1), ('admin@localhost', '22222', TRUE, FALSE, 2), ('usr@localhost', '333', TRUE, FALSE, 3);
 INSERT INTO bank (bic, name, bank_account_number) VALUES (1000000, 'БПС', 100000000000000001);
-INSERT INTO payment_card(card_number, bank_id, client_id, amount, pin_code) VALUES ('0000-0000-0000-0001', 1000000, 1, '150.0', 'passssssssssssssHASHED'), ('0000-0000-0000-0002', 1000000, 2, '90.0', 'card2');
+INSERT INTO payment_card(card_number, bank_id, client_id, amount, pin_code, is_active) VALUES ('0000-0000-0000-0001', 1000000, 1, '150.0', 'passssssssssssssHASHED', TRUE), ('0000-0000-0000-0002', 1000000, 2, '90.0', 'card2', TRUE);
 INSERT INTO money_reservation(amount, status, payment_card, created_at, version) VALUES ('10', 0, '0000-0000-0000-0001', CURRENT_TIME(),0);
 INSERT INTO payment_transaction(uuid, card_number, created_at, money_reservation_id, transaction_status) VALUES (RANDOM_UUID(), '0000-0000-0000-0001', CURRENT_TIMESTAMP(), 1, 1);

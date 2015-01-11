@@ -27,7 +27,7 @@ public class CityBean extends AbstractBean<City, Integer> implements CityReposit
     public City findByName(String name) {
         logger.debug("Finding city by name: {}", name);
         try {
-            return (City) em.createNamedQuery("findByName")
+            return em.createNamedQuery(City.FIND_BY_NAME, City.class)
                     .setParameter("name", name)
                     .getSingleResult();
         } catch (NoResultException e) {

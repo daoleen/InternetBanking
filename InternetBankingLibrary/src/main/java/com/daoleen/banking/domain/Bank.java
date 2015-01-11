@@ -12,9 +12,10 @@ import java.util.List;
 @Entity
 @Table(name = "bank")
 @NamedQueries({
-        @NamedQuery(name = "findByBankAccountNumber", query = "select b from Bank b where b.bankAccountNumber = :bankAccountNumber")
+        @NamedQuery(name = Bank.FIND_BY_BANK_ACCOUNT_NUMBER, query = "select b from Bank b where b.bankAccountNumber = :bankAccountNumber")
 })
 public class Bank implements Identifiable<Integer>, Serializable {
+    public static final String FIND_BY_BANK_ACCOUNT_NUMBER = "Bank.findByBankAccountNumber";
     private static final long serialVersionUID = -4659949543452503136L;
 
     @Id

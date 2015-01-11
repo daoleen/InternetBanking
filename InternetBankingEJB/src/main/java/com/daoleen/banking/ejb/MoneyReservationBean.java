@@ -33,7 +33,7 @@ public class MoneyReservationBean extends AbstractBean<MoneyReservation, Long>
 
     @Override
     public List<MoneyReservation> getActiveReservations(String cardNumber) {
-        return em.createNamedQuery("getActiveReservations", MoneyReservation.class)
+        return em.createNamedQuery(MoneyReservation.GET_ACTIVE_RESERVATIONS, MoneyReservation.class)
                 .setParameter("cardNumber", cardNumber)
                 .setParameter("openedStatus", MoneyReservationStatus.OPENED)
                 .getResultList();
@@ -41,7 +41,7 @@ public class MoneyReservationBean extends AbstractBean<MoneyReservation, Long>
 
     @Override
     public double getActiveReservationSum(PaymentCard card) {
-        Double sum = em.createNamedQuery("getActiveReservationSum", Double.class)
+        Double sum = em.createNamedQuery(MoneyReservation.GET_ACTIVE_RESERVATION_SUM, Double.class)
                 .setParameter("card", card)
                 .setParameter("openedStatus", MoneyReservationStatus.OPENED)
                 .getSingleResult();
@@ -69,7 +69,7 @@ public class MoneyReservationBean extends AbstractBean<MoneyReservation, Long>
 
     @Override
     public void closeActiveReservation(Long id) {
-        em.createNamedQuery("closeReservation")
+        em.createNamedQuery(MoneyReservation.CLOSE_RESERVATION)
                 .setParameter("id", id)
                 .setParameter("closedStatus", MoneyReservationStatus.CLOSED)
                 .executeUpdate();

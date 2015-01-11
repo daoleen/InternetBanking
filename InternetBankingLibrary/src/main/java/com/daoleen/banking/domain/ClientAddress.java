@@ -14,9 +14,10 @@ import java.util.List;
 @Entity
 @Table(name = "client_address")
 @NamedQueries(
-        @NamedQuery(name = "findByAddress", query = "select a from ClientAddress a where a.city.id = :cityId and a.street = :street and a.houseNumber = :houseNumber and a.apartmentNumber = :apartmentNumber")
+        @NamedQuery(name = ClientAddress.FIND_BY_ADDRESS, query = "select a from ClientAddress a where a.city.id = :cityId and a.street = :street and a.houseNumber = :houseNumber and a.apartmentNumber = :apartmentNumber")
 )
 public class ClientAddress implements Identifiable<Long>, Serializable {
+    public static final String FIND_BY_ADDRESS = "ClientAddress.findByAddress";
     private static final long serialVersionUID = 7219687022417992647L;
 
     @Id

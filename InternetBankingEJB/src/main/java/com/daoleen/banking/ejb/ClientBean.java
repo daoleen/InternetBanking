@@ -27,7 +27,7 @@ public class ClientBean extends AbstractBean<Client, Long> implements ClientRepo
     @Override
     public Client findByPassport(String series, int number) {
         try {
-            return em.createNamedQuery("findByPassport", Client.class)
+            return em.createNamedQuery(Client.FIND_BY_PASSPORT, Client.class)
                     .setParameter("series", series)
                     .setParameter("number", number)
                     .getSingleResult();
@@ -40,7 +40,7 @@ public class ClientBean extends AbstractBean<Client, Long> implements ClientRepo
     @Override
     public Client findByMobileNumber(String number) {
         try {
-            return em.createNamedQuery("findByMobileNumber", Client.class)
+            return em.createNamedQuery(Client.FIND_BY_MOBILE_NUMBER, Client.class)
                     .setParameter("mobile", number)
                     .getSingleResult();
         } catch (NoResultException ex) {
@@ -51,14 +51,14 @@ public class ClientBean extends AbstractBean<Client, Long> implements ClientRepo
 
     @Override
     public List<Client> findByAddressId(long addressId) {
-        return em.createNamedQuery("findByAddressId", Client.class)
+        return em.createNamedQuery(Client.FIND_BY_ADDRESS_ID, Client.class)
                 .setParameter("addressId", addressId)
                 .getResultList();
     }
 
     @Override
     public List<Client> findbyAddress(String street, String city, int houseNumber, int apartmentNumber) {
-        return em.createNamedQuery("findbyAddress", Client.class)
+        return em.createNamedQuery(Client.FIND_BY_ADDRESS, Client.class)
                 .setParameter("city", city)
                 .setParameter("street", street)
                 .setParameter("houseNumber", houseNumber)
@@ -68,7 +68,7 @@ public class ClientBean extends AbstractBean<Client, Long> implements ClientRepo
 
     @Override
     public List<Client> findByFIO(String firstName, String lastName, String patronymicName) {
-        return em.createNamedQuery("findByFIO", Client.class)
+        return em.createNamedQuery(Client.FIND_BY_FIO, Client.class)
                 .setParameter("firstName", firstName)
                 .setParameter("lastName", lastName)
                 .setParameter("patronymicName", patronymicName)

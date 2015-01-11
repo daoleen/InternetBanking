@@ -13,9 +13,10 @@ import java.util.List;
 @Entity
 @Table(name = "city")
 @NamedQueries({
-        @NamedQuery(name = "findByName", query = "select c from City c where c.name = :name")
+        @NamedQuery(name = City.FIND_BY_NAME, query = "select c from City c where c.name = :name")
 })
 public class City implements Identifiable<Integer>, Serializable {
+    public static final String FIND_BY_NAME = "City.findByName";
     private static final long serialVersionUID = 3460842343712412283L;
 
     @Id

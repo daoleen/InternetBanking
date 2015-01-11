@@ -13,13 +13,18 @@ import java.util.List;
 @Entity
 @Table(name = "client")
 @NamedQueries({
-        @NamedQuery(name = "findByPassport", query = "select c from Client c where c.passportSeries = :series and c.passportNumber = :number"),
-        @NamedQuery(name = "findByMobileNumber", query = "select c from Client c where c.mobileNumber = :mobile"),
-        @NamedQuery(name = "findByAddressId", query = "select c from Client c where c.address.id = :addressId"),
-        @NamedQuery(name = "findbyAddress", query = "select c from Client c where c.address.city.name = :city and c.address.street = :street and c.address.houseNumber = :houseNumber and c.address.apartmentNumber = :apartmentNumber"),
-        @NamedQuery(name = "findByFIO", query = "select c from Client c where c.firstName = :firstName and c.lastName = :lastName and c.patronymicName = :patronymicName")
+        @NamedQuery(name = Client.FIND_BY_PASSPORT, query = "select c from Client c where c.passportSeries = :series and c.passportNumber = :number"),
+        @NamedQuery(name = Client.FIND_BY_MOBILE_NUMBER, query = "select c from Client c where c.mobileNumber = :mobile"),
+        @NamedQuery(name = Client.FIND_BY_ADDRESS_ID, query = "select c from Client c where c.address.id = :addressId"),
+        @NamedQuery(name = Client.FIND_BY_ADDRESS, query = "select c from Client c where c.address.city.name = :city and c.address.street = :street and c.address.houseNumber = :houseNumber and c.address.apartmentNumber = :apartmentNumber"),
+        @NamedQuery(name = Client.FIND_BY_FIO, query = "select c from Client c where c.firstName = :firstName and c.lastName = :lastName and c.patronymicName = :patronymicName")
 })
 public class Client implements Identifiable<Long>, Serializable {
+    public final static String FIND_BY_PASSPORT = "Client.findByPassport";
+    public final static String FIND_BY_MOBILE_NUMBER = "Client.findByMobileNumber";
+    public final static String FIND_BY_ADDRESS_ID = "Client.findByAddressId";
+    public final static String FIND_BY_ADDRESS = "Client.findbyAddress";
+    public final static String FIND_BY_FIO = "Client.findByFIO";
     private static final long serialVersionUID = -422999179861103398L;
 
     @Id

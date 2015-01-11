@@ -30,7 +30,7 @@ public class ClientAddressBean extends AbstractBean<ClientAddress, Long>
     public List<ClientAddress> findByAddress(String street, int cityId,
                                              int houseNumber, int apartmentNumber) {
         try {
-            return em.createNamedQuery("findByAddress", ClientAddress.class)
+            return em.createNamedQuery(ClientAddress.FIND_BY_ADDRESS, ClientAddress.class)
                     .setParameter("cityId", cityId)
                     .setParameter("street", street)
                     .setParameter("houseNumber", houseNumber)

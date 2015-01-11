@@ -15,6 +15,7 @@ dependencies {
     compile 'org.hibernate.javax.persistence:hibernate-jpa-2.1-api:1.0.0.Final'
     compile 'org.hibernate:hibernate-validator:4.3.1.Final'	// HIBERNATE VALIDATOR!!! Версия именно 4. С пятой глюки =)
 
+
     // WebSphere AS libs & arquillian-was-remote lib
 //    providedCompile fileTree(dir: "/opt/IBM/WID7_WTE/runtimes/bi_v7/lib")
 

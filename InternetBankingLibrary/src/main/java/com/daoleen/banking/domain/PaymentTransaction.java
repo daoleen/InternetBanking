@@ -16,9 +16,10 @@ import java.util.UUID;
 @Entity
 @Table(name = "payment_transaction")
 @NamedQueries({
-        @NamedQuery(name = "findByCardNumber", query = "select t from PaymentTransaction t where t.card.cardNumber = :cardNumber")
+        @NamedQuery(name = PaymentTransaction.FIND_BY_CARD_NUMBER, query = "select t from PaymentTransaction t where t.card.cardNumber = :cardNumber")
 })
 public class PaymentTransaction implements Identifiable<UUID>, Serializable {
+    public static final String FIND_BY_CARD_NUMBER = "PaymentTransaction.findByCardNumber";
     private static final long serialVersionUID = 3742187395769719621L;
 
     @Id

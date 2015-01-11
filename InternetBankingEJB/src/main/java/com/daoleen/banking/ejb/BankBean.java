@@ -35,7 +35,7 @@ public class BankBean extends AbstractBean<Bank, Integer> implements BankReposit
     @Override
     public Bank findByBankAccountNumber(long bankAccountNumber) {
         try {
-            return em.createNamedQuery("findByBankAccountNumber", Bank.class)
+            return em.createNamedQuery(Bank.FIND_BY_BANK_ACCOUNT_NUMBER, Bank.class)
                     .setParameter("bankAccountNumber", bankAccountNumber)
                     .getSingleResult();
         } catch (NoResultException ex) {

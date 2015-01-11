@@ -15,11 +15,14 @@ import java.util.Date;
 @Entity
 @Table(name = "money_reservation")
 @NamedQueries({
-        @NamedQuery(name = "getActiveReservations", query = "select r from MoneyReservation r where r.paymentCard.cardNumber = :cardNumber and r.status = :openedStatus"),
-        @NamedQuery(name = "getActiveReservationSum", query = "select sum(r.amount) from MoneyReservation r where r.paymentCard = :card and r.status = :openedStatus"),
-        @NamedQuery(name = "closeReservation", query = "update MoneyReservation r set r.status = :closedStatus where r.id = :id")
+        @NamedQuery(name = MoneyReservation.GET_ACTIVE_RESERVATIONS, query = "select r from MoneyReservation r where r.paymentCard.cardNumber = :cardNumber and r.status = :openedStatus"),
+        @NamedQuery(name = MoneyReservation.GET_ACTIVE_RESERVATION_SUM, query = "select sum(r.amount) from MoneyReservation r where r.paymentCard = :card and r.status = :openedStatus"),
+        @NamedQuery(name = MoneyReservation.CLOSE_RESERVATION, query = "update MoneyReservation r set r.status = :closedStatus where r.id = :id")
 })
 public class MoneyReservation implements Identifiable<Long>, Serializable {
+    public final static String GET_ACTIVE_RESERVATIONS = "MoneyReservation.getActiveReservations";
+    public final static String GET_ACTIVE_RESERVATION_SUM = "MoneyReservation.getActiveReservationSum";
+    public final static String CLOSE_RESERVATION = "MoneyReservation.closeReservation";
     private static final long serialVersionUID = -6174020065678295704L;
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
