@@ -17,14 +17,11 @@ public class PaymentTransactionStatusConverter implements AttributeConverter<Pay
 
     @Override
     public PaymentTransactionStatus convertToEntityAttribute(Integer dbData) {
-        if(dbData.equals(PaymentTransactionStatus.OPENED)) {
-            return PaymentTransactionStatus.OPENED;
+        if(dbData.equals(PaymentTransactionStatus.FILLING_DATA)) {
+            return PaymentTransactionStatus.FILLING_DATA;
         }
-        if(dbData.equals(PaymentTransactionStatus.STEP2)) {
-            return PaymentTransactionStatus.STEP2;
-        }
-        if(dbData.equals(PaymentTransactionStatus.STEP3)) {
-            return PaymentTransactionStatus.STEP3;
+        if(dbData.equals(PaymentTransactionStatus.PROCESSING)) {
+            return PaymentTransactionStatus.PROCESSING;
         }
         return PaymentTransactionStatus.CLOSED;
     }

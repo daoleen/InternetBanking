@@ -1,12 +1,15 @@
 package com.daoleen.banking.ejb;
 
 import com.daoleen.banking.domain.Client;
+import com.daoleen.banking.domain.ClientAddress;
+import com.daoleen.banking.exception.ClientRegistrationException;
+import com.daoleen.banking.repository.ClientAddressRepository;
 import com.daoleen.banking.repository.ClientRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import javax.ejb.Local;
-import javax.ejb.Stateless;
+import javax.annotation.Resource;
+import javax.ejb.*;
 import javax.enterprise.inject.Typed;
 import javax.persistence.NoResultException;
 import java.util.List;
@@ -17,6 +20,7 @@ import java.util.List;
 @Stateless
 @Local(ClientRepository.class)
 @Typed(ClientRepository.class)
+@TransactionAttribute(TransactionAttributeType.SUPPORTS)
 public class ClientBean extends AbstractBean<Client, Long> implements ClientRepository {
     private final static Logger logger = LoggerFactory.getLogger(ClientBean.class);
 
@@ -24,7 +28,31 @@ public class ClientBean extends AbstractBean<Client, Long> implements ClientRepo
         super(Client.class);
     }
 
+    @Resource
+    private SessionContext sessionContext;
+
+    @EJB
+    private ClientAddressRepository clientAddressRepository;
+
+
     @Override
+    @TransactionAttribute(TransactionAttributeType.REQUIRES_NEW)
+    public Client register(Client client, ClientAddress address) throws ClientRegistrationException {
+        try {
+            ClientAddress clientAddress = clientAddressRepository.save(address);
+            client.setAddress(clientAddress);
+            client = save(client);
+        }
+        catch (Exception e) {
+            sessionContext.setRollbackOnly();
+            throw new ClientRegistrationException(e.getMessage());
+        }
+        return client;
+    }
+
+
+    @Override
+    @TransactionAttribute(TransactionAttributeType.SUPPORTS)
     public Client findByPassport(String series, int number) {
         try {
             return em.createNamedQuery(Client.FIND_BY_PASSPORT, Client.class)
@@ -38,6 +66,7 @@ public class ClientBean extends AbstractBean<Client, Long> implements ClientRepo
     }
 
     @Override
+    @TransactionAttribute(TransactionAttributeType.SUPPORTS)
     public Client findByMobileNumber(String number) {
         try {
             return em.createNamedQuery(Client.FIND_BY_MOBILE_NUMBER, Client.class)
@@ -50,6 +79,7 @@ public class ClientBean extends AbstractBean<Client, Long> implements ClientRepo
     }
 
     @Override
+    @TransactionAttribute(TransactionAttributeType.SUPPORTS)
     public List<Client> findByAddressId(long addressId) {
         return em.createNamedQuery(Client.FIND_BY_ADDRESS_ID, Client.class)
                 .setParameter("addressId", addressId)
@@ -57,6 +87,7 @@ public class ClientBean extends AbstractBean<Client, Long> implements ClientRepo
     }
 
     @Override
+    @TransactionAttribute(TransactionAttributeType.SUPPORTS)
     public List<Client> findbyAddress(String street, String city, int houseNumber, int apartmentNumber) {
         return em.createNamedQuery(Client.FIND_BY_ADDRESS, Client.class)
                 .setParameter("city", city)
@@ -67,6 +98,7 @@ public class ClientBean extends AbstractBean<Client, Long> implements ClientRepo
     }
 
     @Override
+    @TransactionAttribute(TransactionAttributeType.SUPPORTS)
     public List<Client> findByFIO(String firstName, String lastName, String patronymicName) {
         return em.createNamedQuery(Client.FIND_BY_FIO, Client.class)
                 .setParameter("firstName", firstName)

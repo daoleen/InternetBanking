@@ -5,4 +5,4 @@ INSERT INTO user (username, password, is_enabled, is_blocked, client_id) VALUES 
 INSERT INTO bank (bic, name, bank_account_number) VALUES (1000000, 'БПС', 100000000000000001);
 INSERT INTO payment_card(card_number, bank_id, client_id, amount, pin_code, is_active) VALUES ('0000-0000-0000-0001', 1000000, 1, '150.0', 'passssssssssssssHASHED', TRUE), ('0000-0000-0000-0002', 1000000, 2, '90.0', 'card2', TRUE);
 INSERT INTO money_reservation(amount, status, payment_card, created_at, version) VALUES ('10', 0, '0000-0000-0000-0001', CURRENT_TIME(),0);
-INSERT INTO payment_transaction(uuid, card_number, created_at, money_reservation_id, transaction_status) VALUES (RANDOM_UUID(), '0000-0000-0000-0001', CURRENT_TIMESTAMP(), 1, 1);
+INSERT INTO payment_transaction(uuid, card_number, created_at, money_reservation_id, transaction_status, processing_status) VALUES (RANDOM_UUID(), '0000-0000-0000-0001', CURRENT_TIMESTAMP(), 1, 1, 0);

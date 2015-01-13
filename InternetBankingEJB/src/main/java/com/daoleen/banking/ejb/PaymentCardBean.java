@@ -18,7 +18,7 @@ import java.util.List;
 @Stateless
 @Local(PaymentCardRepository.class)
 @Typed(PaymentCardRepository.class)
-@TransactionAttribute(TransactionAttributeType.REQUIRED)
+@TransactionAttribute(TransactionAttributeType.SUPPORTS)
 public class PaymentCardBean extends AbstractBean<PaymentCard, String> implements PaymentCardRepository {
     private final static Logger logger = LoggerFactory.getLogger(PaymentCardBean.class);
 
@@ -28,14 +28,12 @@ public class PaymentCardBean extends AbstractBean<PaymentCard, String> implement
 
 
     @Override
-    @TransactionAttribute(TransactionAttributeType.SUPPORTS)
     public List<PaymentCard> findAll() {
         return em.createNamedQuery(PaymentCard.FIND_ALL, PaymentCard.class).getResultList();
     }
 
 
     @Override
-    @TransactionAttribute(TransactionAttributeType.SUPPORTS)
     public List<PaymentCard> findByBankAndClientPassport(String bankName, String passpSeries, int passpNumber) {
         return em.createNamedQuery(PaymentCard.FIND_BY_BANK_AND_CLIENT_PASSPORT, PaymentCard.class)
                 .setParameter("bankName", bankName)
@@ -45,6 +43,7 @@ public class PaymentCardBean extends AbstractBean<PaymentCard, String> implement
     }
 
     @Override
+    @TransactionAttribute(TransactionAttributeType.REQUIRED)
     public void activateCard(String cardNumber) {
         em.createNamedQuery(PaymentCard.ACTIVATE)
                 .setParameter("cardNumber", cardNumber)

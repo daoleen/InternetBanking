@@ -1,5 +1,7 @@
 package com.daoleen.banking.ejb.test.integration;
 
+import com.daoleen.banking.beans.PasswordEncoderProducer;
+import com.daoleen.banking.beans.qualifiers.UserPasswordEncoder;
 import com.daoleen.banking.converter.MoneyReservationStatusConverter;
 import com.daoleen.banking.domain.Identifiable;
 import com.daoleen.banking.ejb.AbstractBean;
@@ -11,6 +13,7 @@ import org.jboss.arquillian.junit.Arquillian;
 import org.jboss.shrinkwrap.api.ShrinkWrap;
 import org.jboss.shrinkwrap.api.spec.JavaArchive;
 import org.junit.runner.RunWith;
+import org.springframework.security.crypto.password.StandardPasswordEncoder;
 
 /**
  * Created by alex on 12/7/14.
@@ -28,6 +31,15 @@ public abstract class AbstractIntegrationTest {
                 .addPackage(NoEnoughMoneyException.class.getPackage())
                 .addPackage(MoneyReservationStatusConverter.class.getPackage())
                 .addPackage(MoneyReservationStatus.class.getPackage())
+
+                .addPackage(UserPasswordEncoder.class.getPackage())
+                .addPackage(org.springframework.security.crypto.password.PasswordEncoder.class.getPackage())
+                .addPackage(PasswordEncoderProducer.class.getPackage())
+                .addPackage(StandardPasswordEncoder.class.getPackage())
+                .addPackage(org.springframework.security.crypto.keygen.BytesKeyGenerator.class.getPackage())
+                .addPackage(org.springframework.security.crypto.codec.Utf8.class.getPackage())
+                .addPackage(org.springframework.security.crypto.util.EncodingUtils.class.getPackage())
+
                 .addAsResource("META-INF/log4j.properties")
                 .addAsResource("log4j.properties")
                 .addAsResource("META-INF/logging.configuration")
@@ -40,5 +52,4 @@ public abstract class AbstractIntegrationTest {
         System.out.println("Jar contains: " + archive.toString(true));
         return archive;
     }
-
 }

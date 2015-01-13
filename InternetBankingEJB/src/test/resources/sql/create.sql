@@ -24,6 +24,10 @@ CREATE TABLE IF NOT EXISTS client (
   mobile_number     VARCHAR(16) NOT NULL,
   FOREIGN KEY (address_id) REFERENCES client_address (id) ON DELETE CASCADE
 );
+CREATE INDEX client_fullname_idx ON client(first_name, last_name, patronymic_name);
+CREATE UNIQUE INDEX client_passp_idx ON client(passport_series, passport_number);
+CREATE UNIQUE INDEX ON client(mobile_number);
+
 CREATE TABLE IF NOT EXISTS user (
   id             BIGINT      NOT NULL AUTO_INCREMENT PRIMARY KEY,
   username       VARCHAR(32) NOT NULL,
@@ -66,6 +70,7 @@ CREATE TABLE IF NOT EXISTS payment_transaction (
   card_number CHAR(19) NOT NULL,
   completed_at TIMESTAMP,
   money_reservation_id BIGINT NOT NULL,
+  processing_status SMALLINT NOT NULL DEFAULT 0,
   FOREIGN KEY (recepient_bank_id) REFERENCES bank(id),
   FOREIGN KEY (recepient_card_number) REFERENCES payment_card(card_number),
   FOREIGN KEY (card_number) REFERENCES payment_card(card_number),

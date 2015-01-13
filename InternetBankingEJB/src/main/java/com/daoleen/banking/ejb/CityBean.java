@@ -7,6 +7,8 @@ import org.slf4j.LoggerFactory;
 
 import javax.ejb.Local;
 import javax.ejb.Stateless;
+import javax.ejb.TransactionAttribute;
+import javax.ejb.TransactionAttributeType;
 import javax.enterprise.inject.Typed;
 import javax.persistence.NoResultException;
 
@@ -16,6 +18,7 @@ import javax.persistence.NoResultException;
 @Stateless
 @Local(CityRepository.class)
 @Typed(CityRepository.class)
+@TransactionAttribute(TransactionAttributeType.SUPPORTS)
 public class CityBean extends AbstractBean<City, Integer> implements CityRepository {
     private static final Logger logger = LoggerFactory.getLogger(CityBean.class);
 

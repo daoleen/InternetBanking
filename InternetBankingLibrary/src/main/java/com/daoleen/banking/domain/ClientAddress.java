@@ -54,6 +54,14 @@ public class ClientAddress implements Identifiable<Long>, Serializable {
     public ClientAddress() {
     }
 
+    public ClientAddress(City city, String street, int houseNumber, int housingNumber, int apartmentNumber) {
+        this.street = street;
+        this.houseNumber = houseNumber;
+        this.housingNumber = housingNumber;
+        this.apartmentNumber = apartmentNumber;
+        this.city = city;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

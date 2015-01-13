@@ -434,6 +434,12 @@
               <styles xsi:type="notation:FontStyle" xmi:id="_JXCU0YocEeSoI_w0MDi9PA" fontName="Sans"/>
               <layoutConstraint xsi:type="notation:Bounds" xmi:id="_JXCU0oocEeSoI_w0MDi9PA"/>
             </children>
+            <children xmi:id="_XsFYwJp4EeSr2s1-9ZV7mw" type="Column" element="_XkYOQJp4EeSr2s1-9ZV7mw">
+              <children xmi:id="_XswuMJp4EeSr2s1-9ZV7mw" type="DiagramName"/>
+              <children xmi:id="_XsxVQJp4EeSr2s1-9ZV7mw" type="Description"/>
+              <styles xsi:type="notation:FontStyle" xmi:id="_XsFYwZp4EeSr2s1-9ZV7mw" fontName="Sans"/>
+              <layoutConstraint xsi:type="notation:Bounds" xmi:id="_XsFYwpp4EeSr2s1-9ZV7mw"/>
+            </children>
             <styles xsi:type="datanotation:DataListCompartmentStyle" xmi:id="_DPdG8XKAEeS_Mo0ZUQqqgA"/>
           </children>
           <children xmi:id="_DPdG8nKAEeS_Mo0ZUQqqgA" visible="false" type="Index.Compartment">
@@ -1171,6 +1177,9 @@
     </columns>
     <columns xsi:type="LUW:LUWColumn" xmi:id="_JVy-sYocEeSoI_w0MDi9PA" name="money_reservation_id" nullable="false">
       <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_MkzRUIocEeSoI_w0MDi9PA" name="BIGINT" primitiveType="BIGINT"/>
+    </columns>
+    <columns xsi:type="LUW:LUWColumn" xmi:id="_XkYOQJp4EeSr2s1-9ZV7mw" name="processing_status" nullable="false" defaultValue="0">
+      <containedType xsi:type="SQLDataTypes:IntegerDataType" xmi:id="_aWkCAJp4EeSr2s1-9ZV7mw" name="SMALLINT" primitiveType="SMALLINT"/>
     </columns>
     <constraints xsi:type="SQLConstraints:PrimaryKey" xmi:id="_vp2j4HKAEeS_Mo0ZUQqqgA" name="PaymentTransactio1" members="_UvkuwHKAEeS_Mo0ZUQqqgA"/>
     <constraints xsi:type="SQLConstraints:ForeignKey" xmi:id="_yonzYHKGEeS_Mo0ZUQqqgA" name="PaymentTra_Paym_FK" members="_O291QHKDEeS_Mo0ZUQqqgA" onDelete="RESTRICT" uniqueConstraint="_B1qJ0HJ9EeS_Mo0ZUQqqgA" referencedTable="_hHcnMHJ8EeS_Mo0ZUQqqgA">

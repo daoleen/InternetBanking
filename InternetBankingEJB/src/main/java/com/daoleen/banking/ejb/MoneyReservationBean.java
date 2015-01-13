@@ -8,9 +8,7 @@ import com.daoleen.banking.exception.NoEnoughMoneyException;
 import com.daoleen.banking.repository.MoneyReservationRepository;
 import com.daoleen.banking.repository.PaymentCardRepository;
 
-import javax.ejb.EJB;
-import javax.ejb.Local;
-import javax.ejb.Stateless;
+import javax.ejb.*;
 import javax.enterprise.inject.Typed;
 import java.util.List;
 
@@ -20,6 +18,7 @@ import java.util.List;
 @Stateless
 @Local(MoneyReservationRepository.class)
 @Typed(MoneyReservationRepository.class)
+@TransactionAttribute(TransactionAttributeType.SUPPORTS)
 public class MoneyReservationBean extends AbstractBean<MoneyReservation, Long>
         implements MoneyReservationRepository
 {
@@ -30,6 +29,7 @@ public class MoneyReservationBean extends AbstractBean<MoneyReservation, Long>
     public MoneyReservationBean() {
         super(MoneyReservation.class);
     }
+
 
     @Override
     public List<MoneyReservation> getActiveReservations(String cardNumber) {
@@ -49,25 +49,17 @@ public class MoneyReservationBean extends AbstractBean<MoneyReservation, Long>
     }
 
 
-    private MoneyReservation getMoneyReservation(PaymentCard card, double amount) throws NoEnoughMoneyException {
-        double reservedSum = getActiveReservationSum(card);
-
-        if(reservedSum + amount > card.getAmount()) {
-            throw new NoEnoughMoneyException(String.format("%s (%.2f)", card.getCardNumber(), card.getAmount()), reservedSum + amount);
-        }
-
-        return new MoneyReservation(card, amount);
-    }
-
     @Override
+    @TransactionAttribute(TransactionAttributeType.REQUIRED)
     public MoneyReservation createReservation(PaymentCard card, double amount, PaymentTransaction paymentTransaction)
             throws NoEnoughMoneyException {
-        MoneyReservation moneyReservation = getMoneyReservation(card, amount);
+        MoneyReservation moneyReservation = createMoneyReservation(card, amount);
         moneyReservation.setPaymentTransaction(paymentTransaction);
         return save(moneyReservation);
     }
 
     @Override
+    @TransactionAttribute(TransactionAttributeType.REQUIRED)
     public void closeActiveReservation(Long id) {
         em.createNamedQuery(MoneyReservation.CLOSE_RESERVATION)
                 .setParameter("id", id)
@@ -76,7 +68,20 @@ public class MoneyReservationBean extends AbstractBean<MoneyReservation, Long>
     }
 
     @Override
+    @TransactionAttribute(TransactionAttributeType.REQUIRED)
     public void closeActiveReservation(PaymentTransaction transaction) {
         closeActiveReservation(transaction.getMoneyReservation().getId());
+    }
+
+
+
+    private MoneyReservation createMoneyReservation(PaymentCard card, double amount) throws NoEnoughMoneyException {
+        double reservedSum = getActiveReservationSum(card);
+
+        if(reservedSum + amount > card.getAmount()) {
+            throw new NoEnoughMoneyException(String.format("%s (%.2f)", card.getCardNumber(), card.getAmount()), reservedSum + amount);
+        }
+
+        return new MoneyReservation(card, amount);
     }
 }

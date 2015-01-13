@@ -1,7 +1,9 @@
 package com.daoleen.banking.domain;
 
 import com.daoleen.banking.converter.PaymentTransactionStatusConverter;
+import com.daoleen.banking.converter.ProcessingStatusConverter;
 import com.daoleen.banking.enums.PaymentTransactionStatus;
+import com.daoleen.banking.enums.ProcessingStatus;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
@@ -58,13 +60,17 @@ public class PaymentTransaction implements Identifiable<UUID>, Serializable {
     @Column(name = "completed_at")
     private Date completedAt;
 
+    @NotNull
+    @Convert(converter = ProcessingStatusConverter.class)
+    @Column(name = "processing_status")
+    private ProcessingStatus processingStatus;
 
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.LAZY, cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH})
     @JoinColumn(name = "recepient_card_number")
     private PaymentCard recepientCard;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.LAZY, cascade = {CascadeType.PERSIST, CascadeType.MERGE, CascadeType.REFRESH})
     @JoinColumn(name = "card_number")
     private PaymentCard card;
 
@@ -81,7 +87,8 @@ public class PaymentTransaction implements Identifiable<UUID>, Serializable {
     }
 
     public PaymentTransaction() {
-        this.transactionStatus = PaymentTransactionStatus.OPENED;
+        this.transactionStatus = PaymentTransactionStatus.FILLING_DATA;
+        this.processingStatus = ProcessingStatus.NOT_READY;
         this.createdAt = new Date();
     }
 
@@ -207,5 +214,13 @@ public class PaymentTransaction implements Identifiable<UUID>, Serializable {
 
     public void setMoneyReservation(MoneyReservation moneyReservation) {
         this.moneyReservation = moneyReservation;
+    }
+
+    public ProcessingStatus getProcessingStatus() {
+        return processingStatus;
+    }
+
+    public void setProcessingStatus(ProcessingStatus processingStatus) {
+        this.processingStatus = processingStatus;
     }
 }

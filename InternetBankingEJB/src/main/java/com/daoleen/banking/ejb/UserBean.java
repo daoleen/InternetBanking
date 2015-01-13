@@ -1,13 +1,15 @@
 package com.daoleen.banking.ejb;
 
+import com.daoleen.banking.beans.qualifiers.UserPasswordEncoder;
 import com.daoleen.banking.domain.Client;
 import com.daoleen.banking.domain.User;
 import com.daoleen.banking.exception.UserRegistrationException;
 import com.daoleen.banking.repository.UserRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import sun.reflect.generics.reflectiveObjects.NotImplementedException;
+import org.springframework.security.crypto.password.PasswordEncoder;
 
+import javax.annotation.Resource;
 import javax.ejb.*;
 import javax.enterprise.inject.Typed;
 import javax.inject.Inject;
@@ -24,8 +26,12 @@ import java.util.List;
 public class UserBean extends AbstractBean<User, Long> implements UserRepository {
     private final static Logger logger = LoggerFactory.getLogger(UserBean.class);
 
-    @Inject
+    @Resource
     private SessionContext sessionContext;
+
+    @Inject @UserPasswordEncoder
+    private PasswordEncoder passwordEncoder;
+
 
     public UserBean() {
         super(User.class);
@@ -51,10 +57,13 @@ public class UserBean extends AbstractBean<User, Long> implements UserRepository
     }
 
     @Override
+    @TransactionAttribute(TransactionAttributeType.REQUIRES_NEW)
     public User register(String username, String password, Client client) throws UserRegistrationException {
         User user = new User();
+        String hashedPassword = passwordEncoder.encode(password);
+
         user.setUsername(username);
-        //TODO: user.setPassword(hashedPassword);
+        user.setPassword(hashedPassword);
         user.setBlocked(false);
         user.setEnabled(false);
         user.setClient(client);
@@ -87,20 +96,16 @@ public class UserBean extends AbstractBean<User, Long> implements UserRepository
     @Override
     @TransactionAttribute(TransactionAttributeType.SUPPORTS)
     public User findByUsernamePassword(String username, String plainPassword) {
-        throw new NotImplementedException();
+        User user = findByUsername(username);
 
-//        String hashedPassword = "EXECUTING HASH GENERATOR BEAN";
-//
-//        try {
-//            return em.createNamedQuery("findByUsernamePassword", User.class)
-//                    .setParameter("username", username)
-//                    .setParameter("hashedPass", hashedPassword)
-//                    .getSingleResult();
-//        }
-//        catch (NoResultException e) {
-//            logger.info("User {} with specified password has not been found.", username);
-//        }
-//        return null;
+        if (user == null) {
+            return null;
+        }
+
+        if(passwordEncoder.matches(plainPassword, user.getPassword())) {
+            return user;
+        }
+        return null;
     }
 
     @Override
@@ -112,6 +117,7 @@ public class UserBean extends AbstractBean<User, Long> implements UserRepository
     }
 
     @Override
+    @TransactionAttribute(TransactionAttributeType.REQUIRED)
     public void block(Long id, String reason) {
         try {
             em.createNamedQuery(User.BLOCK_USER)

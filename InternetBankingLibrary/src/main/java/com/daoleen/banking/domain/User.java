@@ -15,7 +15,6 @@ import java.io.Serializable;
         @NamedQuery(name = User.FIND_BY_USERNAME, query = "select u from User u where u.username = :username"),
         @NamedQuery(name = User.FIND_BLOCKED, query = "select u from User u where u.blocked = true"),
         @NamedQuery(name = User.FIND_DISABLED, query = "select u from User u where u.enabled = false"),
-        @NamedQuery(name = User.FIND_BY_USERNAME_PASSWORD, query = "select u from User u where u.username = :username and u.password = :hashedPass"),
         @NamedQuery(name = User.DISABLE_USER, query = "update User u set u.enabled = false where u.id = :id"),
         @NamedQuery(name = User.BLOCK_USER, query = "update User u set u.blocked = true, u.blockedReason = :reason where u.id = :id")
 })
@@ -24,7 +23,6 @@ public class User implements Identifiable<Long>, Serializable {
     public static final String FIND_BY_USERNAME = "User.findByUsername";
     public static final String FIND_BLOCKED = "User.findBlocked";
     public static final String FIND_DISABLED = "User.findDisabled";
-    public static final String FIND_BY_USERNAME_PASSWORD = "User.findByUsernamePassword";
     public static final String DISABLE_USER = "User.disableUser";
     public static final String BLOCK_USER = "User.blockUser";
     private static final long serialVersionUID = 1479872066542136816L;
@@ -55,6 +53,7 @@ public class User implements Identifiable<Long>, Serializable {
 
 
 
+    @NotNull
     @OneToOne(fetch = FetchType.LAZY, orphanRemoval = true)
     @JoinColumn(name = "client_id")
     private Client client;

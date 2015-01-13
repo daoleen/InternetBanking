@@ -7,6 +7,8 @@ import org.slf4j.LoggerFactory;
 
 import javax.ejb.Local;
 import javax.ejb.Stateless;
+import javax.ejb.TransactionAttribute;
+import javax.ejb.TransactionAttributeType;
 import javax.enterprise.inject.Typed;
 import javax.persistence.NoResultException;
 import java.util.List;
@@ -17,6 +19,7 @@ import java.util.List;
 @Stateless
 @Local(BankRepository.class)
 @Typed(BankRepository.class)
+@TransactionAttribute(TransactionAttributeType.SUPPORTS)
 public class BankBean extends AbstractBean<Bank, Integer> implements BankRepository {
     private final static Logger logger = LoggerFactory.getLogger(BankBean.class);
 

@@ -4,7 +4,7 @@ package com.daoleen.banking.enums;
  * Created by alex on 12/23/14.
  */
 public enum PaymentTransactionStatus {
-    OPENED(1), STEP2(2), STEP3(3), CLOSED(0);
+    FILLING_DATA(1), PROCESSING(2), CLOSED(0);
 
     private final int status;
 

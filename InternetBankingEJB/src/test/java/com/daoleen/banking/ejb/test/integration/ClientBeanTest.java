@@ -1,8 +1,11 @@
 package com.daoleen.banking.ejb.test.integration;
 
+import com.daoleen.banking.domain.City;
 import com.daoleen.banking.domain.Client;
 import com.daoleen.banking.domain.ClientAddress;
 import com.daoleen.banking.domain.Identifiable;
+import com.daoleen.banking.exception.ClientRegistrationException;
+import com.daoleen.banking.repository.CityRepository;
 import com.daoleen.banking.repository.ClientAddressRepository;
 import com.daoleen.banking.repository.ClientRepository;
 import org.junit.Test;
@@ -25,6 +28,9 @@ public class ClientBeanTest extends AbstractBeanTest {
 
     @EJB
     private ClientAddressRepository clientAddressRepository;
+
+    @EJB
+    private CityRepository cityRepository;
 
     @Override
     protected ClientRepository getEntityRepository() {
@@ -113,5 +119,18 @@ public class ClientBeanTest extends AbstractBeanTest {
         List<Client> clients = clientRepository.findByFIO("Ivanov", "Kozlov", "Kolosov");
         assertNotNull(clients);
         assertEquals(0, clients.size());
+    }
+
+    @Test
+    public void clientRegistrationTest() throws ClientRegistrationException {
+        City city = cityRepository.findAll().get(0);
+        ClientAddress address = new ClientAddress(city, "Troleybusnaya", 12, 10, 11);
+
+        Client client = new Client("client", "registration", "test", new Date(), "DD",
+                232134444, new Date(), "77722211", address);
+
+        Client newClient = clientRepository.register(client, address);
+        assertNotNull(newClient);
+        assertNotNull(newClient.getId());
     }
 }

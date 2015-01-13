@@ -7,6 +7,8 @@ import org.slf4j.LoggerFactory;
 
 import javax.ejb.Local;
 import javax.ejb.Stateless;
+import javax.ejb.TransactionAttribute;
+import javax.ejb.TransactionAttributeType;
 import javax.enterprise.inject.Typed;
 import javax.persistence.NoResultException;
 import java.util.ArrayList;
@@ -18,6 +20,7 @@ import java.util.List;
 @Stateless
 @Local(ClientAddressRepository.class)
 @Typed(ClientAddressRepository.class)
+@TransactionAttribute(TransactionAttributeType.SUPPORTS)
 public class ClientAddressBean extends AbstractBean<ClientAddress, Long>
         implements ClientAddressRepository {
     private final static Logger logger = LoggerFactory.getLogger(ClientAddressBean.class);
@@ -25,6 +28,7 @@ public class ClientAddressBean extends AbstractBean<ClientAddress, Long>
     public ClientAddressBean() {
         super(ClientAddress.class);
     }
+
 
     @Override
     public List<ClientAddress> findByAddress(String street, int cityId,

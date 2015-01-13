@@ -28,8 +28,10 @@ public abstract class AbstractBean<T extends Identifiable<I>, I extends Serializ
         implements Repository<T, I>
 {
     private final static Logger logger = LoggerFactory.getLogger(AbstractBean.class);
+
     @PersistenceContext
     protected EntityManager em;
+
     private Class<T> entityClass;
 
     public AbstractBean(Class<T> clazz) {
