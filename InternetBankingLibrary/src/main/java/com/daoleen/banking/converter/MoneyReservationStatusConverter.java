@@ -17,7 +17,7 @@ public class MoneyReservationStatusConverter implements AttributeConverter<Money
 
     @Override
     public MoneyReservationStatus convertToEntityAttribute(Integer dbData) {
-        if(dbData.equals(MoneyReservationStatus.OPENED.getValue())) {
+        if(dbData.intValue() == MoneyReservationStatus.OPENED.getValue()) {
             return MoneyReservationStatus.OPENED;
         }
         return MoneyReservationStatus.CLOSED;

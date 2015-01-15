@@ -17,11 +17,11 @@ public class ProcessingStatusConverter implements AttributeConverter<ProcessingS
 
     @Override
     public ProcessingStatus convertToEntityAttribute(Integer dbData) {
-        if(dbData.equals(ProcessingStatus.FAIL)) {
+        if(dbData.equals(ProcessingStatus.FAIL.getValue())) {
             return ProcessingStatus.FAIL;
         }
 
-        if(dbData.equals(ProcessingStatus.SUCCESS)) {
+        if(dbData.equals(ProcessingStatus.SUCCESS.getValue())) {
             return ProcessingStatus.SUCCESS;
         }
 
