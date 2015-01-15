@@ -72,7 +72,6 @@ public class TransferMoneyBean implements TransferMoneyRepository {
             tx.commit();
         } catch (NoEnoughMoneyException e) {
             logger.error("An exception occurred while creating money reservation and payment transaction. The transaction will rolled back");
-            // TODO: sessionContext.setRollbackOnly();
             try {
                 tx.rollback();
             } catch (SystemException e1) {
