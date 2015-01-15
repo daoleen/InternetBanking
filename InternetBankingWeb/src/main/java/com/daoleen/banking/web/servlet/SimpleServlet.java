@@ -1,5 +1,6 @@
 package com.daoleen.banking.web.servlet;
 
+import nz.net.ultraq.thymeleaf.LayoutDialect;
 import org.thymeleaf.TemplateEngine;
 import org.thymeleaf.context.WebContext;
 import org.thymeleaf.extras.springsecurity3.dialect.SpringSecurityDialect;
@@ -16,13 +17,16 @@ public class SimpleServlet extends javax.servlet.http.HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         ServletContextTemplateResolver resolver = new ServletContextTemplateResolver();
         resolver.setTemplateMode("HTML5");
-        resolver.setPrefix("/WEB-INF/views/");
+        resolver.setPrefix("/views/");
         resolver.setSuffix(".html");
-        resolver.setCacheTTLMs(0L);
+        resolver.setCacheTTLMs(300000L);
+        resolver.setCacheable(false);   // todo: no caching at development time!
 
         TemplateEngine templateEngine = new TemplateEngine();
         SpringSecurityDialect springSecurityDialect = new SpringSecurityDialect();
+        LayoutDialect layoutDialect = new LayoutDialect();
         templateEngine.addDialect(springSecurityDialect);
+        templateEngine.addDialect(layoutDialect);
         templateEngine.setTemplateResolver(resolver);
 
         WebContext wc = new WebContext(request, response, getServletContext(), request.getLocale());

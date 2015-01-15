@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:th="http://www.thymeleaf.org"
-      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorator="layouts/layout">
 <head lang="en">
     <meta charset="UTF-8"/>
     <title>Заголовок страницы</title>
 </head>
 <body>
+<div layout:fragment="content">
     <h1>Welcome to my home!</h1>
+
     <p>
-        Hello, <span th:text="${name}">username</span>!<br />
+        Hello, <span th:text="${name}">username</span>!<br/>
         Wow, thymeleaf really works
 
         <span sec:authentication="principal">username</span> ...
     </p>
+</div>
 </body>
 </html>

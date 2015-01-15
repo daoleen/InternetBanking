@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title layout:title-pattern="$DECORATOR_TITLE - $CONTENT_TITLE">Internet Banking </title>
+
+    <link th:href="@{/resources/css/styles.css}" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+
+
+<div id="container">
+
+    <div id="header">
+
+        <img th:src="@{/resources/images/logo.jpg}" width="312" height="56" alt="" id="logo"/>
+
+        <ul class="menu">
+            <li class="btn_1"><a href="#" title="home page">home page</a></li>
+            <li class="btn_2"><a href="#" title="about us">about us</a></li>
+            <li class="btn_3"><a href="#" title="services">services</a></li>
+            <li class="btn_4"><a href="#" title="solutions">solutions</a></li>
+            <li class="btn_5"><a href="#" title="support">support</a></li>
+            <li class="btn_6"><a href="#" title="contacts">contacts</a></li>
+        </ul>
+
+
+    </div>
+
+
+    <div id="content1">
+
+        <div id="content" layout:fragment="content">
+            <!-- content -->
+        </div>
+
+    <div class="clear"></div>
+
+</div>
+<div id="footer">
+
+    <p><a href="#">HOME</a> | <a href="#">ABOUT US</a> | <a href="#">SERVICES</a> | <a href="#">SOLUTIONS</a> | <a
+            href="#">SUPPORT</a> | <a href="#">NEWS</a> | <a href="#">CONTACTS</a><br/>Copyright &copy; Your Company
+        Name</p>
+
+</div>
+
+</div>
+
+</body>
+</html>
