@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans:beans xmlns:beans="http://www.springframework.org/schema/beans"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xmlns="http://www.springframework.org/schema/security"
+             xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/security
+http://www.springframework.org/schema/security/spring-security.xsd">
+
+    <!--
+    ° ? matches a single character
+    ° * matches zero or more characters, excluding /
+    ° ** matches zero or more directories in a path
+    -->
+    <http pattern="/resources/**" security="none"/>
+
+    <!-- use-expressions="true" - For using SpringSecurity tags in Thymeleaf -->
+    <http auto-config="true" use-expressions="true">
+
+        <!--<intercept-url pattern="/SimpleServlet" access="hasRole('ROLE_USER')" />-->
+
+
+        <form-login login-page="/account/signin"/>
+        <logout logout-url="/account/logout" logout-success-url="/"/>
+    </http>
+
+    <authentication-manager>
+        <!--<authentication-provider user-service-ref="ibankAuthService">-->
+            <!--<password-encoder ref="passwordEncoder" />-->
+        <!--</authentication-provider>-->
+
+        <authentication-provider>
+            <user-service>
+                <user name="alex" authorities="ROLE_USER" password="1" />
+            </user-service>
+        </authentication-provider>
+    </authentication-manager>
+
+
+    <global-method-security secured-annotations="enabled" />
+
+    <!--<beans:bean id="ibankAuthService" class="..." />-->
+    <!--<beans:bean id="passwordEncoder" class="..." />-->
+
+</beans:beans>

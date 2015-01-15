@@ -1,4 +1,4 @@
 rootProject.name = 'InternetBanking'
 include ':InternetBankingEJB'
 include ':InternetBankingLibrary'
-
+include ':InternetBankingWeb'
