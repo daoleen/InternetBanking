@@ -1,0 +1,99 @@
+/* CSS Document */
+body{padding:0px; margin:0px; background:#fff; color:#848484; font:10px/14px Tahoma, sans-serif;}
+div, p, ul, h2, h3, h4, img{padding:0px; margin:0px;}
+ul{list-style-type:none;}
+
+.clear {clear: both; margin: 0px; height:0}
+
+p a{font:10px/14px Tahoma, sans-serif; color:#4c7e00; text-decoration:none;}
+p a:hover{ color:#000; text-decoration:none;}
+
+.headline{font:11px/14px "Trebuchet MS", Arial, Helvetica, sans-serif; color:#433e33;}
+
+#container{width:775px; position:relative; margin:0 auto; background:url(../images/b_header.jpg) 0 0 no-repeat; border:#848484 1px solid}
+
+/* HEADER */
+
+#header{width:775px; height:200px;  position:relative;}
+
+#header img#logo{position:absolute; top:48px; left:49px}
+
+#header ul.menu{position:absolute; top:155px; left:51px; width:460px}
+#header ul.menu li{height:17px; margin-right:23px; float:left}
+#header ul.menu li a{height:17px; display:block; text-indent:-20000px; }
+#header ul.menu li a:hover{height:17px;}
+
+#header ul.menu li.btn_1 a{width:57px; background:url(../images/btn_1.gif) 0 0 no-repeat; }
+#header ul.menu li.btn_1 a:hover{width:57px; background:url(../images/btn_1_over.gif) 0 0 no-repeat;}
+
+#header ul.menu li.btn_2 a{width:52px; background:url(../images/btn_2.gif) 0 0 no-repeat; }
+#header ul.menu li.btn_2 a:hover{width:52px; background:url(../images/btn_2_over.gif) 0 0 no-repeat;}
+
+#header ul.menu li.btn_3 a{width:49px; background:url(../images/btn_3.gif) 0 0 no-repeat; }
+#header ul.menu li.btn_3 a:hover{width:49px; background:url(../images/btn_3_over.gif) 0 0 no-repeat;}
+
+#header ul.menu li.btn_4 a{width:56px; background:url(../images/btn_4.gif) 0 0 no-repeat; }
+#header ul.menu li.btn_4 a:hover{width:56px; background:url(../images/btn_4_over.gif) 0 0 no-repeat;}
+
+#header ul.menu li.btn_5 a{width:46px; background:url(../images/btn_5.gif) 0 0 no-repeat; }
+#header ul.menu li.btn_5 a:hover{width:46px; background:url(../images/btn_5_over.gif) 0 0 no-repeat;}
+
+#header ul.menu li.btn_6{margin-right:0}
+#header ul.menu li.btn_6 a{width:59px; background:url(../images/btn_6.gif) 0 0 no-repeat; }
+#header ul.menu li.btn_6 a:hover{width:59px; background:url(../images/btn_6_over.gif) 0 0 no-repeat;}
+
+
+
+/* CONTENT1 */
+
+
+#content1{width:775px; position:relative; clear:both;}
+
+#welcome{width:445px; margin:0 0 27px 55px; clear:both}
+#welcome h2{height:28px; position:relative; background:url(../images/h_welcome.gif) 0 0 no-repeat; margin-bottom:6px}
+#welcome p{margin-left:5px}
+#welcome p span{display:block; margin-bottom:10px}
+
+#welcome{width:445px; margin:0 0 27px 55px; clear:both}
+#welcome h2{height:28px; position:relative; background:url(../images/h_welcome.gif) 0 0 no-repeat; margin-bottom:6px}
+
+#services{width:227px; margin:0 30px 0 55px; float:left; display:inline}
+#services h2{height:16px; position:relative; background:url(../images/h_services.gif) 0 0 no-repeat; margin-bottom:12px}
+#services img{float:left; margin:0 13px 0 4px; display:inline}
+#services p{margin-left:8px}
+#services p.headline{float:left; width:117px; margin-left:0}
+#services .clear{height:10px}
+
+#solutions{width:420px; float:left; }
+#solutions h2{height:16px; position:relative; background:url(../images/h_services.gif) 12px 0 no-repeat; margin-bottom:12px}
+#solutions #Sol01{width:197px; float:left}
+#solutions #Sol01 img{float:left;}
+#solutions #Sol01 p{margin-left:17px}
+#solutions #Sol01 p.headline{float:left; width:115px; margin-left:0}
+#solutions #Sol02{width:217px; float:left}
+#solutions #Sol02 img{float:left; margin-right:10px}
+#solutions #Sol02 p{margin-left:12px}
+#solutions #Sol02 p.headline{float:left; width:115px; margin-left:0}
+
+/* CONTENT2 */
+
+#content2{width:775px; height:161px; background:#f3f3f3; position:relative; clear:both; margin-top:20px;}
+
+#spotlight{width:230px; float:left; margin:23px 40px 0 55px; display:inline }
+#spotlight h2{height:16px; position:relative; background:url(../images/h_services.gif) 0 0 no-repeat; margin-bottom:13px}
+#spotlight ul{width:226px; margin-left:2px}
+#spotlight ul li{font:10px/14px Tahoma, sans-serif; background:url(../images/arrow1.gif) 0 0 no-repeat; padding-left:20px; height:18px; padding-top:1px}
+#spotlight ul li a{color:#ef6d21; text-decoration:underline;}
+#spotlight ul li a:hover{color:#fff; text-decoration:none; background:#000}
+
+#partners{width:405px; float:left; margin-top:23px}
+#partners h2{height:16px; position:relative; background:url(../images/h_partners.gif) 0 0 no-repeat; margin-bottom:13px}
+#partners img{float:left; margin-right:13px}
+#partners p span{display:block; margin-bottom:5px}
+
+/* FOOTER */
+
+#footer{height:51px; clear:both; width:775px; background: url(../images/b_footer.jpg) 0 0 repeat-x}
+#footer p{padding: 10px 0 0 0; font:10px/16px Tahoma, sans-serif; font-weight:normal; text-align:center; color:#848484;}
+#footer p a{font:10px/16px Tahoma, sans-serif; font-weight:normal; color:#848484; text-decoration:none; padding: 0 3px }
+#footer p a:hover{text-decoration:none; background:#848484; color:#fff}
