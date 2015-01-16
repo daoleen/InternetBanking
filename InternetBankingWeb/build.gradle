@@ -13,4 +13,6 @@ dependencies {
     compile 'org.thymeleaf:thymeleaf:2.1.4.RELEASE'
     compile 'org.thymeleaf.extras:thymeleaf-extras-springsecurity3:2.1.1.RELEASE'
     compile 'nz.net.ultraq.thymeleaf:thymeleaf-layout-dialect:1.2.7'
+
+    compile 'org.apache.commons:commons-lang3:3.3.2'
 }

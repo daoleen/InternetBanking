@@ -71,6 +71,15 @@
         <url-pattern>/SimpleServlet</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>AbstractServlet</servlet-name>
+        <servlet-class>com.daoleen.banking.web.infrastructure.AbstractServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>AbstractServlet</servlet-name>
+        <url-pattern>/AbstractServlet/*</url-pattern>
+    </servlet-mapping>
 
 
 </web-app>
