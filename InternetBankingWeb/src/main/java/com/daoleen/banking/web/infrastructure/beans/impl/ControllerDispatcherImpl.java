@@ -12,6 +12,7 @@ import org.slf4j.LoggerFactory;
 import javax.inject.Inject;
 import javax.inject.Singleton;
 import javax.servlet.http.HttpServletRequest;
+import java.lang.annotation.Annotation;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.lang.reflect.Parameter;
@@ -30,10 +31,11 @@ public class ControllerDispatcherImpl implements ControllerDispatcher {
     private ParametersBinder parametersBinder;
 
     @Override
-    public ViewResult invokeAction(HttpServletRequest request, String controllerClassName, String methodName)
+    public ViewResult invokeAction(HttpServletRequest request, String controllerClassName, String methodName,
+                                   Class<? extends Annotation> annotationRequestType)
             throws InitializationControllerException {
         AbstractController controllerInstance = createControllerInstance(controllerClassName);
-        Method methodInv = createActionInstance(controllerInstance, methodName);
+        Method methodInv = createActionInstance(controllerInstance, methodName, annotationRequestType);
         Parameter[] methodParameters = methodInv.getParameters();
         int methodParameterCount = methodInv.getParameterCount();
         List<Object> params = null;
@@ -78,16 +80,21 @@ public class ControllerDispatcherImpl implements ControllerDispatcher {
         }
     }
 
-    private Method createActionInstance(AbstractController controllerInstance, String methodName) throws InitializationControllerException {
+    private Method createActionInstance(AbstractController controllerInstance, String methodName,
+                                        Class<? extends Annotation> annotationRequestType)
+            throws InitializationControllerException {
         Method[] methods = controllerInstance.getClass().getMethods();
 
         for (Method method : methods) {
             if (method.getName().equals(methodName)) {
-                return method;
+                if (method.getAnnotation(annotationRequestType) != null) {
+                    return method;
+                }
             }
         }
 
-        String message = String.format("Can not find method with name %s in %s controller", methodName, controllerInstance.getClass().getName());
+        String message = String.format("Could not find method with name %s and request annotation @%s in %s controller",
+                methodName, annotationRequestType.getName(), controllerInstance.getClass().getName());
         logger.error(message);
         throw new InitializationControllerException(message);
     }

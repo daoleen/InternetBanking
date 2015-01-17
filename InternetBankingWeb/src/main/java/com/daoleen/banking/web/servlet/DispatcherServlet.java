@@ -2,6 +2,8 @@ package com.daoleen.banking.web.servlet;
 
 import com.daoleen.banking.web.infrastructure.InitializationControllerException;
 import com.daoleen.banking.web.infrastructure.ViewResult;
+import com.daoleen.banking.web.infrastructure.annotations.Get;
+import com.daoleen.banking.web.infrastructure.annotations.Post;
 import com.daoleen.banking.web.infrastructure.beans.ControllerDispatcher;
 import com.daoleen.banking.web.infrastructure.beans.TemplateProcessor;
 import org.apache.commons.lang3.StringUtils;
@@ -43,7 +45,7 @@ public class DispatcherServlet extends HttpServlet {
         try {
             System.out.println("controllerMethod[0] is: " + controllerMethod[0]);
             System.out.println("controllerMethod[1] is: " + controllerMethod[1]);
-            viewResult = controllerDispatcher.invokeAction(request, controllerMethod[0], controllerMethod[1]);
+            viewResult = controllerDispatcher.invokeAction(request, controllerMethod[0], controllerMethod[1], Get.class);
         } catch (InitializationControllerException e) {
             viewResult = new ViewResult("error");
             viewResult.add("message", e.getMessage());
@@ -59,9 +61,13 @@ public class DispatcherServlet extends HttpServlet {
         ViewResult viewResult = null;
 
         try {
-            viewResult = controllerDispatcher.invokeAction(request, controllerMethod[0], controllerMethod[1]);
+            System.out.println("controllerMethod[0] is: " + controllerMethod[0]);
+            System.out.println("controllerMethod[1] is: " + controllerMethod[1]);
+            viewResult = controllerDispatcher.invokeAction(request, controllerMethod[0], controllerMethod[1], Post.class);
         } catch (InitializationControllerException e) {
-            e.printStackTrace();
+            viewResult = new ViewResult("error");
+            viewResult.add("message", e.getMessage());
+            viewResult.add("stacktrace", ExceptionUtils.getStackTrace(e));
         }
 
         templateProcessor.process(request, response, getServletContext(), viewResult);
