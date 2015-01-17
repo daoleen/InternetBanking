@@ -21,10 +21,10 @@
         <img th:src="@{/resources/images/logo.jpg}" width="312" height="56" alt="" id="logo"/>
 
         <ul class="menu">
-            <li class="btn_1"><a href="#" title="home page">home page</a></li>
-            <li class="btn_2"><a href="#" title="about us">about us</a></li>
-            <li class="btn_3"><a href="#" title="services">services</a></li>
-            <li class="btn_4"><a href="#" title="solutions">solutions</a></li>
+            <li class="btn_1"><a th:href="@{/}" title="home page">Главная</a></li>
+            <li class="btn_2"><a th:href="@{/account/signin}" title="about us">Вход</a></li>
+            <li class="btn_3"><a th:href="@{/account/registration}" title="services">Регистрация</a></li>
+            <li class="btn_4"><a th:href="@{/account/clientRegistration}" title="solutions">Регистрация клиента</a></li>
             <li class="btn_5"><a href="#" title="support">support</a></li>
             <li class="btn_6"><a href="#" title="contacts">contacts</a></li>
         </ul>
@@ -34,6 +34,10 @@
 
 
     <div id="content1">
+
+        <div id="system_notice" th:unless="${#strings.isEmpty(system_notice)}" th:text="${system_notice}">
+            SYSTEM NOTICE HERE
+        </div>
 
         <div id="content" layout:fragment="content">
             <!-- content -->

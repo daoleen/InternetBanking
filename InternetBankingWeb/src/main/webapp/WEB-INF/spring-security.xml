@@ -39,7 +39,8 @@ http://www.springframework.org/schema/security/spring-security.xsd">
 
     <global-method-security secured-annotations="enabled" />
 
-    <!--<beans:bean id="ibankAuthService" class="..." />-->
+    <beans:bean id="ibankAuthService"
+                class="com.daoleen.banking.web.infrastructure.beans.impl.BankingUserDetailsService"/>
     <!--<beans:bean id="passwordEncoder" class="..." />-->
 
 </beans:beans>
