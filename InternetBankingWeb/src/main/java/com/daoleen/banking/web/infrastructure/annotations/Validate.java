@@ -1,4 +1,4 @@
-package com.daoleen.banking.web.infrastructure;
+package com.daoleen.banking.web.infrastructure.annotations;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;
