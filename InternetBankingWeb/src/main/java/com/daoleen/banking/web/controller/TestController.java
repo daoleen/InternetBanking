@@ -3,6 +3,7 @@ package com.daoleen.banking.web.controller;
 import com.daoleen.banking.web.infrastructure.FioTest;
 import com.daoleen.banking.web.infrastructure.ViewResult;
 import com.daoleen.banking.web.infrastructure.annotations.Get;
+import com.daoleen.banking.web.infrastructure.annotations.Post;
 import com.daoleen.banking.web.infrastructure.annotations.Validate;
 import com.daoleen.banking.web.infrastructure.annotations.Var;
 
@@ -62,5 +63,23 @@ public class TestController extends AbstractController {
     public ViewResult validateObjectFail(@Validate @Var("fio") FioTest fio) {
         return viewResult.add("name", String.format("constraintFiolations: %s, fio: %s", validationErrors, fio))
                 .setViewName("test/index");
+    }
+
+
+    // $ curl --data "name=Shurik&age=24" http://localhost:8080/InternetBankingWeb/app/test/postRequest
+    @Post
+    public ViewResult postRequest(@Var("name") String name, @Var("age") int age) {
+        return viewResult.add("name", name + " " + age)
+                .setViewName("test/index");
+    }
+
+
+    // $ curl --data "firstName=Alex&lastName=Kozlov&patrName=Valerevich&name=COMPLeX&age=14&pi=3.14&e=1.21&accept=true" http://localhost:8080/InternetBankingWeb/app/test/complexObjectParamsPost
+    @Post
+    public ViewResult complexObjectParamsPost(@Var("name") String name, @Var("fio") FioTest fio, @Var("age") int age,
+                                              @Var("pi") double pi, @Var("e") float e, @Var("accept") boolean accept) {
+        return viewResult.add("name", String.format("name: %s, age: %d, username: %s, pi: %f, e: %f, accept: %s", name, age,
+                        fio.toString(), pi, e, accept)
+        ).setViewName("test/index");
     }
 }
