@@ -1,5 +1,6 @@
 package com.daoleen.banking.web.controller;
 
+import com.daoleen.banking.repository.remote.CityRepositoryRemote;
 import com.daoleen.banking.web.infrastructure.FioTest;
 import com.daoleen.banking.web.infrastructure.ViewResult;
 import com.daoleen.banking.web.infrastructure.annotations.Get;
@@ -7,10 +8,18 @@ import com.daoleen.banking.web.infrastructure.annotations.Post;
 import com.daoleen.banking.web.infrastructure.annotations.Validate;
 import com.daoleen.banking.web.infrastructure.annotations.Var;
 
+import javax.ejb.EJB;
+import javax.enterprise.context.RequestScoped;
+
 /**
  * Created by alex on 1/17/15.
  */
+@RequestScoped
 public class TestController extends AbstractController {
+
+    @EJB(lookup = "java:global/InternetBankingEJB/CityBean!com.daoleen.banking.repository.remote.CityRepositoryRemote")
+    private CityRepositoryRemote cityRepository;
+
 
     // http://localhost:8080/InternetBankingWeb/app/test
     // http://localhost:8080/InternetBankingWeb/app/test/index
@@ -81,5 +90,15 @@ public class TestController extends AbstractController {
         return viewResult.add("name", String.format("name: %s, age: %d, username: %s, pi: %f, e: %f, accept: %s", name, age,
                         fio.toString(), pi, e, accept)
         ).setViewName("test/index");
+    }
+
+
+    // http://localhost:8080/InternetBankingWeb/app/test/ejbInjectionTest
+    @Get
+    public ViewResult ejbInjectionTest() {
+        StringBuilder cityString = new StringBuilder();
+        cityRepository.findAll().parallelStream().forEach(c -> cityString.append(c.getName()).append(' '));
+        return viewResult.add("name", cityString.toString())
+                .setViewName("test/index");
     }
 }

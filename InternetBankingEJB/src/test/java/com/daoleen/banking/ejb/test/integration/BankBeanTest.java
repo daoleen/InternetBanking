@@ -2,7 +2,7 @@ package com.daoleen.banking.ejb.test.integration;
 
 import com.daoleen.banking.domain.Bank;
 import com.daoleen.banking.domain.Identifiable;
-import com.daoleen.banking.repository.BankRepository;
+import com.daoleen.banking.repository.remote.BankRepositoryRemote;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -19,10 +19,10 @@ public class BankBeanTest extends AbstractBeanTest {
     private final static Logger logger = LoggerFactory.getLogger(BankBeanTest.class);
 
     @EJB
-    private BankRepository bankRepository;
+    private BankRepositoryRemote bankRepository;
 
     @Override
-    protected BankRepository getEntityRepository() {
+    protected BankRepositoryRemote getEntityRepository() {
         return bankRepository;
     }
 

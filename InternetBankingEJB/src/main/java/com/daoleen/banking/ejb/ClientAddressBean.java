@@ -1,14 +1,12 @@
 package com.daoleen.banking.ejb;
 
 import com.daoleen.banking.domain.ClientAddress;
-import com.daoleen.banking.repository.ClientAddressRepository;
+import com.daoleen.banking.repository.local.ClientAddressRepository;
+import com.daoleen.banking.repository.remote.ClientAddressRepositoryRemote;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import javax.ejb.Local;
-import javax.ejb.Stateless;
-import javax.ejb.TransactionAttribute;
-import javax.ejb.TransactionAttributeType;
+import javax.ejb.*;
 import javax.enterprise.inject.Typed;
 import javax.persistence.NoResultException;
 import java.util.ArrayList;
@@ -19,10 +17,11 @@ import java.util.List;
  */
 @Stateless
 @Local(ClientAddressRepository.class)
+@Remote(ClientAddressRepositoryRemote.class)
 @Typed(ClientAddressRepository.class)
 @TransactionAttribute(TransactionAttributeType.SUPPORTS)
 public class ClientAddressBean extends AbstractBean<ClientAddress, Long>
-        implements ClientAddressRepository {
+        implements ClientAddressRepository, ClientAddressRepositoryRemote {
     private final static Logger logger = LoggerFactory.getLogger(ClientAddressBean.class);
 
     public ClientAddressBean() {

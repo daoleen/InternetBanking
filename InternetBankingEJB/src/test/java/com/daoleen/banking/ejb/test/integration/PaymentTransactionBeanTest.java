@@ -3,8 +3,8 @@ package com.daoleen.banking.ejb.test.integration;
 import com.daoleen.banking.domain.Identifiable;
 import com.daoleen.banking.domain.PaymentCard;
 import com.daoleen.banking.domain.PaymentTransaction;
-import com.daoleen.banking.repository.PaymentCardRepository;
-import com.daoleen.banking.repository.PaymentTransactionRepository;
+import com.daoleen.banking.repository.remote.PaymentCardRepositoryRemote;
+import com.daoleen.banking.repository.remote.PaymentTransactionRepositoryRemote;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -22,13 +22,13 @@ public class PaymentTransactionBeanTest extends AbstractBeanTest {
     private final static Logger logger = LoggerFactory.getLogger(PaymentTransactionBeanTest.class);
 
     @EJB
-    private PaymentTransactionRepository paymentTransactionRepository;
+    private PaymentTransactionRepositoryRemote paymentTransactionRepository;
 
     @EJB
-    private PaymentCardRepository paymentCardRepository;
+    private PaymentCardRepositoryRemote paymentCardRepository;
 
     @Override
-    protected PaymentTransactionRepository getEntityRepository() {
+    protected PaymentTransactionRepositoryRemote getEntityRepository() {
         return paymentTransactionRepository;
     }
 

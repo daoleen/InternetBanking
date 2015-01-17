@@ -8,6 +8,8 @@ import com.daoleen.banking.ejb.AbstractBean;
 import com.daoleen.banking.enums.MoneyReservationStatus;
 import com.daoleen.banking.exception.NoEnoughMoneyException;
 import com.daoleen.banking.repository.Repository;
+import com.daoleen.banking.repository.local.BankRepository;
+import com.daoleen.banking.repository.remote.BankRepositoryRemote;
 import org.jboss.arquillian.container.test.api.Deployment;
 import org.jboss.arquillian.junit.Arquillian;
 import org.jboss.shrinkwrap.api.ShrinkWrap;
@@ -27,6 +29,8 @@ public abstract class AbstractIntegrationTest {
                 .addPackage(AbstractIntegrationTest.class.getPackage())
                 .addPackage(AbstractBean.class.getPackage())
                 .addPackage(Repository.class.getPackage())
+                .addPackage(BankRepository.class.getPackage())
+                .addPackage(BankRepositoryRemote.class.getPackage())
                 .addPackage(Identifiable.class.getPackage())
                 .addPackage(NoEnoughMoneyException.class.getPackage())
                 .addPackage(MoneyReservationStatusConverter.class.getPackage())

@@ -2,8 +2,8 @@ package com.daoleen.banking.ejb.test.integration;
 
 import com.daoleen.banking.domain.ClientAddress;
 import com.daoleen.banking.domain.Identifiable;
-import com.daoleen.banking.repository.CityRepository;
-import com.daoleen.banking.repository.ClientAddressRepository;
+import com.daoleen.banking.repository.remote.CityRepositoryRemote;
+import com.daoleen.banking.repository.remote.ClientAddressRepositoryRemote;
 import org.junit.Test;
 
 import javax.ejb.EJB;
@@ -18,13 +18,13 @@ import static org.junit.Assert.assertNotNull;
 public class ClientAddressBeanTest extends AbstractBeanTest {
 
     @EJB
-    private ClientAddressRepository addressRepository;
+    private ClientAddressRepositoryRemote addressRepository;
 
     @EJB
-    private CityRepository cityRepository;
+    private CityRepositoryRemote cityRepository;
 
     @Override
-    protected ClientAddressRepository getEntityRepository() {
+    protected ClientAddressRepositoryRemote getEntityRepository() {
         return addressRepository;
     }
 

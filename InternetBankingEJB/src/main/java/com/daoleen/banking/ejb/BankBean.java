@@ -1,14 +1,12 @@
 package com.daoleen.banking.ejb;
 
 import com.daoleen.banking.domain.Bank;
-import com.daoleen.banking.repository.BankRepository;
+import com.daoleen.banking.repository.local.BankRepository;
+import com.daoleen.banking.repository.remote.BankRepositoryRemote;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import javax.ejb.Local;
-import javax.ejb.Stateless;
-import javax.ejb.TransactionAttribute;
-import javax.ejb.TransactionAttributeType;
+import javax.ejb.*;
 import javax.enterprise.inject.Typed;
 import javax.persistence.NoResultException;
 import java.util.List;
@@ -19,8 +17,9 @@ import java.util.List;
 @Stateless
 @Local(BankRepository.class)
 @Typed(BankRepository.class)
+@Remote(BankRepositoryRemote.class)
 @TransactionAttribute(TransactionAttributeType.SUPPORTS)
-public class BankBean extends AbstractBean<Bank, Integer> implements BankRepository {
+public class BankBean extends AbstractBean<Bank, Integer> implements BankRepository, BankRepositoryRemote {
     private final static Logger logger = LoggerFactory.getLogger(BankBean.class);
 
     public BankBean() {

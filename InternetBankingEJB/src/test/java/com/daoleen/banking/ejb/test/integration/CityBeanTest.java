@@ -2,7 +2,7 @@ package com.daoleen.banking.ejb.test.integration;
 
 import com.daoleen.banking.domain.City;
 import com.daoleen.banking.domain.Identifiable;
-import com.daoleen.banking.repository.CityRepository;
+import com.daoleen.banking.repository.remote.CityRepositoryRemote;
 import org.junit.Test;
 
 import javax.ejb.EJB;
@@ -16,10 +16,10 @@ import static org.junit.Assert.assertNull;
 public class CityBeanTest extends AbstractBeanTest {
 
     @EJB
-    private CityRepository cityRepository;
+    private CityRepositoryRemote cityRepository;
 
     @Override
-    protected CityRepository getEntityRepository() {
+    protected CityRepositoryRemote getEntityRepository() {
         return cityRepository;
     }
 

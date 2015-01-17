@@ -5,8 +5,9 @@ import com.daoleen.banking.domain.PaymentCard;
 import com.daoleen.banking.domain.PaymentTransaction;
 import com.daoleen.banking.enums.MoneyReservationStatus;
 import com.daoleen.banking.exception.NoEnoughMoneyException;
-import com.daoleen.banking.repository.MoneyReservationRepository;
-import com.daoleen.banking.repository.PaymentCardRepository;
+import com.daoleen.banking.repository.local.MoneyReservationRepository;
+import com.daoleen.banking.repository.local.PaymentCardRepository;
+import com.daoleen.banking.repository.remote.MoneyReservationRepositoryRemote;
 
 import javax.ejb.*;
 import javax.enterprise.inject.Typed;
@@ -17,10 +18,11 @@ import java.util.List;
  */
 @Stateless
 @Local(MoneyReservationRepository.class)
+@Remote(MoneyReservationRepositoryRemote.class)
 @Typed(MoneyReservationRepository.class)
 @TransactionAttribute(TransactionAttributeType.SUPPORTS)
 public class MoneyReservationBean extends AbstractBean<MoneyReservation, Long>
-        implements MoneyReservationRepository
+        implements MoneyReservationRepository, MoneyReservationRepositoryRemote
 {
 
     @EJB

@@ -4,7 +4,8 @@ import com.daoleen.banking.beans.qualifiers.UserPasswordEncoder;
 import com.daoleen.banking.domain.Client;
 import com.daoleen.banking.domain.User;
 import com.daoleen.banking.exception.UserRegistrationException;
-import com.daoleen.banking.repository.UserRepository;
+import com.daoleen.banking.repository.local.UserRepository;
+import com.daoleen.banking.repository.remote.UserRepositoryRemote;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -21,9 +22,10 @@ import java.util.List;
  */
 @Stateless
 @Local(UserRepository.class)
+@Remote(UserRepositoryRemote.class)
 @Typed(UserRepository.class)
 @TransactionAttribute(TransactionAttributeType.REQUIRED)
-public class UserBean extends AbstractBean<User, Long> implements UserRepository {
+public class UserBean extends AbstractBean<User, Long> implements UserRepository, UserRepositoryRemote {
     private final static Logger logger = LoggerFactory.getLogger(UserBean.class);
 
     @Resource

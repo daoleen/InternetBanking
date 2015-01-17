@@ -5,9 +5,9 @@ import com.daoleen.banking.domain.Client;
 import com.daoleen.banking.domain.ClientAddress;
 import com.daoleen.banking.domain.Identifiable;
 import com.daoleen.banking.exception.ClientRegistrationException;
-import com.daoleen.banking.repository.CityRepository;
-import com.daoleen.banking.repository.ClientAddressRepository;
-import com.daoleen.banking.repository.ClientRepository;
+import com.daoleen.banking.repository.remote.CityRepositoryRemote;
+import com.daoleen.banking.repository.remote.ClientAddressRepositoryRemote;
+import com.daoleen.banking.repository.remote.ClientRepositoryRemote;
 import org.junit.Test;
 
 import javax.ejb.EJB;
@@ -24,16 +24,16 @@ import static org.junit.Assert.*;
 public class ClientBeanTest extends AbstractBeanTest {
 
     @EJB
-    private ClientRepository clientRepository;
+    private ClientRepositoryRemote clientRepository;
 
     @EJB
-    private ClientAddressRepository clientAddressRepository;
+    private ClientAddressRepositoryRemote clientAddressRepository;
 
     @EJB
-    private CityRepository cityRepository;
+    private CityRepositoryRemote cityRepository;
 
     @Override
-    protected ClientRepository getEntityRepository() {
+    protected ClientRepositoryRemote getEntityRepository() {
         return clientRepository;
     }
 

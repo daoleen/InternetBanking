@@ -6,9 +6,9 @@ import com.daoleen.banking.domain.ClientAddress;
 import com.daoleen.banking.domain.Identifiable;
 import com.daoleen.banking.domain.User;
 import com.daoleen.banking.exception.UserRegistrationException;
-import com.daoleen.banking.repository.ClientAddressRepository;
-import com.daoleen.banking.repository.ClientRepository;
-import com.daoleen.banking.repository.UserRepository;
+import com.daoleen.banking.repository.remote.ClientAddressRepositoryRemote;
+import com.daoleen.banking.repository.remote.ClientRepositoryRemote;
+import com.daoleen.banking.repository.remote.UserRepositoryRemote;
 import org.junit.Test;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
@@ -25,19 +25,19 @@ import static org.junit.Assert.*;
 public class UserBeanTest extends AbstractBeanTest {
 
     @EJB
-    private UserRepository userRepository;
+    private UserRepositoryRemote userRepository;
 
     @EJB
-    private ClientRepository clientRepository;
+    private ClientRepositoryRemote clientRepository;
 
     @EJB
-    private ClientAddressRepository clientAddressRepository;
+    private ClientAddressRepositoryRemote clientAddressRepository;
 
     @Inject @UserPasswordEncoder
     private PasswordEncoder passwordEncoder;
 
     @Override
-    protected UserRepository getEntityRepository() {
+    protected UserRepositoryRemote getEntityRepository() {
         return userRepository;
     }
 

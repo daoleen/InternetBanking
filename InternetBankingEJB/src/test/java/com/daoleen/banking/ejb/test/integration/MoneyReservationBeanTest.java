@@ -7,9 +7,9 @@ import com.daoleen.banking.domain.PaymentTransaction;
 import com.daoleen.banking.enums.MoneyReservationStatus;
 import com.daoleen.banking.enums.PaymentTransactionStatus;
 import com.daoleen.banking.exception.NoEnoughMoneyException;
-import com.daoleen.banking.repository.MoneyReservationRepository;
-import com.daoleen.banking.repository.PaymentCardRepository;
-import com.daoleen.banking.repository.PaymentTransactionRepository;
+import com.daoleen.banking.repository.remote.MoneyReservationRepositoryRemote;
+import com.daoleen.banking.repository.remote.PaymentCardRepositoryRemote;
+import com.daoleen.banking.repository.remote.PaymentTransactionRepositoryRemote;
 import org.junit.Test;
 
 import javax.ejb.EJB;
@@ -24,16 +24,16 @@ import static org.junit.Assert.assertNotNull;
 public class MoneyReservationBeanTest extends AbstractBeanTest {
 
     @EJB
-    private MoneyReservationRepository moneyReservationRepository;
+    private MoneyReservationRepositoryRemote moneyReservationRepository;
 
     @EJB
-    private PaymentCardRepository paymentCardRepository;
+    private PaymentCardRepositoryRemote paymentCardRepository;
 
     @EJB
-    private PaymentTransactionRepository paymentTransactionRepository;
+    private PaymentTransactionRepositoryRemote paymentTransactionRepository;
 
     @Override
-    protected MoneyReservationRepository getEntityRepository() {
+    protected MoneyReservationRepositoryRemote getEntityRepository() {
         return moneyReservationRepository;
     }
 

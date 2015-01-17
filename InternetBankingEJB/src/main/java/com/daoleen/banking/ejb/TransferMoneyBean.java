@@ -8,10 +8,11 @@ import com.daoleen.banking.enums.PaymentTransactionStatus;
 import com.daoleen.banking.enums.ProcessingStatus;
 import com.daoleen.banking.exception.NoEnoughMoneyException;
 import com.daoleen.banking.exception.PaymentTransactionException;
-import com.daoleen.banking.repository.MoneyReservationRepository;
-import com.daoleen.banking.repository.PaymentCardRepository;
-import com.daoleen.banking.repository.PaymentTransactionRepository;
-import com.daoleen.banking.repository.TransferMoneyRepository;
+import com.daoleen.banking.repository.local.MoneyReservationRepository;
+import com.daoleen.banking.repository.local.PaymentCardRepository;
+import com.daoleen.banking.repository.local.PaymentTransactionRepository;
+import com.daoleen.banking.repository.local.TransferMoneyRepository;
+import com.daoleen.banking.repository.remote.TransferMoneyRepositoryRemote;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -26,10 +27,11 @@ import java.util.concurrent.TimeUnit;
  */
 @Stateful
 @Local(TransferMoneyRepository.class)
+@Remote(TransferMoneyRepositoryRemote.class)
 @Typed(TransferMoneyRepository.class)
 @StatefulTimeout(value = 10, unit = TimeUnit.MINUTES)
 @TransactionManagement(TransactionManagementType.BEAN)
-public class TransferMoneyBean implements TransferMoneyRepository {
+public class TransferMoneyBean implements TransferMoneyRepository, TransferMoneyRepositoryRemote {
     private final static Logger logger = LoggerFactory.getLogger(PaymentTransactionBean.class);
     private PaymentTransaction paymentTransaction;
 

@@ -1,4 +1,7 @@
+apply plugin: 'war'
+
 dependencies {
+    providedCompile 'javax:javaee-api:6.0'
     compile 'org.hibernate.javax.persistence:hibernate-jpa-2.1-api:1.0.0.Final'
     compile 'org.hibernate:hibernate-validator:4.3.1.Final'	// HIBERNATE VALIDATOR!!! Версия именно 4. С пятой глюки =)
 }

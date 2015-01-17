@@ -4,9 +4,9 @@ import com.daoleen.banking.domain.Bank;
 import com.daoleen.banking.domain.Client;
 import com.daoleen.banking.domain.Identifiable;
 import com.daoleen.banking.domain.PaymentCard;
-import com.daoleen.banking.repository.BankRepository;
-import com.daoleen.banking.repository.ClientRepository;
-import com.daoleen.banking.repository.PaymentCardRepository;
+import com.daoleen.banking.repository.remote.BankRepositoryRemote;
+import com.daoleen.banking.repository.remote.ClientRepositoryRemote;
+import com.daoleen.banking.repository.remote.PaymentCardRepositoryRemote;
 import org.junit.Test;
 
 import javax.ejb.EJB;
@@ -21,16 +21,16 @@ import static org.junit.Assert.*;
 public class PaymentCardBeanTest extends AbstractBeanTest {
 
     @EJB
-    private PaymentCardRepository paymentCardRepository;
+    private PaymentCardRepositoryRemote paymentCardRepository;
 
     @EJB
-    private ClientRepository clientRepository;
+    private ClientRepositoryRemote clientRepository;
 
     @EJB
-    private BankRepository bankRepository;
+    private BankRepositoryRemote bankRepository;
 
     @Override
-    protected PaymentCardRepository getEntityRepository() {
+    protected PaymentCardRepositoryRemote getEntityRepository() {
         return paymentCardRepository;
     }
 

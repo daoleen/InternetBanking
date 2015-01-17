@@ -7,9 +7,9 @@ import com.daoleen.banking.enums.PaymentTransactionStatus;
 import com.daoleen.banking.enums.ProcessingStatus;
 import com.daoleen.banking.exception.NoEnoughMoneyException;
 import com.daoleen.banking.exception.PaymentTransactionException;
-import com.daoleen.banking.repository.PaymentCardRepository;
-import com.daoleen.banking.repository.PaymentTransactionRepository;
-import com.daoleen.banking.repository.TransferMoneyRepository;
+import com.daoleen.banking.repository.remote.PaymentCardRepositoryRemote;
+import com.daoleen.banking.repository.remote.PaymentTransactionRepositoryRemote;
+import com.daoleen.banking.repository.remote.TransferMoneyRepositoryRemote;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -27,13 +27,13 @@ public class TransferMoneyBeanTest extends AbstractIntegrationTest {
     private final static Logger logger = LoggerFactory.getLogger(TransferMoneyBeanTest.class);
 
     @EJB
-    private PaymentCardRepository paymentCardRepository;
+    private PaymentCardRepositoryRemote paymentCardRepository;
 
     @EJB
-    private PaymentTransactionRepository paymentTransactionRepository;
+    private PaymentTransactionRepositoryRemote paymentTransactionRepository;
 
     @EJB
-    private TransferMoneyRepository transferMoneyRepository;
+    private TransferMoneyRepositoryRemote transferMoneyRepository;
 
 
 

@@ -1,14 +1,12 @@
 package com.daoleen.banking.ejb;
 
 import com.daoleen.banking.domain.PaymentCard;
-import com.daoleen.banking.repository.PaymentCardRepository;
+import com.daoleen.banking.repository.local.PaymentCardRepository;
+import com.daoleen.banking.repository.remote.PaymentCardRepositoryRemote;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import javax.ejb.Local;
-import javax.ejb.Stateless;
-import javax.ejb.TransactionAttribute;
-import javax.ejb.TransactionAttributeType;
+import javax.ejb.*;
 import javax.enterprise.inject.Typed;
 import java.util.List;
 
@@ -17,9 +15,10 @@ import java.util.List;
  */
 @Stateless
 @Local(PaymentCardRepository.class)
+@Remote(PaymentCardRepositoryRemote.class)
 @Typed(PaymentCardRepository.class)
 @TransactionAttribute(TransactionAttributeType.SUPPORTS)
-public class PaymentCardBean extends AbstractBean<PaymentCard, String> implements PaymentCardRepository {
+public class PaymentCardBean extends AbstractBean<PaymentCard, String> implements PaymentCardRepository, PaymentCardRepositoryRemote {
     private final static Logger logger = LoggerFactory.getLogger(PaymentCardBean.class);
 
     public PaymentCardBean() {

@@ -15,6 +15,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.lang.annotation.Annotation;
 
 /**
  * Created by alex on 1/16/15.
@@ -36,41 +37,14 @@ public class DispatcherServlet extends HttpServlet {
     @Inject
     private TemplateProcessor templateProcessor;
 
-
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String[] controllerMethod = getControllerMethod(request);
-        ViewResult viewResult = null;
-
-        try {
-            System.out.println("controllerMethod[0] is: " + controllerMethod[0]);
-            System.out.println("controllerMethod[1] is: " + controllerMethod[1]);
-            viewResult = controllerDispatcher.invokeAction(request, controllerMethod[0], controllerMethod[1], Get.class);
-        } catch (InitializationControllerException e) {
-            viewResult = new ViewResult("error");
-            viewResult.add("message", e.getMessage());
-            viewResult.add("stacktrace", ExceptionUtils.getStackTrace(e));
-        }
-
-        templateProcessor.process(request, response, getServletContext(), viewResult);
+        processAction(request, response, Get.class);
     }
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        String[] controllerMethod = getControllerMethod(request);
-        ViewResult viewResult = null;
-
-        try {
-            System.out.println("controllerMethod[0] is: " + controllerMethod[0]);
-            System.out.println("controllerMethod[1] is: " + controllerMethod[1]);
-            viewResult = controllerDispatcher.invokeAction(request, controllerMethod[0], controllerMethod[1], Post.class);
-        } catch (InitializationControllerException e) {
-            viewResult = new ViewResult("error");
-            viewResult.add("message", e.getMessage());
-            viewResult.add("stacktrace", ExceptionUtils.getStackTrace(e));
-        }
-
-        templateProcessor.process(request, response, getServletContext(), viewResult);
+        processAction(request, response, Post.class);
     }
 
     private String[] getControllerMethod(HttpServletRequest request) {
@@ -86,5 +60,23 @@ public class DispatcherServlet extends HttpServlet {
             controllerMethod[1] = (path.length > 2) ? path[2] : "index";
         }
         return controllerMethod;
+    }
+
+
+    private final void processAction(HttpServletRequest request, HttpServletResponse response,
+                                     Class<? extends Annotation> annotationRequestType)
+            throws IOException {
+        String[] controllerMethod = getControllerMethod(request);
+        ViewResult viewResult;
+
+        try {
+            viewResult = controllerDispatcher.invokeAction(request, controllerMethod[0], controllerMethod[1], annotationRequestType);
+        } catch (InitializationControllerException e) {
+            viewResult = new ViewResult("error");
+            viewResult.add("message", e.getMessage());
+            viewResult.add("stacktrace", ExceptionUtils.getStackTrace(e));
+        }
+
+        templateProcessor.process(request, response, getServletContext(), viewResult);
     }
 }

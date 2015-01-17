@@ -9,56 +9,56 @@
     <enterprise-beans>
         <session>
             <ejb-name>BankBean</ejb-name>
-            <business-local>com.daoleen.banking.repository.BankRepository</business-local>
+            <business-local>com.daoleen.banking.repository.remote.BankRepositoryRemote</business-local>
             <ejb-class>com.daoleen.banking.ejb.BankBean</ejb-class>
             <init-on-startup>true</init-on-startup>
             <transaction-type>Container</transaction-type>
         </session>
         <session>
             <ejb-name>CityBean</ejb-name>
-            <business-local>com.daoleen.banking.repository.CityRepository</business-local>
+            <business-local>com.daoleen.banking.repository.remote.CityRepositoryRemote</business-local>
             <ejb-class>com.daoleen.banking.ejb.CityBean</ejb-class>
             <init-on-startup>true</init-on-startup>
             <transaction-type>Container</transaction-type>
         </session>
         <session>
             <ejb-name>ClientAddressBean</ejb-name>
-            <business-local>com.daoleen.banking.repository.ClientAddressRepository</business-local>
+            <business-local>com.daoleen.banking.repository.remote.ClientAddressRepositoryRemote</business-local>
             <ejb-class>com.daoleen.banking.ejb.ClientAddressBean</ejb-class>
             <init-on-startup>true</init-on-startup>
             <transaction-type>Container</transaction-type>
         </session>
         <session>
             <ejb-name>ClientBean</ejb-name>
-            <business-local>com.daoleen.banking.repository.ClientRepository</business-local>
+            <business-local>com.daoleen.banking.repository.remote.ClientRepositoryRemote</business-local>
             <ejb-class>com.daoleen.banking.ejb.ClientBean</ejb-class>
             <init-on-startup>true</init-on-startup>
             <transaction-type>Container</transaction-type>
         </session>
         <session>
             <ejb-name>MoneyReservationBean</ejb-name>
-            <business-local>com.daoleen.banking.repository.MoneyReservationRepository</business-local>
+            <business-local>com.daoleen.banking.repository.remote.MoneyReservationRepositoryRemote</business-local>
             <ejb-class>com.daoleen.banking.ejb.MoneyReservationBean</ejb-class>
             <init-on-startup>true</init-on-startup>
             <transaction-type>Container</transaction-type>
         </session>
         <session>
             <ejb-name>PaymentCardBean</ejb-name>
-            <business-local>com.daoleen.banking.repository.PaymentCardRepository</business-local>
+            <business-local>com.daoleen.banking.repository.remote.PaymentCardRepositoryRemote</business-local>
             <ejb-class>com.daoleen.banking.ejb.PaymentCardBean</ejb-class>
             <init-on-startup>true</init-on-startup>
             <transaction-type>Container</transaction-type>
         </session>
         <session>
             <ejb-name>PaymentTransactionBean</ejb-name>
-            <business-local>com.daoleen.banking.repository.PaymentTransactionRepository</business-local>
+            <business-local>com.daoleen.banking.repository.remote.PaymentTransactionRepositoryRemote</business-local>
             <ejb-class>com.daoleen.banking.ejb.PaymentTransactionBean</ejb-class>
             <init-on-startup>true</init-on-startup>
             <transaction-type>Container</transaction-type>
         </session>
         <session>
             <ejb-name>UserBean</ejb-name>
-            <business-local>com.daoleen.banking.repository.UserRepository</business-local>
+            <business-local>com.daoleen.banking.repository.remote.UserRepositoryRemote</business-local>
             <ejb-class>com.daoleen.banking.ejb.UserBean</ejb-class>
             <init-on-startup>true</init-on-startup>
             <transaction-type>Container</transaction-type>

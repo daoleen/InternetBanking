@@ -9,14 +9,20 @@ import com.daoleen.banking.web.infrastructure.beans.ParametersBinder;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import javax.enterprise.context.spi.CreationalContext;
+import javax.enterprise.inject.spi.Bean;
+import javax.enterprise.inject.spi.BeanManager;
 import javax.inject.Inject;
 import javax.inject.Singleton;
+import javax.naming.InitialContext;
+import javax.naming.NamingException;
 import javax.servlet.http.HttpServletRequest;
 import java.lang.annotation.Annotation;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.lang.reflect.Parameter;
 import java.util.List;
+import java.util.Set;
 
 /**
  * Created by alex on 1/16/15.
@@ -30,6 +36,18 @@ public class ControllerDispatcherImpl implements ControllerDispatcher {
     @Inject
     private ParametersBinder parametersBinder;
 
+
+    /**
+     * Creates a new managed controller instance by specified controller name
+     * and invokes a specified action (which is method in controller) with specified request annotation type
+     *
+     * @param request               the HttpServletRequest
+     * @param controllerClassName   the full name of controller class
+     * @param methodName            the method name
+     * @param annotationRequestType one of annotation type either @Get or @Post
+     * @return the ViewResult object describes the template view name and template variables
+     * @throws InitializationControllerException
+     */
     @Override
     public ViewResult invokeAction(HttpServletRequest request, String controllerClassName, String methodName,
                                    Class<? extends Annotation> annotationRequestType)
@@ -46,7 +64,6 @@ public class ControllerDispatcherImpl implements ControllerDispatcher {
             } catch (ArgumentValidationException e) {
                 params = e.getParams();
                 try {
-                    //controllerInstance.getClass().getField("validationErrors").set(controllerInstance, e.getValidationErrors());
                     getMethod(controllerInstance, "setValidationErrors").invoke(controllerInstance, e.getValidationErrors());
                 } catch (NoSuchMethodException | IllegalAccessException | InvocationTargetException e1) {
                     throw new InitializationControllerException(e1.getMessage());
@@ -55,7 +72,6 @@ public class ControllerDispatcherImpl implements ControllerDispatcher {
         }
 
         // method invocation
-        System.out.println(params);
         try {
             return (ViewResult) (params != null
                     ? methodInv.invoke(controllerInstance, params.toArray())
@@ -68,19 +84,49 @@ public class ControllerDispatcherImpl implements ControllerDispatcher {
     }
 
 
-    private AbstractController createControllerInstance(String controllerClassName) throws InitializationControllerException {
+    /**
+     * Creates a Managed controller instance.
+     * Therefore it can be possible to achieve the DI capabilities in that Controller,
+     * for example using @EJB annotation
+     *
+     * @param controllerClassName the full name of controller class
+     * @return the managed instance of controller
+     * @throws InitializationControllerException uf such controller class could not be found
+     */
+    @Override
+    public AbstractController createControllerInstance(String controllerClassName) throws InitializationControllerException {
+        String controllerName = String.format(controllerNamingTemplate, controllerClassName);
+
         try {
-            return (AbstractController) Class.forName(String.format(controllerNamingTemplate, controllerClassName)).newInstance();
-        } catch (Exception e) {
-            String message = String.format("An %s was occurred while trying to create a new controller object. Message: %s",
-                    e.getClass().getName(), e.getMessage()
-            );
-            logger.error(message, e);
-            throw new InitializationControllerException(message);
+            BeanManager beanManager = (BeanManager) new InitialContext().lookup("java:comp/BeanManager");
+            Set<Bean<?>> beans = beanManager.getBeans(Class.forName(controllerName));
+
+            if (beans == null || beans.isEmpty()) {
+
+            }
+
+            Bean<?> controller = beans.iterator().next();
+            CreationalContext<?> creationalContext = beanManager.createCreationalContext(controller);
+            return (AbstractController) beanManager.getReference(controller, controller.getBeanClass(), creationalContext);
+        } catch (ClassNotFoundException | NamingException e) {
+            String msg = String.format("Could not find a controller with name '%s'", controllerName);
+            logger.error(msg);
+            throw new InitializationControllerException(msg);
         }
     }
 
-    private Method createActionInstance(AbstractController controllerInstance, String methodName,
+
+    /**
+     * Creates a method instance for specified controller instance by specified method name and request annotation
+     *
+     * @param controllerInstance    the controller object
+     * @param methodName            the method name
+     * @param annotationRequestType one of annotation type either @Get or @Post
+     * @return the method instance
+     * @throws InitializationControllerException if such method could not be found
+     */
+    @Override
+    public Method createActionInstance(AbstractController controllerInstance, String methodName,
                                         Class<? extends Annotation> annotationRequestType)
             throws InitializationControllerException {
         Method[] methods = controllerInstance.getClass().getMethods();

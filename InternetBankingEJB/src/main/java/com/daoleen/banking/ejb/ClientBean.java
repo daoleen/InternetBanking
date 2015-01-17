@@ -3,8 +3,9 @@ package com.daoleen.banking.ejb;
 import com.daoleen.banking.domain.Client;
 import com.daoleen.banking.domain.ClientAddress;
 import com.daoleen.banking.exception.ClientRegistrationException;
-import com.daoleen.banking.repository.ClientAddressRepository;
-import com.daoleen.banking.repository.ClientRepository;
+import com.daoleen.banking.repository.local.ClientAddressRepository;
+import com.daoleen.banking.repository.local.ClientRepository;
+import com.daoleen.banking.repository.remote.ClientRepositoryRemote;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -19,9 +20,10 @@ import java.util.List;
  */
 @Stateless
 @Local(ClientRepository.class)
+@Remote(ClientRepositoryRemote.class)
 @Typed(ClientRepository.class)
 @TransactionAttribute(TransactionAttributeType.SUPPORTS)
-public class ClientBean extends AbstractBean<Client, Long> implements ClientRepository {
+public class ClientBean extends AbstractBean<Client, Long> implements ClientRepository, ClientRepositoryRemote {
     private final static Logger logger = LoggerFactory.getLogger(ClientBean.class);
 
     public ClientBean() {
