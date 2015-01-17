@@ -10,6 +10,7 @@ import com.daoleen.banking.web.infrastructure.annotations.Var;
  */
 public class TestController extends AbstractController {
 
+    // http://localhost:8080/InternetBankingWeb/app/test
     // http://localhost:8080/InternetBankingWeb/app/test/index
     public ViewResult index() {
         return viewResult.add("name", "Саня")

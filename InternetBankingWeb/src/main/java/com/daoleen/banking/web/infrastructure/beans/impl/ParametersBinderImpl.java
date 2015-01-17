@@ -57,7 +57,13 @@ public class ParametersBinderImpl implements ParametersBinder {
                     }
                 }
             } else {
-                parameterObject = primitiveFactory.getPrimitive(p.getType().getName(), request.getParameter(parameterName));
+                String parameterValue = request.getParameter(parameterName);
+
+                if (parameterValue == null) {
+                    throw new InitializationControllerException("Can not find parameter with name: " + parameterName);
+                }
+
+                parameterObject = primitiveFactory.getPrimitive(p.getType().getName(), parameterValue);
                 if (parameterObject == null) {
                     throw new InitializationControllerException("Can not find parameter with name: " + parameterName);
                 }

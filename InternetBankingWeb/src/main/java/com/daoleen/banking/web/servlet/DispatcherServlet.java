@@ -5,6 +5,7 @@ import com.daoleen.banking.web.infrastructure.ViewResult;
 import com.daoleen.banking.web.infrastructure.beans.ControllerDispatcher;
 import com.daoleen.banking.web.infrastructure.beans.TemplateProcessor;
 import org.apache.commons.lang3.StringUtils;
+import org.apache.commons.lang3.exception.ExceptionUtils;
 
 import javax.inject.Inject;
 import javax.servlet.ServletException;
@@ -34,8 +35,6 @@ public class DispatcherServlet extends HttpServlet {
     private TemplateProcessor templateProcessor;
 
 
-    // TODO: add me to web.xml
-
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String[] controllerMethod = getControllerMethod(request);
@@ -46,7 +45,9 @@ public class DispatcherServlet extends HttpServlet {
             System.out.println("controllerMethod[1] is: " + controllerMethod[1]);
             viewResult = controllerDispatcher.invokeAction(request, controllerMethod[0], controllerMethod[1]);
         } catch (InitializationControllerException e) {
-            e.printStackTrace();
+            viewResult = new ViewResult("error");
+            viewResult.add("message", e.getMessage());
+            viewResult.add("stacktrace", ExceptionUtils.getStackTrace(e));
         }
 
         templateProcessor.process(request, response, getServletContext(), viewResult);
@@ -76,7 +77,7 @@ public class DispatcherServlet extends HttpServlet {
             controllerMethod[1] = "index";
         } else {
             controllerMethod[0] = StringUtils.capitalize(path[1]);
-            controllerMethod[1] = (path.length > 1) ? path[2] : "index";
+            controllerMethod[1] = (path.length > 2) ? path[2] : "index";
         }
         return controllerMethod;
     }
