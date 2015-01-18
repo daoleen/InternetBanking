@@ -44,9 +44,7 @@ public abstract class AbstractIntegrationTest {
                 .addPackage(org.springframework.security.crypto.codec.Utf8.class.getPackage())
                 .addPackage(org.springframework.security.crypto.util.EncodingUtils.class.getPackage())
 
-                .addAsResource("META-INF/log4j.properties")
-                .addAsResource("log4j.properties")
-                .addAsResource("META-INF/logging.configuration")
+//                .addAsResource("log4j.properties")
                 .addAsResource("META-INF/persistence.xml")
 //                .addAsResource("sql/data.sql")
                 .addAsResource("sql/create.sql")

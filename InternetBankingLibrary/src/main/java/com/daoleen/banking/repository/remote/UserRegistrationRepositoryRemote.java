@@ -1,0 +1,22 @@
+package com.daoleen.banking.repository.remote;
+
+import com.daoleen.banking.domain.User;
+import com.daoleen.banking.exception.UserRegistrationException;
+
+import javax.ejb.Remote;
+import java.util.Date;
+
+/**
+ * Created by alex on 1/18/15.
+ */
+@Remote
+public interface UserRegistrationRepositoryRemote {
+    public void registerCity(String name);
+
+    public void registerAddress(String street, int houseNumber, int housingNumber, int apartmentNumber);
+
+    public void registerClient(String firstName, String lastName, String patronymicName, Date birthDate, String passportSeries,
+                               int passportNumber, Date registrationDate, String mobileNumber);
+
+    public User registerUser(String username, String password) throws UserRegistrationException;
+}

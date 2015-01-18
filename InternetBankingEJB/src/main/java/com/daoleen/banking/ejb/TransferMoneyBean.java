@@ -20,6 +20,7 @@ import javax.annotation.Resource;
 import javax.ejb.*;
 import javax.enterprise.inject.Typed;
 import javax.transaction.*;
+import java.io.Serializable;
 import java.util.concurrent.TimeUnit;
 
 /**
@@ -31,10 +32,11 @@ import java.util.concurrent.TimeUnit;
 @Typed(TransferMoneyRepository.class)
 @StatefulTimeout(value = 10, unit = TimeUnit.MINUTES)
 @TransactionManagement(TransactionManagementType.BEAN)
-public class TransferMoneyBean implements TransferMoneyRepository, TransferMoneyRepositoryRemote {
+public class TransferMoneyBean implements TransferMoneyRepository, TransferMoneyRepositoryRemote, Serializable {
     private final static Logger logger = LoggerFactory.getLogger(PaymentTransactionBean.class);
-    private PaymentTransaction paymentTransaction;
+    private static final long serialVersionUID = 2794784474979952820L;
 
+    private PaymentTransaction paymentTransaction;
 
     @EJB
     private PaymentCardRepository paymentCardRepository;

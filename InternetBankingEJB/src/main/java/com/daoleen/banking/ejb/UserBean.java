@@ -10,7 +10,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
-import javax.annotation.Resource;
 import javax.ejb.*;
 import javax.enterprise.inject.Typed;
 import javax.inject.Inject;
@@ -27,9 +26,6 @@ import java.util.List;
 @TransactionAttribute(TransactionAttributeType.REQUIRED)
 public class UserBean extends AbstractBean<User, Long> implements UserRepository, UserRepositoryRemote {
     private final static Logger logger = LoggerFactory.getLogger(UserBean.class);
-
-    @Resource
-    private SessionContext sessionContext;
 
     @Inject @UserPasswordEncoder
     private PasswordEncoder passwordEncoder;
@@ -59,7 +55,7 @@ public class UserBean extends AbstractBean<User, Long> implements UserRepository
     }
 
     @Override
-    @TransactionAttribute(TransactionAttributeType.REQUIRES_NEW)
+    @TransactionAttribute(TransactionAttributeType.REQUIRED)
     public User register(String username, String password, Client client) throws UserRegistrationException {
         User user = new User();
         String hashedPassword = passwordEncoder.encode(password);
@@ -75,7 +71,6 @@ public class UserBean extends AbstractBean<User, Long> implements UserRepository
             // TODO: sendEmailNotification();
         }
         catch (Exception e) {
-            sessionContext.setRollbackOnly();
             throw new UserRegistrationException(e.getMessage());
         }
         return user;

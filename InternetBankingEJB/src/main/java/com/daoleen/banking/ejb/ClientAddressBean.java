@@ -44,4 +44,20 @@ public class ClientAddressBean extends AbstractBean<ClientAddress, Long>
         }
         return new ArrayList<ClientAddress>();
     }
+
+    @Override
+    public List<ClientAddress> findByAddress(String street, String cityName,
+                                             int houseNumber, int apartmentNumber) {
+        try {
+            return em.createNamedQuery(ClientAddress.FIND_BY_ADDRESS_CITY_NAME, ClientAddress.class)
+                    .setParameter("cityName", cityName)
+                    .setParameter("street", street)
+                    .setParameter("houseNumber", houseNumber)
+                    .setParameter("apartmentNumber", apartmentNumber)
+                    .getResultList();
+        } catch (NoResultException ex) {
+            logger.info("ClientAddress has not been found.");
+        }
+        return new ArrayList<ClientAddress>();
+    }
 }

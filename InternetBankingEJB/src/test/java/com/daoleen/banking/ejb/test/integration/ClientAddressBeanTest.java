@@ -2,8 +2,8 @@ package com.daoleen.banking.ejb.test.integration;
 
 import com.daoleen.banking.domain.ClientAddress;
 import com.daoleen.banking.domain.Identifiable;
-import com.daoleen.banking.repository.remote.CityRepositoryRemote;
-import com.daoleen.banking.repository.remote.ClientAddressRepositoryRemote;
+import com.daoleen.banking.repository.local.CityRepository;
+import com.daoleen.banking.repository.local.ClientAddressRepository;
 import org.junit.Test;
 
 import javax.ejb.EJB;
@@ -18,13 +18,13 @@ import static org.junit.Assert.assertNotNull;
 public class ClientAddressBeanTest extends AbstractBeanTest {
 
     @EJB
-    private ClientAddressRepositoryRemote addressRepository;
+    private ClientAddressRepository addressRepository;
 
     @EJB
-    private CityRepositoryRemote cityRepository;
+    private CityRepository cityRepository;
 
     @Override
-    protected ClientAddressRepositoryRemote getEntityRepository() {
+    protected ClientAddressRepository getEntityRepository() {
         return addressRepository;
     }
 
@@ -43,6 +43,13 @@ public class ClientAddressBeanTest extends AbstractBeanTest {
     public void findByAddress() {
         // VALUES (1, 'Masherova', 12, NULL, 17);
         List<ClientAddress> addresses = addressRepository.findByAddress("Masherova", 1, 12, 17);
+        assertEquals(1, addresses.size());
+    }
+
+    @Test
+    public void findByAddressCityName() {
+        // VALUES (1, 'Masherova', 12, NULL, 17);
+        List<ClientAddress> addresses = addressRepository.findByAddress("Masherova", "Minsk", 12, 17);
         assertEquals(1, addresses.size());
     }
 

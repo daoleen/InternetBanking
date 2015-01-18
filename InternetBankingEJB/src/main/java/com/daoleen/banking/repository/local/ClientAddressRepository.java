@@ -12,4 +12,6 @@ import java.util.List;
 @Local
 public interface ClientAddressRepository extends Repository<ClientAddress, Long> {
     public List<ClientAddress> findByAddress(String street, int cityId, int houseNumber, int apartmentNumber);
+
+    public List<ClientAddress> findByAddress(String street, String cityName, int houseNumber, int apartmentNumber);
 }
