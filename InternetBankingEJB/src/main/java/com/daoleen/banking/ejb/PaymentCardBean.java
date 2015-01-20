@@ -44,6 +44,13 @@ public class PaymentCardBean extends AbstractBean<PaymentCard, String> implement
     }
 
     @Override
+    public List<PaymentCard> findByUsername(String username) {
+        return em.createNamedQuery(PaymentCard.FIND_BY_USERNAME, PaymentCard.class)
+                .setParameter("username", username)
+                .getResultList();
+    }
+
+    @Override
     @TransactionAttribute(TransactionAttributeType.REQUIRED)
     public void activateCard(String cardNumber) {
         em.createNamedQuery(PaymentCard.ACTIVATE)

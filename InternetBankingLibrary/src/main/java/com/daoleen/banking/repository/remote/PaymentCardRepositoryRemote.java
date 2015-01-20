@@ -14,6 +14,8 @@ public interface PaymentCardRepositoryRemote extends Repository<PaymentCard, Str
     public List<PaymentCard> findByBankAndClientPassport(
             String bankName, String passpSeries, int passpNumber);
 
+    public List<PaymentCard> findByUsername(String username);
+
     public void activateCard(String cardNumber);
 
     public List<PaymentCard> findInactive();

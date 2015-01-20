@@ -16,13 +16,15 @@ import java.util.List;
         @NamedQuery(name = PaymentCard.FIND_ALL, query = "select c from PaymentCard c where c.active = 1"),
         @NamedQuery(name = PaymentCard.FIND_BY_BANK_AND_CLIENT_PASSPORT, query = "select c from PaymentCard c where c.bank.name = :bankName and c.client.passportSeries = :passportSeries and c.client.passportNumber = :passportNumber"),
         @NamedQuery(name = PaymentCard.ACTIVATE, query = "update PaymentCard c set c.active = 1 where c.cardNumber = :cardNumber"),
-        @NamedQuery(name = PaymentCard.FIND_INACTIVE, query = "select c from PaymentCard c where c.active = 0")
+        @NamedQuery(name = PaymentCard.FIND_INACTIVE, query = "select c from PaymentCard c where c.active = 0"),
+        @NamedQuery(name = PaymentCard.FIND_BY_USERNAME, query = "select c from PaymentCard c where c.client.user.username = :username")
 })
 public class PaymentCard implements Identifiable<String>, Serializable {
     public final static String FIND_ALL = "PaymentCard.findAll";
     public final static String FIND_BY_BANK_AND_CLIENT_PASSPORT = "PaymentCard.findByBankAndClientPassport";
     public final static String ACTIVATE = "PaymentCard.activate";
     public final static String FIND_INACTIVE = "PaymentCard.findInactive";
+    public final static String FIND_BY_USERNAME = "PaymentCard.findByUsername";
     private static final long serialVersionUID = 6121569744751124720L;
 
     @Id

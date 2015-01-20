@@ -88,4 +88,11 @@ public class PaymentCardBeanTest extends AbstractBeanTest {
         PaymentCard activeCard = paymentCardRepository.findById(cardNumber);
         assertTrue(activeCard.isActive());
     }
+
+
+    @Test
+    public void findByUsernameTest() {
+        List<PaymentCard> paymentCardList = paymentCardRepository.findByUsername("alexssource@gmail.com");
+        assertTrue(paymentCardList.size() > 0);
+    }
 }
