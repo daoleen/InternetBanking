@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorator="layouts/layoutControl"
+      xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+    <meta charset="UTF-8"/>
+    <title>Мои карты</title>
+</head>
+<body>
+
+<div layout:fragment="contentBar" id="content-bar">
+    <h2>Список ваших платежных карт</h2>
+
+    <table>
+        <thead>
+        <tr>
+            <th>Номер карты</th>
+            <th>Банк</th>
+            <th>Баланс</th>
+            <th>Зарезервировано средств</th>
+            <th>Активна?</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="card : ${cards}">
+            <td th:text="${card.cardNumber}"></td>
+            <td th:text="${card.bankName}"></td>
+            <td th:text="${card.amount}"></td>
+            <td th:text="${card.reservedAmount}"></td>
+            <td th:text="${card.active}"></td>
+        </tr>
+        </tbody>
+    </table>
+    <a th:href="@{/app/PaymentCard/create}">Создать новую карту</a>
+</div>
+
+</body>
+</html>

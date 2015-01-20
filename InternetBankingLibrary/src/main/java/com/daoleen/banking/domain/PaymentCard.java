@@ -1,5 +1,7 @@
 package com.daoleen.banking.domain;
 
+import com.daoleen.banking.converter.StringToByteArrayConverter;
+
 import javax.persistence.*;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotNull;
@@ -39,6 +41,7 @@ public class PaymentCard implements Identifiable<String>, Serializable {
 
     @NotNull
     @Column(name = "pin_code")
+    @Convert(converter = StringToByteArrayConverter.class)
     private String pinCode;
 
     @Temporal(TemporalType.DATE)
@@ -49,8 +52,7 @@ public class PaymentCard implements Identifiable<String>, Serializable {
     private boolean active;
 
 
-
-    @ManyToOne(fetch = FetchType.LAZY)
+    @ManyToOne(fetch = FetchType.EAGER)
     @JoinColumn(name = "bank_id")
     private Bank bank;
 
