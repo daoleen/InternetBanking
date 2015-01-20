@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:th="http://www.thymeleaf.org"
+      layout:decorator="layouts/layout">
+<head lang="en">
+    <meta charset="UTF-8"/>
+    <title>Регистрация. Шаг 2</title>
+</head>
+<body>
+<div layout:fragment="content">
+    <h2>Регистрация нового клиента</h2>
+
+    <h4>Шаг 2. Введите адрес</h4>
+
+    <div id="register-form">
+        <form th:action="@{/app/account/register_address}" th:object="${address}" method="post">
+            <table>
+                <tr>
+                    <td>Улица</td>
+                    <td><input type="text" name="street" th:value="*{street}"/></td>
+                    <td>
+                        <span th:text="${errors.get('street')}"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Дом</td>
+                    <td><input type="text" name="houseNumber" th:value="*{houseNumber}"/></td>
+                    <td>
+                        <span th:text="${errors.get('houseNumber')}"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Номер корпуса</td>
+                    <td><input type="text" name="housingNumber" th:value="*{housingNumber}"/></td>
+                    <td>
+                        <span th:text="${errors.get('housingNumber')}"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Номер квартиры</td>
+                    <td><input type="text" name="apartmentNumber" th:value="*{apartmentNumber}"/></td>
+                    <td>
+                        <span th:text="${errors.get('apartmentNumber')}"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" align="center">
+                        <a th:href="@{/app/account/register_city}">Назад</a>
+                        <input type="submit" value="Далее"/>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>
+</body>
+</html>

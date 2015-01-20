@@ -1,5 +1,8 @@
 package com.daoleen.banking.repository.local;
 
+import com.daoleen.banking.domain.City;
+import com.daoleen.banking.domain.Client;
+import com.daoleen.banking.domain.ClientAddress;
 import com.daoleen.banking.domain.User;
 import com.daoleen.banking.exception.UserRegistrationException;
 
@@ -19,4 +22,12 @@ public interface UserRegistrationRepository {
                                int passportNumber, Date registrationDate, String mobileNumber);
 
     public User registerUser(String username, String password) throws UserRegistrationException;
+
+    public City getCity();
+
+    public ClientAddress getClientAddress();
+
+    public Client getClient();
+
+    public User getUser();
 }

@@ -3,7 +3,7 @@
 CREATE TABLE user (
   id BIGINT NOT NULL GENERATED AS IDENTITY PRIMARY KEY,
   username       VARCHAR(32) NOT NULL,
-  password       CHAR(16) FOR BIT DATA NOT NULL,
+  password       CHAR(80) FOR BIT DATA NOT NULL,
   is_enabled     SMALLINT NOT NULL DEFAULT 1,
   is_blocked     SMALLINT NOT NULL DEFAULT 0,
   blocked_reason VARCHAR(255),

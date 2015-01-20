@@ -8,6 +8,7 @@ import org.slf4j.LoggerFactory;
 
 import javax.ejb.*;
 import javax.enterprise.inject.Typed;
+import java.io.Serializable;
 import java.util.List;
 
 /**
@@ -18,8 +19,9 @@ import java.util.List;
 @Remote(PaymentCardRepositoryRemote.class)
 @Typed(PaymentCardRepository.class)
 @TransactionAttribute(TransactionAttributeType.SUPPORTS)
-public class PaymentCardBean extends AbstractBean<PaymentCard, String> implements PaymentCardRepository, PaymentCardRepositoryRemote {
+public class PaymentCardBean extends AbstractBean<PaymentCard, String> implements PaymentCardRepository, PaymentCardRepositoryRemote, Serializable {
     private final static Logger logger = LoggerFactory.getLogger(PaymentCardBean.class);
+    private static final long serialVersionUID = 5269721808467769702L;
 
     public PaymentCardBean() {
         super(PaymentCard.class);

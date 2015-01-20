@@ -13,6 +13,7 @@ import javax.annotation.Resource;
 import javax.ejb.*;
 import javax.enterprise.inject.Typed;
 import javax.persistence.NoResultException;
+import java.io.Serializable;
 import java.util.List;
 
 /**
@@ -23,8 +24,9 @@ import java.util.List;
 @Remote(ClientRepositoryRemote.class)
 @Typed(ClientRepository.class)
 @TransactionAttribute(TransactionAttributeType.SUPPORTS)
-public class ClientBean extends AbstractBean<Client, Long> implements ClientRepository, ClientRepositoryRemote {
+public class ClientBean extends AbstractBean<Client, Long> implements ClientRepository, ClientRepositoryRemote, Serializable {
     private final static Logger logger = LoggerFactory.getLogger(ClientBean.class);
+    private static final long serialVersionUID = 7225596424434197075L;
 
     public ClientBean() {
         super(Client.class);

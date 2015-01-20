@@ -17,6 +17,7 @@ import javax.inject.Singleton;
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import java.lang.annotation.Annotation;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -42,6 +43,7 @@ public class ControllerDispatcherImpl implements ControllerDispatcher {
      * and invokes a specified action (which is method in controller) with specified request annotation type
      *
      * @param request               the HttpServletRequest
+     * @param response              the HttpServletResponse
      * @param controllerClassName   the full name of controller class
      * @param methodName            the method name
      * @param annotationRequestType one of annotation type either @Get or @Post
@@ -49,10 +51,13 @@ public class ControllerDispatcherImpl implements ControllerDispatcher {
      * @throws InitializationControllerException
      */
     @Override
-    public ViewResult invokeAction(HttpServletRequest request, String controllerClassName, String methodName,
+    public ViewResult invokeAction(HttpServletRequest request, HttpServletResponse response,
+                                   String controllerClassName, String methodName,
                                    Class<? extends Annotation> annotationRequestType)
             throws InitializationControllerException {
         AbstractController controllerInstance = createControllerInstance(controllerClassName);
+        controllerInstance.setRequest(request);
+        controllerInstance.setResponse(response);
         Method methodInv = createActionInstance(controllerInstance, methodName, annotationRequestType);
         Parameter[] methodParameters = methodInv.getParameters();
         int methodParameterCount = methodInv.getParameterCount();
@@ -127,7 +132,7 @@ public class ControllerDispatcherImpl implements ControllerDispatcher {
      */
     @Override
     public Method createActionInstance(AbstractController controllerInstance, String methodName,
-                                        Class<? extends Annotation> annotationRequestType)
+                                       Class<? extends Annotation> annotationRequestType)
             throws InitializationControllerException {
         Method[] methods = controllerInstance.getClass().getMethods();
 

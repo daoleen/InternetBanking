@@ -97,7 +97,7 @@ public class ParametersBinderImpl implements ParametersBinder {
             try {
                 String methodName = "set" + fieldName.substring(0, 1).toUpperCase() + fieldName.substring(1);
                 getMethodFromObject(parameterObject, methodName).invoke(parameterObject, fieldValue);
-            } catch (IllegalAccessException | NoSuchMethodException | InvocationTargetException e) {
+            } catch (IllegalAccessException | NoSuchMethodException | InvocationTargetException | IllegalArgumentException e) {
                 String message = String.format("An IllegalAccessException was occurred while trying to set value to field of object. Exception: %s. " +
                                 "Parameter type: %s, parameter name: %s",
                         e.getMessage(), p.getType().getName(), fieldName

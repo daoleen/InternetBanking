@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:th="http://www.thymeleaf.org"
+      layout:decorator="layouts/layout">
+<head lang="en">
+    <meta charset="UTF-8"/>
+    <title>Регистрация. Шаг 4</title>
+</head>
+<body>
+<div layout:fragment="content">
+    <h2>Регистрация нового клиента</h2>
+
+    <h4>Шаг 4. Введите ваши данные для входа в панель управления</h4>
+
+    <div id="register-form">
+        <form th:action="@{/app/account/register_user}" method="post" th:object="${user}">
+            <table>
+                <tr>
+                    <td>Имя пользователя (username)</td>
+                    <td><input type="text" name="username" th:value="*{username}"/></td>
+                    <td>
+                        <span class="error" th:text='${errors.get("username")}'>
+                            ошбки нету
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Пароль</td>
+                    <td><input type="password" name="password" th:value="*{password}"/></td>
+                    <td>
+                        <span class="error" th:text='${errors.get("password")}'>
+                            ошбки нету
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" align="center">
+                        <a th:href="@{/app/account/register_client}">Назад</a>
+                        <input type="submit" value="Завершить регистрацию"/>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>
+</body>
+</html>

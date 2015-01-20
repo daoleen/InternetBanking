@@ -1,3 +1,18 @@
+ul#menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+ul#menu > li {
+    display: inline;
+}
+
+ul#menu > li > a {
+    text-decoration: none;
+    color: #FFF;
+}
+
 #content {
     margin: 2%;
 }
@@ -21,4 +36,24 @@
     border: 1px solid #ef6d21;
     padding: 5px;
     text-align: center;
+}
+
+.error {
+    color: #F00;
+}
+
+#menu-bar {
+    width: 20%;
+    float: left;
+    border: 1px solid #CCC;
+    padding: 5px;
+}
+
+#content-bar {
+    width: 75%;
+    float: right;
+}
+
+.clear {
+    clear: both;
 }

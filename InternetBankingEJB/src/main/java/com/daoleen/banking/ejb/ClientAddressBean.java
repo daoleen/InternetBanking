@@ -9,6 +9,7 @@ import org.slf4j.LoggerFactory;
 import javax.ejb.*;
 import javax.enterprise.inject.Typed;
 import javax.persistence.NoResultException;
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -21,8 +22,9 @@ import java.util.List;
 @Typed(ClientAddressRepository.class)
 @TransactionAttribute(TransactionAttributeType.SUPPORTS)
 public class ClientAddressBean extends AbstractBean<ClientAddress, Long>
-        implements ClientAddressRepository, ClientAddressRepositoryRemote {
+        implements ClientAddressRepository, ClientAddressRepositoryRemote, Serializable {
     private final static Logger logger = LoggerFactory.getLogger(ClientAddressBean.class);
+    private static final long serialVersionUID = -286074788866278518L;
 
     public ClientAddressBean() {
         super(ClientAddress.class);

@@ -9,6 +9,7 @@ import org.slf4j.LoggerFactory;
 import javax.ejb.*;
 import javax.enterprise.inject.Typed;
 import javax.persistence.NoResultException;
+import java.io.Serializable;
 
 /**
  * Created by alex on 12/6/14.
@@ -18,8 +19,9 @@ import javax.persistence.NoResultException;
 @Remote(CityRepositoryRemote.class)
 @Typed(CityRepository.class)
 @TransactionAttribute(TransactionAttributeType.SUPPORTS)
-public class CityBean extends AbstractBean<City, Integer> implements CityRepository, CityRepositoryRemote {
+public class CityBean extends AbstractBean<City, Integer> implements CityRepository, CityRepositoryRemote, Serializable {
     private static final Logger logger = LoggerFactory.getLogger(CityBean.class);
+    private static final long serialVersionUID = -104671129635002056L;
 
     public CityBean() {
         super(City.class);

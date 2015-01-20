@@ -11,6 +11,7 @@ import com.daoleen.banking.repository.remote.MoneyReservationRepositoryRemote;
 
 import javax.ejb.*;
 import javax.enterprise.inject.Typed;
+import java.io.Serializable;
 import java.util.List;
 
 /**
@@ -22,9 +23,10 @@ import java.util.List;
 @Typed(MoneyReservationRepository.class)
 @TransactionAttribute(TransactionAttributeType.SUPPORTS)
 public class MoneyReservationBean extends AbstractBean<MoneyReservation, Long>
-        implements MoneyReservationRepository, MoneyReservationRepositoryRemote
+        implements MoneyReservationRepository, MoneyReservationRepositoryRemote, Serializable
 {
 
+    private static final long serialVersionUID = 6729653877600363898L;
     @EJB
     private PaymentCardRepository paymentCardRepository;
 

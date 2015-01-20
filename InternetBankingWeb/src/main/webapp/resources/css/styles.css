@@ -18,32 +18,6 @@ p a:hover{ color:#000; text-decoration:none;}
 
 #header img#logo{position:absolute; top:48px; left:49px}
 
-#header ul.menu{position:absolute; top:155px; left:51px; width:460px}
-#header ul.menu li{height:17px; margin-right:23px; float:left}
-#header ul.menu li a{height:17px; display:block; text-indent:-20000px; }
-#header ul.menu li a:hover{height:17px;}
-
-#header ul.menu li.btn_1 a{width:57px; background:url(../images/btn_1.gif) 0 0 no-repeat; }
-#header ul.menu li.btn_1 a:hover{width:57px; background:url(../images/btn_1_over.gif) 0 0 no-repeat;}
-
-#header ul.menu li.btn_2 a{width:52px; background:url(../images/btn_2.gif) 0 0 no-repeat; }
-#header ul.menu li.btn_2 a:hover{width:52px; background:url(../images/btn_2_over.gif) 0 0 no-repeat;}
-
-#header ul.menu li.btn_3 a{width:49px; background:url(../images/btn_3.gif) 0 0 no-repeat; }
-#header ul.menu li.btn_3 a:hover{width:49px; background:url(../images/btn_3_over.gif) 0 0 no-repeat;}
-
-#header ul.menu li.btn_4 a{width:56px; background:url(../images/btn_4.gif) 0 0 no-repeat; }
-#header ul.menu li.btn_4 a:hover{width:56px; background:url(../images/btn_4_over.gif) 0 0 no-repeat;}
-
-#header ul.menu li.btn_5 a{width:46px; background:url(../images/btn_5.gif) 0 0 no-repeat; }
-#header ul.menu li.btn_5 a:hover{width:46px; background:url(../images/btn_5_over.gif) 0 0 no-repeat;}
-
-#header ul.menu li.btn_6{margin-right:0}
-#header ul.menu li.btn_6 a{width:59px; background:url(../images/btn_6.gif) 0 0 no-repeat; }
-#header ul.menu li.btn_6 a:hover{width:59px; background:url(../images/btn_6_over.gif) 0 0 no-repeat;}
-
-
-
 /* CONTENT1 */
 
 

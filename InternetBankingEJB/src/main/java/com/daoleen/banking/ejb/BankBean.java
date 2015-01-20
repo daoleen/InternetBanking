@@ -9,6 +9,7 @@ import org.slf4j.LoggerFactory;
 import javax.ejb.*;
 import javax.enterprise.inject.Typed;
 import javax.persistence.NoResultException;
+import java.io.Serializable;
 import java.util.List;
 
 /**
@@ -19,8 +20,9 @@ import java.util.List;
 @Typed(BankRepository.class)
 @Remote(BankRepositoryRemote.class)
 @TransactionAttribute(TransactionAttributeType.SUPPORTS)
-public class BankBean extends AbstractBean<Bank, Integer> implements BankRepository, BankRepositoryRemote {
+public class BankBean extends AbstractBean<Bank, Integer> implements Serializable, BankRepository, BankRepositoryRemote {
     private final static Logger logger = LoggerFactory.getLogger(BankBean.class);
+    private static final long serialVersionUID = 4216171919563545947L;
 
     public BankBean() {
         super(Bank.class);

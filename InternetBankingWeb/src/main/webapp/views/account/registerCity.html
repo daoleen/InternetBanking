@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:th="http://www.thymeleaf.org"
+      layout:decorator="layouts/layout">
+<head lang="en">
+    <meta charset="UTF-8"/>
+    <title>Регистрация. Шаг 1</title>
+</head>
+<body>
+<div layout:fragment="content">
+    <h2>Регистрация нового клиента</h2>
+
+    <h4>Шаг 1. Введите город</h4>
+
+    <div id="register-form">
+        <form th:action="@{/app/account/register_city}" method="post" th:object="${city}">
+            <table>
+                <tr>
+                    <td>Город проживания (прописки)</td>
+                    <td><input type="text" name="name" th:value="*{name}"/></td>
+                    <td>
+                        <span class="error" th:text='${errors.get("city")}'>
+                            ошбки нету
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" align="center">
+                        <input type="submit" value="Далее"/>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>
+</body>
+</html>

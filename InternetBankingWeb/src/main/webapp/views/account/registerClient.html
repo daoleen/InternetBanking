@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      xmlns:th="http://www.thymeleaf.org"
+      layout:decorator="layouts/layout">
+<head lang="en">
+    <meta charset="UTF-8"/>
+    <title>Регистрация. Шаг 2</title>
+</head>
+<body>
+<div layout:fragment="content">
+    <h2>Регистрация нового клиента</h2>
+
+    <h4>Шаг 3. Введите данные о клиенте</h4>
+
+    <div id="register-form">
+        <form th:action="@{/app/account/register_client}" th:object="${client}" method="post">
+            <table>
+                <tr>
+                    <td>Имя</td>
+                    <td><input type="text" name="firstName" th:value="*{firstName}"/></td>
+                    <td>
+                        <span th:text="${errors.get('firstName')}"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Фамилия</td>
+                    <td><input type="text" name="lastName" th:value="*{lastName}"/></td>
+                    <td>
+                        <span th:text="${errors.get('lastName')}"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Отчество</td>
+                    <td><input type="text" name="patronymicName" th:value="*{patronymicName}"/></td>
+                    <td>
+                        <span th:text="${errors.get('patronymicName')}"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Серия паспорта</td>
+                    <td><input type="text" name="passportSeries" th:value="*{passportSeries}"/></td>
+                    <td>
+                        <span th:text="${errors.get('passportSeries')}"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Номер паспорта</td>
+                    <td><input type="text" name="passportNumber" th:value="*{passportNumber}"/></td>
+                    <td>
+                        <span th:text="${errors.get('passportNumber')}"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Номер телефона</td>
+                    <td><input type="text" name="mobileNumber" th:value="*{mobileNumber}"/></td>
+                    <td>
+                        <span th:text="${errors.get('mobileNumber')}"></span>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3" align="center">
+                        <a th:href="@{/app/account/register_address}">Назад</a>
+                        <input type="submit" value="Далее"/>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</div>
+</body>
+</html>

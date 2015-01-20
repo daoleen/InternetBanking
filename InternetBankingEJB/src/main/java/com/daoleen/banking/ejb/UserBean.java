@@ -14,6 +14,7 @@ import javax.ejb.*;
 import javax.enterprise.inject.Typed;
 import javax.inject.Inject;
 import javax.persistence.NoResultException;
+import java.io.Serializable;
 import java.util.List;
 
 /**
@@ -24,8 +25,9 @@ import java.util.List;
 @Remote(UserRepositoryRemote.class)
 @Typed(UserRepository.class)
 @TransactionAttribute(TransactionAttributeType.REQUIRED)
-public class UserBean extends AbstractBean<User, Long> implements UserRepository, UserRepositoryRemote {
+public class UserBean extends AbstractBean<User, Long> implements UserRepository, UserRepositoryRemote, Serializable {
     private final static Logger logger = LoggerFactory.getLogger(UserBean.class);
+    private static final long serialVersionUID = 7799491018349450810L;
 
     @Inject @UserPasswordEncoder
     private PasswordEncoder passwordEncoder;

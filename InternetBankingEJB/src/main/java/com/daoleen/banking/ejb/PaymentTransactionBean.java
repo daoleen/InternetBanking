@@ -8,6 +8,7 @@ import org.slf4j.LoggerFactory;
 
 import javax.ejb.*;
 import javax.enterprise.inject.Typed;
+import java.io.Serializable;
 import java.util.List;
 import java.util.UUID;
 
@@ -20,8 +21,9 @@ import java.util.UUID;
 @Typed(PaymentTransactionRepository.class)
 @TransactionAttribute(TransactionAttributeType.SUPPORTS)
 public class PaymentTransactionBean extends AbstractBean<PaymentTransaction, UUID>
-        implements PaymentTransactionRepository, PaymentTransactionRepositoryRemote {
+        implements PaymentTransactionRepository, PaymentTransactionRepositoryRemote, Serializable {
     private final static Logger logger = LoggerFactory.getLogger(PaymentTransactionBean.class);
+    private static final long serialVersionUID = 931875454907930831L;
 
     public PaymentTransactionBean() {
         super(PaymentTransaction.class);

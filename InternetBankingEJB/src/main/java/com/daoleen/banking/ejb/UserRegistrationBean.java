@@ -60,8 +60,8 @@ public class UserRegistrationBean implements UserRegistrationRepository, UserReg
 
     @Override
     public void registerAddress(String street, int houseNumber, int housingNumber, int apartmentNumber) {
-        List<ClientAddress> address = clientAddressRepository.findByAddress(street, city.getName(), houseNumber, apartmentNumber);
         logger.info("UserRegistrationBean.registerAddress: cityName is: {}", city.getName());
+        List<ClientAddress> address = clientAddressRepository.findByAddress(street, city.getName(), houseNumber, apartmentNumber);
 
         if (address.size() > 0) {
             clientAddress = address.get(0);
@@ -124,6 +124,26 @@ public class UserRegistrationBean implements UserRegistrationRepository, UserReg
             logger.error(e.getMessage());
             throw new UserRegistrationException(e.getMessage());
         }
+        return user;
+    }
+
+    @Override
+    public City getCity() {
+        return city;
+    }
+
+    @Override
+    public ClientAddress getClientAddress() {
+        return clientAddress;
+    }
+
+    @Override
+    public Client getClient() {
+        return client;
+    }
+
+    @Override
+    public User getUser() {
         return user;
     }
 }

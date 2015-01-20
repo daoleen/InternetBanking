@@ -25,7 +25,7 @@ import java.util.List;
  */
 @Stateless
 public abstract class AbstractBean<T extends Identifiable<I>, I extends Serializable>
-        implements Repository<T, I>
+        implements Repository<T, I>, Serializable
 {
     private final static Logger logger = LoggerFactory.getLogger(AbstractBean.class);
 

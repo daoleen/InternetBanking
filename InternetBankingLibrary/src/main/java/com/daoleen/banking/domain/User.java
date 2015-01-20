@@ -1,5 +1,7 @@
 package com.daoleen.banking.domain;
 
+import com.daoleen.banking.converter.StringToByteArrayConverter;
+
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
@@ -39,6 +41,7 @@ public class User implements Identifiable<Long>, Serializable {
 
     @NotNull
     @Column(name = "password")
+    @Convert(converter = StringToByteArrayConverter.class)
     private String password;
 
     @Column(name = "is_enabled")

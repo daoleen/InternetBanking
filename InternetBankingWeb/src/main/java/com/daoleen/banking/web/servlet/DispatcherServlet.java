@@ -70,7 +70,7 @@ public class DispatcherServlet extends HttpServlet {
         ViewResult viewResult;
 
         try {
-            viewResult = controllerDispatcher.invokeAction(request, controllerMethod[0], controllerMethod[1], annotationRequestType);
+            viewResult = controllerDispatcher.invokeAction(request, response, controllerMethod[0], controllerMethod[1], annotationRequestType);
         } catch (InitializationControllerException e) {
             viewResult = new ViewResult("error");
             viewResult.add("message", e.getMessage());
