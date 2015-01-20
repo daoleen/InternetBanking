@@ -14,7 +14,7 @@
         <ul>
             <li><a th:href="@{/app/PaymentCard/list}">Мои платежные карты</a></li>
             <li><a th:href="@{/app/TransferMoney/selectCard(type=card)}">Перевод на карту</a></li>
-            <li><a href="#">Перевод на счет в банке</a></li>
+            <li><a th:href="@{/app/TransferMoney/selectCard(type=account)}">Перевод на счет в банке</a></li>
         </ul>
     </div>
     <div id="content-bar" layout:fragment="contentBar">
