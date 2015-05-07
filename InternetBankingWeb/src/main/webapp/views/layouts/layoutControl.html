@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
-      layout:decorator="layouts/layout">
+      layout:decorator="layouts/layout"
+      xmlns:th="http://www.thymeleaf.org">
 <head lang="en">
     <meta charset="UTF-8"/>
     <title>Вход в панель управления</title>
@@ -11,9 +12,9 @@
     <div id="menu-bar">
         <h3>Меню</h3>
         <ul>
-            <li><a href="#">Мои платежные карты</a></li>
-            <li><a href="#">Перевод на карту</a></li>
-            <li><a href="#">Перевод на счет в банке</a></li>
+            <li><a th:href="@{/app/PaymentCard/list}">Мои платежные карты</a></li>
+            <li><a th:href="@{/app/TransferMoney/selectCard(type=card)}">Перевод на карту</a></li>
+            <li><a th:href="@{/app/TransferMoney/selectCard(type=account)}">Перевод на счет в банке</a></li>
         </ul>
     </div>
     <div id="content-bar" layout:fragment="contentBar">
