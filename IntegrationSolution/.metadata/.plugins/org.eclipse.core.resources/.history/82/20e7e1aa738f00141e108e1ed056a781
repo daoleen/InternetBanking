@@ -1,0 +1,6 @@
+public class GeneratedCompilationUnitName_1419868767845 {public void fakeMethod1419868767845() {java.util.Random r = new java.util.Random();
+smsCode = r.nextInt(1000);
+String smsMessage = String.format("Ваш смс код для проверки: %d.\nInternet Banking", smsCode);
+smsEmailMessage = smsEmailMessage.createDataObject("smsEmailMessage");
+smsEmailMessage.set
+}}

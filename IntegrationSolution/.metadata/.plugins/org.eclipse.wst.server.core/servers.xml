@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><servers>
+  <server auto-publish-setting="1" baseServerName="server1" hostname="localhost" id="wps_70" id-set="true" isAliveTimeout="60000" isAutoConnectionTypeEnabled="false" isHotMethodReplace="true" isOptimiziedForDevelopmentEnv="true" isRunServerWithWorkspaceResources="false" isSecurityEnabled="true" isUTCEnabled="true" isZeroBinaryEnabled="false" name="WebSphere Process Server v7.0 at localhost" runtime-id="wps.v70" sca-test-environment="true" securityPasswd="{xor}PjsyNjE=" securityUserId="admin" server-type="com.ibm.ws.ast.st.v7.server.bi" server-type-id="com.ibm.ws.ast.st.v7.server.bi" serverConnectionType="IPC" serverIPCConnectorPortNum="9633" serverOrbBootstrapPortNum="2809" serverSoapConnectorPortNum="8880" start-timeout="600" stop-timeout="240" timestamp="3" webSphereProfileName="qwps">
+    <list key="modules" value0="IntegrationSolution_ModuleApp::org.eclipse.jst.j2ee.server:IntegrationSolution_ModuleApp::jst.ear::1.4"/>
+    <list key="connectorTypeList" value0="IPC" value1="SOAP"/>
+  </server>
+</servers>

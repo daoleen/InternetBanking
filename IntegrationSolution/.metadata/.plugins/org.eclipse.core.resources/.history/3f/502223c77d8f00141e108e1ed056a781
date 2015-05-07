@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?><wsdl:definitions name="SmsCodeHumanTaskInterface" targetNamespace="http://IntegrationSolution_Library/Interfaces/HumanTasks/SmsCodeHumanTaskInterface" xmlns:tns="http://IntegrationSolution_Library/Interfaces/HumanTasks/SmsCodeHumanTaskInterface" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <wsdl:portType name="SmsCodeHumanTaskInterface"/>
+</wsdl:definitions>

@@ -1,0 +1,2 @@
+import commonj.sdo.DataObject;import commonj.sdo.Type;import com.ibm.websphere.sca.ServiceManager;import com.ibm.websphere.bo.BOFactory;import com.ibm.websphere.bo.BOCopy;public class GeneratedCompilationUnitName_1419875127843 {public void fakeMethod1419875127843() {num
+}}

@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workbench progressCount="83" version="2.0">
+<workbenchAdvisor/>
+<window height="768" maximized="true" width="1024" x="30" y="30">
+<fastViewData fastViewLocation="1024"/>
+<perspectiveBar>
+<itemSize x="160"/>
+</perspectiveBar>
+<coolbarLayout locked="0">
+<coolItem id="group.file" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="134" y="22"/>
+<coolItem id="additions" itemType="typeGroupMarker"/>
+<coolItem id="com.ibm.etools.patterns.PatternActionSet" itemType="typeToolBarContribution" x="38" y="22"/>
+<coolItem id="com.ibm.wbit.reporting.infrastructure.actionSet" itemType="typeToolBarContribution" x="38" y="22"/>
+<coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="57" y="22"/>
+<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="103" y="22"/>
+<coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="com.ibm.form.designer.editor.source.SourceEditorToolbar" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="com.ibm.form.designer.editor.design.VisualEditorToolbar" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="com.ibm.etools.references.ui.debugTrimToolbarContributionToolbar" itemType="typeToolBarContribution" x="38" y="22"/>
+<coolItem id="group.nav" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="99" y="22"/>
+<coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.browser.editor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="com.ibm.wbit.bo.ui.boeditor.BOEditor" itemType="typePlaceholder" x="107" y="22"/>
+<coolItem id="com.ibm.wbit.wiring.ui.editor.SCDLGraphicalEditor" itemType="typeToolBarContribution" x="84" y="22"/>
+<coolItem id="com.ibm.wbit.bpel.ui.bpeleditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="com.ibm.wbit.ie.ui.graphicaleditor.InterfaceEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="group.help" itemType="typeGroupMarker"/>
+<coolItem id="com.ibm.cic.licensing.common.ui.controlContribution" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
+</coolbarLayout>
+<page aggregateWorkingSetId="Aggregate for window 1419872489409" focus="true" label="Workspace - Business Integration">
+<editors>
+<editorArea activeWorkbook="DefaultEditorWorkbook">
+<info part="DefaultEditorWorkbook">
+<folder appearance="1" expanded="2">
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+</presentation>
+</folder>
+</info>
+</editorArea>
+<editor id="com.ibm.wbit.bpel.ui.bpeleditor" name="SmsVerificationProcess.bpel" partName="SmsVerificationProcess" path="E:/IBM/Projects/InternetBanking/IntegrationSolution/IntegrationSolution_Module/BusinessProcesses/SmsVerificationProcess.bpel" title="SmsVerificationProcess" tooltip="IntegrationSolution_Module/BusinessProcesses/SmsVerificationProcess.bpel" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/IntegrationSolution_Module/BusinessProcesses/SmsVerificationProcess.bpel"/>
+</editor>
+<editor id="com.ibm.wbit.wiring.ui.editor.SCDLGraphicalEditor" name="sca.module" partName="IntegrationSolution_Module - Assembly Diagram" path="E:/IBM/Projects/InternetBanking/IntegrationSolution/IntegrationSolution_Module/sca.module" title="IntegrationSolution_Module - Assembly Diagram" tooltip="IntegrationSolution_Module/sca.module" workbook="DefaultEditorWorkbook">
+<input MEMENTO_ARTIFACT_QNAME_LN="IntegrationSolution_Module" MEMENTO_TYPE_QNAME_LN="Module" MEMENTO_TYPE_QNAME_NS="http://www.ibm.com/xmlns/prod/websphere/scdl/6.0.0" factoryID="com.ibm.wbit.ui.FileEditorInputWithSourceFactory" path="/IntegrationSolution_Module/sca.module"/>
+</editor>
+<editor id="com.ibm.wbit.ie.ui.graphicaleditor.InterfaceEditor" name="SmsVerificationProcessInterface.wsdl" partName="SmsVerificationProcessInterface" path="E:/IBM/Projects/InternetBanking/IntegrationSolution/IntegrationSolution_Library/Interfaces/BusinessProcesses/SmsVerificationProcessInterface.wsdl" title="SmsVerificationProcessInterface" tooltip="IntegrationSolution_Library/Interfaces/BusinessProcesses/SmsVerificationProcessInterface.wsdl" workbook="DefaultEditorWorkbook">
+<input MEMENTO_ARTIFACT_QNAME_LN="SmsVerificationProcessInterface" MEMENTO_ARTIFACT_QNAME_NS="http://IntegrationSolution_Library/Interfaces/BusinessProcesses/SmsVerificationProcessInterface" MEMENTO_TYPE_QNAME_LN="portType" MEMENTO_TYPE_QNAME_NS="http://schemas.xmlsoap.org/wsdl" factoryID="com.ibm.wbit.ui.FileEditorInputWithSourceFactory" path="/IntegrationSolution_Library/Interfaces/BusinessProcesses/SmsVerificationProcessInterface.wsdl"/>
+</editor>
+<editor id="com.ibm.wbit.ie.ui.graphicaleditor.InterfaceEditor" name="SmsCodeHumanTaskInterface.wsdl" partName="SmsCodeHumanTaskInterface" path="E:/IBM/Projects/InternetBanking/IntegrationSolution/IntegrationSolution_Library/Interfaces/HumanTasks/SmsCodeHumanTaskInterface.wsdl" title="SmsCodeHumanTaskInterface" tooltip="IntegrationSolution_Library/Interfaces/HumanTasks/SmsCodeHumanTaskInterface.wsdl" workbook="DefaultEditorWorkbook">
+<input MEMENTO_ARTIFACT_QNAME_LN="SmsCodeHumanTaskInterface" MEMENTO_ARTIFACT_QNAME_NS="http://IntegrationSolution_Library/Interfaces/HumanTasks/SmsCodeHumanTaskInterface" MEMENTO_TYPE_QNAME_LN="portType" MEMENTO_TYPE_QNAME_NS="http://schemas.xmlsoap.org/wsdl" factoryID="com.ibm.wbit.ui.FileEditorInputWithSourceFactory" path="/IntegrationSolution_Library/Interfaces/HumanTasks/SmsCodeHumanTaskInterface.wsdl"/>
+</editor>
+</editors>
+<views>
+<view id="org.eclipse.ui.views.PropertySheet" partName="Properties">
+<viewState/>
+</view>
+<view id="com.ibm.wbit.taskflow.ui.views.TaskFlowView" partName="Task Flows">
+<viewState/>
+</view>
+<view id="com.ibm.wbit.ui.logicalview.WBILogicalView" partName="Business Integration">
+<viewState activeSolution="&lt;all resources&gt;" linkWithEditor="false" modeTree="2" sectionExpansion="SOLUTIONS_AND_PROJECTS" sectionExpansionFirstWeight="245" sectionExpansionSecondWeight="754" showFoldersInTree="1" showNamespacesInTree="0" showSections="true" showSolutionDropdown="false">
+<treeExpansion>
+<expandedTypeModule projectPath="/IntegrationSolution_Library"/>
+<expandedTypeCategory className="com.ibm.wbit.ui.logicalview.model.InterfacesCategory">
+<parentElement>
+<expandedTypeModule projectPath="/IntegrationSolution_Library"/>
+</parentElement>
+</expandedTypeCategory>
+<expandedTypeCategory categoryName="Interfaces/BusinessProcesses" className="com.ibm.wbit.ui.logicalview.model.FolderLogicalCategory">
+<parentElement>
+<expandedTypeCategory className="com.ibm.wbit.ui.logicalview.model.InterfacesCategory">
+<parentElement>
+<expandedTypeModule projectPath="/IntegrationSolution_Library"/>
+</parentElement>
+</expandedTypeCategory>
+</parentElement>
+</expandedTypeCategory>
+<expandedTypeCategory categoryName="Interfaces/HumanTasks" className="com.ibm.wbit.ui.logicalview.model.FolderLogicalCategory">
+<parentElement>
+<expandedTypeCategory className="com.ibm.wbit.ui.logicalview.model.InterfacesCategory">
+<parentElement>
+<expandedTypeModule projectPath="/IntegrationSolution_Library"/>
+</parentElement>
+</expandedTypeCategory>
+</parentElement>
+</expandedTypeCategory>
+<expandedTypeModule projectPath="/IntegrationSolution_Module"/>
+<expandedTypeCategory className="com.ibm.wbit.ui.logicalview.model.BusinessLogicCategory">
+<parentElement>
+<expandedTypeModule projectPath="/IntegrationSolution_Module"/>
+</parentElement>
+</expandedTypeCategory>
+<expandedTypeCategory className="com.ibm.wbit.ui.logicalview.model.ProcessesCategory">
+<parentElement>
+<expandedTypeCategory className="com.ibm.wbit.ui.logicalview.model.BusinessLogicCategory">
+<parentElement>
+<expandedTypeModule projectPath="/IntegrationSolution_Module"/>
+</parentElement>
+</expandedTypeCategory>
+</parentElement>
+</expandedTypeCategory>
+<expandedTypeCategory categoryName="BusinessProcesses" className="com.ibm.wbit.ui.logicalview.model.FolderLogicalCategory">
+<parentElement>
+<expandedTypeCategory className="com.ibm.wbit.ui.logicalview.model.ProcessesCategory">
+<parentElement>
+<expandedTypeCategory className="com.ibm.wbit.ui.logicalview.model.BusinessLogicCategory">
+<parentElement>
+<expandedTypeModule projectPath="/IntegrationSolution_Module"/>
+</parentElement>
+</expandedTypeCategory>
+</parentElement>
+</expandedTypeCategory>
+</parentElement>
+</expandedTypeCategory>
+<expandedTypeCategory className="com.ibm.wbit.ui.logicalview.model.InterfacesCategory">
+<parentElement>
+<expandedTypeModule projectPath="/IntegrationSolution_Module"/>
+</parentElement>
+</expandedTypeCategory>
+</treeExpansion>
+<solutionTreeExpansion>
+<expandedTypeSolution projectPath="/IntegrationSolution"/>
+</solutionTreeExpansion>
+</viewState>
+</view>
+<view id="com.ibm.wbit.comptest.ui.view.HorizontalTraceView" partName="Server Logs">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.views.ProblemView" partName="Problems">
+<viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
+<expanded>
+<category IMemento.internal.id="Warnings (2 items)"/>
+<category IMemento.internal.id="Warnings"/>
+<category IMemento.internal.id="Errors"/>
+</expanded>
+<columnWidths org.eclipse.ui.ide.locationField="84" org.eclipse.ui.ide.markerType="124" org.eclipse.ui.ide.pathField="164" org.eclipse.ui.ide.resourceField="124" org.eclipse.ui.ide.severityAndDescriptionField="400"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
+</viewState>
+</view>
+<view id="org.eclipse.wst.server.ui.ServersView" partName="Servers">
+<viewState columnWidth0="345" columnWidth1="200" columnWidth2="200"/>
+</view>
+<view id="com.ibm.wbit.ui.build.activities.view.BuildActivitiesView" partName="Build Activities"/>
+</views>
+<perspectives activePart="com.ibm.wbit.comptest.ui.view.HorizontalTraceView" activePerspective="com.ibm.wbit.ui.WBIPerspective">
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="com.ibm.wbit.ui.BusinessIntegrationPerspective" id="com.ibm.wbit.ui.WBIPerspective" label="Business Integration"/>
+<alwaysOnActionSet id="com.ibm.bpm.gettingstarted.actionset.id"/>
+<alwaysOnActionSet id="com.ibm.cic.licensing.common.ui.actionSet"/>
+<alwaysOnActionSet id="com.ibm.etools.patterns.PatternActionSet"/>
+<alwaysOnActionSet id="help.additions.support_actionset"/>
+<alwaysOnActionSet id="com.ibm.etools.miniwelcome.miniWelcomeActionSet"/>
+<alwaysOnActionSet id="com.ibm.wbit.samples.framework.help_samplestutorials_actionset_id"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="com.ibm.form.designer.help.update"/>
+<alwaysOnActionSet id="com.ibm.form.designer.feedbackActionSet"/>
+<alwaysOnActionSet id="com.ibm.wbit.ui.mapcatalog.actionsets"/>
+<alwaysOnActionSet id="com.ibm.wbit.ui.buildactivitiesview.wid_project_actionset_id"/>
+<alwaysOnActionSet id="com.ibm.wbit.reporting.infrastructure.actionSet"/>
+<alwaysOnActionSet id="com.ibm.wbit.ui.navigation.actionSets"/>
+<alwaysOnActionSet id="com.ibm.wbit.ui.newprojects.actionSets"/>
+<alwaysOffActionSet id="com.ibm.01.help.gallery.cat.tutorialGalleryActionSet"/>
+<alwaysOffActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+<alwaysOffActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<alwaysOffActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<alwaysOffActionSet id="com.ibm.rational.welcome.core.helpSearchActionSet"/>
+<alwaysOffActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOffActionSet id="org.eclipse.jst.servlet.ui.internal.actions.ConvertToWebModuleTypeActionSet"/>
+<alwaysOffActionSet id="com.ibm.rational.welcome.core.webResourcesActionSet"/>
+<alwaysOffActionSet id="com.ibm.ccl.help.preferenceharvester.actionSet1"/>
+<alwaysOffActionSet id="com.ibm.help.gallery.sampleGalleryActionSet"/>
+<alwaysOffActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<show_view_action id="com.ibm.wbit.ui.logicalview.WBILogicalView"/>
+<show_view_action id="com.ibm.wbit.ui.build.activities.view.BuildActivitiesView"/>
+<show_view_action id="com.ibm.wbit.ui.referencesview"/>
+<show_view_action id="com.ibm.wbit.ui.physicalview.PhysicalView"/>
+<show_view_action id="com.ibm.wbit.activity.ui.viewer.ActivityLibraryView"/>
+<show_view_action id="org.eclipse.wst.server.ui.ServersView"/>
+<show_view_action id="com.ibm.wbit.comptest.ui.view.HorizontalTraceView"/>
+<show_view_action id="org.eclipse.wst.internet.monitor.view"/>
+<show_view_action id="org.eclipse.ui.views.PropertySheet"/>
+<show_view_action id="org.eclipse.ui.views.ProblemView"/>
+<show_view_action id="org.eclipse.ui.views.ContentOutline"/>
+<show_view_action id="org.eclipse.ui.console.ConsoleView"/>
+<show_view_action id="org.eclipse.ui.views.TaskList"/>
+<show_view_action id="com.ibm.wbit.taskflow.ui.views.TaskFlowView"/>
+<show_view_action id="com.ibm.etools.patterns.views.PatternExplorerView"/>
+<new_wizard_action id="com.ibm.wbit.bo.evolution.internal.wizards.NewArtifactUpdaterWizard"/>
+<new_wizard_action id="com.ibm.wbit.businesscalendar.ui.CalModelWizardID"/>
+<new_wizard_action id="com.ibm.wbit.bo.ui.NewBusinessObjectWizard"/>
+<new_wizard_action id="com.ibm.wbit.adapter.ui.wizards.EMDBOWizard"/>
+<new_wizard_action id="com.ibm.wbit.bpel.ui.wizards.newprocess.NewProcessWizard"/>
+<new_wizard_action id="com.ibm.wbit.templates.forms.formProcess"/>
+<new_wizard_action id="NewBusinessSvcWizardID"/>
+<new_wizard_action id="com.ibm.wbit.ae.ui.wizards.NewAdaptiveEntityWizard"/>
+<new_wizard_action id="NewVocabWizardID"/>
+<new_wizard_action id="com.ibm.wbit.comptest.ct.ui.SCATestCaseNewWizard"/>
+<new_wizard_action id="com.ibm.wbit.comptest.ct.ui.SCATestSuiteNewWizard"/>
+<new_wizard_action id="com.ibm.wbit.adapter.emd.ui.wizards.EMDResourceConfigWizard"/>
+<new_wizard_action id="com.ibm.wbit.activity.ui.CustomActivityWizardID"/>
+<new_wizard_action id="com.ibm.wbit.sib.xmlmap.internal.ui.wizards.NewMapWizard"/>
+<new_wizard_action id="com.ibm.wbit.comptest.ui.NewObjectPoolWizard"/>
+<new_wizard_action id="com.ibm.wbit.br.ui.decisiontable.DecisionTableFileWizard"/>
+<new_wizard_action id="com.ibm.wbit.comptest.ui.NewEmulatorWizard"/>
+<new_wizard_action id="com.ibm.wbimonitor.edt.wizard.NewEventDefinitionWizard"/>
+<new_wizard_action id="com.ibm.wbit.adapter.ui.wizards.EMDWizard"/>
+<new_wizard_action id="com.ibm.wbit.tel.integration.wizards.TaskNewWizard"/>
+<new_wizard_action id="com.ibm.wbit.ie.ui.wizards.NewInterfaceWizard"/>
+<new_wizard_action id="com.ibm.wbit.mediation.ui.wizards.NewMediatorWizard"/>
+<new_wizard_action id="com.ibm.wbit.sib.mediation.ui.wizards.NewMediationFlowWizard"/>
+<new_wizard_action id="com.ibm.wbit.sib.mediation.ui.wizards.NewMediationSubFlowWizard"/>
+<new_wizard_action id="com.ibm.wbimonitor.xml.editor.ui.newwizard.NewBusinessMeasuresWizard.id"/>
+<new_wizard_action id="com.ibm.wbit.migrationplan.ui.wizard.NewMigrationplanWizardID"/>
+<new_wizard_action id="com.ibm.wbit.relationshipdesigner.wizards.NewRelationshipWizard"/>
+<new_wizard_action id="com.ibm.wbit.br.selector.ui.wizard.RuleGroupWizard"/>
+<new_wizard_action id="com.ibm.wbit.br.ui.ruleset.wizard.RuleSetFileWizard"/>
+<new_wizard_action id="com.ibm.wbit.br.selector.ui.wizard.SelectorWizard"/>
+<perspective_action id="com.ibm.wbit.ui.WBIPerspective"/>
+<perspective_action id="org.eclipse.hyades.trace.internal.ui.tracePerspective"/>
+<perspective_action id="com.ibm.btools.blm.ui.perspective.BLMPerspective"/>
+<perspective_action id="com.ibm.wbimonitor.xml.editor.ui.perspective.BePerspective"/>
+<view id="com.ibm.wbit.ui.logicalview.WBILogicalView"/>
+<view id="com.ibm.wbit.taskflow.ui.views.TaskFlowView"/>
+<view id="com.ibm.wbit.ui.build.activities.view.BuildActivitiesView"/>
+<view id="org.eclipse.ui.views.PropertySheet"/>
+<view id="org.eclipse.ui.views.ProblemView"/>
+<view id="org.eclipse.wst.server.ui.ServersView"/>
+<view id="com.ibm.wbit.comptest.ui.view.HorizontalTraceView"/>
+<fastViewBars/>
+<layout>
+<mainWindow>
+<info folder="true" part="left">
+<folder activePageID="com.ibm.wbit.ui.logicalview.WBILogicalView" appearance="2" expanded="2">
+<page content="com.ibm.wbit.ui.logicalview.WBILogicalView" label="Business Integration"/>
+<page content="com.ibm.wbit.ui.physicalview.PhysicalView" label="LabelNotFound"/>
+<page content="com.ibm.etools.patterns.views.PatternExplorerView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="stickyFolderRight" ratio="0.749499" ratioLeft="748" ratioRight="250" relationship="2" relative="left">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.28957915" ratioLeft="289" ratioRight="709" relationship="2" relative="left"/>
+<info folder="true" part="bottom" ratio="0.6369863" ratioLeft="465" ratioRight="265" relationship="4" relative="org.eclipse.ui.editorss">
+<folder activePageID="com.ibm.wbit.comptest.ui.view.HorizontalTraceView" appearance="2" expanded="2">
+<page content="com.ibm.wbit.taskflow.ui.views.TaskFlowView" label="Task Flows"/>
+<page content="com.ibm.wbit.ui.build.activities.view.BuildActivitiesView" label="Build Activities"/>
+<page content="org.eclipse.ui.views.PropertySheet" label="Properties"/>
+<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
+<page content="org.eclipse.wst.server.ui.ServersView" label="Servers"/>
+<page content="com.ibm.wbit.comptest.ui.view.HorizontalTraceView" label="Server Logs"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="5"/>
+<part id="4"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="bottomLeft" ratio="0.5889764" ratioLeft="374" ratioRight="261" relationship="4" relative="left">
+<folder appearance="2" expanded="2">
+<page content="com.ibm.wbit.ui.referencesview" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
+</perspectives>
+<workingSets/>
+<navigationHistory/>
+<input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
+</page>
+<workbenchWindowAdvisor/>
+<actionBarAdvisor/>
+<trimLayout>
+<trimArea IMemento.internal.id="128">
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
+</trimArea>
+<trimArea IMemento.internal.id="1024">
+<trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
+<trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
+</trimArea>
+</trimLayout>
+</window>
+<mruList>
+<file factoryID="com.ibm.wbit.ui.FileEditorInputWithSourceFactory" id="com.ibm.wbit.ie.ui.graphicaleditor.InterfaceEditor" name="SmsCodeHumanTaskInterface.wsdl" tooltip="IntegrationSolution_Library/Interfaces/HumanTasks/SmsCodeHumanTaskInterface.wsdl">
+<persistable MEMENTO_ARTIFACT_QNAME_LN="SmsCodeHumanTaskInterface" MEMENTO_ARTIFACT_QNAME_NS="http://IntegrationSolution_Library/Interfaces/HumanTasks/SmsCodeHumanTaskInterface" MEMENTO_TYPE_QNAME_LN="portType" MEMENTO_TYPE_QNAME_NS="http://schemas.xmlsoap.org/wsdl" path="/IntegrationSolution_Library/Interfaces/HumanTasks/SmsCodeHumanTaskInterface.wsdl"/>
+</file>
+<file factoryID="com.ibm.wbit.ui.FileEditorInputWithSourceFactory" id="com.ibm.wbit.ie.ui.graphicaleditor.InterfaceEditor" name="SmsVerificationProcessInterface.wsdl" tooltip="IntegrationSolution_Library/Interfaces/BusinessProcesses/SmsVerificationProcessInterface.wsdl">
+<persistable MEMENTO_ARTIFACT_QNAME_LN="SmsVerificationProcessInterface" MEMENTO_ARTIFACT_QNAME_NS="http://IntegrationSolution_Library/Interfaces/BusinessProcesses/SmsVerificationProcessInterface" MEMENTO_TYPE_QNAME_LN="portType" MEMENTO_TYPE_QNAME_NS="http://schemas.xmlsoap.org/wsdl" path="/IntegrationSolution_Library/Interfaces/BusinessProcesses/SmsVerificationProcessInterface.wsdl"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.ibm.wbit.tel.editor.canvas.HTMEditor" name="SmsVerificationProcessTask1.itel" tooltip="IntegrationSolution_Module/BusinessProcesses/SmsVerificationProcessTask1.itel">
+<persistable path="/IntegrationSolution_Module/BusinessProcesses/SmsVerificationProcessTask1.itel"/>
+</file>
+<file factoryID="com.ibm.wbit.ui.FileEditorInputWithSourceFactory" id="com.ibm.wbit.bo.ui.boeditor.BOEditor" name="SimpleAlertEmail.xsd" tooltip="IntegrationSolution_Module/CommonSchemas/SimpleAlertEmail.xsd">
+<persistable MEMENTO_ARTIFACT_QNAME_LN="SimpleAlertEmail" MEMENTO_ARTIFACT_QNAME_NS="http://www.ibm.com/xmlns/prod/websphere/j2ca/email/simplealertemail" MEMENTO_TYPE_QNAME_LN="DataType" MEMENTO_TYPE_QNAME_NS="com.ibm.wbit.bo.ui" path="/IntegrationSolution_Module/CommonSchemas/SimpleAlertEmail.xsd"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.ibm.wbit.ie.ui.graphicaleditor.InterfaceEditor" name="EmailServiceImport.wsdl" tooltip="IntegrationSolution_Module/Services/EmailServiceImport.wsdl">
+<persistable path="/IntegrationSolution_Module/Services/EmailServiceImport.wsdl"/>
+</file>
+<file factoryID="com.ibm.wbit.ui.FileEditorInputWithSourceFactory" id="com.ibm.wbit.wiring.ui.editor.SCDLGraphicalEditor" name="sca.module" tooltip="IntegrationSolution_Module/sca.module">
+<persistable MEMENTO_ARTIFACT_QNAME_LN="IntegrationSolution_Module" MEMENTO_TYPE_QNAME_LN="Module" MEMENTO_TYPE_QNAME_NS="http://www.ibm.com/xmlns/prod/websphere/scdl/6.0.0" path="/IntegrationSolution_Module/sca.module"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.ibm.wbit.bpel.ui.bpeleditor" name="SmsVerificationProcess.bpel" tooltip="IntegrationSolution_Module/BusinessProcesses/SmsVerificationProcess.bpel">
+<persistable path="/IntegrationSolution_Module/BusinessProcesses/SmsVerificationProcess.bpel"/>
+</file>
+<file factoryID="com.ibm.bpm.gettingstarted.editor.GettingStartedEditorElementFactory" id="com.ibm.bpm.gettingstarted.editor.GettingStartedEditor" name="IBM WebSphere Integration Developer 7.0" tooltip="Getting Started - IBM WebSphere Integration Developer 7.0">
+<persistable gettingStartedID="com.ibm.wbit.ui.gettingStarted"/>
+</file>
+</mruList>
+</workbench>

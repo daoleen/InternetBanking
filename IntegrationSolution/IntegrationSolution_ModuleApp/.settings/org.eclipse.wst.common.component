@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="IntegrationSolution_ModuleApp">
+        <wb-resource deploy-path="/" source-path="/EarContent"/>
+        <dependent-module archiveName="IntegrationSolution_Module.jar" deploy-path="/" handle="module:/resource/IntegrationSolution_Module/IntegrationSolution_Module">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module deploy-path="/" handle="module:/resource/IntegrationSolution_ModuleWeb/IntegrationSolution_ModuleWeb">
+            <dependent-object>WebModule_1169158408425</dependent-object>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="IntegrationSolution_Library.jar" deploy-path="/" handle="module:/resource/IntegrationSolution_Library/IntegrationSolution_Library">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module deploy-path="/" handle="module:/resource/CWYEM_EMail/CWYEM_EMail">
+            <dependent-object>ConnectorModule_1419867855049</dependent-object>
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+    </wb-module>
+</project-modules>
